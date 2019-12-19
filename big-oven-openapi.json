@@ -1,0 +1,2642 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "partner",
+        "title": "Big Oven",
+        "description": "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http:\/\/swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https:\/\/github.com\/swagger-api\/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed ",
+        "termsOfService": "Please see our [terms of service](http:\/\/api2.bigoven.com\/web\/documentation\/termsofuse"
+    },
+    "servers": [
+        "httpsapi2.bigoven.com\/"
+    ],
+    "paths": {
+        "\/collection\/{id}": {
+            "get": {
+                "summary": "Gets a recipe collection. A recipe collection is a curated set of recipes.",
+                "description": "Gets a recipe collection. a recipe collection is a curated set of recipes..",
+                "operationId": "CollectionGetCollection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "the collection identifier"
+                    },
+                    {
+                        "name": "rpp",
+                        "in": "query",
+                        "description": "results per page"
+                    },
+                    {
+                        "name": "pg",
+                        "in": "query",
+                        "description": "page number (starting with 1)"
+                    },
+                    {
+                        "name": "test",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionForLogging",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/collection\/{id}\/meta": {
+            "get": {
+                "summary": "Gets a recipe collection metadata. A recipe collection is a curated set of recipes.",
+                "description": "Gets a recipe collection metadata. a recipe collection is a curated set of recipes..",
+                "operationId": "CollectionGetCollectionMeta",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "the collection identifier"
+                    }
+                ]
+            }
+        },
+        "\/collections": {
+            "get": {
+                "summary": "Get the list of current, seasonal recipe collections. From here, you can use the \/collection\/{id} endpoint to retrieve the recipes in those collections.",
+                "description": "Get the list of current, seasonal recipe collections. from here, you can use the \/collection\/{id} endpoint to retrieve the recipes in those collections..",
+                "operationId": "CollectionCollections",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "test",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/glossary\/byterm\/{term}": {
+            "get": {
+                "summary": "Get food glossary article by term (e.g., asparagus). This editorial is (c) BigOven and MUST carry attribution and a link back to the glossary entry on BigOven.com.",
+                "description": "Get food glossary article by term (e.g., asparagus). this editorial is (c) bigoven and must carry attribution and a link back to the glossary entry on bigoven.com..",
+                "operationId": "GlossaryByTerm",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "term",
+                        "in": "path",
+                        "description": "Keyword used to look up article, e.g., asparagus"
+                    }
+                ]
+            }
+        },
+        "\/glossary\/{id}": {
+            "get": {
+                "summary": "Get food glossary article",
+                "description": "Get food glossary article.",
+                "operationId": "GlossaryGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "the collection identifier"
+                    }
+                ]
+            }
+        },
+        "\/grocerylist": {
+            "delete": {
+                "summary": "Delete all the items on a grocery list; faster operation than a sync with deleted items.",
+                "description": "Delete all the items on a grocery list; faster operation than a sync with deleted items..",
+                "operationId": "GroceryListDelete",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get the user's grocery list.  User is determined by Basic Authentication.",
+                "description": "Get the user's grocery list.  user is determined by basic authentication..",
+                "operationId": "GroceryListGet",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/grocerylist\/department": {
+            "post": {
+                "summary": "Departmentalize a list of strings -- used for ad-hoc grocery list item addition",
+                "description": "Departmentalize a list of strings -- used for ad-hoc grocery list item addition.",
+                "operationId": "GroceryListDepartment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "model",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/grocerylist\/item": {
+            "post": {
+                "summary": "Add a single line item to the grocery list",
+                "description": "Add a single line item to the grocery list.",
+                "operationId": "GroceryListPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "newItem",
+                        "in": "body",
+                        "description": "name, quantity, unit, notes, department"
+                    }
+                ]
+            }
+        },
+        "\/grocerylist\/item\/{guid}": {
+            "delete": {
+                "summary": "\/grocerylist\/item\/{guid}  DELETE will delete this item assuming you own it.",
+                "description": "\/grocerylist\/item\/{guid}  delete will delete this item assuming you own it..",
+                "operationId": "GroceryListDeleteItemByGuid",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "guid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a grocery item by GUID",
+                "description": "Update a grocery item by guid.",
+                "operationId": "GroceryListGroceryListItemGuid",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "req",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "guid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/grocerylist\/recipe": {
+            "post": {
+                "summary": "Add a Recipe to the grocery list.  In the request data, pass in recipeId, scale (scale=1.0 says to keep the recipe the same size as originally posted), markAsPending (true\/false) to indicate that\r\n            the lines in the recipe should be marked ",
+                "description": "Add a recipe to the grocery list.  in the request data, pass in recipeid, scale (scale=1.0 says to keep the recipe the same size as originally posted), markaspending (true\/false) to indicate that\r\n            the lines in the recipe should be marked .",
+                "operationId": "GroceryListAddRecipe",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/grocerylist\/sync": {
+            "post": {
+                "summary": "Synchronize the grocery list.  Call this with a POST to \/grocerylist\/sync",
+                "description": "Synchronize the grocery list.  call this with a post to \/grocerylist\/sync.",
+                "operationId": "GroceryListPostGroceryListSync",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "req",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe": {
+            "post": {
+                "summary": "Add a new recipe",
+                "description": "Add a new recipe.",
+                "operationId": "RecipePost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipe",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a recipe",
+                "description": "Update a recipe.",
+                "operationId": "RecipePut",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipe",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe\/autocomplete": {
+            "get": {
+                "summary": "Given a query, return recipe titles starting with query. Query must be at least 3 chars in length.",
+                "description": "Given a query, return recipe titles starting with query. query must be at least 3 chars in length..",
+                "operationId": "RecipeAutoComplete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe\/categories": {
+            "get": {
+                "summary": "Get a list of recipe categories (the ID field can be used for include_cat in search parameters)",
+                "description": "Get a list of recipe categories (the id field can be used for include_cat in search parameters).",
+                "operationId": "RecipeCategories",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/recipe\/review\/replies\/{replyId}": {
+            "delete": {
+                "summary": "DELETE a reply to a given review. Authenticated user must be the one who originally posted the reply.",
+                "description": "Delete a reply to a given review. authenticated user must be the one who originally posted the reply..",
+                "operationId": "ReviewDeleteReply",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "replyId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update (PUT) a reply to a given review. Authenticated user must be the original one that posted the reply.",
+                "description": "Update (put) a reply to a given review. authenticated user must be the original one that posted the reply..",
+                "operationId": "ReviewPutReply",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "replyId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe\/review\/{reviewId}": {
+            "get": {
+                "summary": "Get a given review by string-style ID. This will return a payload with FeaturedReply, ReplyCount.\r\n            Recommended display is to list top-level reviews with one featured reply underneath. \r\n            Currently, the FeaturedReply is the most",
+                "description": "Get a given review by string-style id. this will return a payload with featuredreply, replycount.\r\n            recommended display is to list top-level reviews with one featured reply underneath. \r\n            currently, the featuredreply is the most.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reviewId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a given top-level review.",
+                "description": "Update a given top-level review..",
+                "operationId": "ReviewPut",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reviewId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe\/review\/{reviewId}\/replies": {
+            "get": {
+                "summary": "Get a paged list of replies for a given review.",
+                "description": "Get a paged list of replies for a given review..",
+                "operationId": "ReviewGetReplies",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reviewId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "pg",
+                        "in": "query",
+                        "description": "page number (starting with 1)"
+                    },
+                    {
+                        "name": "rpp",
+                        "in": "query",
+                        "description": "results per page"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "POST a reply to a given review. The date will be set by server. Note that replies no longer have star ratings, only top-level reviews do.",
+                "description": "Post a reply to a given review. the date will be set by server. note that replies no longer have star ratings, only top-level reviews do..",
+                "operationId": "ReviewPostReply",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reviewId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe\/scan": {
+            "post": {
+                "summary": "POST an image as a new RecipeScan request\r\n                1)  Fetch the filename -- DONE\r\n                2)  Copy it to the pics\/scan folder - ENSURE NO NAMING COLLISIONS -- DONE\r\n                3)  Create 120 thumbnail size  in pics\/scan\/120 -- D",
+                "description": "Post an image as a new recipescan request\r\n                1)  fetch the filename -- done\r\n                2)  copy it to the pics\/scan folder - ensure no naming collisions -- done\r\n                3)  create 120 thumbnail size  in pics\/scan\/120 -- d.",
+                "operationId": "RecipeScan",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "test",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "devicetype",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "lat",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "lng",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe\/{id}": {
+            "delete": {
+                "summary": "Delete a Recipe (you must be authenticated as an owner of the recipe)",
+                "description": "Delete a recipe (you must be authenticated as an owner of the recipe).",
+                "operationId": "RecipeDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "the collection identifier"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Return full Recipe detail. Returns 403 if the recipe is owned by someone else.",
+                "description": "Return full recipe detail. returns 403 if the recipe is owned by someone else..",
+                "operationId": "RecipeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "the collection identifier"
+                    },
+                    {
+                        "name": "prefetch",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe\/{recipeId}\/feedback": {
+            "post": {
+                "summary": "Feedback on a Recipe -- for internal BigOven editors",
+                "description": "Feedback on a recipe -- for internal bigoven editors.",
+                "operationId": "RecipeFeedback",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe\/{recipeId}\/image": {
+            "post": {
+                "summary": "POST: \/recipe\/{recipeId}\/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n             \r\n             Note that caption, lng and lat are all optional, but must go on the request URI as params because this endpoint\r\n             needs a m",
+                "description": "Post: \/recipe\/{recipeid}\/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n             \r\n             note that caption, lng and lat are all optional, but must go on the request uri as params because this endpoint\r\n             needs a m.",
+                "operationId": "ImagesUploadRecipeImage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "caption",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "lat",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "lng",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe\/{recipeId}\/images": {
+            "get": {
+                "summary": "Get all the images for a recipe. DEPRECATED. Please use \/recipe\/{recipeId}\/photos.",
+                "description": "Get all the images for a recipe. deprecated. please use \/recipe\/{recipeid}\/photos..",
+                "operationId": "ImagesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe\/{recipeId}\/note": {
+            "post": {
+                "summary": "HTTP POST a new note into the system.",
+                "description": "Http post a new note into the system..",
+                "operationId": "NotePost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "note",
+                        "in": "body",
+                        "description": "a recipe note, with fields: Date (YYYY-MM-DD string), Notes (string), People (string), Variations (string), RecipeID (int?)"
+                    }
+                ]
+            }
+        },
+        "\/recipe\/{recipeId}\/note\/{noteId}": {
+            "delete": {
+                "summary": "Delete a review\r\n                do a DELETE Http request of \/note\/{ID}",
+                "description": "Delete a review\r\n                do a delete http request of \/note\/{id}.",
+                "operationId": "NoteDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "noteId",
+                        "in": "path",
+                        "description": "noteId (int)"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get a given note. Make sure you're passing authentication information in the header for the user who owns the note.",
+                "description": "Get a given note. make sure you're passing authentication information in the header for the user who owns the note..",
+                "operationId": "NoteGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "noteId",
+                        "in": "path",
+                        "description": "noteId (int)"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "HTTP PUT (update) a Recipe note (RecipeNote).",
+                "description": "Http put (update) a recipe note (recipenote)..",
+                "operationId": "NotePut",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "noteId",
+                        "in": "path",
+                        "description": "noteId (int)"
+                    },
+                    {
+                        "name": "recipeNote",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe\/{recipeId}\/notes": {
+            "get": {
+                "summary": "recipe\/100\/notes",
+                "description": "Recipe\/100\/notes.",
+                "operationId": "NoteGetNotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "pg",
+                        "in": "query",
+                        "description": "page number (starting with 1)"
+                    },
+                    {
+                        "name": "rpp",
+                        "in": "query",
+                        "description": "results per page"
+                    }
+                ]
+            }
+        },
+        "\/recipe\/{recipeId}\/photos": {
+            "get": {
+                "summary": "Get all the photos for a recipe",
+                "description": "Get all the photos for a recipe.",
+                "operationId": "ImagesGetRecipePhotos",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "pg",
+                        "in": "query",
+                        "description": "page number (starting with 1)"
+                    },
+                    {
+                        "name": "rpp",
+                        "in": "query",
+                        "description": "results per page"
+                    }
+                ]
+            }
+        },
+        "\/recipe\/{recipeId}\/related": {
+            "get": {
+                "summary": "Get recipes related to the given recipeId",
+                "description": "Get recipes related to the given recipeid.",
+                "operationId": "RecipeRelated",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "pg",
+                        "in": "query",
+                        "description": "page number (starting with 1)"
+                    },
+                    {
+                        "name": "rpp",
+                        "in": "query",
+                        "description": "results per page"
+                    }
+                ]
+            }
+        },
+        "\/recipe\/{recipeId}\/review": {
+            "get": {
+                "summary": "Get *my* review for the recipe {recipeId}, where \"me\" is determined by standard authentication headers",
+                "description": "Get *my* review for the recipe {recipeid}, where \"me\" is determined by standard authentication headers.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add a new review. Only one review can be provided per {userId, recipeId} pair. Otherwise your review will be updated.",
+                "description": "Add a new review. only one review can be provided per {userid, recipeid} pair. otherwise your review will be updated..",
+                "operationId": "ReviewPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe\/{recipeId}\/review\/{reviewId}": {
+            "delete": {
+                "summary": "Delete a review by recipeId and reviewId. DEPRECATED. Please see recipe\/review\/{reviewId} for the preferred method.\r\n            (We are moving from an integer-based ID system to a GUID-style string-based ID system for reviews and replies.)",
+                "description": "Delete a review by recipeid and reviewid. deprecated. please see recipe\/review\/{reviewid} for the preferred method.\r\n            (we are moving from an integer-based id system to a guid-style string-based id system for reviews and replies.).",
+                "operationId": "ReviewDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reviewId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get a given review - DEPRECATED. See recipe\/review\/{reviewId} for the current usage.\r\n            Beginning in January 2017, BigOven moded from an integer-based ID system to a GUID-style string-based ID system for reviews and replies.\r\n            We",
+                "description": "Get a given review - deprecated. see recipe\/review\/{reviewid} for the current usage.\r\n            beginning in january 2017, bigoven moded from an integer-based id system to a guid-style string-based id system for reviews and replies.\r\n            we.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reviewId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "HTTP PUT (update) a recipe review. DEPRECATED. Please see recipe\/review\/{reviewId} PUT for the new endpoint.\r\n            We are moving to a string-based primary key system, no longer integers, for reviews and replies.",
+                "description": "Http put (update) a recipe review. deprecated. please see recipe\/review\/{reviewid} put for the new endpoint.\r\n            we are moving to a string-based primary key system, no longer integers, for reviews and replies..",
+                "operationId": "ReviewPutLegacy",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reviewId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipe\/{recipeId}\/reviews": {
+            "get": {
+                "summary": "Get paged list of reviews for a recipe. Each review will have at most one FeaturedReply, as well as a ReplyCount.",
+                "description": "Get paged list of reviews for a recipe. each review will have at most one featuredreply, as well as a replycount..",
+                "operationId": "ReviewGetReviews",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "pg",
+                        "in": "query",
+                        "description": "page number (starting with 1)"
+                    },
+                    {
+                        "name": "rpp",
+                        "in": "query",
+                        "description": "results per page"
+                    }
+                ]
+            }
+        },
+        "\/recipe\/{recipeId}\/scans": {
+            "get": {
+                "summary": "Gets a list of RecipeScan images for the recipe. There will be at most 3 per recipe.",
+                "description": "Gets a list of recipescan images for the recipe. there will be at most 3 per recipe..",
+                "operationId": "ImagesGetScanImages",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "recipeId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/recipes": {
+            "get": {
+                "summary": "Search for recipes. There are many parameters that you can apply. Starting with the most common, use title_kw to search within a title.\r\n            Use any_kw to search across the entire recipe.\r\n            If you'd like to limit by course, set the",
+                "description": "Search for recipes. there are many parameters that you can apply. starting with the most common, use title_kw to search within a title.\r\n            use any_kw to search across the entire recipe.\r\n            if you'd like to limit by course, set the.",
+                "operationId": "RecipeRecipeSearch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "any_kw",
+                        "in": "query",
+                        "description": "Search anywhere in the recipe for the keyword"
+                    },
+                    {
+                        "name": "folder",
+                        "in": "query",
+                        "description": "Search in a specific folder name for the authenticated user"
+                    },
+                    {
+                        "name": "coll",
+                        "in": "query",
+                        "description": "Limit to a collection ID number"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "optionally set to either \"myrecipes\", \"try\", \"favorites\",\"added\" to filter to just the authenticated user's recipe set"
+                    },
+                    {
+                        "name": "title_kw",
+                        "in": "query",
+                        "description": "Search just in the recipe title for the keyword"
+                    },
+                    {
+                        "name": "userId",
+                        "in": "query",
+                        "description": "Set the target userid to search their public recipes"
+                    },
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "description": "Set the target username to search their public recipes"
+                    },
+                    {
+                        "name": "token",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "photos",
+                        "in": "query",
+                        "description": "if set to true, limit search results to photos only"
+                    },
+                    {
+                        "name": "boostmine",
+                        "in": "query",
+                        "description": "if set to true, boost my own recipes in my folders so they show up high in the list (at the expense of other sort orders)"
+                    },
+                    {
+                        "name": "include_cat",
+                        "in": "query",
+                        "description": "integer of the subcategory you'd like to limit searches to (see the \/recipe\/categories endpoint for available id numbers). For instance, 58 is \"Main Dish &gt; Casseroles\"."
+                    },
+                    {
+                        "name": "exclude_cat",
+                        "in": "query",
+                        "description": "like include_cat, set this to an integer to exclude a specific category"
+                    },
+                    {
+                        "name": "include_primarycat",
+                        "in": "query",
+                        "description": "csv indicating up to three top-level categories -- valid values are [appetizers,bread,breakfast,desserts,drinks,maindish,salads,sidedish,soups,marinades,other]"
+                    },
+                    {
+                        "name": "include_ing",
+                        "in": "query",
+                        "description": "A CSV representing up to 3 ingredients to include, e.g., tomatoes,corn%20%starch,chicken"
+                    },
+                    {
+                        "name": "exclude_ing",
+                        "in": "query",
+                        "description": "A CSV representing up to 3 ingredients to exclude  (Powersearch-capable plan required)"
+                    },
+                    {
+                        "name": "cuisine",
+                        "in": "query",
+                        "description": "Limit to a specific cuisine. Cooks can enter anything free-form, but the few dozen preconfigured values are Afghan,African,American,American-South,Asian,Australian,Brazilian,Cajun,Canadian,Caribbean,Chinese,Croatian,Cuban,Dessert,Eastern European,English,French,German,Greek,Hawaiian,Hungarian,India,Indian,Irish,Italian,Japanese,Jewish,Korean,Latin,Mediterranean,Mexican,Middle Eastern,Moroccan,Polish,Russian,Scandanavian,Seafood,Southern,Southwestern,Spanish,Tex-Mex,Thai,Vegan,Vegetarian,Vietname"
+                    },
+                    {
+                        "name": "db",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "userset",
+                        "in": "query",
+                        "description": "If set to a given username, it'll force the search to filter to just that username"
+                    },
+                    {
+                        "name": "rpp",
+                        "in": "query",
+                        "description": "results per page"
+                    },
+                    {
+                        "name": "pg",
+                        "in": "query",
+                        "description": "page number (starting with 1)"
+                    },
+                    {
+                        "name": "vtn",
+                        "in": "query",
+                        "description": "when set to 1, limit to vegetarian (Powersearch-capable plan required)"
+                    },
+                    {
+                        "name": "vgn",
+                        "in": "query",
+                        "description": "when set to 1, limit to vegan (Powersearch-capable plan required)"
+                    },
+                    {
+                        "name": "chs",
+                        "in": "query",
+                        "description": "when set to 1, limit to contains-cheese (Powersearch-capable plan required)"
+                    },
+                    {
+                        "name": "glf",
+                        "in": "query",
+                        "description": "when set to 1, limit to gluten-free (Powersearch-capable plan required)"
+                    },
+                    {
+                        "name": "ntf",
+                        "in": "query",
+                        "description": "when set to 1, limit to nut-free (Powersearch-capable plan required)"
+                    },
+                    {
+                        "name": "dyf",
+                        "in": "query",
+                        "description": "when set to 1, limit to dairy-free (Powersearch-capable plan required)"
+                    },
+                    {
+                        "name": "sff",
+                        "in": "query",
+                        "description": "when set to 1, limit to seafood-free (Powersearch-capable plan required)"
+                    },
+                    {
+                        "name": "slf",
+                        "in": "query",
+                        "description": "when set to 1, limit to shellfish-free (Powersearch-capable plan required)"
+                    },
+                    {
+                        "name": "tnf",
+                        "in": "query",
+                        "description": "when set to 1, limit to tree-nut free (Powersearch-capable plan required)"
+                    },
+                    {
+                        "name": "wmf",
+                        "in": "query",
+                        "description": "when set to 1, limit to white-meat free (Powersearch-capable plan required)"
+                    },
+                    {
+                        "name": "rmf",
+                        "in": "query",
+                        "description": "when set to 1, limit to red-meat free (Powersearch-capable plan required)"
+                    },
+                    {
+                        "name": "cps",
+                        "in": "query",
+                        "description": "when set to 1, recipe contains pasta, set to 0 means contains no pasta (Powersearch-capable plan required)"
+                    },
+                    {
+                        "name": "champion",
+                        "in": "query",
+                        "description": "optional. When set to 1, this will limit search results to \"best of\" recipes as determined by various internal editorial and programmatic algorithms. For the most comprehensive results, don't include this parameter."
+                    }
+                ]
+            }
+        },
+        "\/recipes\/random": {
+            "get": {
+                "summary": "Get a random, home-page-quality Recipe.",
+                "description": "Get a random, home-page-quality recipe..",
+                "operationId": "RecipeGetRandomRecipe",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/recipes\/raves": {
+            "get": {
+                "summary": "Get the recipe\/comment tuples for those recipes with 4 or 5 star ratings",
+                "description": "Get the recipe\/comment tuples for those recipes with 4 or 5 star ratings.",
+                "operationId": "RecipeRaves",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "pg",
+                        "in": "query",
+                        "description": "page number (starting with 1)"
+                    },
+                    {
+                        "name": "rpp",
+                        "in": "query",
+                        "description": "results per page"
+                    }
+                ]
+            }
+        },
+        "\/recipes\/recentviews": {
+            "get": {
+                "summary": "Get a list of recipes that the authenticated user has most recently viewed",
+                "description": "Get a list of recipes that the authenticated user has most recently viewed.",
+                "operationId": "RecipeRecentViews",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "pg",
+                        "in": "query",
+                        "description": "page number (starting with 1)"
+                    },
+                    {
+                        "name": "rpp",
+                        "in": "query",
+                        "description": "results per page"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "API2.Controllers.GroceryListController.DepartmentModel": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "API2.Controllers.GroceryListController.PostGroceryListRecipeRequest": {
+                "type": "object",
+                "properties": {
+                    "markAsPending": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "recipeId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "scale": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "API2.Controllers.GroceryListController.PostGroceryListSyncRequest": {
+                "type": "object",
+                "properties": {
+                    "since": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "API2.Controllers.GroceryListController.PostToGroceryListRecipeRequest": {
+                "type": "object",
+                "properties": {
+                    "department": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "quantity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "unit": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "API2.Controllers.GroceryListController.UpdateItemByGuidRequest": {
+                "type": "object",
+                "properties": {
+                    "department": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "guid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "quantity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "unit": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "API2.Controllers.ImagesController.RecipePhotosResponse": {
+                "type": "object",
+                "properties": {
+                    "ResultCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Results": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "API2.Controllers.NoteController.NoteRequest": {
+                "type": "object",
+                "properties": {
+                    "CreationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DateDT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "guid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "People": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "recipeId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UserID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Variations": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "API2.Controllers.RecipeController.FeedbackDTO": {
+                "type": "object",
+                "properties": {
+                    "feedback": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "API2.Controllers.ReviewController.PostReplyReq": {
+                "type": "object",
+                "properties": {
+                    "Comment": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "API2.Controllers.ReviewController.ReviewRequest": {
+                "type": "object",
+                "properties": {
+                    "ActiveMinutes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Comment": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MakeAgain": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StarRating": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalMinutes": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "API2.Controllers.ReviewController.ReviewRequestLegacy": {
+                "type": "object",
+                "properties": {
+                    "ActiveMinutes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Comment": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "guid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MakeAgain": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ParentID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StarRating": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalMinutes": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "API2.GroceryListDepartmentResult": {
+                "type": "object",
+                "properties": {
+                    "dept": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "item": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.GlossaryEntry": {
+                "type": "object",
+                "properties": {
+                    "CreationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Definition": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GlossaryEntryID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastModified": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Term": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.Grocery.GroceryList": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastModified": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Recipes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VersionGuid": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.Grocery.Item": {
+                "type": "object",
+                "properties": {
+                    "BigOvenObject": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CreationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "department": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DisplayQuantity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "guid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsChecked": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ItemID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastModified": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LocalStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "recipeId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ThirdPartyURL": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.Image": {
+                "type": "object",
+                "properties": {
+                    "Caption": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CreationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageSquares": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageURL120": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageURL128": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageURL200": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageURL256": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageURL48": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageURL64": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsPrimary": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MaxImageSquare": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.Ingredient": {
+                "type": "object",
+                "properties": {
+                    "DisplayIndex": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DisplayQuantity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HTMLName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IngredientID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsHeading": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsLinked": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MetricDisplayQuantity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MetricQuantity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MetricUnit": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PreparationNotes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "quantity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "unit": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.IngredientInfo": {
+                "type": "object",
+                "properties": {
+                    "department": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MasterIngredientID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UsuallyOnHand": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.NutritionInfo": {
+                "type": "object",
+                "properties": {
+                    "CaloriesFromFat": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Cholesterol": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CholesterolPct": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DietaryFiber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DietaryFiberPct": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MonoFat": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PolyFat": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Potassium": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PotassiumPct": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Protein": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ProteinPct": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SatFat": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SatFatPct": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SingularYieldUnit": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Sodium": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SodiumPct": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Sugar": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalCalories": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalCarbs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalCarbsPct": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalFat": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalFatPct": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TransFat": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.Recipe": {
+                "type": "object",
+                "properties": {
+                    "ActiveMinutes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AdTags": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AdminBoost": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AllCategoriesText": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "BookmarkImageURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "BookmarkSiteLogo": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "BookmarkURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Category": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Collection": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CollectionID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CreationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Cuisine": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FavoriteCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HeroPhotoUrl": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageSquares": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Ingredients": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IngredientsTextBlock": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Instructions": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsBookmark": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsPrivate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsRecipeScan": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsSponsored": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastModified": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MaxImageSquare": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MedalCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MenuCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Microcategory": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NotesCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PrimaryIngredient": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "recipeId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ReviewCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StarRating": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Subcategory": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalMinutes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VariantOfRecipeID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VerifiedByClass": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VerifiedDateTime": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WebURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "YieldNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "YieldUnit": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.RecipeInfo": {
+                "type": "object",
+                "properties": {
+                    "BookmarkURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Category": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CreationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Cuisine": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HeroPhotoUrl": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HideFromPublicSearch": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageURL120": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsBookmark": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsPrivate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MaxImageSquare": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Microcategory": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QualityScore": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "recipeId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ReviewCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StarRating": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StarRatingIMG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Subcategory": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalTries": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WebURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "YieldNumber": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.RecipeNote": {
+                "type": "object",
+                "properties": {
+                    "CreationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DateDT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "guid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "People": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "recipeId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UserID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Variations": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.RecipeNoteList": {
+                "type": "object",
+                "properties": {
+                    "ResultCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Results": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.Reply": {
+                "type": "object",
+                "properties": {
+                    "Comment": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CreationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastModified": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ReviewID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.Review": {
+                "type": "object",
+                "properties": {
+                    "ActiveMinutes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Comment": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CreationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "guid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastModified": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ParentID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Replies": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ReplyCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ReviewID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StarRating": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalMinutes": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.UserInfo": {
+                "type": "object",
+                "properties": {
+                    "FirstName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageURL48": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsKitchenHelper": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsPremium": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsUsingRecurly": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MemberSince": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PhotoUrl": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PremiumExpiryDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UserID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UserName": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API.UserInfoTiny": {
+                "type": "object",
+                "properties": {
+                    "FirstName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PhotoUrl": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UserID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UserName": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API2.CollectionInfo": {
+                "type": "object",
+                "properties": {
+                    "Description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsFiltered": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsSponsored": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MobileUrl": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRO": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PhotoUrl": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Results": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Token": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WebURL": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API2.GroceryList": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastModified": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Recipes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VersionGuid": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API2.Photo": {
+                "type": "object",
+                "properties": {
+                    "Caption": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CreationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsPrimary": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MaxImageSquare": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PhotoUrl": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API2.Recipe": {
+                "type": "object",
+                "properties": {
+                    "ActiveMinutes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AdTags": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AdminBoost": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AllCategoriesText": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "BookmarkImageURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "BookmarkSiteLogo": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "BookmarkURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Category": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Collection": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CollectionID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CreationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Cuisine": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FavoriteCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageSquares": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ImageURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Ingredients": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IngredientsTextBlock": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Instructions": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsBookmark": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsPrivate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsRecipeScan": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsSponsored": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastModified": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MaxImageSquare": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MedalCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MenuCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Microcategory": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NotesCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PhotoUrl": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PrimaryIngredient": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "recipeId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ReviewCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StarRating": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Subcategory": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalMinutes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VariantOfRecipeID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VerifiedByClass": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VerifiedDateTime": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WebURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "YieldNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "YieldUnit": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API2.RecipeInfox": {
+                "type": "object",
+                "properties": {
+                    "Category": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CreationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Cuisine": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsBookmark": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsPrivate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsRecipeScan": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Microcategory": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PhotoUrl": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "recipeId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ReviewCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Servings": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StarRating": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Subcategory": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalTries": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WebURL": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API2.RecipeNote": {
+                "type": "object",
+                "properties": {
+                    "CreationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DateDT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "guid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "People": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "recipeId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UserID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Variations": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API2.RecipeSearchResult": {
+                "type": "object",
+                "properties": {
+                    "ResultCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Results": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SpellSuggest": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.API2.UserInfoTinyx": {
+                "type": "object",
+                "properties": {
+                    "FirstName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PhotoUrl": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UserID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UserName": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.RecipeCategory": {
+                "type": "object",
+                "properties": {
+                    "Category": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DefaultActiveMinutes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DefaultTotalMinutes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ParentID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PrimaryImage": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ShortDescription": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.RecipeInfoDateTuple2": {
+                "type": "object",
+                "properties": {
+                    "Date": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BigOven.Model.RecipeInfoReviewTuple2": {
+                "type": "object"
+            },
+            "BigOven.Model.ShoppingListLine": {
+                "type": "object",
+                "properties": {
+                    "DateAdded": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "dept": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "guid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HTMLItemName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IsChecked": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ItemName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastModified": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ListID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MealPlanID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MealPlanObjectType": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PendingAddition": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "recipeId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ShoppingListLineID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Store": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TextAmt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ThirdPartyHost": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ThirdPartyTitle": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ThirdPartyURL": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "System.Object": {
+                "type": "object"
+            }
+        }
+    }
+}
