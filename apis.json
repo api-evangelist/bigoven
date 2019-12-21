@@ -11,8 +11,8 @@
         "nutrition",
         "recipes"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-20",
+    "modified": "2019-12-20",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/bigoven\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -30,7 +30,7 @@
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/350000-recipe-and-grocery-list-api-v2-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/bigoven\/master\/350000-recipe-and-grocery-list-api-v2-openapi.json"
                 }
             ]
         },
@@ -48,7 +48,7 @@
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/bigoven-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/bigoven\/master\/bigoven-openapi.json"
                 }
             ]
         },
@@ -66,13 +66,17 @@
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/big-oven-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/bigoven\/master\/big-oven-openapi.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Website",
             "url": "http:\/\/www.bigoven.com"
