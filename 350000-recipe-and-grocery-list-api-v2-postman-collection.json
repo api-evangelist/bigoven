@@ -1,5 +1,5 @@
 {
-    "id": "47a1e1ba2c4ef99eac2938927e7a057a",
+    "id": "e15a8d56b62d8bdbb9fbc924617cb892",
     "name": "350,000+ Recipe and Grocery List API (v2)",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "c8a6f7c832ffae689b94de81b617974b",
+            "id": "86917c087a575c7a315b0dca84ec71bc",
             "name": "Gets a recipe collection. A recipe collection is a curated set of recipes.",
             "url": "http:\/\/api2.bigoven.com\/\/collection\/{id}",
             "description": "",
@@ -65,11 +65,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "c4fa4364e07be24f9fc670715d138f64",
+            "id": "33ab6ed7ac283abae11037788751d412",
             "name": "Gets a recipe collection metadata. A recipe collection is a curated set of recipes.",
             "url": "http:\/\/api2.bigoven.com\/\/collection\/{id}\/meta",
             "description": "",
@@ -96,11 +96,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "c01981c2698dee1d33de69225ad3aed2",
+            "id": "d5e55832687334f3c2e3772dfd62fc51",
             "name": "Get the list of current, seasonal recipe collections. From here, you can use the \/collection\/{id} endpoint to retrieve the recipes in those collections.",
             "url": "http:\/\/api2.bigoven.com\/\/collections",
             "description": "",
@@ -127,11 +127,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "13193d14740ff9128c241efa7b408f1d",
+            "id": "f66aa807a016731176c1b2c15bfce656",
             "name": "Get food glossary article by term (e.g., asparagus). This editorial is (c) BigOven and MUST carry attribution and a link back to the glossary entry on BigOven.com.",
             "url": "http:\/\/api2.bigoven.com\/\/glossary\/byterm\/{term}",
             "description": "",
@@ -158,11 +158,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "c8b4f317d92e9b33a3b626824cc9214a",
+            "id": "a0eb75bd7ed87909cc403bed90879d6a",
             "name": "Get food glossary article",
             "url": "http:\/\/api2.bigoven.com\/\/glossary\/{id}",
             "description": "",
@@ -189,11 +189,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "16daaf4a31e6faa15deba26436751292",
+            "id": "d636270b52300cc201516e7a50af9938",
             "name": "Delete all the items on a grocery list; faster operation than a sync with deleted items.",
             "url": "http:\/\/api2.bigoven.com\/\/grocerylist",
             "description": "",
@@ -212,11 +212,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "c6c35b2c65b42ddfb124674c270f4bc8",
+            "id": "eaa49e64c8c6090a3273c19c1622b24f",
             "name": "Get the user's grocery list.  User is determined by Basic Authentication.",
             "url": "http:\/\/api2.bigoven.com\/\/grocerylist",
             "description": "",
@@ -235,11 +235,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "98a52ca40dc94008b0d343faf77058a1",
+            "id": "a121ca582d199312af3a12d467abd607",
             "name": "Departmentalize a list of strings -- used for ad-hoc grocery list item addition",
             "url": "http:\/\/api2.bigoven.com\/\/grocerylist\/department",
             "description": "",
@@ -258,11 +258,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "88325b33bb265dfbc8819fbddd71797a",
+            "id": "d7ebc9cb3303943e7977c2c5d1b50e0d",
             "name": "Add a single line item to the grocery list",
             "url": "http:\/\/api2.bigoven.com\/\/grocerylist\/item",
             "description": "",
@@ -281,11 +281,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "a47336aa5eefd0f7198dcfbb683b9fea",
+            "id": "906e56be8f728621ffa34b56dcb8c4e7",
             "name": "\/grocerylist\/item\/{guid}  DELETE will delete this item assuming you own it.",
             "url": "http:\/\/api2.bigoven.com\/\/grocerylist\/item\/{guid}",
             "description": "",
@@ -312,11 +312,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "2139780d81809b29abdf9f0371145573",
+            "id": "71a97461f07d38c589a175bd312d9149",
             "name": "Update a grocery item by GUID",
             "url": "http:\/\/api2.bigoven.com\/\/grocerylist\/item\/{guid}",
             "description": "",
@@ -343,11 +343,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "1a2a8593dd509df81ae739f3d6b7ef80",
+            "id": "d9e7abcd7ca51968243f2d142bce2621",
             "name": "Add a Recipe to the grocery list.  In the request data, pass in recipeId, scale (scale=1.0 says to keep the recipe the same size as originally posted), markAsPending (true\/false) to indicate that\r\n            the lines in the recipe should be marked ",
             "url": "http:\/\/api2.bigoven.com\/\/grocerylist\/recipe",
             "description": "",
@@ -366,11 +366,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "fc807d61485e17c54dcc236871e7e94a",
+            "id": "358ead0103bcf1a3c532b94d6a665dab",
             "name": "Synchronize the grocery list.  Call this with a POST to \/grocerylist\/sync",
             "url": "http:\/\/api2.bigoven.com\/\/grocerylist\/sync",
             "description": "",
@@ -389,11 +389,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "209c6ec3020f6fdcbfb7d7268a088407",
+            "id": "7a235d11e16889f9dced3a7e840af6ac",
             "name": "Add a new recipe",
             "url": "http:\/\/api2.bigoven.com\/\/recipe",
             "description": "",
@@ -412,11 +412,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "ea49c470321d3a57dab66d6c725be5fc",
+            "id": "c8df81e67f6b0877eb56768b901a8509",
             "name": "Update a recipe",
             "url": "http:\/\/api2.bigoven.com\/\/recipe",
             "description": "",
@@ -435,11 +435,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "592d2c46544606a942d19c17d0705b45",
+            "id": "e8e3af8ee32c3eded000697a87940edf",
             "name": "Given a query, return recipe titles starting with query. Query must be at least 3 chars in length.",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/autocomplete",
             "description": "",
@@ -473,11 +473,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "0164a49b0087ce8debfa60c528529305",
+            "id": "d68bc2f8a8db06963e7da4413455a955",
             "name": "Get a list of recipe categories (the ID field can be used for include_cat in search parameters)",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/categories",
             "description": "",
@@ -496,11 +496,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "a78e17a32ff682f2fe7d2b77e07ad2ee",
+            "id": "c2d101581f905a471226484f57bc8380",
             "name": "POST an image as a new RecipeScan request\r\n                1)  Fetch the filename -- DONE\r\n                2)  Copy it to the pics\/scan folder - ENSURE NO NAMING COLLISIONS -- DONE\r\n                3)  Create 120 thumbnail size  in pics\/scan\/120 -- D",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/scan",
             "description": "",
@@ -548,11 +548,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "6f708a9036acba370c731063e4903061",
+            "id": "9d519a7b776485062a8e6587f7b8d4fc",
             "name": "Delete a Recipe (you must be authenticated as an owner of the recipe)",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{id}",
             "description": "",
@@ -579,11 +579,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "99386f411c721f5cbcab1d72731041f6",
+            "id": "c1c73361ed0922f81dc83a0689eeea63",
             "name": "Return full Recipe detail",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{id}",
             "description": "",
@@ -617,11 +617,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "4536473816f9ceb7e9833ea84bc5db20",
+            "id": "2aea4b9a34059d78da34f6d374905769",
             "name": "Feedback on a Recipe -- for internal BigOven editors",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/feedback",
             "description": "",
@@ -648,11 +648,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "569b59c1d583340e14f981acaa875be7",
+            "id": "e6f25692c0392e5a8efdd7d1d9d0337f",
             "name": "POST: \/recipe\/{recipeId}\/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n             \r\n             Note that caption, lng and lat are all optional, but must go on the request URI as params because this endpoint\r\n             needs a m",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/image",
             "description": "",
@@ -700,11 +700,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "db2a32cca2b0279388ea5308caab4403",
+            "id": "056411b807e65a0ed00bbe6d90a12cbb",
             "name": "Get all the images for a recipe. DEPRECATED. Please use \/recipe\/{recipeId}\/photos.",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/images",
             "description": "",
@@ -731,11 +731,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "f3a6828b61f75b45cb968d0c898ab073",
+            "id": "5f03a5f0b62d97c1d272d61f690a367d",
             "name": "HTTP POST a new note into the system.",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/note",
             "description": "",
@@ -762,11 +762,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "74a838e89d07cea5609ec0101edb347e",
+            "id": "5943abc34a0e140869844420ae8bc016",
             "name": "Delete a review\r\n                do a DELETE Http request of \/note\/{ID}",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/note\/{noteId}",
             "description": "",
@@ -800,11 +800,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "fcf936be9275f53c33aec5a1cf6ac667",
+            "id": "d393e32c7e5ce331207ebbea907ed1a8",
             "name": "Get a given note. Make sure you're passing authentication information in the header for the user who owns the note.",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/note\/{noteId}",
             "description": "",
@@ -838,11 +838,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "1aa220e85996ae3516096eda4794d31f",
+            "id": "4792c707c2114cd5c6b9fa4e7e8f0924",
             "name": "HTTP PUT (update) a Recipe note (RecipeNote).",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/note\/{noteId}",
             "description": "",
@@ -876,11 +876,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "223ffbc5fefb7538e1f641e13fc741bb",
+            "id": "28d7f03003a98e9443a90864f01ae834",
             "name": "recipe\/100\/notes",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/notes",
             "description": "",
@@ -921,11 +921,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "fa110d53a1720cec545fb4ebbf00847d",
+            "id": "21dde34f7f10b0e00db895dd814fa613",
             "name": "Get all the photos for a recipe",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/photos",
             "description": "",
@@ -966,11 +966,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "fab4d86df6164456befca9cd11292fa8",
+            "id": "c8fe532d52280c7d4104e3387e09a262",
             "name": "Get recipes related to the given recipeId",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/related",
             "description": "",
@@ -1011,11 +1011,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "1d78a61fcf68d7b5eece7d9294919154",
+            "id": "5b5d353aff9a1a54d9e701c54372cc8d",
             "name": "Get *my* review for this recipe, where \"me\" is passed in via authentication headers",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/review",
             "description": "",
@@ -1042,11 +1042,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "e20b8d892f70f088683bc5a862a683f8",
+            "id": "f12e8ce06c4ca6b45135cfac1545f5bb",
             "name": "Add a new review or rating.\r\n            You need to provide EITHER a StarRating or a Comment or both.\r\n            Just providing a StarRating is a \"rating\"; just providing a Comment is a \"comment\". You can also provide a comment AND a rating (prefe",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/review",
             "description": "",
@@ -1073,11 +1073,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "8677abfd46788b1bea4192d4361fe181",
+            "id": "50f7c177a567e6cfe62141aab8bf1bfd",
             "name": "Delete a review",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/review\/{reviewId}",
             "description": "",
@@ -1118,11 +1118,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "0153394632343b0fa2cda60063ca5e16",
+            "id": "f5eafb0569aaa39c0d14837e7e315c68",
             "name": "Get a given review",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/review\/{reviewId}",
             "description": "",
@@ -1156,11 +1156,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "595937878d0b9f3c64a92edb3ed0a33e",
+            "id": "0ba5b1dae3a277897648375e451acd1b",
             "name": "HTTP PUT (update) a Recipe review (UserComment).",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/review\/{reviewId}",
             "description": "",
@@ -1194,11 +1194,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "1e4766aa86fad92b9933e266bd3297d0",
+            "id": "44ca4ff88b6fa5a6ea5fa523266b52a6",
             "name": "Get reviews for a recipe",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/reviews",
             "description": "",
@@ -1239,11 +1239,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "ef5c34b0ae48c30a4f69bc22748912ee",
+            "id": "6bd2527cf04f1e7287ad1596d963489a",
             "name": "Gets a list of RecipeScan images for the recipe. There will be at most 3 per recipe.",
             "url": "http:\/\/api2.bigoven.com\/\/recipe\/{recipeId}\/scans",
             "description": "",
@@ -1270,11 +1270,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "c5768364bc7534087d720a0d54e0d783",
+            "id": "1e5b5325fcecea1b41f80ec21608d55d",
             "name": "Search for recipes. There are many parameters that you can apply. Starting with the most common, use title_kw to search within a title.\r\n            Use any_kw to search across the entire recipe.\r\n            If you'd like to limit by course, set the",
             "url": "http:\/\/api2.bigoven.com\/\/recipes",
             "description": "",
@@ -1518,11 +1518,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "0bf990e751611ae45dd5db145b264dd2",
+            "id": "df212ae62a985bcb7a8e0529c652f1ef",
             "name": "Get a random, home-page-quality Recipe.",
             "url": "http:\/\/api2.bigoven.com\/\/recipes\/random",
             "description": "",
@@ -1541,11 +1541,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "ac577c6cd462990e9256fe9017f08227",
+            "id": "963456ae724b3273082a348caa637969",
             "name": "Get the recipe\/comment tuples for those recipes with 4 or 5 star ratings",
             "url": "http:\/\/api2.bigoven.com\/\/recipes\/raves",
             "description": "",
@@ -1579,11 +1579,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         },
         {
-            "id": "314e1f6787ebb50993f68af825c5876c",
+            "id": "2ecfa2dbc5bc0114e43d32061a11ef74",
             "name": "Get a list of recipes that the authenticated user has most recently viewed",
             "url": "http:\/\/api2.bigoven.com\/\/recipes\/recentviews",
             "description": "",
@@ -1617,7 +1617,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "47a1e1ba2c4ef99eac2938927e7a057a",
+            "collectionId": "e15a8d56b62d8bdbb9fbc924617cb892",
             "rawModeData": ""
         }
     ]
