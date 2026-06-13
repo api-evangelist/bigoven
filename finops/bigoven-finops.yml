@@ -1,0 +1,43 @@
+name: BigOven API FinOps
+description: Financial operations guidance for managing BigOven API costs across plans.
+url: https://api2.bigoven.com/web/documentation/feestructure
+billing:
+  model: monthly-subscription
+  currency: USD
+  paymentMethod: credit-card-required
+  billingCycle: monthly
+
+costOptimization:
+  - recommendation: Start with the Basic plan ($99/month) for prototyping and low-traffic applications to minimize upfront cost.
+  - recommendation: Upgrade to Bronze ($199/month) only when nutritional data is required by your application features.
+  - recommendation: Monitor hourly request counts via API key usage to determine when plan upgrades are needed before hitting throttle limits.
+  - recommendation: Implement client-side caching of recipe data to reduce redundant API calls and stay within tier request limits.
+  - recommendation: Use the PowerSearch feature on Silver and above to reduce result sets and avoid fetching unnecessary recipe details.
+  - recommendation: For enterprise or high-volume applications, contact BigOven for Platinum custom pricing to negotiate volume discounts.
+
+planComparison:
+  - plan: Basic
+    monthlyPrice: 99
+    requestsPerHour: 500
+    costPer1000Requests: varies
+    bestFor: Low-traffic apps, prototyping, recipe search without nutrition
+
+  - plan: Bronze
+    monthlyPrice: 199
+    requestsPerHour: 1000
+    bestFor: Apps requiring nutrition data with moderate traffic
+
+  - plan: Silver
+    monthlyPrice: 399
+    requestsPerHour: 5000
+    bestFor: Diet and health apps needing PowerSearch filtering
+
+  - plan: Gold
+    monthlyPrice: 699
+    requestsPerHour: 10000
+    bestFor: High-traffic production food and grocery applications
+
+  - plan: Platinum
+    monthlyPrice: custom
+    requestsPerHour: unlimited
+    bestFor: Enterprise-scale platforms requiring guaranteed unlimited throughput

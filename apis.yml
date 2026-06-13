@@ -1,0 +1,62 @@
+aid: bigoven
+name: BigOven
+description: BigOven is a recipe and meal planning platform providing access to over 1,000,000 recipes via a REST API. Developers can search recipes, retrieve nutritional information, manage cloud-based grocery lists, and build diet and meal planning features. The API is offered by Aisle Ahead, Inc. and supports commercial food, nutrition, diet, and grocery applications.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/bigoven/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - Recipes
+  - Meal Planning
+  - Grocery Lists
+  - Nutrition
+  - Food
+  - Cooking
+apis:
+  - aid: bigoven:bigoven-api
+    name: BigOven Build API
+    description: REST API providing access to 1,000,000+ recipes, grocery list management, nutritional data, and meal planning features. Returns JSON responses and requires HTTPS and an API key.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://api2.bigoven.com/web/documentation
+    baseURL: https://api2.bigoven.com
+    tags:
+      - Recipes
+      - Nutrition
+      - Grocery Lists
+      - Meal Planning
+    properties:
+      - type: Documentation
+        url: https://api2.bigoven.com/web/documentation
+      - type: OpenAPI
+        url: https://api2.bigoven.com/swagger/ui/index
+      - type: Authentication
+        url: https://api2.bigoven.com/web/documentation/authentication
+      - type: Pricing
+        url: https://api2.bigoven.com/web/documentation/feestructure
+      - type: RateLimits
+        url: https://api2.bigoven.com/web/documentation/usage-throttling
+common:
+  - type: Website
+    url: https://www.bigoven.com
+  - type: Documentation
+    url: https://api2.bigoven.com/web/documentation
+  - type: GitHubOrg
+    url: https://github.com/bigoven
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/bigoven-com
+  - type: Blog
+    url: https://www.bigoven.com/article
+  - type: Pricing
+    url: https://api2.bigoven.com/web/documentation/feestructure
+  - type: X
+    url: https://x.com/bigoven
+  - type: Plans
+    url: plans/bigoven-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/bigoven-rate-limits.yml
+  - type: FinOps
+    url: finops/bigoven-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

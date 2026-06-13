@@ -1,0 +1,86 @@
+name: BigOven API Plans
+description: Pricing plans for the BigOven Build API providing access to 1,000,000+ recipes, grocery lists, and nutritional data.
+url: https://api2.bigoven.com/web/documentation/feestructure
+plans:
+  - name: Basic
+    description: Entry-level commercial plan with recipe search and grocery list access.
+    monthlyPrice: 99.00
+    currency: USD
+    features:
+      - Recipe search
+      - Recipe details
+      - Grocery list management
+      - Cloud-based shopping list
+      - JSON REST API access
+    limits:
+      requestsPerHour: 500
+    commercialUse: true
+    nutritionData: false
+    powerSearch: false
+
+  - name: Bronze
+    description: Bronze plan includes nutrition data on top of the basic recipe features.
+    monthlyPrice: 199.00
+    currency: USD
+    features:
+      - Recipe search
+      - Recipe details
+      - Grocery list management
+      - Nutrition data (calories, protein, fat, carbs, sodium)
+      - JSON REST API access
+    limits:
+      requestsPerHour: 1000
+    commercialUse: true
+    nutritionData: true
+    powerSearch: false
+
+  - name: Silver
+    description: Silver plan adds PowerSearch for dietary restriction filtering.
+    monthlyPrice: 399.00
+    currency: USD
+    features:
+      - Recipe search
+      - Recipe details
+      - Grocery list management
+      - Nutrition data (calories, protein, fat, carbs, sodium)
+      - PowerSearch (vegan, gluten-free, dietary filters)
+      - JSON REST API access
+    limits:
+      requestsPerHour: 5000
+    commercialUse: true
+    nutritionData: true
+    powerSearch: true
+
+  - name: Gold
+    description: Gold plan provides the full feature set with higher request throughput.
+    monthlyPrice: 699.00
+    currency: USD
+    features:
+      - Recipe search
+      - Recipe details
+      - Grocery list management
+      - Nutrition data (calories, protein, fat, carbs, sodium)
+      - PowerSearch (vegan, gluten-free, dietary filters)
+      - Recipe imagery
+      - User reviews and ratings
+      - JSON REST API access
+    limits:
+      requestsPerHour: 10000
+    commercialUse: true
+    nutritionData: true
+    powerSearch: true
+
+  - name: Platinum
+    description: Enterprise unlimited plan with custom pricing. Contact sales for details.
+    monthlyPrice: custom
+    currency: USD
+    features:
+      - All Gold plan features
+      - Unlimited requests
+      - Dedicated support
+    limits:
+      requestsPerHour: unlimited
+    commercialUse: true
+    nutritionData: true
+    powerSearch: true
+    contactRequired: true

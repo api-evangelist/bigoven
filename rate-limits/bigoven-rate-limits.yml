@@ -1,0 +1,26 @@
+name: BigOven API Rate Limits
+description: Usage throttling and rate limiting details for the BigOven Build API. Limits are enforced per API key per hour.
+url: https://api2.bigoven.com/web/documentation/usage-throttling
+enforcement: per-api-key
+window: hourly
+tiers:
+  - plan: Basic
+    requestsPerHour: 500
+
+  - plan: Bronze
+    requestsPerHour: 1000
+
+  - plan: Silver
+    requestsPerHour: 5000
+
+  - plan: Gold
+    requestsPerHour: 10000
+
+  - plan: Platinum
+    requestsPerHour: unlimited
+
+notes:
+  - BigOven tracks requests per API key each hour.
+  - Exceeding the hourly limit results in throttled responses until the window resets.
+  - HTTPS is required for all API calls; HTTP requests are not supported.
+  - Pass the API key via the X-BigOven-API-Key header or as a URL parameter.
