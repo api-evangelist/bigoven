@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API2.RecipeInfox",
+  "properties": {
+    "Category": {
+      "type": "string"
+    },
+    "CreationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "Cuisine": {
+      "type": "string"
+    },
+    "HasVideos": {
+      "type": "boolean"
+    },
+    "IsBookmark": {
+      "type": "boolean"
+    },
+    "IsPrivate": {
+      "type": "boolean"
+    },
+    "IsRecipeScan": {
+      "type": "boolean"
+    },
+    "Microcategory": {
+      "type": "string"
+    },
+    "PhotoUrl": {
+      "type": "string"
+    },
+    "Poster": {
+      "$ref": "#/components/schemas/BigOven.Model.API2.UserInfoTinyx"
+    },
+    "RecipeID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "ReviewCount": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "Servings": {
+      "format": "double",
+      "type": "number"
+    },
+    "StarRating": {
+      "format": "double",
+      "type": "number"
+    },
+    "Subcategory": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "TotalTries": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "WebURL": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

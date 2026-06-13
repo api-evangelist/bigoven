@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API.Image",
+  "properties": {
+    "Caption": {
+      "type": "string"
+    },
+    "CreationDate": {
+      "type": "string"
+    },
+    "ImageID": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "ImageSquares": {
+      "items": {
+        "format": "int32",
+        "type": "integer"
+      },
+      "type": "array"
+    },
+    "ImageURL": {
+      "type": "string"
+    },
+    "ImageURL120": {
+      "type": "string"
+    },
+    "ImageURL128": {
+      "type": "string"
+    },
+    "ImageURL200": {
+      "type": "string"
+    },
+    "ImageURL256": {
+      "type": "string"
+    },
+    "ImageURL48": {
+      "type": "string"
+    },
+    "ImageURL64": {
+      "type": "string"
+    },
+    "IsPrimary": {
+      "type": "boolean"
+    },
+    "MaxImageSquare": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "Poster": {
+      "$ref": "#/components/schemas/BigOven.Model.API.UserInfo"
+    }
+  },
+  "type": "object"
+}

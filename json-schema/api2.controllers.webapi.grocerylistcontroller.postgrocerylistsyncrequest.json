@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API2.Controllers.WebAPI.GroceryListController.PostGroceryListSyncRequest",
+  "description": "",
+  "properties": {
+    "list": {
+      "$ref": "#/components/schemas/BigOven.Model.API.Grocery.GroceryList"
+    },
+    "since": {
+      "description": "Gets or sets the since.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

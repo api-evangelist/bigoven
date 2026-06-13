@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API2.Models.Profile",
+  "description": "",
+  "properties": {
+    "AboutMe": {
+      "description": "",
+      "type": "string"
+    },
+    "BackgroundUrl": {
+      "description": "",
+      "type": "string"
+    },
+    "Counts": {
+      "$ref": "#/components/schemas/API2.Models.Counts"
+    },
+    "FirstName": {
+      "description": "",
+      "type": "string"
+    },
+    "FullName": {
+      "description": "",
+      "type": "string"
+    },
+    "HomeUrl": {
+      "description": "",
+      "type": "string"
+    },
+    "LastName": {
+      "description": "",
+      "type": "string"
+    },
+    "PhotoUrl": {
+      "description": "",
+      "type": "string"
+    },
+    "UserID": {
+      "description": "",
+      "format": "int64",
+      "type": "integer"
+    },
+    "UserName": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

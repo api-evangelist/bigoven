@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API2.Controllers.WebAPI.GroceryListController.PostGroceryListAddLineRequest",
+  "description": "",
+  "properties": {
+    "text": {
+      "description": "Gets or sets the text.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

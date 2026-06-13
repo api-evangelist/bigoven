@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API2.Models.Preference",
+  "description": "",
+  "properties": {
+    "EatingStyle": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

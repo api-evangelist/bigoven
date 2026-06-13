@@ -1,0 +1,44 @@
+{
+  "operationId": "Note_Put",
+  "method": "PUT",
+  "path": "/recipe/{recipeId}/note/{noteId}",
+  "tags": [
+    "Note"
+  ],
+  "summary": "HTTP PUT (update) a Recipe note (RecipeNote).",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "noteId",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "requestBody": {
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Controllers.WebAPI.NoteController.NoteRequest"
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API.RecipeNote"
+    }
+  }
+}

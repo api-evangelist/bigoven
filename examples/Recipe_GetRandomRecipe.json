@@ -1,0 +1,17 @@
+{
+  "operationId": "Recipe_GetRandomRecipe",
+  "method": "GET",
+  "path": "/recipes/random",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Get a random, home-page-quality Recipe.",
+  "parameters": [],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API.Recipe"
+    }
+  }
+}

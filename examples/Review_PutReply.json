@@ -1,0 +1,27 @@
+{
+  "operationId": "Review_PutReply",
+  "method": "PUT",
+  "path": "/recipe/review/replies/{replyId}",
+  "tags": [
+    "Review"
+  ],
+  "summary": "Update (PUT) a reply to a given review. Authenticated user must be the original one that posted the reply.",
+  "parameters": [
+    {
+      "name": "replyId",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API.Reply"
+    }
+  }
+}

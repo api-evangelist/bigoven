@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.RecipeCategory",
+  "properties": {
+    "Category": {
+      "type": "string"
+    },
+    "DefaultActiveMinutes": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "DefaultTotalMinutes": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "ID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "ParentID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "PrimaryImage": {
+      "type": "string"
+    },
+    "ShortDescription": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,40 @@
+{
+  "operationId": "Recipe_AutoComplete",
+  "method": "GET",
+  "path": "/recipe/autocomplete",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Given a query, return recipe titles starting with query. Query must be at least 3 chars in length.",
+  "parameters": [
+    {
+      "name": "query",
+      "in": "query",
+      "required": true,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "limit",
+      "in": "query",
+      "required": false,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  }
+}

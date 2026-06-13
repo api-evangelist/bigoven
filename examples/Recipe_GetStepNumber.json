@@ -1,0 +1,37 @@
+{
+  "operationId": "Recipe_GetStepNumber",
+  "method": "POST",
+  "path": "/recipe/get/step/number",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Returns stored step number and number of steps in recipe",
+  "parameters": [
+    {
+      "name": "userName",
+      "in": "query",
+      "required": true,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "recipeId",
+      "in": "query",
+      "required": true,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Result"
+    }
+  }
+}

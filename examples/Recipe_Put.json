@@ -1,0 +1,17 @@
+{
+  "operationId": "Recipe_Put",
+  "method": "PUT",
+  "path": "/recipe",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Update a recipe",
+  "parameters": [],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API.Recipe"
+    }
+  }
+}

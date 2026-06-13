@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API.Grocery.Item",
+  "properties": {
+    "BigOvenObject": {
+      "type": "string"
+    },
+    "CreationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "Department": {
+      "type": "string"
+    },
+    "DisplayQuantity": {
+      "type": "string"
+    },
+    "GUID": {
+      "type": "string"
+    },
+    "IsChecked": {
+      "type": "boolean"
+    },
+    "ItemID": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "LastModified": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "LocalStatus": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Notes": {
+      "type": "string"
+    },
+    "RecipeID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "ThirdPartyURL": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

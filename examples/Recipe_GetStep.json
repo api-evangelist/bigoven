@@ -1,0 +1,47 @@
+{
+  "operationId": "Recipe_GetStep",
+  "method": "POST",
+  "path": "/recipe/get/saved/step",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Gets recipe single step as text",
+  "parameters": [
+    {
+      "name": "userName",
+      "in": "query",
+      "required": true,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "recipeId",
+      "in": "query",
+      "required": true,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "stepId",
+      "in": "query",
+      "required": true,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "type": "string"
+    }
+  }
+}

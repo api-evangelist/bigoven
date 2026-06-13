@@ -1,0 +1,17 @@
+{
+  "operationId": "Me_GetOptions",
+  "method": "GET",
+  "path": "/me/preferences/options",
+  "tags": [
+    "Me"
+  ],
+  "summary": "Gets the options.",
+  "parameters": [],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Controllers.WebAPI.MeController.PreferenceOptions"
+    }
+  }
+}

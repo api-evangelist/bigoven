@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API2.Controllers.WebAPI.MeController.Option",
+  "description": "",
+  "properties": {
+    "Description": {
+      "description": "Gets or sets the description.",
+      "type": "string"
+    },
+    "Key": {
+      "description": "Gets or sets the key.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

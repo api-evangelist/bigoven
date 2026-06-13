@@ -1,0 +1,44 @@
+{
+  "operationId": "Review_PutLegacy",
+  "method": "PUT",
+  "path": "/recipe/{recipeId}/review/{reviewId}",
+  "tags": [
+    "Review"
+  ],
+  "summary": "HTTP PUT (update) a recipe review. DEPRECATED. Please see recipe/review/{reviewId} PUT for the new endpoint.\r\n            We are moving to a string-based primary key system, no longer integers, for reviews and replies.",
+  "parameters": [
+    {
+      "name": "reviewId",
+      "in": "path",
+      "required": true,
+      "description": "reviewId (int)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "recipeId (int)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "requestBody": {
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy"
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API.Review"
+    }
+  }
+}

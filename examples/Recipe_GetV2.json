@@ -1,0 +1,37 @@
+{
+  "operationId": "Recipe_GetV2",
+  "method": "GET",
+  "path": "/recipes/{id}",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Same as GET recipe but also includes the recipe videos (if any)",
+  "parameters": [
+    {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "description": "The Recipe ID to retrieve",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "prefetch",
+      "in": "query",
+      "required": false,
+      "description": "The prefetch.",
+      "schema": {
+        "type": "boolean"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Models.Recipes.RecipeResponse"
+    }
+  }
+}

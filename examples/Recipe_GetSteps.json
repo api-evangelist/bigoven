@@ -1,0 +1,47 @@
+{
+  "operationId": "Recipe_GetSteps",
+  "method": "POST",
+  "path": "/recipe/post/step",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Stores recipe step number and returns saved step data",
+  "parameters": [
+    {
+      "name": "userName",
+      "in": "query",
+      "required": true,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "recipeId",
+      "in": "query",
+      "required": true,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "stepId",
+      "in": "query",
+      "required": true,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Result"
+    }
+  }
+}

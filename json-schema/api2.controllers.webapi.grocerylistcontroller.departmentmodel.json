@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API2.Controllers.WebAPI.GroceryListController.DepartmentModel",
+  "description": "",
+  "properties": {
+    "items": {
+      "description": "Gets or sets the items.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -30,6 +30,8 @@ apis:
         url: https://api2.bigoven.com/web/documentation
       - type: OpenAPI
         url: https://api2.bigoven.com/swagger/ui/index
+      - type: OpenAPI
+        url: openapi/bigoven-openapi.yaml
       - type: Authentication
         url: https://api2.bigoven.com/web/documentation/authentication
       - type: Pricing

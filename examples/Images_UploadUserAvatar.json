@@ -1,0 +1,17 @@
+{
+  "operationId": "Images_UploadUserAvatar",
+  "method": "POST",
+  "path": "/image/avatar",
+  "tags": [
+    "Images"
+  ],
+  "summary": "POST: /image/avatar\r\n             \r\n            Testing with Postman (validated 11/20/2015):\r\n            1) Remove the Content-Type header; add authentication information\r\n            2) On the request, click Body and choose \"form-data\", then add a line item with \"key\" column set to \"file\" and on the right,\r\n            change the type of the input from Text to File.  Browse and choose a JPG.",
+  "parameters": [],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/System.Object"
+    }
+  }
+}

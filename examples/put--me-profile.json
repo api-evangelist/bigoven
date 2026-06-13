@@ -1,0 +1,23 @@
+{
+  "operationId": "put--me-profile",
+  "method": "PUT",
+  "path": "/me/profile",
+  "tags": [
+    "Me"
+  ],
+  "summary": "Puts me.",
+  "parameters": [],
+  "requestBody": {
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Models.Profile"
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Models.BigOvenUser"
+    }
+  }
+}

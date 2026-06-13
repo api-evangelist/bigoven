@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API.NutritionInfo",
+  "properties": {
+    "CaloriesFromFat": {
+      "format": "double",
+      "type": "number"
+    },
+    "Cholesterol": {
+      "format": "double",
+      "type": "number"
+    },
+    "CholesterolPct": {
+      "format": "double",
+      "type": "number"
+    },
+    "DietaryFiber": {
+      "format": "double",
+      "type": "number"
+    },
+    "DietaryFiberPct": {
+      "format": "double",
+      "type": "number"
+    },
+    "MonoFat": {
+      "format": "double",
+      "type": "number"
+    },
+    "PolyFat": {
+      "format": "double",
+      "type": "number"
+    },
+    "Potassium": {
+      "format": "double",
+      "type": "number"
+    },
+    "PotassiumPct": {
+      "format": "double",
+      "type": "number"
+    },
+    "Protein": {
+      "format": "double",
+      "type": "number"
+    },
+    "ProteinPct": {
+      "format": "double",
+      "type": "number"
+    },
+    "SatFat": {
+      "format": "double",
+      "type": "number"
+    },
+    "SatFatPct": {
+      "format": "double",
+      "type": "number"
+    },
+    "SingularYieldUnit": {
+      "type": "string"
+    },
+    "Sodium": {
+      "format": "double",
+      "type": "number"
+    },
+    "SodiumPct": {
+      "format": "double",
+      "type": "number"
+    },
+    "Sugar": {
+      "format": "double",
+      "type": "number"
+    },
+    "TotalCalories": {
+      "format": "double",
+      "type": "number"
+    },
+    "TotalCarbs": {
+      "format": "double",
+      "type": "number"
+    },
+    "TotalCarbsPct": {
+      "format": "double",
+      "type": "number"
+    },
+    "TotalFat": {
+      "format": "double",
+      "type": "number"
+    },
+    "TotalFatPct": {
+      "format": "double",
+      "type": "number"
+    },
+    "TransFat": {
+      "format": "double",
+      "type": "number"
+    }
+  },
+  "type": "object"
+}

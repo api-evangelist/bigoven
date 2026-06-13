@@ -1,0 +1,27 @@
+{
+  "operationId": "Recipe_GetActiveRecipe",
+  "method": "GET",
+  "path": "/recipe/get/active/recipe",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Returns last active recipe for the user",
+  "parameters": [
+    {
+      "name": "userName",
+      "in": "query",
+      "required": true,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Result"
+    }
+  }
+}

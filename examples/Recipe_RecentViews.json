@@ -1,0 +1,41 @@
+{
+  "operationId": "Recipe_RecentViews",
+  "method": "GET",
+  "path": "/recipes/recentviews",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Get a list of recipes that the authenticated user has most recently viewed",
+  "parameters": [
+    {
+      "name": "pg",
+      "in": "query",
+      "required": false,
+      "description": "Page number starting with 1",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "rpp",
+      "in": "query",
+      "required": false,
+      "description": "results per page",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.RecipeInfoDateTuple2"
+      },
+      "type": "array"
+    }
+  }
+}

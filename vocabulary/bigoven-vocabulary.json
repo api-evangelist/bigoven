@@ -1,0 +1,2022 @@
+{
+  "title": "BigOven API Vocabulary",
+  "description": "Domain terms and properties extracted from the BigOven Recipe and Grocery List API",
+  "source": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/master/APIs/bigoven.com/partner/openapi.yaml",
+  "tags": [
+    "Collection",
+    "GroceryList",
+    "Images",
+    "Me",
+    "Note",
+    "Recipe",
+    "Review"
+  ],
+  "terms": [
+    {
+      "term": "items",
+      "type": "string",
+      "description": "Gets or sets the items.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.DepartmentModel"
+      ]
+    },
+    {
+      "term": "text",
+      "type": "string",
+      "description": "Gets or sets the text.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.PostGroceryListAddLineRequest"
+      ]
+    },
+    {
+      "term": "markAsPending",
+      "type": "boolean",
+      "description": "Gets or sets the mark as pending.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.PostGroceryListRecipeRequest"
+      ]
+    },
+    {
+      "term": "recipeId",
+      "type": "integer",
+      "description": "Gets or sets the recipe identifier.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.PostGroceryListRecipeRequest"
+      ]
+    },
+    {
+      "term": "scale",
+      "type": "number",
+      "description": "Gets or sets the scale.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.PostGroceryListRecipeRequest"
+      ]
+    },
+    {
+      "term": "list",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.PostGroceryListSyncRequest"
+      ]
+    },
+    {
+      "term": "since",
+      "type": "string",
+      "description": "Gets or sets the since.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.PostGroceryListSyncRequest"
+      ]
+    },
+    {
+      "term": "department",
+      "type": "string",
+      "description": "Gets or sets the department.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.PostToGroceryListRecipeRequest",
+        "API2.Controllers.WebAPI.GroceryListController.UpdateItemByGuidRequest"
+      ]
+    },
+    {
+      "term": "name",
+      "type": "string",
+      "description": "Gets or sets the name.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.PostToGroceryListRecipeRequest",
+        "API2.Controllers.WebAPI.GroceryListController.UpdateItemByGuidRequest"
+      ]
+    },
+    {
+      "term": "notes",
+      "type": "string",
+      "description": "Gets or sets the notes.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.PostToGroceryListRecipeRequest",
+        "API2.Controllers.WebAPI.GroceryListController.UpdateItemByGuidRequest"
+      ]
+    },
+    {
+      "term": "quantity",
+      "type": "string",
+      "description": "Gets or sets the quantity.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.PostToGroceryListRecipeRequest",
+        "API2.Controllers.WebAPI.GroceryListController.UpdateItemByGuidRequest"
+      ]
+    },
+    {
+      "term": "unit",
+      "type": "string",
+      "description": "Gets or sets the unit.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.PostToGroceryListRecipeRequest",
+        "API2.Controllers.WebAPI.GroceryListController.UpdateItemByGuidRequest"
+      ]
+    },
+    {
+      "term": "guid",
+      "type": "string",
+      "description": "Gets or sets the unique identifier.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.UpdateItemByGuidRequest"
+      ]
+    },
+    {
+      "term": "ischecked",
+      "type": "boolean",
+      "description": "Gets or sets the ischecked.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.GroceryListController.UpdateItemByGuidRequest"
+      ]
+    },
+    {
+      "term": "ResultCount",
+      "type": "integer",
+      "description": "Gets or sets the result count.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.ImagesController.RecipePhotosResponse",
+        "BigOven.Model.API.RecipeNoteList",
+        "BigOven.Model.API2.RecipeSearchResult"
+      ]
+    },
+    {
+      "term": "Results",
+      "type": "array",
+      "description": "Gets or sets the results.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.ImagesController.RecipePhotosResponse",
+        "BigOven.Model.API.RecipeNoteList",
+        "BigOven.Model.API2.CollectionInfo",
+        "BigOven.Model.API2.RecipeSearchResult"
+      ]
+    },
+    {
+      "term": "Options",
+      "type": "array",
+      "description": "Gets or sets the options.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.MeController.EatingStyle"
+      ]
+    },
+    {
+      "term": "Description",
+      "type": "string",
+      "description": "Gets or sets the description.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.MeController.Option",
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.CollectionInfo",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "Key",
+      "type": "string",
+      "description": "Gets or sets the key.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.MeController.Option"
+      ]
+    },
+    {
+      "term": "EatingStyle",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Controllers.WebAPI.MeController.PreferenceOptions",
+        "API2.Models.Preference"
+      ]
+    },
+    {
+      "term": "CreationDate",
+      "type": "string",
+      "description": "Gets or sets the creation date.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.NoteController.NoteRequest",
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Grocery.Item",
+        "BigOven.Model.API.Image",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API.RecipeNote",
+        "BigOven.Model.API.Reply",
+        "BigOven.Model.API.Review",
+        "BigOven.Model.API2.Photo",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox",
+        "BigOven.Model.API2.RecipeNote"
+      ]
+    },
+    {
+      "term": "Date",
+      "type": "string",
+      "description": "Gets or sets the date.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.NoteController.NoteRequest",
+        "BigOven.Model.API.RecipeNote",
+        "BigOven.Model.API2.RecipeNote"
+      ]
+    },
+    {
+      "term": "DateDT",
+      "type": "string",
+      "description": "Gets or sets the date dt.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.NoteController.NoteRequest",
+        "BigOven.Model.API.RecipeNote",
+        "BigOven.Model.API2.RecipeNote"
+      ]
+    },
+    {
+      "term": "GUID",
+      "type": "string",
+      "description": "Gets or sets the unique identifier.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.NoteController.NoteRequest",
+        "API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy",
+        "BigOven.Model.API.Grocery.Item",
+        "BigOven.Model.API.RecipeNote",
+        "BigOven.Model.API.Review",
+        "BigOven.Model.API2.RecipeNote",
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "ID",
+      "type": "integer",
+      "description": "Gets or sets the identifier.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.NoteController.NoteRequest",
+        "BigOven.Model.API.RecipeNote",
+        "BigOven.Model.API.Reply",
+        "BigOven.Model.API.Review",
+        "BigOven.Model.API2.CollectionInfo",
+        "BigOven.Model.API2.RecipeNote",
+        "BigOven.Model.RecipeCategory"
+      ]
+    },
+    {
+      "term": "Notes",
+      "type": "string",
+      "description": "Gets or sets the notes.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.NoteController.NoteRequest",
+        "BigOven.Model.API.Grocery.Item",
+        "BigOven.Model.API.RecipeNote",
+        "BigOven.Model.API2.RecipeNote",
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "People",
+      "type": "string",
+      "description": "Gets or sets the people.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.NoteController.NoteRequest",
+        "BigOven.Model.API.RecipeNote",
+        "BigOven.Model.API2.RecipeNote"
+      ]
+    },
+    {
+      "term": "RecipeID",
+      "type": "integer",
+      "description": "Gets or sets the recipe identifier.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.NoteController.NoteRequest",
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Grocery.Item",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API.RecipeNote",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox",
+        "BigOven.Model.API2.RecipeNote",
+        "BigOven.Model.RecipeInfoTiny",
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "UserID",
+      "type": "integer",
+      "description": "Gets or sets the user identifier.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.NoteController.NoteRequest",
+        "API2.Models.Profile",
+        "BigOven.Model.API.RecipeNote",
+        "BigOven.Model.API.UserInfo",
+        "BigOven.Model.API.UserInfoTiny",
+        "BigOven.Model.API2.RecipeNote",
+        "BigOven.Model.API2.UserInfoTinyx"
+      ]
+    },
+    {
+      "term": "Variations",
+      "type": "string",
+      "description": "Gets or sets the variations.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.NoteController.NoteRequest",
+        "BigOven.Model.API.RecipeNote",
+        "BigOven.Model.API2.RecipeNote"
+      ]
+    },
+    {
+      "term": "Comment",
+      "type": "string",
+      "description": "The comment. If mentioning any user(s) (optional), include them as @username in the text body. Do not use @ symbol for anything but mentioning @usernames.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.ReviewController.PostReplyReq",
+        "API2.Controllers.WebAPI.ReviewController.ReviewRequest",
+        "API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy",
+        "BigOven.Model.API.Reply",
+        "BigOven.Model.API.Review"
+      ]
+    },
+    {
+      "term": "ActiveMinutes",
+      "type": "integer",
+      "description": "How many minutes of ACTIVE time (i.e., actively working on the recipe, not waiting for rising, baking, etc.) did it \r\n            demand of the cook? Optional.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.ReviewController.ReviewRequest",
+        "API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy",
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.Review",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "MakeAgain",
+      "type": "string",
+      "description": "\"yes\" or \"no\"",
+      "usedIn": [
+        "API2.Controllers.WebAPI.ReviewController.ReviewRequest",
+        "API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy"
+      ]
+    },
+    {
+      "term": "StarRating",
+      "type": "integer",
+      "description": "1, 2, 3, 4, or 5",
+      "usedIn": [
+        "API2.Controllers.WebAPI.ReviewController.ReviewRequest",
+        "API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy",
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API.Review",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox"
+      ]
+    },
+    {
+      "term": "TotalMinutes",
+      "type": "integer",
+      "description": "How long, start to finish, in minutes (integer) did it take? Optional.",
+      "usedIn": [
+        "API2.Controllers.WebAPI.ReviewController.ReviewRequest",
+        "API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy",
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.Review",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "ParentID",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy",
+        "BigOven.Model.API.Review",
+        "BigOven.Model.RecipeCategory"
+      ]
+    },
+    {
+      "term": "dept",
+      "type": "string",
+      "description": "Gets or sets the dept.",
+      "usedIn": [
+        "API2.GroceryListDepartmentResult"
+      ]
+    },
+    {
+      "term": "item",
+      "type": "string",
+      "description": "Gets or sets the item.",
+      "usedIn": [
+        "API2.GroceryListDepartmentResult"
+      ]
+    },
+    {
+      "term": "CreditBalance",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Accounting"
+      ]
+    },
+    {
+      "term": "MemberSince",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Accounting",
+        "BigOven.Model.API.UserInfo"
+      ]
+    },
+    {
+      "term": "PremiumExpiryDate",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Accounting",
+        "BigOven.Model.API.UserInfo"
+      ]
+    },
+    {
+      "term": "UserLevel",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Accounting"
+      ]
+    },
+    {
+      "term": "Accounting",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.BigOvenUser"
+      ]
+    },
+    {
+      "term": "BOAuthToken",
+      "type": "string",
+      "description": "The user-specific authentication token",
+      "usedIn": [
+        "API2.Models.BigOvenUser"
+      ]
+    },
+    {
+      "term": "LastChangeLogID",
+      "type": "string",
+      "description": "Last change log",
+      "usedIn": [
+        "API2.Models.BigOvenUser"
+      ]
+    },
+    {
+      "term": "Personal",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.BigOvenUser"
+      ]
+    },
+    {
+      "term": "Preferences",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.BigOvenUser"
+      ]
+    },
+    {
+      "term": "Profile",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.BigOvenUser"
+      ]
+    },
+    {
+      "term": "AddedCount",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Counts"
+      ]
+    },
+    {
+      "term": "FollowersCount",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Counts"
+      ]
+    },
+    {
+      "term": "FollowingCount",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Counts"
+      ]
+    },
+    {
+      "term": "PrivateRecipeCount",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Counts"
+      ]
+    },
+    {
+      "term": "PublicRecipeCount",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Counts"
+      ]
+    },
+    {
+      "term": "TotalRecipes",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Counts"
+      ]
+    },
+    {
+      "term": "City",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Location"
+      ]
+    },
+    {
+      "term": "Country",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Location"
+      ]
+    },
+    {
+      "term": "DMA",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Location"
+      ]
+    },
+    {
+      "term": "Email",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Personal"
+      ]
+    },
+    {
+      "term": "Location",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Personal"
+      ]
+    },
+    {
+      "term": "AboutMe",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Profile"
+      ]
+    },
+    {
+      "term": "BackgroundUrl",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Profile"
+      ]
+    },
+    {
+      "term": "Counts",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Profile"
+      ]
+    },
+    {
+      "term": "FirstName",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Profile",
+        "BigOven.Model.API.UserInfo",
+        "BigOven.Model.API.UserInfoTiny",
+        "BigOven.Model.API2.UserInfoTinyx"
+      ]
+    },
+    {
+      "term": "FullName",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Profile"
+      ]
+    },
+    {
+      "term": "HomeUrl",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Profile"
+      ]
+    },
+    {
+      "term": "LastName",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Profile",
+        "BigOven.Model.API.UserInfo",
+        "BigOven.Model.API.UserInfoTiny",
+        "BigOven.Model.API2.UserInfoTinyx"
+      ]
+    },
+    {
+      "term": "PhotoUrl",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Profile",
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.UserInfo",
+        "BigOven.Model.API.UserInfoTiny",
+        "BigOven.Model.API2.CollectionInfo",
+        "BigOven.Model.API2.Photo",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox",
+        "BigOven.Model.API2.UserInfoTinyx"
+      ]
+    },
+    {
+      "term": "UserName",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Profile",
+        "BigOven.Model.API.UserInfo",
+        "BigOven.Model.API.UserInfoTiny",
+        "BigOven.Model.API2.UserInfoTinyx"
+      ]
+    },
+    {
+      "term": "feedback",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.FeedbackDTO"
+      ]
+    },
+    {
+      "term": "AdTags",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "AdminBoost",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "AllCategoriesText",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "BookmarkImageURL",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "BookmarkSiteLogo",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "BookmarkURL",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "Category",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox",
+        "BigOven.Model.RecipeCategory"
+      ]
+    },
+    {
+      "term": "Collection",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "CollectionID",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "Cuisine",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox"
+      ]
+    },
+    {
+      "term": "FavoriteCount",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "ImageSquares",
+      "type": "array",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Image",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "ImageURL",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Image",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.RecipeInfoTiny"
+      ]
+    },
+    {
+      "term": "Ingredients",
+      "type": "array",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "IngredientsTextBlock",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "Instructions",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "IsBookmark",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox"
+      ]
+    },
+    {
+      "term": "IsPrivate",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox"
+      ]
+    },
+    {
+      "term": "IsRecipeScan",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox"
+      ]
+    },
+    {
+      "term": "IsSponsored",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.CollectionInfo",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "LastModified",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Grocery.GroceryList",
+        "BigOven.Model.API.Grocery.Item",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.Reply",
+        "BigOven.Model.API.Review",
+        "BigOven.Model.API2.GroceryList",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "MaxImageSquare",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Image",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.Photo",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "MedalCount",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "MenuCount",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "Microcategory",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox"
+      ]
+    },
+    {
+      "term": "NotesCount",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "NutritionInfo",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "Poster",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Image",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API.Reply",
+        "BigOven.Model.API.Review",
+        "BigOven.Model.API2.Photo",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox"
+      ]
+    },
+    {
+      "term": "PrimaryIngredient",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "ReviewCount",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox"
+      ]
+    },
+    {
+      "term": "Steps",
+      "type": "array",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "Subcategory",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox"
+      ]
+    },
+    {
+      "term": "Title",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.CollectionInfo",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox",
+        "BigOven.Model.RecipeInfoTiny"
+      ]
+    },
+    {
+      "term": "VariantOfRecipeID",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "VerifiedByClass",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "VerifiedDateTime",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "Videos",
+      "type": "array",
+      "description": "Gets or sets the recipe videos, i.e. a list of type {API2.Models.Recipes.RecipeVideoResponse}",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse"
+      ]
+    },
+    {
+      "term": "WebURL",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.Recipe",
+        "BigOven.Model.API2.RecipeInfox"
+      ]
+    },
+    {
+      "term": "YieldNumber",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "YieldUnit",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeResponse",
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API2.Recipe"
+      ]
+    },
+    {
+      "term": "InsertedOn",
+      "type": "string",
+      "description": "Gets or sets the date the video was added.",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeVideoResponse"
+      ]
+    },
+    {
+      "term": "IsPrimaryVideo",
+      "type": "boolean",
+      "description": "Gets or sets a value indicating whether the video is the primary video of the recipe.",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeVideoResponse"
+      ]
+    },
+    {
+      "term": "MediaId",
+      "type": "string",
+      "description": "Gets or sets the JWPlayer media id.",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeVideoResponse"
+      ]
+    },
+    {
+      "term": "VidId",
+      "type": "integer",
+      "description": "Gets or sets the video id.",
+      "usedIn": [
+        "API2.Models.Recipes.RecipeVideoResponse"
+      ]
+    },
+    {
+      "term": "Data",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Result",
+        "BigOven.Result"
+      ]
+    },
+    {
+      "term": "Message",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "API2.Result",
+        "BigOven.Result"
+      ]
+    },
+    {
+      "term": "StatusCode",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "API2.Result",
+        "BigOven.Result"
+      ]
+    },
+    {
+      "term": "Items",
+      "type": "array",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Grocery.GroceryList",
+        "BigOven.Model.API2.GroceryList"
+      ]
+    },
+    {
+      "term": "Recipes",
+      "type": "array",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Grocery.GroceryList",
+        "BigOven.Model.API2.GroceryList"
+      ]
+    },
+    {
+      "term": "VersionGuid",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Grocery.GroceryList",
+        "BigOven.Model.API2.GroceryList"
+      ]
+    },
+    {
+      "term": "BigOvenObject",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Grocery.Item"
+      ]
+    },
+    {
+      "term": "Department",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Grocery.Item",
+        "BigOven.Model.API.IngredientInfo"
+      ]
+    },
+    {
+      "term": "DisplayQuantity",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Grocery.Item",
+        "BigOven.Model.API.Ingredient"
+      ]
+    },
+    {
+      "term": "IsChecked",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Grocery.Item",
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "ItemID",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Grocery.Item"
+      ]
+    },
+    {
+      "term": "LocalStatus",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Grocery.Item"
+      ]
+    },
+    {
+      "term": "Name",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Grocery.Item",
+        "BigOven.Model.API.Ingredient",
+        "BigOven.Model.API.IngredientInfo"
+      ]
+    },
+    {
+      "term": "ThirdPartyURL",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Grocery.Item",
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "Caption",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Image",
+        "BigOven.Model.API2.Photo"
+      ]
+    },
+    {
+      "term": "ImageID",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Image",
+        "BigOven.Model.API2.Photo"
+      ]
+    },
+    {
+      "term": "ImageURL120",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Image",
+        "BigOven.Model.API.RecipeInfo"
+      ]
+    },
+    {
+      "term": "ImageURL128",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Image"
+      ]
+    },
+    {
+      "term": "ImageURL200",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Image"
+      ]
+    },
+    {
+      "term": "ImageURL256",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Image"
+      ]
+    },
+    {
+      "term": "ImageURL48",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Image"
+      ]
+    },
+    {
+      "term": "ImageURL64",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Image"
+      ]
+    },
+    {
+      "term": "IsPrimary",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Image",
+        "BigOven.Model.API2.Photo"
+      ]
+    },
+    {
+      "term": "DisplayIndex",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Ingredient"
+      ]
+    },
+    {
+      "term": "HTMLName",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Ingredient"
+      ]
+    },
+    {
+      "term": "IngredientID",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Ingredient"
+      ]
+    },
+    {
+      "term": "IngredientInfo",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Ingredient"
+      ]
+    },
+    {
+      "term": "IsHeading",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Ingredient"
+      ]
+    },
+    {
+      "term": "IsLinked",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Ingredient"
+      ]
+    },
+    {
+      "term": "MetricDisplayQuantity",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Ingredient"
+      ]
+    },
+    {
+      "term": "MetricQuantity",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Ingredient"
+      ]
+    },
+    {
+      "term": "MetricUnit",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Ingredient"
+      ]
+    },
+    {
+      "term": "PreparationNotes",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Ingredient"
+      ]
+    },
+    {
+      "term": "Quantity",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Ingredient"
+      ]
+    },
+    {
+      "term": "Unit",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Ingredient"
+      ]
+    },
+    {
+      "term": "MasterIngredientID",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.IngredientInfo"
+      ]
+    },
+    {
+      "term": "UsuallyOnHand",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.IngredientInfo"
+      ]
+    },
+    {
+      "term": "CaloriesFromFat",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "Cholesterol",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "CholesterolPct",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "DietaryFiber",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "DietaryFiberPct",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "MonoFat",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "PolyFat",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "Potassium",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "PotassiumPct",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "Protein",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "ProteinPct",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "SatFat",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "SatFatPct",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "SingularYieldUnit",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "Sodium",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "SodiumPct",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "Sugar",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "TotalCalories",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "TotalCarbs",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "TotalCarbsPct",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "TotalFat",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "TotalFatPct",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "TransFat",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.NutritionInfo"
+      ]
+    },
+    {
+      "term": "HeroPhotoUrl",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Recipe",
+        "BigOven.Model.API.RecipeInfo"
+      ]
+    },
+    {
+      "term": "HasVideos",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.RecipeInfox"
+      ]
+    },
+    {
+      "term": "HideFromPublicSearch",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.RecipeInfo"
+      ]
+    },
+    {
+      "term": "QualityScore",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.RecipeInfoTiny"
+      ]
+    },
+    {
+      "term": "StarRatingIMG",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.RecipeInfo"
+      ]
+    },
+    {
+      "term": "TotalTries",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.RecipeInfo",
+        "BigOven.Model.API2.RecipeInfox"
+      ]
+    },
+    {
+      "term": "ReviewID",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Reply",
+        "BigOven.Model.API.Review"
+      ]
+    },
+    {
+      "term": "FeaturedReply",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Review"
+      ]
+    },
+    {
+      "term": "Replies",
+      "type": "array",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Review"
+      ]
+    },
+    {
+      "term": "ReplyCount",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.Review"
+      ]
+    },
+    {
+      "term": "ImageUrl48",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.UserInfo"
+      ]
+    },
+    {
+      "term": "IsKitchenHelper",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.UserInfo"
+      ]
+    },
+    {
+      "term": "IsPremium",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.UserInfo"
+      ]
+    },
+    {
+      "term": "IsUsingRecurly",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.UserInfo"
+      ]
+    },
+    {
+      "term": "PhotoUrl48",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.UserInfo"
+      ]
+    },
+    {
+      "term": "WebUrl",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API.UserInfo",
+        "BigOven.Model.API2.CollectionInfo"
+      ]
+    },
+    {
+      "term": "IsFiltered",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API2.CollectionInfo"
+      ]
+    },
+    {
+      "term": "MobileUrl",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API2.CollectionInfo"
+      ]
+    },
+    {
+      "term": "PRO",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API2.CollectionInfo"
+      ]
+    },
+    {
+      "term": "Token",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API2.CollectionInfo"
+      ]
+    },
+    {
+      "term": "Servings",
+      "type": "number",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API2.RecipeInfox",
+        "BigOven.Model.RecipeInfoTiny"
+      ]
+    },
+    {
+      "term": "SpellSuggest",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.API2.RecipeSearchResult"
+      ]
+    },
+    {
+      "term": "EndGantt",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.InstructionStep"
+      ]
+    },
+    {
+      "term": "StartGantt",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.InstructionStep"
+      ]
+    },
+    {
+      "term": "Text",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.InstructionStep"
+      ]
+    },
+    {
+      "term": "DefaultActiveMinutes",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.RecipeCategory"
+      ]
+    },
+    {
+      "term": "DefaultTotalMinutes",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.RecipeCategory"
+      ]
+    },
+    {
+      "term": "PrimaryImage",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.RecipeCategory"
+      ]
+    },
+    {
+      "term": "ShortDescription",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.RecipeCategory"
+      ]
+    },
+    {
+      "term": "date",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.RecipeInfoDateTuple2"
+      ]
+    },
+    {
+      "term": "recipeInfo",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.RecipeInfoDateTuple2"
+      ]
+    },
+    {
+      "term": "RecipeInfo",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.RecipeInfoReviewTuple2"
+      ]
+    },
+    {
+      "term": "Review",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.RecipeInfoReviewTuple2"
+      ]
+    },
+    {
+      "term": "DateAdded",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "Dept",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "HTMLItemName",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "ItemName",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "ListID",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "MealPlanID",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "MealPlanObjectType",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "PendingAddition",
+      "type": "boolean",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "ShoppingListLineID",
+      "type": "integer",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "Store",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "TextAmt",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "ThirdPartyHost",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.ShoppingListLine"
+      ]
+    },
+    {
+      "term": "ThirdPartyTitle",
+      "type": "string",
+      "description": "",
+      "usedIn": [
+        "BigOven.Model.ShoppingListLine"
+      ]
+    }
+  ]
+}

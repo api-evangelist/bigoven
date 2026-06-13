@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API2.Controllers.WebAPI.MeController.EatingStyle",
+  "description": "",
+  "properties": {
+    "Options": {
+      "description": "Gets or sets the options.",
+      "items": {
+        "$ref": "#/components/schemas/API2.Controllers.WebAPI.MeController.Option"
+      },
+      "type": "array"
+    }
+  },
+  "type": "object"
+}

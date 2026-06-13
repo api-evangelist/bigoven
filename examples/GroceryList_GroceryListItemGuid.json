@@ -1,0 +1,33 @@
+{
+  "operationId": "GroceryList_GroceryListItemGuid",
+  "method": "PUT",
+  "path": "/grocerylist/item/{guid}",
+  "tags": [
+    "GroceryList"
+  ],
+  "summary": "Update a grocery item by GUID",
+  "parameters": [
+    {
+      "name": "guid",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ],
+  "requestBody": {
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Controllers.WebAPI.GroceryListController.UpdateItemByGuidRequest"
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/System.Object"
+    }
+  }
+}

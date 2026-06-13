@@ -1,0 +1,49 @@
+{
+  "operationId": "Recipe_Scan",
+  "method": "POST",
+  "path": "/recipe/scan",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "POST an image as a new RecipeScan request\r\n                1)  Fetch the filename -- DONE\r\n                2)  Copy it to the pics/scan folder - ENSURE NO NAMING COLLISIONS -- DONE\r\n                3)  Create 120 thumbnail size  in pics/scan/120 -- DONE\r\n                4)  Insert the CloudTasks record\r\n                5)  Create the HIT\r\n                6)  Update the CloudTasks record with the HIT ID\r\n                7)  Email the requesing user\r\n                8)  Call out to www.bigoven.com to fetch the image and re-create the thumbnail",
+  "parameters": [
+    {
+      "name": "test",
+      "in": "query",
+      "required": false,
+      "description": "",
+      "schema": {
+        "type": "boolean"
+      }
+    },
+    {
+      "name": "devicetype",
+      "in": "query",
+      "required": false,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "lat",
+      "in": "query",
+      "required": false,
+      "description": "",
+      "schema": {
+        "format": "double",
+        "type": "number"
+      }
+    },
+    {
+      "name": "lng",
+      "in": "query",
+      "required": false,
+      "description": "",
+      "schema": {
+        "format": "double",
+        "type": "number"
+      }
+    }
+  ]
+}

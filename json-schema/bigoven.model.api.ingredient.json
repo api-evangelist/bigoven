@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API.Ingredient",
+  "properties": {
+    "DisplayIndex": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "DisplayQuantity": {
+      "type": "string"
+    },
+    "HTMLName": {
+      "type": "string"
+    },
+    "IngredientID": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "IngredientInfo": {
+      "$ref": "#/components/schemas/BigOven.Model.API.IngredientInfo"
+    },
+    "IsHeading": {
+      "type": "boolean"
+    },
+    "IsLinked": {
+      "type": "boolean"
+    },
+    "MetricDisplayQuantity": {
+      "type": "string"
+    },
+    "MetricQuantity": {
+      "format": "double",
+      "type": "number"
+    },
+    "MetricUnit": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "PreparationNotes": {
+      "type": "string"
+    },
+    "Quantity": {
+      "format": "double",
+      "type": "number"
+    },
+    "Unit": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

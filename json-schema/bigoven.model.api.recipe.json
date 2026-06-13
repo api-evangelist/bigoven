@@ -1,0 +1,166 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API.Recipe",
+  "properties": {
+    "ActiveMinutes": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "AdTags": {
+      "type": "string"
+    },
+    "AdminBoost": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "AllCategoriesText": {
+      "type": "string"
+    },
+    "BookmarkImageURL": {
+      "type": "string"
+    },
+    "BookmarkSiteLogo": {
+      "type": "string"
+    },
+    "BookmarkURL": {
+      "type": "string"
+    },
+    "Category": {
+      "type": "string"
+    },
+    "Collection": {
+      "type": "string"
+    },
+    "CollectionID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "CreationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "Cuisine": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "FavoriteCount": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "HeroPhotoUrl": {
+      "type": "string"
+    },
+    "ImageSquares": {
+      "items": {
+        "format": "int32",
+        "type": "integer"
+      },
+      "type": "array"
+    },
+    "ImageURL": {
+      "type": "string"
+    },
+    "Ingredients": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.API.Ingredient"
+      },
+      "type": "array"
+    },
+    "IngredientsTextBlock": {
+      "type": "string"
+    },
+    "Instructions": {
+      "type": "string"
+    },
+    "IsBookmark": {
+      "type": "boolean"
+    },
+    "IsPrivate": {
+      "type": "boolean"
+    },
+    "IsRecipeScan": {
+      "type": "boolean"
+    },
+    "IsSponsored": {
+      "type": "boolean"
+    },
+    "LastModified": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "MaxImageSquare": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "MedalCount": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "MenuCount": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "Microcategory": {
+      "type": "string"
+    },
+    "NotesCount": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "NutritionInfo": {
+      "$ref": "#/components/schemas/BigOven.Model.API.NutritionInfo"
+    },
+    "Poster": {
+      "$ref": "#/components/schemas/BigOven.Model.API.UserInfo"
+    },
+    "PrimaryIngredient": {
+      "type": "string"
+    },
+    "RecipeID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "ReviewCount": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "StarRating": {
+      "format": "double",
+      "type": "number"
+    },
+    "Subcategory": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "TotalMinutes": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "VariantOfRecipeID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "VerifiedByClass": {
+      "type": "string"
+    },
+    "VerifiedDateTime": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "WebURL": {
+      "type": "string"
+    },
+    "YieldNumber": {
+      "format": "double",
+      "type": "number"
+    },
+    "YieldUnit": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

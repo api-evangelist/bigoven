@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API2.RecipeSearchResult",
+  "properties": {
+    "ResultCount": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "Results": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.API2.RecipeInfox"
+      },
+      "type": "array"
+    },
+    "SpellSuggest": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

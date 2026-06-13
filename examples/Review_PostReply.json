@@ -1,0 +1,27 @@
+{
+  "operationId": "Review_PostReply",
+  "method": "POST",
+  "path": "/recipe/review/{reviewId}/replies",
+  "tags": [
+    "Review"
+  ],
+  "summary": "POST a reply to a given review. The date will be set by server. Note that replies no longer have star ratings, only top-level reviews do.",
+  "parameters": [
+    {
+      "name": "reviewId",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API.Reply"
+    }
+  }
+}

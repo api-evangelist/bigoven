@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API2.Controllers.WebAPI.GroceryListController.UpdateItemByGuidRequest",
+  "description": "",
+  "properties": {
+    "department": {
+      "description": "Gets or sets the department.",
+      "type": "string"
+    },
+    "guid": {
+      "description": "Gets or sets the unique identifier.",
+      "type": "string"
+    },
+    "ischecked": {
+      "description": "Gets or sets the ischecked.",
+      "type": "boolean"
+    },
+    "name": {
+      "description": "Gets or sets the name.",
+      "type": "string"
+    },
+    "notes": {
+      "description": "Gets or sets the notes.",
+      "type": "string"
+    },
+    "quantity": {
+      "description": "Gets or sets the quantity.",
+      "type": "string"
+    },
+    "unit": {
+      "description": "Gets or sets the unit.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

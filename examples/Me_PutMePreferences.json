@@ -1,0 +1,23 @@
+{
+  "operationId": "Me_PutMePreferences",
+  "method": "PUT",
+  "path": "/me/preferences",
+  "tags": [
+    "Me"
+  ],
+  "summary": "Puts me preferences.",
+  "parameters": [],
+  "requestBody": {
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Models.Preference"
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Models.BigOvenUser"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "operationId": "Review_Put",
+  "method": "PUT",
+  "path": "/recipe/review/{reviewId}",
+  "tags": [
+    "Review"
+  ],
+  "summary": "Update a given top-level review.",
+  "parameters": [
+    {
+      "name": "reviewId",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API.Review"
+    }
+  }
+}

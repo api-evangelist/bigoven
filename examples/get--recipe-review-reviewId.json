@@ -1,0 +1,27 @@
+{
+  "operationId": "get--recipe-review-reviewId",
+  "method": "GET",
+  "path": "/recipe/review/{reviewId}",
+  "tags": [
+    "Review"
+  ],
+  "summary": "Get a given review by string-style ID. This will return a payload with FeaturedReply, ReplyCount.\r\n            Recommended display is to list top-level reviews with one featured reply underneath. \r\n            Currently, the FeaturedReply is the most recent one for that rating.",
+  "parameters": [
+    {
+      "name": "reviewId",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API.Review"
+    }
+  }
+}

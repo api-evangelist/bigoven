@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API.UserInfoTiny",
+  "properties": {
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "PhotoUrl": {
+      "type": "string"
+    },
+    "UserID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "UserName": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

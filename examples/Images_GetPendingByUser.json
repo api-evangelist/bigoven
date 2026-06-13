@@ -1,0 +1,17 @@
+{
+  "operationId": "Images_GetPendingByUser",
+  "method": "GET",
+  "path": "/recipe/photos/pending",
+  "tags": [
+    "Images"
+  ],
+  "summary": "Gets the pending by user.",
+  "parameters": [],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Controllers.WebAPI.ImagesController.RecipePhotosResponse"
+    }
+  }
+}

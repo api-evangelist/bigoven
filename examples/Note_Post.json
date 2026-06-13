@@ -1,0 +1,34 @@
+{
+  "operationId": "Note_Post",
+  "method": "POST",
+  "path": "/recipe/{recipeId}/note",
+  "tags": [
+    "Note"
+  ],
+  "summary": "HTTP POST a new note into the system.",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "recipeId (int)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "requestBody": {
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Controllers.WebAPI.NoteController.NoteRequest"
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API2.RecipeNote"
+    }
+  }
+}

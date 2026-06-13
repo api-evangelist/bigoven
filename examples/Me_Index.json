@@ -1,0 +1,17 @@
+{
+  "operationId": "Me_Index",
+  "method": "GET",
+  "path": "/me",
+  "tags": [
+    "Me"
+  ],
+  "summary": "Indexes this instance.",
+  "parameters": [],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Models.BigOvenUser"
+    }
+  }
+}

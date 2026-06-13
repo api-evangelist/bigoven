@@ -1,0 +1,23 @@
+{
+  "operationId": "GroceryList_PostGroceryListSync",
+  "method": "POST",
+  "path": "/grocerylist/sync",
+  "tags": [
+    "GroceryList"
+  ],
+  "summary": "Synchronize the grocery list.  Call this with a POST to /grocerylist/sync",
+  "parameters": [],
+  "requestBody": {
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Controllers.WebAPI.GroceryListController.PostGroceryListSyncRequest"
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/System.Object"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "operationId": "GroceryList_Get",
+  "method": "GET",
+  "path": "/grocerylist",
+  "tags": [
+    "GroceryList"
+  ],
+  "summary": "Get the user's grocery list.  User is determined by Basic Authentication.",
+  "parameters": [],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API2.GroceryList"
+    }
+  }
+}

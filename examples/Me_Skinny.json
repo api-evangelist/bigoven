@@ -1,0 +1,17 @@
+{
+  "operationId": "Me_Skinny",
+  "method": "GET",
+  "path": "/me/skinny",
+  "tags": [
+    "Me"
+  ],
+  "summary": "Skinnies this instance.",
+  "parameters": [],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Models.BigOvenUser"
+    }
+  }
+}

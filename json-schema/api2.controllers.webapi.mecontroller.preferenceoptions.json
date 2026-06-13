@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API2.Controllers.WebAPI.MeController.PreferenceOptions",
+  "description": "",
+  "properties": {
+    "EatingStyle": {
+      "$ref": "#/components/schemas/API2.Controllers.WebAPI.MeController.EatingStyle"
+    }
+  },
+  "type": "object"
+}

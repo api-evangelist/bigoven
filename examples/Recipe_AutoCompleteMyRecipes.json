@@ -1,0 +1,40 @@
+{
+  "operationId": "Recipe_AutoCompleteMyRecipes",
+  "method": "GET",
+  "path": "/recipe/autocomplete/mine",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Automatics the complete my recipes.",
+  "parameters": [
+    {
+      "name": "query",
+      "in": "query",
+      "required": true,
+      "description": "The query.",
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "limit",
+      "in": "query",
+      "required": true,
+      "description": "The limit.",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.RecipeInfoTiny"
+      },
+      "type": "array"
+    }
+  }
+}

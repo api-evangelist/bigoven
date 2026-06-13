@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.RecipeInfoDateTuple2",
+  "properties": {
+    "date": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "recipeInfo": {
+      "$ref": "#/components/schemas/BigOven.Model.API2.RecipeInfox"
+    }
+  },
+  "type": "object"
+}

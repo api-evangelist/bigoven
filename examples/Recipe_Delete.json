@@ -1,0 +1,28 @@
+{
+  "operationId": "Recipe_Delete",
+  "method": "DELETE",
+  "path": "/recipe/{id}",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Delete a Recipe (you must be authenticated as an owner of the recipe)",
+  "parameters": [
+    {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/System.Object"
+    }
+  }
+}

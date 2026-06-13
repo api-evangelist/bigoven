@@ -1,0 +1,30 @@
+{
+  "operationId": "Collection_Collections",
+  "method": "GET",
+  "path": "/collections",
+  "tags": [
+    "Collection"
+  ],
+  "summary": "Get the list of current, seasonal recipe collections. From here, you can use the /collection/{id} endpoint to retrieve the recipes in those collections.",
+  "parameters": [
+    {
+      "name": "test",
+      "in": "query",
+      "required": false,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.API2.CollectionInfo"
+      },
+      "type": "array"
+    }
+  }
+}

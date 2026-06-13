@@ -1,0 +1,27 @@
+{
+  "operationId": "Review_DeleteReply",
+  "method": "DELETE",
+  "path": "/recipe/review/replies/{replyId}",
+  "tags": [
+    "Review"
+  ],
+  "summary": "DELETE a reply to a given review. Authenticated user must be the one who originally posted the reply.",
+  "parameters": [
+    {
+      "name": "replyId",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/System.Object"
+    }
+  }
+}

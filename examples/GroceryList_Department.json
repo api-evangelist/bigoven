@@ -1,0 +1,26 @@
+{
+  "operationId": "GroceryList_Department",
+  "method": "POST",
+  "path": "/grocerylist/department",
+  "tags": [
+    "GroceryList"
+  ],
+  "summary": "Departmentalize a list of strings -- used for ad-hoc grocery list item addition",
+  "parameters": [],
+  "requestBody": {
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Controllers.WebAPI.GroceryListController.DepartmentModel"
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "items": {
+        "$ref": "#/components/schemas/API2.GroceryListDepartmentResult"
+      },
+      "type": "array"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "operationId": "Recipe_Post",
+  "method": "POST",
+  "path": "/recipe",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Add a new recipe",
+  "parameters": [],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API.Recipe"
+    }
+  }
+}

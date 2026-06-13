@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API2.GroceryListDepartmentResult",
+  "description": "",
+  "properties": {
+    "dept": {
+      "description": "Gets or sets the dept.",
+      "type": "string"
+    },
+    "item": {
+      "description": "Gets or sets the item.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

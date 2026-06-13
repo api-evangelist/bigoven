@@ -1,0 +1,23 @@
+{
+  "operationId": "Me_PutMePersonal",
+  "method": "PUT",
+  "path": "/me/personal",
+  "tags": [
+    "Me"
+  ],
+  "summary": "Puts me personal.",
+  "parameters": [],
+  "requestBody": {
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Models.Personal"
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Models.BigOvenUser"
+    }
+  }
+}

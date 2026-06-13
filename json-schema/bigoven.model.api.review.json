@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API.Review",
+  "properties": {
+    "ActiveMinutes": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "Comment": {
+      "type": "string"
+    },
+    "CreationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "FeaturedReply": {
+      "$ref": "#/components/schemas/BigOven.Model.API.Reply"
+    },
+    "GUID": {
+      "type": "string"
+    },
+    "ID": {
+      "type": "string"
+    },
+    "LastModified": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "ParentID": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "Poster": {
+      "$ref": "#/components/schemas/BigOven.Model.API.UserInfo"
+    },
+    "Replies": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.API.Review"
+      },
+      "type": "array"
+    },
+    "ReplyCount": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "ReviewID": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "StarRating": {
+      "format": "double",
+      "type": "number"
+    },
+    "TotalMinutes": {
+      "format": "int32",
+      "type": "integer"
+    }
+  },
+  "type": "object"
+}

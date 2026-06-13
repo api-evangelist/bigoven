@@ -1,0 +1,38 @@
+{
+  "operationId": "Note_Delete",
+  "method": "DELETE",
+  "path": "/recipe/{recipeId}/note/{noteId}",
+  "tags": [
+    "Note"
+  ],
+  "summary": "Delete a review\r\n                do a DELETE Http request of /note/{ID}",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "recipeId (int)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "noteId",
+      "in": "path",
+      "required": true,
+      "description": "noteId (int)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/System.Object"
+    }
+  }
+}

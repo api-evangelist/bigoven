@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.ShoppingListLine",
+  "properties": {
+    "DateAdded": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "Dept": {
+      "type": "string"
+    },
+    "GUID": {
+      "type": "string"
+    },
+    "HTMLItemName": {
+      "type": "string"
+    },
+    "IsChecked": {
+      "type": "boolean"
+    },
+    "ItemName": {
+      "type": "string"
+    },
+    "LastModified": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "ListID": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "MealPlanID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "MealPlanObjectType": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "Notes": {
+      "type": "string"
+    },
+    "PendingAddition": {
+      "type": "boolean"
+    },
+    "RecipeID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "ShoppingListLineID": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "Store": {
+      "type": "string"
+    },
+    "TextAmt": {
+      "type": "string"
+    },
+    "ThirdPartyHost": {
+      "type": "string"
+    },
+    "ThirdPartyTitle": {
+      "type": "string"
+    },
+    "ThirdPartyURL": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

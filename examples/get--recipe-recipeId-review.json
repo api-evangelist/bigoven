@@ -1,0 +1,28 @@
+{
+  "operationId": "get--recipe-recipeId-review",
+  "method": "GET",
+  "path": "/recipe/{recipeId}/review",
+  "tags": [
+    "Review"
+  ],
+  "summary": "Get *my* review for the recipe {recipeId}, where \"me\" is determined by standard authentication headers",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API.Review"
+    }
+  }
+}

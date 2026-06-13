@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy",
+  "description": "Legacy -- This object here is deprecated. Please use the new \"ReviewRequest\" structure for all future development",
+  "properties": {
+    "ActiveMinutes": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "Comment": {
+      "type": "string"
+    },
+    "GUID": {
+      "type": "string"
+    },
+    "MakeAgain": {
+      "type": "string"
+    },
+    "ParentID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "StarRating": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "TotalMinutes": {
+      "format": "int32",
+      "type": "integer"
+    }
+  },
+  "type": "object"
+}

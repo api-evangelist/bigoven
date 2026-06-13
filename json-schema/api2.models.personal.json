@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API2.Models.Personal",
+  "description": "Personal level info -- email, location, etc.",
+  "properties": {
+    "Email": {
+      "description": "",
+      "type": "string"
+    },
+    "Location": {
+      "$ref": "#/components/schemas/API2.Models.Location"
+    }
+  },
+  "type": "object"
+}

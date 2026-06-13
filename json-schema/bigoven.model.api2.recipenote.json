@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API2.RecipeNote",
+  "properties": {
+    "CreationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "Date": {
+      "type": "string"
+    },
+    "DateDT": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "GUID": {
+      "type": "string"
+    },
+    "ID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "Notes": {
+      "type": "string"
+    },
+    "People": {
+      "type": "string"
+    },
+    "RecipeID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "UserID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "Variations": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

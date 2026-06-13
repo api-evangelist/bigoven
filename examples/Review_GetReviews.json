@@ -1,0 +1,51 @@
+{
+  "operationId": "Review_GetReviews",
+  "method": "GET",
+  "path": "/recipe/{recipeId}/reviews",
+  "tags": [
+    "Review"
+  ],
+  "summary": "Get paged list of reviews for a recipe. Each review will have at most one FeaturedReply, as well as a ReplyCount.",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "recipe id (int)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "pg",
+      "in": "query",
+      "required": false,
+      "description": "the page (int), starting with 1",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "rpp",
+      "in": "query",
+      "required": false,
+      "description": "results per page (int)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.API.Review"
+      },
+      "type": "array"
+    }
+  }
+}

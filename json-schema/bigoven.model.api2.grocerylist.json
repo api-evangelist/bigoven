@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API2.GroceryList",
+  "properties": {
+    "Items": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.API.Grocery.Item"
+      },
+      "type": "array"
+    },
+    "LastModified": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "Recipes": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.API2.RecipeInfox"
+      },
+      "type": "array"
+    },
+    "VersionGuid": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

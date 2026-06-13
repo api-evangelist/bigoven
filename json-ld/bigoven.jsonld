@@ -1,0 +1,339 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "bigoven": "https://api2.bigoven.com/vocab#",
+    "openapi": "https://openapis.org/schema#"
+  },
+  "@type": "WebAPI",
+  "@id": "https://api2.bigoven.com",
+  "name": "1,000,000+ Recipe and Grocery List API (v2)",
+  "description": "REST API providing access to 1,000,000+ recipes, grocery list management, nutritional data, and meal planning features.",
+  "url": "https://api2.bigoven.com",
+  "documentation": "https://api2.bigoven.com/web/documentation",
+  "version": "partner",
+  "provider": {
+    "@type": "Organization",
+    "name": "BigOven / Aisle Ahead, Inc.",
+    "url": "https://www.bigoven.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://api2.bigoven.com/web/documentation/feestructure"
+  },
+  "potentialAction": [
+    {
+      "@type": "SearchAction",
+      "name": "Recipe Search",
+      "description": "Search over 1,000,000 recipes by keyword, cuisine, dietary restriction, and more",
+      "target": "https://api2.bigoven.com/recipe"
+    },
+    {
+      "@type": "ReadAction",
+      "name": "Get Recipe",
+      "description": "Retrieve a specific recipe by ID with full nutritional information",
+      "target": "https://api2.bigoven.com/recipe/{recipe-id}"
+    },
+    {
+      "@type": "ReadAction",
+      "name": "Grocery List",
+      "description": "Read and manage cloud-based grocery lists",
+      "target": "https://api2.bigoven.com/grocerylist"
+    }
+  ],
+  "keywords": [
+    "recipes",
+    "meal planning",
+    "grocery lists",
+    "nutrition",
+    "food",
+    "cooking"
+  ],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://api2.bigoven.com",
+    "availableLanguage": "en"
+  },
+  "termsOfService": "https://api2.bigoven.com/web/documentation",
+  "hasDefinedTerm": [
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.GroceryListController.DepartmentModel",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.GroceryListController.PostGroceryListAddLineRequest",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.GroceryListController.PostGroceryListRecipeRequest",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.GroceryListController.PostGroceryListSyncRequest",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.GroceryListController.PostToGroceryListRecipeRequest",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.GroceryListController.UpdateItemByGuidRequest",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.ImagesController.RecipePhotosResponse",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.MeController.EatingStyle",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.MeController.Option",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.MeController.PreferenceOptions",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.NoteController.NoteRequest",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.ReviewController.PostReplyReq",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.ReviewController.ReviewRequest",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.GroceryListDepartmentResult",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Models.Accounting",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Models.BigOvenUser",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Models.Counts",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Models.Location",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Models.Personal",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Models.Preference",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Models.Profile",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Models.Recipes.FeedbackDTO",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Models.Recipes.RecipeResponse",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Models.Recipes.RecipeVideoResponse",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "API2.Result",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.Grocery.GroceryList",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.Grocery.Item",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.Image",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.Ingredient",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.IngredientInfo",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.NutritionInfo",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.Recipe",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.RecipeInfo",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.RecipeNote",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.RecipeNoteList",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.Reply",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.Review",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.UserInfo",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API.UserInfoTiny",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API2.CollectionInfo",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API2.GroceryList",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API2.Photo",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API2.Recipe",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API2.RecipeInfox",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API2.RecipeNote",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API2.RecipeSearchResult",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.API2.UserInfoTinyx",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.InstructionStep",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.RecipeCategory",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.RecipeInfoDateTuple2",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.RecipeInfoReviewTuple2",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.RecipeInfoTiny",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Model.ShoppingListLine",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BigOven.Result",
+      "inDefinedTermSet": "bigoven:schemas"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "System.Object",
+      "inDefinedTermSet": "bigoven:schemas"
+    }
+  ]
+}

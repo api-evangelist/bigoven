@@ -1,0 +1,38 @@
+{
+  "operationId": "Review_Delete",
+  "method": "DELETE",
+  "path": "/recipe/{recipeId}/review/{reviewId}",
+  "tags": [
+    "Review"
+  ],
+  "summary": "DEPRECATED! - Deletes a review by recipeId and reviewId. Please use recipe/review/{reviewId} instead.",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "reviewId",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "format": "int64",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/System.Object"
+    }
+  }
+}

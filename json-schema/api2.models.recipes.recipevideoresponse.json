@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API2.Models.Recipes.RecipeVideoResponse",
+  "description": "DTO used to return the details of a recipe video",
+  "properties": {
+    "InsertedOn": {
+      "description": "Gets or sets the date the video was added.",
+      "format": "date-time",
+      "type": "string"
+    },
+    "IsPrimaryVideo": {
+      "description": "Gets or sets a value indicating whether the video is the primary video of the recipe.",
+      "type": "boolean"
+    },
+    "MediaId": {
+      "description": "Gets or sets the JWPlayer media id.",
+      "type": "string"
+    },
+    "VidId": {
+      "description": "Gets or sets the video id.",
+      "format": "int32",
+      "type": "integer"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,20 @@
+{
+  "operationId": "Recipe_Categories",
+  "method": "GET",
+  "path": "/recipe/categories",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Get a list of recipe categories (the ID field can be used for include_cat in search parameters)",
+  "parameters": [],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.RecipeCategory"
+      },
+      "type": "array"
+    }
+  }
+}

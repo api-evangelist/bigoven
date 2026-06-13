@@ -1,0 +1,34 @@
+{
+  "operationId": "Recipe_Feedback",
+  "method": "POST",
+  "path": "/recipe/{recipeId}/feedback",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Feedback on a Recipe -- for internal BigOven editors",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "requestBody": {
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Models.Recipes.FeedbackDTO"
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/System.Object"
+    }
+  }
+}

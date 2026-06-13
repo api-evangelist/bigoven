@@ -1,0 +1,28 @@
+{
+  "operationId": "Collection_GetCollectionMeta",
+  "method": "GET",
+  "path": "/collection/{id}/meta",
+  "tags": [
+    "Collection"
+  ],
+  "summary": "Gets a recipe collection metadata. A recipe collection is a curated set of recipes.",
+  "parameters": [
+    {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "description": "the collection identifier",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API2.CollectionInfo"
+    }
+  }
+}

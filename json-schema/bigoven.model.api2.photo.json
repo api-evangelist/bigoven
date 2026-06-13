@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API2.Photo",
+  "properties": {
+    "Caption": {
+      "type": "string"
+    },
+    "CreationDate": {
+      "type": "string"
+    },
+    "ImageID": {
+      "format": "int64",
+      "type": "integer"
+    },
+    "IsPrimary": {
+      "type": "boolean"
+    },
+    "MaxImageSquare": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "PhotoUrl": {
+      "type": "string"
+    },
+    "Poster": {
+      "$ref": "#/components/schemas/BigOven.Model.API2.UserInfoTinyx"
+    }
+  },
+  "type": "object"
+}

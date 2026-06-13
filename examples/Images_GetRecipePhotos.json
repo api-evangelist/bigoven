@@ -1,0 +1,48 @@
+{
+  "operationId": "Images_GetRecipePhotos",
+  "method": "GET",
+  "path": "/recipe/{recipeId}/photos",
+  "tags": [
+    "Images"
+  ],
+  "summary": "Get all the photos for a recipe",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "Recipe ID (required)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "pg",
+      "in": "query",
+      "required": false,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "rpp",
+      "in": "query",
+      "required": false,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Controllers.WebAPI.ImagesController.RecipePhotosResponse"
+    }
+  }
+}

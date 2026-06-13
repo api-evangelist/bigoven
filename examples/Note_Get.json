@@ -1,0 +1,38 @@
+{
+  "operationId": "Note_Get",
+  "method": "GET",
+  "path": "/recipe/{recipeId}/note/{noteId}",
+  "tags": [
+    "Note"
+  ],
+  "summary": "Get a given note. Make sure you're passing authentication information in the header for the user who owns the note.",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "recipe identifier (integer)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "noteId",
+      "in": "path",
+      "required": true,
+      "description": "The note ID (note -- it's not the RecipeID)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API.RecipeNote"
+    }
+  }
+}

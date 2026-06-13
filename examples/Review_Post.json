@@ -1,0 +1,28 @@
+{
+  "operationId": "Review_Post",
+  "method": "POST",
+  "path": "/recipe/{recipeId}/review",
+  "tags": [
+    "Review"
+  ],
+  "summary": "Add a new review. Only one review can be provided per {userId, recipeId} pair. Otherwise your review will be updated.",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/System.Object"
+    }
+  }
+}

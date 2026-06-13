@@ -1,0 +1,23 @@
+{
+  "operationId": "GroceryList_Post",
+  "method": "POST",
+  "path": "/grocerylist/line",
+  "tags": [
+    "GroceryList"
+  ],
+  "summary": "Add a single line item to the grocery list",
+  "parameters": [],
+  "requestBody": {
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Controllers.WebAPI.GroceryListController.PostGroceryListAddLineRequest"
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.ShoppingListLine"
+    }
+  }
+}

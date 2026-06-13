@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API.UserInfo",
+  "properties": {
+    "FirstName": {
+      "type": "string"
+    },
+    "ImageUrl48": {
+      "type": "string"
+    },
+    "IsKitchenHelper": {
+      "type": "boolean"
+    },
+    "IsPremium": {
+      "type": "boolean"
+    },
+    "IsUsingRecurly": {
+      "type": "boolean"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "MemberSince": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "PhotoUrl": {
+      "type": "string"
+    },
+    "PhotoUrl48": {
+      "readOnly": true,
+      "type": "string"
+    },
+    "PremiumExpiryDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "UserID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "UserName": {
+      "type": "string"
+    },
+    "WebUrl": {
+      "readOnly": true,
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

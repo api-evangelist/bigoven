@@ -1,0 +1,37 @@
+{
+  "operationId": "Recipe_Get",
+  "method": "GET",
+  "path": "/recipe/{id}",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Return full Recipe detail. Returns 403 if the recipe is owned by someone else.",
+  "parameters": [
+    {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "description": "The Recipe ID to retrieve",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "prefetch",
+      "in": "query",
+      "required": false,
+      "description": "The prefetch.",
+      "schema": {
+        "type": "boolean"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API2.Recipe"
+    }
+  }
+}

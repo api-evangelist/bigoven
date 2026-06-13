@@ -1,0 +1,41 @@
+{
+  "operationId": "Recipe_Raves",
+  "method": "GET",
+  "path": "/recipes/raves",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Get the recipe/comment tuples for those recipes with 4 or 5 star ratings",
+  "parameters": [
+    {
+      "name": "pg",
+      "in": "query",
+      "required": false,
+      "description": "page, starting with 1",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "rpp",
+      "in": "query",
+      "required": false,
+      "description": "results per page",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.RecipeInfoReviewTuple2"
+      },
+      "type": "array"
+    }
+  }
+}

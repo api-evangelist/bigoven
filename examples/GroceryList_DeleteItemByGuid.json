@@ -1,0 +1,27 @@
+{
+  "operationId": "GroceryList_DeleteItemByGuid",
+  "method": "DELETE",
+  "path": "/grocerylist/item/{guid}",
+  "tags": [
+    "GroceryList"
+  ],
+  "summary": "/grocerylist/item/{guid}  DELETE will delete this item assuming you own it.",
+  "parameters": [
+    {
+      "name": "guid",
+      "in": "path",
+      "required": true,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/System.Object"
+    }
+  }
+}

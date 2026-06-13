@@ -1,0 +1,37 @@
+{
+  "operationId": "Recipe_GetRecipeWithSteps",
+  "method": "GET",
+  "path": "/recipe/steps/{id}",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Return full Recipe detail with steps. Returns 403 if the recipe is owned by someone else.",
+  "parameters": [
+    {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "description": "the Recipe ID to retrieve",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "prefetch",
+      "in": "query",
+      "required": false,
+      "description": "",
+      "schema": {
+        "type": "boolean"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API2.Recipe"
+    }
+  }
+}

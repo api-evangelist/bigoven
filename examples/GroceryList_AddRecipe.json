@@ -1,0 +1,23 @@
+{
+  "operationId": "GroceryList_AddRecipe",
+  "method": "POST",
+  "path": "/grocerylist/recipe",
+  "tags": [
+    "GroceryList"
+  ],
+  "summary": "Add a Recipe to the grocery list.  In the request data, pass in recipeId, scale (scale=1.0 says to keep the recipe the same size as originally posted), markAsPending (true/false) to indicate that\r\n            the lines in the recipe should be marked in a \"pending\" (unconfirmed by user) state.",
+  "parameters": [],
+  "requestBody": {
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/API2.Controllers.WebAPI.GroceryListController.PostGroceryListRecipeRequest"
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/System.Object"
+    }
+  }
+}

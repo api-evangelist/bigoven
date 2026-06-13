@@ -1,0 +1,17 @@
+{
+  "operationId": "GroceryList_Delete",
+  "method": "DELETE",
+  "path": "/grocerylist",
+  "tags": [
+    "GroceryList"
+  ],
+  "summary": "Delete all the items on a grocery list; faster operation than a sync with deleted items.",
+  "parameters": [],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/System.Object"
+    }
+  }
+}

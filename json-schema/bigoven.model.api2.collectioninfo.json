@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.API2.CollectionInfo",
+  "properties": {
+    "Description": {
+      "type": "string"
+    },
+    "ID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "IsFiltered": {
+      "type": "boolean"
+    },
+    "IsSponsored": {
+      "type": "boolean"
+    },
+    "MobileUrl": {
+      "type": "string"
+    },
+    "PRO": {
+      "type": "boolean"
+    },
+    "PhotoUrl": {
+      "type": "string"
+    },
+    "Results": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.API2.RecipeInfox"
+      },
+      "type": "array"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Token": {
+      "type": "string"
+    },
+    "WebUrl": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

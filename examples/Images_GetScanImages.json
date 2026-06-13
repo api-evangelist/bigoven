@@ -1,0 +1,31 @@
+{
+  "operationId": "Images_GetScanImages",
+  "method": "GET",
+  "path": "/recipe/{recipeId}/scans",
+  "tags": [
+    "Images"
+  ],
+  "summary": "Gets a list of RecipeScan images for the recipe. There will be at most 3 per recipe.",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "the recipe identifier (int)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.API.Image"
+      },
+      "type": "array"
+    }
+  }
+}

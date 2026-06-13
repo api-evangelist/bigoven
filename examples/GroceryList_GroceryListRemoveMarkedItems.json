@@ -1,0 +1,17 @@
+{
+  "operationId": "GroceryList_GroceryListRemoveMarkedItems",
+  "method": "POST",
+  "path": "/grocerylist/clearcheckedlines",
+  "tags": [
+    "GroceryList"
+  ],
+  "summary": "Clears the checked lines.",
+  "parameters": [],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API2.GroceryList"
+    }
+  }
+}

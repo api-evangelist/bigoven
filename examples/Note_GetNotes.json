@@ -1,0 +1,48 @@
+{
+  "operationId": "Note_GetNotes",
+  "method": "GET",
+  "path": "/recipe/{recipeId}/notes",
+  "tags": [
+    "Note"
+  ],
+  "summary": "recipe/100/notes",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "recipeId (int)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "pg",
+      "in": "query",
+      "required": false,
+      "description": "page (int, starting from 1)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "rpp",
+      "in": "query",
+      "required": false,
+      "description": "recipeId",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API.RecipeNoteList"
+    }
+  }
+}

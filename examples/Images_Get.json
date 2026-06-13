@@ -1,0 +1,31 @@
+{
+  "operationId": "Images_Get",
+  "method": "GET",
+  "path": "/recipe/{recipeId}/images",
+  "tags": [
+    "Images"
+  ],
+  "summary": "Get all the images for a recipe. DEPRECATED. Please use /recipe/{recipeId}/photos.",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "Recipe ID (required)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "items": {
+        "$ref": "#/components/schemas/BigOven.Model.API.Image"
+      },
+      "type": "array"
+    }
+  }
+}

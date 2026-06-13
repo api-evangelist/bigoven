@@ -1,0 +1,28 @@
+{
+  "operationId": "Recipe_ZapRecipe",
+  "method": "GET",
+  "path": "/recipe/{id}/zap",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Zaps the recipe.",
+  "parameters": [
+    {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "description": "The identifier.",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/System.Object"
+    }
+  }
+}

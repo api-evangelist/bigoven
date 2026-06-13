@@ -1,0 +1,66 @@
+{
+  "operationId": "Collection_GetCollection",
+  "method": "GET",
+  "path": "/collection/{id}",
+  "tags": [
+    "Collection"
+  ],
+  "summary": "Gets a recipe collection. A recipe collection is a curated set of recipes.",
+  "parameters": [
+    {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "description": "the collection identifier",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "rpp",
+      "in": "query",
+      "required": false,
+      "description": "results per page",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "pg",
+      "in": "query",
+      "required": false,
+      "description": "page number (starting with 1)",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "test",
+      "in": "query",
+      "required": false,
+      "description": "",
+      "schema": {
+        "type": "boolean"
+      }
+    },
+    {
+      "name": "sessionForLogging",
+      "in": "query",
+      "required": false,
+      "description": "",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API2.RecipeSearchResult"
+    }
+  }
+}

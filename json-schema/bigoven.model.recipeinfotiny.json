@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BigOven.Model.RecipeInfoTiny",
+  "properties": {
+    "ImageURL": {
+      "type": "string"
+    },
+    "QualityScore": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "RecipeID": {
+      "format": "int32",
+      "type": "integer"
+    },
+    "Servings": {
+      "format": "double",
+      "type": "number"
+    },
+    "Title": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

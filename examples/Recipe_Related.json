@@ -1,0 +1,48 @@
+{
+  "operationId": "Recipe_Related",
+  "method": "GET",
+  "path": "/recipe/{recipeId}/related",
+  "tags": [
+    "Recipe"
+  ],
+  "summary": "Get recipes related to the given recipeId",
+  "parameters": [
+    {
+      "name": "recipeId",
+      "in": "path",
+      "required": true,
+      "description": "The recipe id",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "pg",
+      "in": "query",
+      "required": false,
+      "description": "The page",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    },
+    {
+      "name": "rpp",
+      "in": "query",
+      "required": false,
+      "description": "The results per page",
+      "schema": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  ],
+  "response": {
+    "status": 200,
+    "contentType": "application/json",
+    "schema": {
+      "$ref": "#/components/schemas/BigOven.Model.API2.RecipeSearchResult"
+    }
+  }
+}
