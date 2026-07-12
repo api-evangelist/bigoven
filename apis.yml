@@ -39,6 +39,10 @@ apis:
       - type: RateLimits
         url: https://api2.bigoven.com/web/documentation/usage-throttling
 common:
+  - type: DomainSecurity
+    url: security/bigoven-domain-security.yml
+  - type: Authentication
+    url: authentication/bigoven-authentication.yml
   - type: Website
     url: https://www.bigoven.com
   - type: Documentation

@@ -1,0 +1,26 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/bigoven-openapi.yaml
+summary:
+  types:
+  - apiKey
+  - http
+  api_key_in:
+  - header
+schemes:
+- name: api_key
+  type: apiKey
+  in: header
+  parameter: X-BigOven-API-Key
+  description: 'Pass your api_key in the header (recommended) or as a URL parameter. For the
+    URL parameter, use api_key. For the header, send it as a header value for: X-BigOven-API-Key'
+  sources:
+  - openapi/bigoven-openapi.yaml
+- name: basic
+  type: http
+  scheme: basic
+  description: Basic HTTP Authentication is used for those endpoint calls where you want to
+    act as a BigOven user -- e.g., to get the list of favorites of a signed-in user, or add
+    items to their grocery list.
+  sources:
+  - openapi/bigoven-openapi.yaml
