@@ -1,0 +1,257 @@
+openapi: 3.0.0
+info:
+  description: "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](https://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](https://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](https://api2.bigoven.com)."
+  title: 1,000,000+ Recipe and Grocery List API (v2) Collection API
+  version: partner
+  x-apiClientRegistration:
+    url: http://api2.bigoven.com/web/console
+  x-logo:
+    url: https://twitter.com/bigoven/profile_image?size=original
+  x-origin:
+  - format: openapi
+    url: http://api2.bigoven.com/swagger/docs/partner
+    version: '3.0'
+  x-providerName: bigoven.com
+servers:
+- url: https://api2.bigoven.com
+tags:
+- name: Collection
+paths:
+  /collection/{id}:
+    get:
+      deprecated: false
+      operationId: Collection_GetCollection
+      parameters:
+      - description: the collection identifier
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int32
+          type: integer
+      - description: results per page
+        in: query
+        name: rpp
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: page number (starting with 1)
+        in: query
+        name: pg
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: ''
+        in: query
+        name: test
+        required: false
+        schema:
+          type: boolean
+      - description: ''
+        in: query
+        name: sessionForLogging
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+          description: OK
+      summary: Gets a recipe collection. A recipe collection is a curated set of recipes.
+      tags:
+      - Collection
+  /collection/{id}/meta:
+    get:
+      deprecated: false
+      operationId: Collection_GetCollectionMeta
+      parameters:
+      - description: the collection identifier
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.CollectionInfo'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.CollectionInfo'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.CollectionInfo'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.CollectionInfo'
+          description: OK
+      summary: Gets a recipe collection metadata. A recipe collection is a curated set of recipes.
+      tags:
+      - Collection
+  /collections:
+    get:
+      deprecated: false
+      operationId: Collection_Collections
+      parameters:
+      - in: query
+        name: test
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.API2.CollectionInfo'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.API2.CollectionInfo'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.API2.CollectionInfo'
+                type: array
+            text/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.API2.CollectionInfo'
+                type: array
+          description: OK
+      summary: Get the list of current, seasonal recipe collections. From here, you can use the /collection/{id} endpoint to retrieve the recipes in those collections.
+      tags:
+      - Collection
+components:
+  schemas:
+    BigOven.Model.API2.UserInfoTinyx:
+      properties:
+        FirstName:
+          type: string
+        LastName:
+          type: string
+        PhotoUrl:
+          type: string
+        UserID:
+          format: int32
+          type: integer
+        UserName:
+          type: string
+      type: object
+    BigOven.Model.API2.CollectionInfo:
+      properties:
+        Description:
+          type: string
+        ID:
+          format: int32
+          type: integer
+        IsFiltered:
+          type: boolean
+        IsSponsored:
+          type: boolean
+        MobileUrl:
+          type: string
+        PRO:
+          type: boolean
+        PhotoUrl:
+          type: string
+        Results:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
+          type: array
+        Title:
+          type: string
+        Token:
+          type: string
+        WebUrl:
+          type: string
+      type: object
+    BigOven.Model.API2.RecipeInfox:
+      properties:
+        Category:
+          type: string
+        CreationDate:
+          format: date-time
+          type: string
+        Cuisine:
+          type: string
+        HasVideos:
+          type: boolean
+        IsBookmark:
+          type: boolean
+        IsPrivate:
+          type: boolean
+        IsRecipeScan:
+          type: boolean
+        Microcategory:
+          type: string
+        PhotoUrl:
+          type: string
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API2.UserInfoTinyx'
+        RecipeID:
+          format: int32
+          type: integer
+        ReviewCount:
+          format: int32
+          type: integer
+        Servings:
+          format: double
+          type: number
+        StarRating:
+          format: double
+          type: number
+        Subcategory:
+          type: string
+        Title:
+          type: string
+        TotalTries:
+          format: int32
+          type: integer
+        WebURL:
+          type: string
+      type: object
+    BigOven.Model.API2.RecipeSearchResult:
+      properties:
+        ResultCount:
+          format: int32
+          type: integer
+        Results:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
+          type: array
+        SpellSuggest:
+          type: string
+      type: object
+  securitySchemes:
+    api_key:
+      description: 'Pass your api_key in the header (recommended) or as a URL parameter. For the URL parameter, use api_key. For the header, send it as a header value for: X-BigOven-API-Key'
+      in: header
+      name: X-BigOven-API-Key
+      type: apiKey
+    basic:
+      description: Basic HTTP Authentication is used for those endpoint calls where you want to act as a BigOven user -- e.g., to get the list of favorites of a signed-in user, or add items to their grocery list.
+      scheme: basic
+      type: http
+externalDocs:
+  url: http://api2.bigoven.com/web/documentation

@@ -1,0 +1,364 @@
+openapi: 3.0.0
+info:
+  description: "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](https://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](https://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](https://api2.bigoven.com)."
+  title: 1,000,000+ Recipe and Grocery List API (v2) Collection Note API
+  version: partner
+  x-apiClientRegistration:
+    url: http://api2.bigoven.com/web/console
+  x-logo:
+    url: https://twitter.com/bigoven/profile_image?size=original
+  x-origin:
+  - format: openapi
+    url: http://api2.bigoven.com/swagger/docs/partner
+    version: '3.0'
+  x-providerName: bigoven.com
+servers:
+- url: https://api2.bigoven.com
+tags:
+- name: Note
+paths:
+  /recipe/{recipeId}/note:
+    post:
+      deprecated: false
+      operationId: Note_Post
+      parameters:
+      - description: recipeId (int)
+        in: path
+        name: recipeId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/API2.Controllers.WebAPI.NoteController.NoteRequest'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/API2.Controllers.WebAPI.NoteController.NoteRequest'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Controllers.WebAPI.NoteController.NoteRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/API2.Controllers.WebAPI.NoteController.NoteRequest'
+          text/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Controllers.WebAPI.NoteController.NoteRequest'
+        description: 'a recipe note, with fields: Date (YYYY-MM-DD string), Notes (string), People (string), Variations (string), RecipeID (int?)'
+        required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeNote'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeNote'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeNote'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeNote'
+          description: OK
+      summary: HTTP POST a new note into the system.
+      tags:
+      - Note
+  /recipe/{recipeId}/note/{noteId}:
+    delete:
+      deprecated: false
+      operationId: Note_Delete
+      parameters:
+      - description: recipeId (int)
+        in: path
+        name: recipeId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      - description: noteId (int)
+        in: path
+        name: noteId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+          description: OK
+      summary: "Delete a review\r\n                do a DELETE Http request of /note/{ID}"
+      tags:
+      - Note
+    get:
+      deprecated: false
+      operationId: Note_Get
+      parameters:
+      - description: recipe identifier (integer)
+        in: path
+        name: recipeId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      - description: The note ID (note -- it's not the RecipeID)
+        in: path
+        name: noteId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.RecipeNote'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.RecipeNote'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.RecipeNote'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.RecipeNote'
+          description: OK
+      summary: Get a given note. Make sure you're passing authentication information in the header for the user who owns the note.
+      tags:
+      - Note
+    put:
+      deprecated: false
+      operationId: Note_Put
+      parameters:
+      - in: path
+        name: recipeId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      - in: path
+        name: noteId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/API2.Controllers.WebAPI.NoteController.NoteRequest'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/API2.Controllers.WebAPI.NoteController.NoteRequest'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Controllers.WebAPI.NoteController.NoteRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/API2.Controllers.WebAPI.NoteController.NoteRequest'
+          text/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Controllers.WebAPI.NoteController.NoteRequest'
+        required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.RecipeNote'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.RecipeNote'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.RecipeNote'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.RecipeNote'
+          description: OK
+      summary: HTTP PUT (update) a Recipe note (RecipeNote).
+      tags:
+      - Note
+  /recipe/{recipeId}/notes:
+    get:
+      deprecated: false
+      operationId: Note_GetNotes
+      parameters:
+      - description: recipeId (int)
+        in: path
+        name: recipeId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      - description: page (int, starting from 1)
+        in: query
+        name: pg
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: recipeId
+        in: query
+        name: rpp
+        required: false
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.RecipeNoteList'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.RecipeNoteList'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.RecipeNoteList'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.RecipeNoteList'
+          description: OK
+      summary: recipe/100/notes
+      tags:
+      - Note
+components:
+  schemas:
+    BigOven.Model.API2.RecipeNote:
+      properties:
+        CreationDate:
+          format: date-time
+          type: string
+        Date:
+          type: string
+        DateDT:
+          format: date-time
+          type: string
+        GUID:
+          type: string
+        ID:
+          format: int32
+          type: integer
+        Notes:
+          type: string
+        People:
+          type: string
+        RecipeID:
+          format: int32
+          type: integer
+        UserID:
+          format: int32
+          type: integer
+        Variations:
+          type: string
+      type: object
+    API2.Controllers.WebAPI.NoteController.NoteRequest:
+      description: ''
+      properties:
+        CreationDate:
+          description: Gets or sets the creation date.
+          format: date-time
+          type: string
+        Date:
+          description: Gets or sets the date.
+          format: date-time
+          type: string
+        DateDT:
+          description: Gets or sets the date dt.
+          type: string
+        GUID:
+          description: Gets or sets the unique identifier.
+          type: string
+        ID:
+          description: Gets or sets the identifier.
+          format: int32
+          type: integer
+        Notes:
+          description: Gets or sets the notes.
+          type: string
+        People:
+          description: Gets or sets the people.
+          type: string
+        RecipeID:
+          description: Gets or sets the recipe identifier.
+          format: int32
+          type: integer
+        UserID:
+          description: Gets or sets the user identifier.
+          format: int32
+          type: integer
+        Variations:
+          description: Gets or sets the variations.
+          type: string
+      type: object
+    BigOven.Model.API.RecipeNote:
+      properties:
+        CreationDate:
+          format: date-time
+          type: string
+        Date:
+          type: string
+        DateDT:
+          format: date-time
+          type: string
+        GUID:
+          type: string
+        ID:
+          format: int32
+          type: integer
+        Notes:
+          type: string
+        People:
+          type: string
+        RecipeID:
+          format: int32
+          type: integer
+        UserID:
+          format: int32
+          type: integer
+        Variations:
+          type: string
+      type: object
+    System.Object:
+      properties: {}
+      type: object
+    BigOven.Model.API.RecipeNoteList:
+      properties:
+        ResultCount:
+          format: int32
+          type: integer
+        Results:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API.RecipeNote'
+          type: array
+      type: object
+  securitySchemes:
+    api_key:
+      description: 'Pass your api_key in the header (recommended) or as a URL parameter. For the URL parameter, use api_key. For the header, send it as a header value for: X-BigOven-API-Key'
+      in: header
+      name: X-BigOven-API-Key
+      type: apiKey
+    basic:
+      description: Basic HTTP Authentication is used for those endpoint calls where you want to act as a BigOven user -- e.g., to get the list of favorites of a signed-in user, or add items to their grocery list.
+      scheme: basic
+      type: http
+externalDocs:
+  url: http://api2.bigoven.com/web/documentation

@@ -1,0 +1,2148 @@
+openapi: 3.0.0
+info:
+  description: "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](https://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](https://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](https://api2.bigoven.com)."
+  title: 1,000,000+ and Grocery List API (v2) Collection Recipe API
+  version: partner
+  x-apiClientRegistration:
+    url: http://api2.bigoven.com/web/console
+  x-logo:
+    url: https://twitter.com/bigoven/profile_image?size=original
+  x-origin:
+  - format: openapi
+    url: http://api2.bigoven.com/swagger/docs/partner
+    version: '3.0'
+  x-providerName: bigoven.com
+servers:
+- url: https://api2.bigoven.com
+tags:
+- name: Recipe
+paths:
+  /recipe:
+    post:
+      deprecated: false
+      operationId: Recipe_Post
+      requestBody:
+        $ref: '#/components/requestBodies/BigOven.Model.API.Recipe'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+          description: OK
+      summary: Add a new recipe
+      tags:
+      - Recipe
+    put:
+      deprecated: false
+      operationId: Recipe_Put
+      requestBody:
+        $ref: '#/components/requestBodies/BigOven.Model.API.Recipe'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+          description: OK
+      summary: Update a recipe
+      tags:
+      - Recipe
+  /recipe/autocomplete:
+    get:
+      deprecated: false
+      operationId: Recipe_AutoComplete
+      parameters:
+      - description: ''
+        in: query
+        name: query
+        required: true
+        schema:
+          type: string
+      - description: ''
+        in: query
+        name: limit
+        required: false
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  type: string
+                type: array
+            application/xml:
+              schema:
+                items:
+                  type: string
+                type: array
+            text/json:
+              schema:
+                items:
+                  type: string
+                type: array
+            text/xml:
+              schema:
+                items:
+                  type: string
+                type: array
+          description: OK
+      summary: Given a query, return recipe titles starting with query. Query must be at least 3 chars in length.
+      tags:
+      - Recipe
+  /recipe/autocomplete/all:
+    get:
+      deprecated: false
+      operationId: Recipe_AutoCompleteAllRecipes
+      parameters:
+      - description: The query.
+        in: query
+        name: query
+        required: true
+        schema:
+          type: string
+      - description: The limit.
+        in: query
+        name: limit
+        required: true
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoTiny'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoTiny'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoTiny'
+                type: array
+            text/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoTiny'
+                type: array
+          description: OK
+      summary: Automatics the complete all recipes.
+      tags:
+      - Recipe
+  /recipe/autocomplete/mine:
+    get:
+      deprecated: false
+      operationId: Recipe_AutoCompleteMyRecipes
+      parameters:
+      - description: The query.
+        in: query
+        name: query
+        required: true
+        schema:
+          type: string
+      - description: The limit.
+        in: query
+        name: limit
+        required: true
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoTiny'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoTiny'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoTiny'
+                type: array
+            text/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoTiny'
+                type: array
+          description: OK
+      summary: Automatics the complete my recipes.
+      tags:
+      - Recipe
+  /recipe/categories:
+    get:
+      deprecated: false
+      operationId: Recipe_Categories
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeCategory'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeCategory'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeCategory'
+                type: array
+            text/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeCategory'
+                type: array
+          description: OK
+      summary: Get a list of recipe categories (the ID field can be used for include_cat in search parameters)
+      tags:
+      - Recipe
+  /recipe/get/active/recipe:
+    get:
+      deprecated: false
+      operationId: Recipe_GetActiveRecipe
+      parameters:
+      - description: ''
+        in: query
+        name: userName
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Result'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Result'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Result'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Result'
+          description: OK
+      summary: Returns last active recipe for the user
+      tags:
+      - Recipe
+  /recipe/get/saved/step:
+    post:
+      deprecated: false
+      operationId: Recipe_GetStep
+      parameters:
+      - description: ''
+        in: query
+        name: userName
+        required: true
+        schema:
+          type: string
+      - description: ''
+        in: query
+        name: recipeId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      - description: ''
+        in: query
+        name: stepId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: string
+            application/xml:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+            text/xml:
+              schema:
+                type: string
+          description: OK
+      summary: Gets recipe single step as text
+      tags:
+      - Recipe
+  /recipe/get/step/number:
+    post:
+      deprecated: false
+      operationId: Recipe_GetStepNumber
+      parameters:
+      - description: ''
+        in: query
+        name: userName
+        required: true
+        schema:
+          type: string
+      - description: ''
+        in: query
+        name: recipeId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API2.Result'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Result'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/API2.Result'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Result'
+          description: OK
+      summary: Returns stored step number and number of steps in recipe
+      tags:
+      - Recipe
+  /recipe/post/step:
+    post:
+      deprecated: false
+      operationId: Recipe_GetSteps
+      parameters:
+      - description: ''
+        in: query
+        name: userName
+        required: true
+        schema:
+          type: string
+      - description: ''
+        in: query
+        name: recipeId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      - description: ''
+        in: query
+        name: stepId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Result'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Result'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Result'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Result'
+          description: OK
+      summary: Stores recipe step number and returns saved step data
+      tags:
+      - Recipe
+  /recipe/scan:
+    post:
+      deprecated: false
+      operationId: Recipe_Scan
+      parameters:
+      - in: query
+        name: test
+        required: false
+        schema:
+          type: boolean
+      - in: query
+        name: devicetype
+        required: false
+        schema:
+          type: string
+      - in: query
+        name: lat
+        required: false
+        schema:
+          format: double
+          type: number
+      - in: query
+        name: lng
+        required: false
+        schema:
+          format: double
+          type: number
+      responses:
+        '401':
+          description: Not authorized
+        '402':
+          description: Payment required (not enough credits)
+        '415':
+          description: Bad media type (bad JPG)
+        '500':
+          description: General error on initiating RecipeScan task; please try again or contact us at support[at]bigoven.com
+      summary: "POST an image as a new RecipeScan request\r\n                1)  Fetch the filename -- DONE\r\n                2)  Copy it to the pics/scan folder - ENSURE NO NAMING COLLISIONS -- DONE\r\n                3)  Create 120 thumbnail size  in pics/scan/120 -- DONE\r\n                4)  Insert the CloudTasks record\r\n                5)  Create the HIT\r\n                6)  Update the CloudTasks record with the HIT ID\r\n                7)  Email the requesing user\r\n                8)  Call out to www.bigoven.com to fetch the image and re-create the thumbnail"
+      tags:
+      - Recipe
+  /recipe/steps/{id}:
+    get:
+      deprecated: false
+      operationId: Recipe_GetRecipeWithSteps
+      parameters:
+      - description: the Recipe ID to retrieve
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int32
+          type: integer
+      - in: query
+        name: prefetch
+        required: false
+        schema:
+          type: boolean
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.Recipe'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.Recipe'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.Recipe'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.Recipe'
+          description: OK
+      summary: Return full Recipe detail with steps. Returns 403 if the recipe is owned by someone else.
+      tags:
+      - Recipe
+  /recipe/{id}:
+    delete:
+      deprecated: false
+      operationId: Recipe_Delete
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+          description: OK
+      summary: Delete a Recipe (you must be authenticated as an owner of the recipe)
+      tags:
+      - Recipe
+    get:
+      deprecated: false
+      operationId: Recipe_Get
+      parameters:
+      - description: The Recipe ID to retrieve
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int32
+          type: integer
+      - description: The prefetch.
+        in: query
+        name: prefetch
+        required: false
+        schema:
+          type: boolean
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.Recipe'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.Recipe'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.Recipe'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.Recipe'
+          description: OK
+      summary: Return full Recipe detail. Returns 403 if the recipe is owned by someone else.
+      tags:
+      - Recipe
+  /recipe/{id}/zap:
+    get:
+      deprecated: false
+      operationId: Recipe_ZapRecipe
+      parameters:
+      - description: The identifier.
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+          description: OK
+      summary: Zaps the recipe.
+      tags:
+      - Recipe
+  /recipe/{recipeId}/feedback:
+    post:
+      deprecated: false
+      operationId: Recipe_Feedback
+      parameters:
+      - description: ''
+        in: path
+        name: recipeId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Recipes.FeedbackDTO'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Recipes.FeedbackDTO'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Recipes.FeedbackDTO'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Recipes.FeedbackDTO'
+          text/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Recipes.FeedbackDTO'
+        description: The payload for feedback, which includes the field "feedback"
+        required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/System.Object'
+          description: OK
+      summary: Feedback on a Recipe -- for internal BigOven editors
+      tags:
+      - Recipe
+  /recipe/{recipeId}/related:
+    get:
+      deprecated: false
+      operationId: Recipe_Related
+      parameters:
+      - description: The recipe id
+        in: path
+        name: recipeId
+        required: true
+        schema:
+          format: int32
+          type: integer
+      - description: The page
+        in: query
+        name: pg
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: The results per page
+        in: query
+        name: rpp
+        required: false
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+          description: OK
+      summary: Get recipes related to the given recipeId
+      tags:
+      - Recipe
+  /recipes:
+    get:
+      deprecated: false
+      operationId: Recipe_RecipeSearch
+      parameters:
+      - description: Search anywhere in the recipe for the keyword
+        in: query
+        name: any_kw
+        required: false
+        schema:
+          type: string
+      - description: Search in a specific folder name for the authenticated user
+        in: query
+        name: folder
+        required: false
+        schema:
+          type: string
+      - description: Limit to a collection ID number
+        in: query
+        name: coll
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: optionally set to either "myrecipes", "try", "favorites","added" to filter to just the authenticated user's recipe set
+        in: query
+        name: filter
+        required: false
+        schema:
+          type: string
+      - description: Search just in the recipe title for the keyword
+        in: query
+        name: title_kw
+        required: false
+        schema:
+          type: string
+      - description: Set the target userid to search their public recipes
+        in: query
+        name: userId
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: Set the target username to search their public recipes
+        in: query
+        name: username
+        required: false
+        schema:
+          type: string
+      - description: ''
+        in: query
+        name: token
+        required: false
+        schema:
+          type: string
+      - description: if set to true, limit search results to photos only
+        in: query
+        name: photos
+        required: false
+        schema:
+          type: boolean
+      - description: if set to true, boost my own recipes in my folders so they show up high in the list (at the expense of other sort orders)
+        in: query
+        name: boostmine
+        required: false
+        schema:
+          type: boolean
+      - description: integer of the subcategory you'd like to limit searches to (see the /recipe/categories endpoint for available id numbers). For instance, 58 is "Main Dish &gt; Casseroles".
+        in: query
+        name: include_cat
+        required: false
+        schema:
+          type: string
+      - description: like include_cat, set this to an integer to exclude a specific category
+        in: query
+        name: exclude_cat
+        required: false
+        schema:
+          type: string
+      - description: csv indicating up to three top-level categories -- valid values are [appetizers,bread,breakfast,desserts,drinks,maindish,salads,sidedish,soups,marinades,other]
+        in: query
+        name: include_primarycat
+        required: false
+        schema:
+          type: string
+      - description: csv indicating integer values for up to 3 top-level categories -- valid values are 1...11 [appetizers,bread,breakfast,desserts,drinks,maindish,salads,sidedish,soups,marinades,other]
+        in: query
+        name: exclude_primarycat
+        required: false
+        schema:
+          type: string
+      - description: A CSV representing up to 3 ingredients to include, e.g., tomatoes,corn%20%starch,chicken
+        in: query
+        name: include_ing
+        required: false
+        schema:
+          type: string
+      - description: A CSV representing up to 3 ingredients to exclude  (Powersearch-capable plan required)
+        in: query
+        name: exclude_ing
+        required: false
+        schema:
+          type: string
+      - description: Limit to a specific cuisine. Cooks can enter anything free-form, but the few dozen preconfigured values are Afghan,African,American,American-South,Asian,Australian,Brazilian,Cajun,Canadian,Caribbean,Chinese,Croatian,Cuban,Dessert,Eastern European,English,French,German,Greek,Hawaiian,Hungarian,India,Indian,Irish,Italian,Japanese,Jewish,Korean,Latin,Mediterranean,Mexican,Middle Eastern,Moroccan,Polish,Russian,Scandanavian,Seafood,Southern,Southwestern,Spanish,Tex-Mex,Thai,Vegan,Vegetarian,Vietnamese
+        in: query
+        name: cuisine
+        required: false
+        schema:
+          type: string
+      - description: ''
+        in: query
+        name: db
+        required: false
+        schema:
+          type: string
+      - description: If set to a given username, it'll force the search to filter to just that username
+        in: query
+        name: userset
+        required: false
+        schema:
+          type: string
+      - description: Limit to yield of a given number size or greater. Note that cooks usually enter recipes by Servings, but sometimes they are posted by "dozen", etc. This parameter simply specifies the minimum number for that value entered in "yield."
+        in: query
+        name: servingsMin
+        required: false
+        schema:
+          format: double
+          type: number
+      - description: Optional. If supplied, will restrict results to recipes that can be made in {totalMins} or less. (Convert "1 hour, 15 minutes" to 75 before passing in.)
+        in: query
+        name: totalMins
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: Optional. If supplied, will restrict results to recipes that can be made with {maxIngredients} ingredients or less
+        in: query
+        name: maxIngredients
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: Optional. If supplied, will restrict results to recipes that have at least {minIngredients}
+        in: query
+        name: minIngredients
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: integer; results per page
+        in: query
+        name: rpp
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: 'integer: the page number'
+        in: query
+        name: pg
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to vegetarian (Powersearch-capable plan required)
+        in: query
+        name: vtn
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to vegan (Powersearch-capable plan required)
+        in: query
+        name: vgn
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to contains-cheese (Powersearch-capable plan required)
+        in: query
+        name: chs
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to gluten-free (Powersearch-capable plan required)
+        in: query
+        name: glf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to nut-free (Powersearch-capable plan required)
+        in: query
+        name: ntf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to dairy-free (Powersearch-capable plan required)
+        in: query
+        name: dyf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to seafood-free (Powersearch-capable plan required)
+        in: query
+        name: sff
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to shellfish-free (Powersearch-capable plan required)
+        in: query
+        name: slf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to tree-nut free (Powersearch-capable plan required)
+        in: query
+        name: tnf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to white-meat free (Powersearch-capable plan required)
+        in: query
+        name: wmf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to red-meat free (Powersearch-capable plan required)
+        in: query
+        name: rmf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, recipe contains pasta, set to 0 means contains no pasta (Powersearch-capable plan required)
+        in: query
+        name: cps
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: optional. When set to 1, this will limit search results to "best of" recipes as determined by various internal editorial and programmatic algorithms. For the most comprehensive results, don't include this parameter.
+        in: query
+        name: champion
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: optional, default is false. When set to true, BigOven will attempt to apply synonyms in search (e.g., excluding pork will also exclude bacon)
+        in: query
+        name: synonyms
+        required: false
+        schema:
+          type: boolean
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+          description: OK
+      summary: "Search for recipes. There are many parameters that you can apply. Starting with the most common, use title_kw to search within a title.\r\n            Use any_kw to search across the entire recipe.\r\n            If you'd like to limit by course, set the parameter \"include_primarycat\" to one of (appetizers,bread,breakfast,dessert,drinks,maindish,salad,sidedish,soup,marinades,other).\r\n            If you'd like to exclude a category, set exclude_cat to one or more (comma-separated) list of those categories to exclude.\r\n            If you'd like to include a category, set include_cat to one or more (comma-separated) of those categories to include.\r\n            To explicitly include an ingredient in your search, set the parameter \"include_ing\" to a CSV of up to three ingredients, e.g.:include_ing=mustard,chicken,beef%20tips\r\n            To explicitly exclude an ingredient in your search, set the parameter \"exclude_ing\" to a CSV of up to three ingredients.\r\n            All searches must contain the paging parameters pg and rpp, which are integers, and represent the page number (1-based) and results per page (rpp).\r\n            So, to get the third page of a result set paged with 25 recipes per page, you'd pass pg=3&amp;rpp=25\r\n            If you'd like to target searches to just a single target user's recipes, set userId=the target userId (number).\r\n            Or, you can set username=theirusername\r\n            vtn;vgn;chs;glf;ntf;dyf;sff;slf;tnf;wmf;rmf;cps\r\n            cuisine\r\n            photos\r\n            filter=added,try,favorites,myrecipes\\r\\n\\r\\n\r\n            folder=FolderNameCaseSensitive\r\n            coll=ID of Collection"
+      tags:
+      - Recipe
+  /recipes/random:
+    get:
+      deprecated: false
+      operationId: Recipe_GetRandomRecipe
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+          description: OK
+      summary: Get a random, home-page-quality Recipe.
+      tags:
+      - Recipe
+  /recipes/raves:
+    get:
+      deprecated: false
+      operationId: Recipe_Raves
+      parameters:
+      - description: page, starting with 1
+        in: query
+        name: pg
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: results per page
+        in: query
+        name: rpp
+        required: false
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoReviewTuple2'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoReviewTuple2'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoReviewTuple2'
+                type: array
+            text/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoReviewTuple2'
+                type: array
+          description: OK
+      summary: Get the recipe/comment tuples for those recipes with 4 or 5 star ratings
+      tags:
+      - Recipe
+  /recipes/recentviews:
+    get:
+      deprecated: false
+      operationId: Recipe_RecentViews
+      parameters:
+      - description: Page number starting with 1
+        in: query
+        name: pg
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: results per page
+        in: query
+        name: rpp
+        required: false
+        schema:
+          format: int32
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoDateTuple2'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoDateTuple2'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoDateTuple2'
+                type: array
+            text/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BigOven.Model.RecipeInfoDateTuple2'
+                type: array
+          description: OK
+      summary: Get a list of recipes that the authenticated user has most recently viewed
+      tags:
+      - Recipe
+  /recipes/top25random:
+    get:
+      deprecated: false
+      operationId: Recipe_RecipeSearchRandom
+      parameters:
+      - description: Search anywhere in the recipe for the keyword
+        in: query
+        name: any_kw
+        required: false
+        schema:
+          type: string
+      - description: Search in a specific folder name for the authenticated user
+        in: query
+        name: folder
+        required: false
+        schema:
+          type: string
+      - description: Limit to a collection ID number
+        in: query
+        name: coll
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: optionally set to either "myrecipes", "try", "favorites","added" to filter to just the authenticated user's recipe set
+        in: query
+        name: filter
+        required: false
+        schema:
+          type: string
+      - description: Search just in the recipe title for the keyword
+        in: query
+        name: title_kw
+        required: false
+        schema:
+          type: string
+      - description: Set the target userid to search their public recipes
+        in: query
+        name: userId
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: Set the target username to search their public recipes
+        in: query
+        name: username
+        required: false
+        schema:
+          type: string
+      - description: ''
+        in: query
+        name: token
+        required: false
+        schema:
+          type: string
+      - description: if set to true, limit search results to photos only
+        in: query
+        name: photos
+        required: false
+        schema:
+          type: boolean
+      - description: if set to true, boost my own recipes in my folders so they show up high in the list (at the expense of other sort orders)
+        in: query
+        name: boostmine
+        required: false
+        schema:
+          type: boolean
+      - description: integer of the subcategory you'd like to limit searches to (see the /recipe/categories endpoint for available id numbers). For instance, 58 is "Main Dish &gt; Casseroles".
+        in: query
+        name: include_cat
+        required: false
+        schema:
+          type: string
+      - description: like include_cat, set this to an integer to exclude a specific category
+        in: query
+        name: exclude_cat
+        required: false
+        schema:
+          type: string
+      - description: csv indicating up to three top-level categories -- valid values are [appetizers,bread,breakfast,desserts,drinks,maindish,salads,sidedish,soups,marinades,other]
+        in: query
+        name: include_primarycat
+        required: false
+        schema:
+          type: string
+      - description: csv indicating integer values for up to 3 top-level categories -- valid values are 1...11 [appetizers,bread,breakfast,desserts,drinks,maindish,salads,sidedish,soups,marinades,other]
+        in: query
+        name: exclude_primarycat
+        required: false
+        schema:
+          type: string
+      - description: A CSV representing up to 3 ingredients to include, e.g., tomatoes,corn%20%starch,chicken
+        in: query
+        name: include_ing
+        required: false
+        schema:
+          type: string
+      - description: A CSV representing up to 3 ingredients to exclude  (Powersearch-capable plan required)
+        in: query
+        name: exclude_ing
+        required: false
+        schema:
+          type: string
+      - description: Limit to a specific cuisine. Cooks can enter anything free-form, but the few dozen preconfigured values are Afghan,African,American,American-South,Asian,Australian,Brazilian,Cajun,Canadian,Caribbean,Chinese,Croatian,Cuban,Dessert,Eastern European,English,French,German,Greek,Hawaiian,Hungarian,India,Indian,Irish,Italian,Japanese,Jewish,Korean,Latin,Mediterranean,Mexican,Middle Eastern,Moroccan,Polish,Russian,Scandanavian,Seafood,Southern,Southwestern,Spanish,Tex-Mex,Thai,Vegan,Vegetarian,Vietnamese
+        in: query
+        name: cuisine
+        required: false
+        schema:
+          type: string
+      - description: ''
+        in: query
+        name: db
+        required: false
+        schema:
+          type: string
+      - description: If set to a given username, it'll force the search to filter to just that username
+        in: query
+        name: userset
+        required: false
+        schema:
+          type: string
+      - description: Limit to yield of a given number size or greater. Note that cooks usually enter recipes by Servings, but sometimes they are posted by "dozen", etc. This parameter simply specifies the minimum number for that value entered in "yield."
+        in: query
+        name: servingsMin
+        required: false
+        schema:
+          format: double
+          type: number
+      - description: Optional. If supplied, will restrict results to recipes that can be made in {totalMins} or less. (Convert "1 hour, 15 minutes" to 75 before passing in.)
+        in: query
+        name: totalMins
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: Optional. If supplied, will restrict results to recipes that can be made with {maxIngredients} ingredients or less
+        in: query
+        name: maxIngredients
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: Optional. If supplied, will restrict results to recipes that have at least {minIngredients}
+        in: query
+        name: minIngredients
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to vegetarian (Powersearch-capable plan required)
+        in: query
+        name: vtn
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to vegan (Powersearch-capable plan required)
+        in: query
+        name: vgn
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to contains-cheese (Powersearch-capable plan required)
+        in: query
+        name: chs
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to gluten-free (Powersearch-capable plan required)
+        in: query
+        name: glf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to nut-free (Powersearch-capable plan required)
+        in: query
+        name: ntf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to dairy-free (Powersearch-capable plan required)
+        in: query
+        name: dyf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to seafood-free (Powersearch-capable plan required)
+        in: query
+        name: sff
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to shellfish-free (Powersearch-capable plan required)
+        in: query
+        name: slf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to tree-nut free (Powersearch-capable plan required)
+        in: query
+        name: tnf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to white-meat free (Powersearch-capable plan required)
+        in: query
+        name: wmf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, limit to red-meat free (Powersearch-capable plan required)
+        in: query
+        name: rmf
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: when set to 1, recipe contains pasta, set to 0 means contains no pasta (Powersearch-capable plan required)
+        in: query
+        name: cps
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: optional. When set to 1, this will limit search results to "best of" recipes as determined by various internal editorial and programmatic algorithms. For the most comprehensive results, don't include this parameter.
+        in: query
+        name: champion
+        required: false
+        schema:
+          format: int32
+          type: integer
+      - description: optional, default is false. When set to true, BigOven will attempt to apply synonyms in search (e.g., excluding pork will also exclude bacon)
+        in: query
+        name: synonyms
+        required: false
+        schema:
+          type: boolean
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/BigOven.Model.API2.RecipeSearchResult'
+          description: OK
+      summary: "Search for recipes. There are many parameters that you can apply. Starting with the most common, use title_kw to search within a title.\r\n            Use any_kw to search across the entire recipe.\r\n            If you'd like to limit by course, set the parameter \"include_primarycat\" to one of (appetizers,bread,breakfast,dessert,drinks,maindish,salad,sidedish,soup,marinades,other).\r\n            If you'd like to exclude a category, set exclude_cat to one or more (comma-separated) list of those categories to exclude.\r\n            If you'd like to include a category, set include_cat to one or more (comma-separated) of those categories to include.\r\n            To explicitly include an ingredient in your search, set the parameter \"include_ing\" to a CSV of up to three ingredients, e.g.:include_ing=mustard,chicken,beef%20tips\r\n            To explicitly exclude an ingredient in your search, set the parameter \"exclude_ing\" to a CSV of up to three ingredients.\r\n            All searches must contain the paging parameters pg and rpp, which are integers, and represent the page number (1-based) and results per page (rpp).\r\n            So, to get the third page of a result set paged with 25 recipes per page, you'd pass pg=3&amp;rpp=25\r\n            If you'd like to target searches to just a single target user's recipes, set userId=the target userId (number).\r\n            Or, you can set username=theirusername\r\n            vtn;vgn;chs;glf;ntf;dyf;sff;slf;tnf;wmf;rmf;cps\r\n            cuisine\r\n            photos\r\n            filter=added,try,favorites,myrecipes\\r\\n\\r\\n\r\n            folder=FolderNameCaseSensitive\r\n            coll=ID of Collection"
+      tags:
+      - Recipe
+  /recipes/{id}:
+    get:
+      deprecated: false
+      operationId: Recipe_GetV2
+      parameters:
+      - description: The Recipe ID to retrieve
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int32
+          type: integer
+      - description: The prefetch.
+        in: query
+        name: prefetch
+        required: false
+        schema:
+          type: boolean
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.Recipes.RecipeResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.Recipes.RecipeResponse'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.Recipes.RecipeResponse'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.Recipes.RecipeResponse'
+          description: OK
+      summary: Same as GET recipe but also includes the recipe videos (if any)
+      tags:
+      - Recipe
+components:
+  schemas:
+    BigOven.Model.API.IngredientInfo:
+      properties:
+        Department:
+          type: string
+        MasterIngredientID:
+          format: int32
+          type: integer
+        Name:
+          type: string
+        UsuallyOnHand:
+          type: boolean
+      type: object
+    API2.Models.Recipes.RecipeVideoResponse:
+      description: DTO used to return the details of a recipe video
+      properties:
+        InsertedOn:
+          description: Gets or sets the date the video was added.
+          format: date-time
+          type: string
+        IsPrimaryVideo:
+          description: Gets or sets a value indicating whether the video is the primary video of the recipe.
+          type: boolean
+        MediaId:
+          description: Gets or sets the JWPlayer media id.
+          type: string
+        VidId:
+          description: Gets or sets the video id.
+          format: int32
+          type: integer
+      type: object
+    BigOven.Model.API2.UserInfoTinyx:
+      properties:
+        FirstName:
+          type: string
+        LastName:
+          type: string
+        PhotoUrl:
+          type: string
+        UserID:
+          format: int32
+          type: integer
+        UserName:
+          type: string
+      type: object
+    BigOven.Model.API2.RecipeInfox:
+      properties:
+        Category:
+          type: string
+        CreationDate:
+          format: date-time
+          type: string
+        Cuisine:
+          type: string
+        HasVideos:
+          type: boolean
+        IsBookmark:
+          type: boolean
+        IsPrivate:
+          type: boolean
+        IsRecipeScan:
+          type: boolean
+        Microcategory:
+          type: string
+        PhotoUrl:
+          type: string
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API2.UserInfoTinyx'
+        RecipeID:
+          format: int32
+          type: integer
+        ReviewCount:
+          format: int32
+          type: integer
+        Servings:
+          format: double
+          type: number
+        StarRating:
+          format: double
+          type: number
+        Subcategory:
+          type: string
+        Title:
+          type: string
+        TotalTries:
+          format: int32
+          type: integer
+        WebURL:
+          type: string
+      type: object
+    API2.Models.Recipes.RecipeResponse:
+      description: DTO used to return a recipe with videos
+      properties:
+        ActiveMinutes:
+          format: int32
+          type: integer
+        AdTags:
+          type: string
+        AdminBoost:
+          format: int32
+          type: integer
+        AllCategoriesText:
+          type: string
+        BookmarkImageURL:
+          type: string
+        BookmarkSiteLogo:
+          type: string
+        BookmarkURL:
+          type: string
+        Category:
+          type: string
+        Collection:
+          type: string
+        CollectionID:
+          format: int32
+          type: integer
+        CreationDate:
+          format: date-time
+          type: string
+        Cuisine:
+          type: string
+        Description:
+          type: string
+        FavoriteCount:
+          format: int32
+          type: integer
+        ImageSquares:
+          items:
+            format: int32
+            type: integer
+          type: array
+        ImageURL:
+          type: string
+        Ingredients:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API.Ingredient'
+          type: array
+        IngredientsTextBlock:
+          type: string
+        Instructions:
+          type: string
+        IsBookmark:
+          type: boolean
+        IsPrivate:
+          type: boolean
+        IsRecipeScan:
+          type: boolean
+        IsSponsored:
+          type: boolean
+        LastModified:
+          format: date-time
+          type: string
+        MaxImageSquare:
+          format: int32
+          type: integer
+        MedalCount:
+          format: int32
+          type: integer
+        MenuCount:
+          format: int32
+          type: integer
+        Microcategory:
+          type: string
+        NotesCount:
+          format: int32
+          type: integer
+        NutritionInfo:
+          $ref: '#/components/schemas/BigOven.Model.API.NutritionInfo'
+        PhotoUrl:
+          type: string
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API.UserInfo'
+        PrimaryIngredient:
+          type: string
+        RecipeID:
+          format: int32
+          type: integer
+        ReviewCount:
+          format: int32
+          type: integer
+        StarRating:
+          format: double
+          type: number
+        Steps:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.InstructionStep'
+          type: array
+        Subcategory:
+          type: string
+        Title:
+          type: string
+        TotalMinutes:
+          format: int32
+          type: integer
+        VariantOfRecipeID:
+          format: int32
+          type: integer
+        VerifiedByClass:
+          type: string
+        VerifiedDateTime:
+          format: date-time
+          type: string
+        Videos:
+          description: Gets or sets the recipe videos, i.e. a list of type {API2.Models.Recipes.RecipeVideoResponse}
+          items:
+            $ref: '#/components/schemas/API2.Models.Recipes.RecipeVideoResponse'
+          type: array
+        WebURL:
+          type: string
+        YieldNumber:
+          format: double
+          type: number
+        YieldUnit:
+          type: string
+      type: object
+    BigOven.Model.API.NutritionInfo:
+      properties:
+        CaloriesFromFat:
+          format: double
+          type: number
+        Cholesterol:
+          format: double
+          type: number
+        CholesterolPct:
+          format: double
+          type: number
+        DietaryFiber:
+          format: double
+          type: number
+        DietaryFiberPct:
+          format: double
+          type: number
+        MonoFat:
+          format: double
+          type: number
+        PolyFat:
+          format: double
+          type: number
+        Potassium:
+          format: double
+          type: number
+        PotassiumPct:
+          format: double
+          type: number
+        Protein:
+          format: double
+          type: number
+        ProteinPct:
+          format: double
+          type: number
+        SatFat:
+          format: double
+          type: number
+        SatFatPct:
+          format: double
+          type: number
+        SingularYieldUnit:
+          type: string
+        Sodium:
+          format: double
+          type: number
+        SodiumPct:
+          format: double
+          type: number
+        Sugar:
+          format: double
+          type: number
+        TotalCalories:
+          format: double
+          type: number
+        TotalCarbs:
+          format: double
+          type: number
+        TotalCarbsPct:
+          format: double
+          type: number
+        TotalFat:
+          format: double
+          type: number
+        TotalFatPct:
+          format: double
+          type: number
+        TransFat:
+          format: double
+          type: number
+      type: object
+    API2.Models.Recipes.FeedbackDTO:
+      properties:
+        feedback:
+          type: string
+      type: object
+    BigOven.Model.RecipeInfoReviewTuple2:
+      properties:
+        RecipeInfo:
+          $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
+        Review:
+          $ref: '#/components/schemas/BigOven.Model.API.Review'
+      type: object
+    BigOven.Model.API.UserInfo:
+      properties:
+        FirstName:
+          type: string
+        ImageUrl48:
+          type: string
+        IsKitchenHelper:
+          type: boolean
+        IsPremium:
+          type: boolean
+        IsUsingRecurly:
+          type: boolean
+        LastName:
+          type: string
+        MemberSince:
+          format: date-time
+          type: string
+        PhotoUrl:
+          type: string
+        PhotoUrl48:
+          readOnly: true
+          type: string
+        PremiumExpiryDate:
+          format: date-time
+          type: string
+        UserID:
+          format: int32
+          type: integer
+        UserName:
+          type: string
+        WebUrl:
+          readOnly: true
+          type: string
+      type: object
+    BigOven.Model.RecipeInfoDateTuple2:
+      properties:
+        date:
+          format: date-time
+          type: string
+        recipeInfo:
+          $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
+      type: object
+    BigOven.Model.API2.RecipeSearchResult:
+      properties:
+        ResultCount:
+          format: int32
+          type: integer
+        Results:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
+          type: array
+        SpellSuggest:
+          type: string
+      type: object
+    BigOven.Model.API.Review:
+      properties:
+        ActiveMinutes:
+          format: int32
+          type: integer
+        Comment:
+          type: string
+        CreationDate:
+          format: date-time
+          type: string
+        FeaturedReply:
+          $ref: '#/components/schemas/BigOven.Model.API.Reply'
+        GUID:
+          type: string
+        ID:
+          type: string
+        LastModified:
+          format: date-time
+          type: string
+        ParentID:
+          format: int64
+          type: integer
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API.UserInfo'
+        Replies:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API.Review'
+          type: array
+        ReplyCount:
+          format: int32
+          type: integer
+        ReviewID:
+          format: int64
+          type: integer
+        StarRating:
+          format: double
+          type: number
+        TotalMinutes:
+          format: int32
+          type: integer
+      type: object
+    BigOven.Result:
+      properties:
+        Data:
+          $ref: '#/components/schemas/System.Object'
+        Message:
+          type: string
+        StatusCode:
+          format: int32
+          type: integer
+      type: object
+    BigOven.Model.RecipeCategory:
+      properties:
+        Category:
+          type: string
+        DefaultActiveMinutes:
+          format: int32
+          type: integer
+        DefaultTotalMinutes:
+          format: int32
+          type: integer
+        ID:
+          format: int32
+          type: integer
+        ParentID:
+          format: int32
+          type: integer
+        PrimaryImage:
+          type: string
+        ShortDescription:
+          type: string
+      type: object
+    BigOven.Model.API.Reply:
+      properties:
+        Comment:
+          type: string
+        CreationDate:
+          format: date-time
+          type: string
+        ID:
+          type: string
+        LastModified:
+          format: date-time
+          type: string
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API.UserInfoTiny'
+        ReviewID:
+          type: string
+      type: object
+    API2.Result:
+      properties:
+        Data:
+          $ref: '#/components/schemas/System.Object'
+        Message:
+          type: string
+        StatusCode:
+          format: int32
+          type: integer
+      type: object
+    System.Object:
+      properties: {}
+      type: object
+    BigOven.Model.API.Recipe:
+      properties:
+        ActiveMinutes:
+          format: int32
+          type: integer
+        AdTags:
+          type: string
+        AdminBoost:
+          format: int32
+          type: integer
+        AllCategoriesText:
+          type: string
+        BookmarkImageURL:
+          type: string
+        BookmarkSiteLogo:
+          type: string
+        BookmarkURL:
+          type: string
+        Category:
+          type: string
+        Collection:
+          type: string
+        CollectionID:
+          format: int32
+          type: integer
+        CreationDate:
+          format: date-time
+          type: string
+        Cuisine:
+          type: string
+        Description:
+          type: string
+        FavoriteCount:
+          format: int32
+          type: integer
+        HeroPhotoUrl:
+          type: string
+        ImageSquares:
+          items:
+            format: int32
+            type: integer
+          type: array
+        ImageURL:
+          type: string
+        Ingredients:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API.Ingredient'
+          type: array
+        IngredientsTextBlock:
+          type: string
+        Instructions:
+          type: string
+        IsBookmark:
+          type: boolean
+        IsPrivate:
+          type: boolean
+        IsRecipeScan:
+          type: boolean
+        IsSponsored:
+          type: boolean
+        LastModified:
+          format: date-time
+          type: string
+        MaxImageSquare:
+          format: int32
+          type: integer
+        MedalCount:
+          format: int32
+          type: integer
+        MenuCount:
+          format: int32
+          type: integer
+        Microcategory:
+          type: string
+        NotesCount:
+          format: int32
+          type: integer
+        NutritionInfo:
+          $ref: '#/components/schemas/BigOven.Model.API.NutritionInfo'
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API.UserInfo'
+        PrimaryIngredient:
+          type: string
+        RecipeID:
+          format: int32
+          type: integer
+        ReviewCount:
+          format: int32
+          type: integer
+        StarRating:
+          format: double
+          type: number
+        Subcategory:
+          type: string
+        Title:
+          type: string
+        TotalMinutes:
+          format: int32
+          type: integer
+        VariantOfRecipeID:
+          format: int32
+          type: integer
+        VerifiedByClass:
+          type: string
+        VerifiedDateTime:
+          format: date-time
+          type: string
+        WebURL:
+          type: string
+        YieldNumber:
+          format: double
+          type: number
+        YieldUnit:
+          type: string
+      type: object
+    BigOven.Model.API.UserInfoTiny:
+      properties:
+        FirstName:
+          type: string
+        LastName:
+          type: string
+        PhotoUrl:
+          type: string
+        UserID:
+          format: int32
+          type: integer
+        UserName:
+          type: string
+      type: object
+    BigOven.Model.RecipeInfoTiny:
+      properties:
+        ImageURL:
+          type: string
+        QualityScore:
+          format: int32
+          type: integer
+        RecipeID:
+          format: int32
+          type: integer
+        Servings:
+          format: double
+          type: number
+        Title:
+          type: string
+      type: object
+    BigOven.Model.InstructionStep:
+      properties:
+        EndGantt:
+          format: int32
+          type: integer
+        StartGantt:
+          format: int32
+          type: integer
+        Text:
+          type: string
+      type: object
+    BigOven.Model.API.Ingredient:
+      properties:
+        DisplayIndex:
+          format: int32
+          type: integer
+        DisplayQuantity:
+          type: string
+        HTMLName:
+          type: string
+        IngredientID:
+          format: int64
+          type: integer
+        IngredientInfo:
+          $ref: '#/components/schemas/BigOven.Model.API.IngredientInfo'
+        IsHeading:
+          type: boolean
+        IsLinked:
+          type: boolean
+        MetricDisplayQuantity:
+          type: string
+        MetricQuantity:
+          format: double
+          type: number
+        MetricUnit:
+          type: string
+        Name:
+          type: string
+        PreparationNotes:
+          type: string
+        Quantity:
+          format: double
+          type: number
+        Unit:
+          type: string
+      type: object
+    BigOven.Model.API2.Recipe:
+      properties:
+        ActiveMinutes:
+          format: int32
+          type: integer
+        AdTags:
+          type: string
+        AdminBoost:
+          format: int32
+          type: integer
+        AllCategoriesText:
+          type: string
+        BookmarkImageURL:
+          type: string
+        BookmarkSiteLogo:
+          type: string
+        BookmarkURL:
+          type: string
+        Category:
+          type: string
+        Collection:
+          type: string
+        CollectionID:
+          format: int32
+          type: integer
+        CreationDate:
+          format: date-time
+          type: string
+        Cuisine:
+          type: string
+        Description:
+          type: string
+        FavoriteCount:
+          format: int32
+          type: integer
+        ImageSquares:
+          items:
+            format: int32
+            type: integer
+          type: array
+        ImageURL:
+          type: string
+        Ingredients:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API.Ingredient'
+          type: array
+        IngredientsTextBlock:
+          type: string
+        Instructions:
+          type: string
+        IsBookmark:
+          type: boolean
+        IsPrivate:
+          type: boolean
+        IsRecipeScan:
+          type: boolean
+        IsSponsored:
+          type: boolean
+        LastModified:
+          format: date-time
+          type: string
+        MaxImageSquare:
+          format: int32
+          type: integer
+        MedalCount:
+          format: int32
+          type: integer
+        MenuCount:
+          format: int32
+          type: integer
+        Microcategory:
+          type: string
+        NotesCount:
+          format: int32
+          type: integer
+        NutritionInfo:
+          $ref: '#/components/schemas/BigOven.Model.API.NutritionInfo'
+        PhotoUrl:
+          type: string
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API.UserInfo'
+        PrimaryIngredient:
+          type: string
+        RecipeID:
+          format: int32
+          type: integer
+        ReviewCount:
+          format: int32
+          type: integer
+        StarRating:
+          format: double
+          type: number
+        Steps:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.InstructionStep'
+          type: array
+        Subcategory:
+          type: string
+        Title:
+          type: string
+        TotalMinutes:
+          format: int32
+          type: integer
+        VariantOfRecipeID:
+          format: int32
+          type: integer
+        VerifiedByClass:
+          type: string
+        VerifiedDateTime:
+          format: date-time
+          type: string
+        WebURL:
+          type: string
+        YieldNumber:
+          format: double
+          type: number
+        YieldUnit:
+          type: string
+      type: object
+  requestBodies:
+    BigOven.Model.API.Recipe:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+        application/x-www-form-urlencoded:
+          schema:
+            $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+        text/json:
+          schema:
+            $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+        text/xml:
+          schema:
+            $ref: '#/components/schemas/BigOven.Model.API.Recipe'
+      required: true
+  securitySchemes:
+    api_key:
+      description: 'Pass your api_key in the header (recommended) or as a URL parameter. For the URL parameter, use api_key. For the header, send it as a header value for: X-BigOven-API-Key'
+      in: header
+      name: X-BigOven-API-Key
+      type: apiKey
+    basic:
+      description: Basic HTTP Authentication is used for those endpoint calls where you want to act as a BigOven user -- e.g., to get the list of favorites of a signed-in user, or add items to their grocery list.
+      scheme: basic
+      type: http
+externalDocs:
+  url: http://api2.bigoven.com/web/documentation

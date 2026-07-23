@@ -1,0 +1,422 @@
+openapi: 3.0.0
+info:
+  description: "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](https://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](https://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](https://api2.bigoven.com)."
+  title: 1,000,000+ Recipe and Grocery List API (v2) Collection Me API
+  version: partner
+  x-apiClientRegistration:
+    url: http://api2.bigoven.com/web/console
+  x-logo:
+    url: https://twitter.com/bigoven/profile_image?size=original
+  x-origin:
+  - format: openapi
+    url: http://api2.bigoven.com/swagger/docs/partner
+    version: '3.0'
+  x-providerName: bigoven.com
+servers:
+- url: https://api2.bigoven.com
+tags:
+- name: Me
+paths:
+  /me:
+    get:
+      deprecated: false
+      operationId: Me_Index
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+          description: OK
+      summary: Indexes this instance.
+      tags:
+      - Me
+    put:
+      deprecated: false
+      operationId: Me_PutMe
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/API2.Models.BigOvenUser'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/API2.Models.BigOvenUser'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Models.BigOvenUser'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/API2.Models.BigOvenUser'
+          text/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Models.BigOvenUser'
+        description: The req.
+        required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+          description: OK
+      summary: Puts me.
+      tags:
+      - Me
+  /me/personal:
+    put:
+      deprecated: false
+      operationId: Me_PutMePersonal
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Personal'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Personal'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Personal'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Personal'
+          text/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Personal'
+        description: The req.
+        required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+          description: OK
+      summary: Puts me personal.
+      tags:
+      - Me
+  /me/preferences:
+    put:
+      deprecated: false
+      operationId: Me_PutMePreferences
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Preference'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Preference'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Preference'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Preference'
+          text/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Preference'
+        description: The req.
+        required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+          description: OK
+      summary: Puts me preferences.
+      tags:
+      - Me
+  /me/preferences/options:
+    get:
+      deprecated: false
+      operationId: Me_GetOptions
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API2.Controllers.WebAPI.MeController.PreferenceOptions'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Controllers.WebAPI.MeController.PreferenceOptions'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/API2.Controllers.WebAPI.MeController.PreferenceOptions'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Controllers.WebAPI.MeController.PreferenceOptions'
+          description: OK
+      summary: Gets the options.
+      tags:
+      - Me
+  /me/profile:
+    put:
+      deprecated: false
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Profile'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Profile'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Profile'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Profile'
+          text/xml:
+            schema:
+              $ref: '#/components/schemas/API2.Models.Profile'
+        description: The req.
+        required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+          description: OK
+      summary: Puts me.
+      tags:
+      - Me
+  /me/skinny:
+    get:
+      deprecated: false
+      operationId: Me_Skinny
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/API2.Models.BigOvenUser'
+          description: OK
+      summary: Skinnies this instance.
+      tags:
+      - Me
+components:
+  schemas:
+    API2.Models.Preference:
+      description: ''
+      properties:
+        EatingStyle:
+          description: ''
+          type: string
+      type: object
+    API2.Models.Counts:
+      description: ''
+      properties:
+        AddedCount:
+          description: ''
+          format: int64
+          type: integer
+        FollowersCount:
+          description: ''
+          format: int64
+          type: integer
+        FollowingCount:
+          description: ''
+          format: int64
+          type: integer
+        PrivateRecipeCount:
+          description: ''
+          format: int64
+          type: integer
+        PublicRecipeCount:
+          description: ''
+          format: int64
+          type: integer
+        TotalRecipes:
+          description: ''
+          format: int64
+          type: integer
+      type: object
+    API2.Models.Personal:
+      description: Personal level info -- email, location, etc.
+      properties:
+        Email:
+          description: ''
+          type: string
+        Location:
+          $ref: '#/components/schemas/API2.Models.Location'
+      type: object
+    API2.Models.Location:
+      description: ''
+      properties:
+        City:
+          description: ''
+          type: string
+        Country:
+          description: ''
+          type: string
+        DMA:
+          description: ''
+          format: int32
+          type: integer
+      type: object
+    API2.Controllers.WebAPI.MeController.PreferenceOptions:
+      description: ''
+      properties:
+        EatingStyle:
+          $ref: '#/components/schemas/API2.Controllers.WebAPI.MeController.EatingStyle'
+      type: object
+    API2.Controllers.WebAPI.MeController.EatingStyle:
+      description: ''
+      properties:
+        Options:
+          description: Gets or sets the options.
+          items:
+            $ref: '#/components/schemas/API2.Controllers.WebAPI.MeController.Option'
+          type: array
+      type: object
+    API2.Models.Profile:
+      description: ''
+      properties:
+        AboutMe:
+          description: ''
+          type: string
+        BackgroundUrl:
+          description: ''
+          type: string
+        Counts:
+          $ref: '#/components/schemas/API2.Models.Counts'
+        FirstName:
+          description: ''
+          type: string
+        FullName:
+          description: ''
+          type: string
+        HomeUrl:
+          description: ''
+          type: string
+        LastName:
+          description: ''
+          type: string
+        PhotoUrl:
+          description: ''
+          type: string
+        UserID:
+          description: ''
+          format: int64
+          type: integer
+        UserName:
+          description: ''
+          type: string
+      type: object
+    API2.Models.BigOvenUser:
+      description: An API2 wrapper object for a user
+      properties:
+        Accounting:
+          $ref: '#/components/schemas/API2.Models.Accounting'
+        BOAuthToken:
+          description: The user-specific authentication token
+          type: string
+        LastChangeLogID:
+          description: Last change log
+          type: string
+        Personal:
+          $ref: '#/components/schemas/API2.Models.Personal'
+        Preferences:
+          $ref: '#/components/schemas/API2.Models.Preference'
+        Profile:
+          $ref: '#/components/schemas/API2.Models.Profile'
+      type: object
+    API2.Models.Accounting:
+      description: ''
+      properties:
+        CreditBalance:
+          description: ''
+          format: int32
+          type: integer
+        MemberSince:
+          description: ''
+          format: date-time
+          type: string
+        PremiumExpiryDate:
+          description: ''
+          format: date-time
+          type: string
+        UserLevel:
+          description: ''
+          type: string
+      type: object
+    API2.Controllers.WebAPI.MeController.Option:
+      description: ''
+      properties:
+        Description:
+          description: Gets or sets the description.
+          type: string
+        Key:
+          description: Gets or sets the key.
+          type: string
+      type: object
+  securitySchemes:
+    api_key:
+      description: 'Pass your api_key in the header (recommended) or as a URL parameter. For the URL parameter, use api_key. For the header, send it as a header value for: X-BigOven-API-Key'
+      in: header
+      name: X-BigOven-API-Key
+      type: apiKey
+    basic:
+      description: Basic HTTP Authentication is used for those endpoint calls where you want to act as a BigOven user -- e.g., to get the list of favorites of a signed-in user, or add items to their grocery list.
+      scheme: basic
+      type: http
+externalDocs:
+  url: http://api2.bigoven.com/web/documentation
