@@ -1,7 +1,20 @@
 aid: bigoven
 name: BigOven
 description: BigOven is a recipe and meal planning platform providing access to over 1,000,000 recipes via a REST API. Developers can search recipes, retrieve nutritional information, manage cloud-based grocery lists, and build diet and meal planning features. The API is offered by Aisle Ahead, Inc. and supports commercial food, nutrition, diet, and grocery applications.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: paid
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Paid · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bigoven.png
 url: https://raw.githubusercontent.com/api-evangelist/bigoven/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -14,30 +27,132 @@ tags:
   - Food
   - Cooking
 apis:
-  - aid: bigoven:bigoven-api
-    name: BigOven Build API
-    description: REST API providing access to 1,000,000+ recipes, grocery list management, nutritional data, and meal planning features. Returns JSON responses and requires HTTPS and an API key.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://api2.bigoven.com/web/documentation
-    baseURL: https://api2.bigoven.com
-    tags:
-      - Recipes
-      - Nutrition
-      - Grocery Lists
-      - Meal Planning
-    properties:
-      - type: Documentation
-        url: https://api2.bigoven.com/web/documentation
-      - type: OpenAPI
-        url: https://api2.bigoven.com/swagger/ui/index
-      - type: OpenAPI
-        url: openapi/bigoven-openapi.yaml
-      - type: Authentication
-        url: https://api2.bigoven.com/web/documentation/authentication
-      - type: Pricing
-        url: https://api2.bigoven.com/web/documentation/feestructure
-      - type: RateLimits
-        url: https://api2.bigoven.com/web/documentation/usage-throttling
+- aid: bigoven:bigoven-collection-api
+  name: BigOven Collection API
+  description: The Collection API from BigOven — 3 operation(s) for collection.
+  humanURL: https://api2.bigoven.com/web/documentation
+  baseURL: https://api2.bigoven.com
+  tags:
+  - Collection
+  properties:
+  - type: OpenAPI
+    url: openapi/bigoven-collection-api-openapi.yml
+  - type: Documentation
+    url: https://api2.bigoven.com/web/documentation
+  - type: Authentication
+    url: https://api2.bigoven.com/web/documentation/authentication
+  - type: Pricing
+    url: https://api2.bigoven.com/web/documentation/feestructure
+  - type: RateLimits
+    url: https://api2.bigoven.com/web/documentation/usage-throttling
+- aid: bigoven:bigoven-grocerylist-api
+  name: BigOven GroceryList API
+  description: The GroceryList API from BigOven — 8 operation(s) for grocerylist.
+  humanURL: https://api2.bigoven.com/web/documentation
+  baseURL: https://api2.bigoven.com
+  tags:
+  - GroceryList
+  properties:
+  - type: OpenAPI
+    url: openapi/bigoven-grocerylist-api-openapi.yml
+  - type: Documentation
+    url: https://api2.bigoven.com/web/documentation
+  - type: Authentication
+    url: https://api2.bigoven.com/web/documentation/authentication
+  - type: Pricing
+    url: https://api2.bigoven.com/web/documentation/feestructure
+  - type: RateLimits
+    url: https://api2.bigoven.com/web/documentation/usage-throttling
+- aid: bigoven:bigoven-images-api
+  name: BigOven Images API
+  description: The Images API from BigOven — 6 operation(s) for images.
+  humanURL: https://api2.bigoven.com/web/documentation
+  baseURL: https://api2.bigoven.com
+  tags:
+  - Images
+  properties:
+  - type: OpenAPI
+    url: openapi/bigoven-images-api-openapi.yml
+  - type: Documentation
+    url: https://api2.bigoven.com/web/documentation
+  - type: Authentication
+    url: https://api2.bigoven.com/web/documentation/authentication
+  - type: Pricing
+    url: https://api2.bigoven.com/web/documentation/feestructure
+  - type: RateLimits
+    url: https://api2.bigoven.com/web/documentation/usage-throttling
+- aid: bigoven:bigoven-me-api
+  name: BigOven Me API
+  description: The Me API from BigOven — 6 operation(s) for me.
+  humanURL: https://api2.bigoven.com/web/documentation
+  baseURL: https://api2.bigoven.com
+  tags:
+  - Me
+  properties:
+  - type: OpenAPI
+    url: openapi/bigoven-me-api-openapi.yml
+  - type: Documentation
+    url: https://api2.bigoven.com/web/documentation
+  - type: Authentication
+    url: https://api2.bigoven.com/web/documentation/authentication
+  - type: Pricing
+    url: https://api2.bigoven.com/web/documentation/feestructure
+  - type: RateLimits
+    url: https://api2.bigoven.com/web/documentation/usage-throttling
+- aid: bigoven:bigoven-note-api
+  name: BigOven Note API
+  description: The Note API from BigOven — 3 operation(s) for note.
+  humanURL: https://api2.bigoven.com/web/documentation
+  baseURL: https://api2.bigoven.com
+  tags:
+  - Note
+  properties:
+  - type: OpenAPI
+    url: openapi/bigoven-note-api-openapi.yml
+  - type: Documentation
+    url: https://api2.bigoven.com/web/documentation
+  - type: Authentication
+    url: https://api2.bigoven.com/web/documentation/authentication
+  - type: Pricing
+    url: https://api2.bigoven.com/web/documentation/feestructure
+  - type: RateLimits
+    url: https://api2.bigoven.com/web/documentation/usage-throttling
+- aid: bigoven:bigoven-recipe-api
+  name: BigOven Recipe API
+  description: The Recipe API from BigOven — 21 operation(s) for recipe.
+  humanURL: https://api2.bigoven.com/web/documentation
+  baseURL: https://api2.bigoven.com
+  tags:
+  - Recipe
+  properties:
+  - type: OpenAPI
+    url: openapi/bigoven-recipe-api-openapi.yml
+  - type: Documentation
+    url: https://api2.bigoven.com/web/documentation
+  - type: Authentication
+    url: https://api2.bigoven.com/web/documentation/authentication
+  - type: Pricing
+    url: https://api2.bigoven.com/web/documentation/feestructure
+  - type: RateLimits
+    url: https://api2.bigoven.com/web/documentation/usage-throttling
+- aid: bigoven:bigoven-review-api
+  name: BigOven Review API
+  description: The Review API from BigOven — 6 operation(s) for review.
+  humanURL: https://api2.bigoven.com/web/documentation
+  baseURL: https://api2.bigoven.com
+  tags:
+  - Review
+  properties:
+  - type: OpenAPI
+    url: openapi/bigoven-review-api-openapi.yml
+  - type: Documentation
+    url: https://api2.bigoven.com/web/documentation
+  - type: Authentication
+    url: https://api2.bigoven.com/web/documentation/authentication
+  - type: Pricing
+    url: https://api2.bigoven.com/web/documentation/feestructure
+  - type: RateLimits
+    url: https://api2.bigoven.com/web/documentation/usage-throttling
 common:
   - type: AgenticAccess
     url: agentic-access/bigoven-agentic-access.yml
