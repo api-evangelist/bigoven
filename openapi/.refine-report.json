@@ -1,0 +1,26 @@
+{
+  "provider": "bigoven",
+  "sources": [
+    "bigoven-collection-api-openapi.yml",
+    "bigoven-grocerylist-api-openapi.yml",
+    "bigoven-images-api-openapi.yml",
+    "bigoven-me-api-openapi.yml",
+    "bigoven-note-api-openapi.yml",
+    "bigoven-recipe-api-openapi.yml",
+    "bigoven-review-api-openapi.yml"
+  ],
+  "outputs": [
+    "bigoven-collection-api-openapi.yml",
+    "bigoven-grocerylist-api-openapi.yml",
+    "bigoven-images-api-openapi.yml",
+    "bigoven-me-api-openapi.yml",
+    "bigoven-note-api-openapi.yml",
+    "bigoven-recipe-api-openapi.yml",
+    "bigoven-review-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
