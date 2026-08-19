@@ -1,0 +1,149 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "1,000,000+ Recipe and Grocery List API (v2) Collection Note API",
+    "version": "3.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Note",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "HTTP POST a new note into the system.",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api2.bigoven.com/recipe/:recipeId/note",
+            "params": [
+              {
+                "name": "recipeId",
+                "value": "",
+                "type": "path",
+                "description": "recipeId (int)"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "HTTP POST a new note into the system."
+        },
+        {
+          "info": {
+            "name": "Get a given note. Make sure you're passing authentication information in the header for the user who owns the note.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api2.bigoven.com/recipe/:recipeId/note/:noteId",
+            "params": [
+              {
+                "name": "recipeId",
+                "value": "",
+                "type": "path",
+                "description": "recipe identifier (integer)"
+              },
+              {
+                "name": "noteId",
+                "value": "",
+                "type": "path",
+                "description": "The note ID (note -- it's not the RecipeID)"
+              }
+            ]
+          },
+          "docs": "Get a given note. Make sure you're passing authentication information in the header for the user who owns the note."
+        },
+        {
+          "info": {
+            "name": "HTTP PUT (update) a Recipe note (RecipeNote).",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api2.bigoven.com/recipe/:recipeId/note/:noteId",
+            "params": [
+              {
+                "name": "recipeId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "noteId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "HTTP PUT (update) a Recipe note (RecipeNote)."
+        },
+        {
+          "info": {
+            "name": "Delete a review\r\n                do a DELETE Http request of /note/{ID}",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api2.bigoven.com/recipe/:recipeId/note/:noteId",
+            "params": [
+              {
+                "name": "recipeId",
+                "value": "",
+                "type": "path",
+                "description": "recipeId (int)"
+              },
+              {
+                "name": "noteId",
+                "value": "",
+                "type": "path",
+                "description": "noteId (int)"
+              }
+            ]
+          },
+          "docs": "Delete a review\r\n                do a DELETE Http request of /note/{ID}"
+        },
+        {
+          "info": {
+            "name": "recipe/100/notes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api2.bigoven.com/recipe/:recipeId/notes",
+            "params": [
+              {
+                "name": "recipeId",
+                "value": "",
+                "type": "path",
+                "description": "recipeId (int)"
+              },
+              {
+                "name": "pg",
+                "value": "",
+                "type": "query",
+                "description": "page (int, starting from 1)"
+              },
+              {
+                "name": "rpp",
+                "value": "",
+                "type": "query",
+                "description": "recipeId"
+              }
+            ]
+          },
+          "docs": "recipe/100/notes"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

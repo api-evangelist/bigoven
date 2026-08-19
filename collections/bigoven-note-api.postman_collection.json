@@ -1,0 +1,863 @@
+{
+  "item": [
+    {
+      "id": "8bf7d2ed-3c5c-4464-969e-6b91b8207cdf",
+      "name": "Note",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d1c46c51-64b9-4c2b-ad7e-7f8d9255d03f",
+          "name": "HTTP POST a new note into the system.",
+          "request": {
+            "name": "HTTP POST a new note into the system.",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":recipeId",
+                "note"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "recipeId",
+                  "description": "(Required) recipeId (int)"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "CreationDate",
+                  "value": "<dateTime>",
+                  "description": "Gets or sets the creation date."
+                },
+                {
+                  "disabled": false,
+                  "key": "Date",
+                  "value": "<dateTime>",
+                  "description": "Gets or sets the date."
+                },
+                {
+                  "disabled": false,
+                  "key": "DateDT",
+                  "value": "<string>",
+                  "description": "Gets or sets the date dt."
+                },
+                {
+                  "disabled": false,
+                  "key": "GUID",
+                  "value": "<string>",
+                  "description": "Gets or sets the unique identifier."
+                },
+                {
+                  "disabled": false,
+                  "key": "ID",
+                  "value": "<integer>",
+                  "description": "Gets or sets the identifier."
+                },
+                {
+                  "disabled": false,
+                  "key": "Notes",
+                  "value": "<string>",
+                  "description": "Gets or sets the notes."
+                },
+                {
+                  "disabled": false,
+                  "key": "People",
+                  "value": "<string>",
+                  "description": "Gets or sets the people."
+                },
+                {
+                  "disabled": false,
+                  "key": "RecipeID",
+                  "value": "<integer>",
+                  "description": "Gets or sets the recipe identifier."
+                },
+                {
+                  "disabled": false,
+                  "key": "UserID",
+                  "value": "<integer>",
+                  "description": "Gets or sets the user identifier."
+                },
+                {
+                  "disabled": false,
+                  "key": "Variations",
+                  "value": "<string>",
+                  "description": "Gets or sets the variations."
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "18892549-d90b-438d-b1de-2f3cbadaddcf",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "note"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "recipeId",
+                      "description": "(Required) recipeId (int)"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the creation date.",
+                        "type": "text/plain"
+                      },
+                      "key": "CreationDate",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the date.",
+                        "type": "text/plain"
+                      },
+                      "key": "Date",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the date dt.",
+                        "type": "text/plain"
+                      },
+                      "key": "DateDT",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the unique identifier.",
+                        "type": "text/plain"
+                      },
+                      "key": "GUID",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the identifier.",
+                        "type": "text/plain"
+                      },
+                      "key": "ID",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the notes.",
+                        "type": "text/plain"
+                      },
+                      "key": "Notes",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the people.",
+                        "type": "text/plain"
+                      },
+                      "key": "People",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the recipe identifier.",
+                        "type": "text/plain"
+                      },
+                      "key": "RecipeID",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the user identifier.",
+                        "type": "text/plain"
+                      },
+                      "key": "UserID",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the variations.",
+                        "type": "text/plain"
+                      },
+                      "key": "Variations",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"CreationDate\": \"1995-06-30T15:03:05.016Z\",\n  \"Date\": \"string\",\n  \"DateDT\": \"1966-08-17T13:07:00.583Z\",\n  \"GUID\": \"string\",\n  \"ID\": 7782,\n  \"Notes\": \"string\",\n  \"People\": \"string\",\n  \"RecipeID\": 793,\n  \"UserID\": 9126,\n  \"Variations\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "31401ef8-c140-4c71-8eb1-c27765f1820e",
+          "name": "Delete a review\r\n                do a DELETE Http request of /note/{ID}",
+          "request": {
+            "name": "Delete a review\r\n                do a DELETE Http request of /note/{ID}",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":recipeId",
+                "note",
+                ":noteId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "recipeId",
+                  "description": "(Required) recipeId (int)"
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "noteId",
+                  "description": "(Required) noteId (int)"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1fa84a53-3768-4bc1-a3d9-a9249070306d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "note",
+                    ":noteId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "recipeId",
+                      "description": "(Required) recipeId (int)"
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "noteId",
+                      "description": "(Required) noteId (int)"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e814896f-aa0d-4156-9ccb-633118a31e26",
+          "name": "Get a given note. Make sure you're passing authentication information in the header for the user who owns the note.",
+          "request": {
+            "name": "Get a given note. Make sure you're passing authentication information in the header for the user who owns the note.",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":recipeId",
+                "note",
+                ":noteId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "recipeId",
+                  "description": "(Required) recipe identifier (integer)"
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "noteId",
+                  "description": "(Required) The note ID (note -- it's not the RecipeID)"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c5b015d0-a785-4d58-bf24-53de91ebacd4",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "note",
+                    ":noteId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "recipeId",
+                      "description": "(Required) recipe identifier (integer)"
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "noteId",
+                      "description": "(Required) The note ID (note -- it's not the RecipeID)"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"CreationDate\": \"1995-06-30T15:03:05.016Z\",\n  \"Date\": \"string\",\n  \"DateDT\": \"1966-08-17T13:07:00.583Z\",\n  \"GUID\": \"string\",\n  \"ID\": 7782,\n  \"Notes\": \"string\",\n  \"People\": \"string\",\n  \"RecipeID\": 793,\n  \"UserID\": 9126,\n  \"Variations\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "93d8c330-5ec5-4c71-93dc-36ee84624445",
+          "name": "HTTP PUT (update) a Recipe note (RecipeNote).",
+          "request": {
+            "name": "HTTP PUT (update) a Recipe note (RecipeNote).",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":recipeId",
+                "note",
+                ":noteId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "recipeId",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "noteId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "CreationDate",
+                  "value": "<dateTime>",
+                  "description": "Gets or sets the creation date."
+                },
+                {
+                  "disabled": false,
+                  "key": "Date",
+                  "value": "<dateTime>",
+                  "description": "Gets or sets the date."
+                },
+                {
+                  "disabled": false,
+                  "key": "DateDT",
+                  "value": "<string>",
+                  "description": "Gets or sets the date dt."
+                },
+                {
+                  "disabled": false,
+                  "key": "GUID",
+                  "value": "<string>",
+                  "description": "Gets or sets the unique identifier."
+                },
+                {
+                  "disabled": false,
+                  "key": "ID",
+                  "value": "<integer>",
+                  "description": "Gets or sets the identifier."
+                },
+                {
+                  "disabled": false,
+                  "key": "Notes",
+                  "value": "<string>",
+                  "description": "Gets or sets the notes."
+                },
+                {
+                  "disabled": false,
+                  "key": "People",
+                  "value": "<string>",
+                  "description": "Gets or sets the people."
+                },
+                {
+                  "disabled": false,
+                  "key": "RecipeID",
+                  "value": "<integer>",
+                  "description": "Gets or sets the recipe identifier."
+                },
+                {
+                  "disabled": false,
+                  "key": "UserID",
+                  "value": "<integer>",
+                  "description": "Gets or sets the user identifier."
+                },
+                {
+                  "disabled": false,
+                  "key": "Variations",
+                  "value": "<string>",
+                  "description": "Gets or sets the variations."
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "c46ba5eb-b5f0-4113-b1c4-1be922675b5c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "note",
+                    ":noteId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "recipeId",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "noteId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the creation date.",
+                        "type": "text/plain"
+                      },
+                      "key": "CreationDate",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the date.",
+                        "type": "text/plain"
+                      },
+                      "key": "Date",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the date dt.",
+                        "type": "text/plain"
+                      },
+                      "key": "DateDT",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the unique identifier.",
+                        "type": "text/plain"
+                      },
+                      "key": "GUID",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the identifier.",
+                        "type": "text/plain"
+                      },
+                      "key": "ID",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the notes.",
+                        "type": "text/plain"
+                      },
+                      "key": "Notes",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the people.",
+                        "type": "text/plain"
+                      },
+                      "key": "People",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the recipe identifier.",
+                        "type": "text/plain"
+                      },
+                      "key": "RecipeID",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the user identifier.",
+                        "type": "text/plain"
+                      },
+                      "key": "UserID",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the variations.",
+                        "type": "text/plain"
+                      },
+                      "key": "Variations",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"CreationDate\": \"1995-06-30T15:03:05.016Z\",\n  \"Date\": \"string\",\n  \"DateDT\": \"1966-08-17T13:07:00.583Z\",\n  \"GUID\": \"string\",\n  \"ID\": 7782,\n  \"Notes\": \"string\",\n  \"People\": \"string\",\n  \"RecipeID\": 793,\n  \"UserID\": 9126,\n  \"Variations\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0059b57b-2828-4cd8-acd8-294bcb609cf3",
+          "name": "recipe/100/notes",
+          "request": {
+            "name": "recipe/100/notes",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":recipeId",
+                "notes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "pg",
+                  "value": "<integer>",
+                  "description": "page (int, starting from 1)"
+                },
+                {
+                  "disabled": false,
+                  "key": "rpp",
+                  "value": "<integer>",
+                  "description": "recipeId"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "recipeId",
+                  "description": "(Required) recipeId (int)"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b5d54221-ea6f-46bc-8f7b-924c4e8c96d7",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "notes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "pg",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "rpp",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "recipeId",
+                      "description": "(Required) recipeId (int)"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ResultCount\": 759,\n  \"Results\": [\n    {\n      \"CreationDate\": \"1997-03-30T08:10:10.930Z\",\n      \"Date\": \"string\",\n      \"DateDT\": \"1995-03-31T10:50:07.222Z\",\n      \"GUID\": \"string\",\n      \"ID\": 7842,\n      \"Notes\": \"string\",\n      \"People\": \"string\",\n      \"RecipeID\": 9622,\n      \"UserID\": 1219,\n      \"Variations\": \"string\"\n    },\n    {\n      \"CreationDate\": \"1946-10-08T18:57:30.372Z\",\n      \"Date\": \"string\",\n      \"DateDT\": \"1997-01-09T17:20:49.359Z\",\n      \"GUID\": \"string\",\n      \"ID\": 6982,\n      \"Notes\": \"string\",\n      \"People\": \"string\",\n      \"RecipeID\": 9224,\n      \"UserID\": 3447,\n      \"Variations\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api2.bigoven.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "d76b704c-db3d-4284-a37e-993293c95f02",
+    "name": "1,000,000+ Recipe and Grocery List API (v2) Collection Note API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](https://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](https://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](https://api2.bigoven.com).",
+      "type": "text/plain"
+    }
+  }
+}

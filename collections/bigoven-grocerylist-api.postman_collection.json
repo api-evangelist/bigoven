@@ -1,0 +1,1142 @@
+{
+  "item": [
+    {
+      "id": "d4a22631-6ff8-4106-a0d9-28b4ccfb2d0d",
+      "name": "GroceryList",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d9411762-a85e-44e5-b6b2-c2db358abbcf",
+          "name": "Delete all the items on a grocery list; faster operation than a sync with deleted items.",
+          "request": {
+            "name": "Delete all the items on a grocery list; faster operation than a sync with deleted items.",
+            "description": {},
+            "url": {
+              "path": [
+                "grocerylist"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "724d3a13-5d60-4b2e-9506-64980a7120e6",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "grocerylist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5d9e88f9-2c5c-47c2-97b9-e14dbe29cbe1",
+          "name": "Get the user's grocery list.  User is determined by Basic Authentication.",
+          "request": {
+            "name": "Get the user's grocery list.  User is determined by Basic Authentication.",
+            "description": {},
+            "url": {
+              "path": [
+                "grocerylist"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8e8860c5-7912-4071-9d62-1c6e8ce03349",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "grocerylist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Items\": [\n    {\n      \"BigOvenObject\": \"string\",\n      \"CreationDate\": \"1952-10-19T19:46:56.023Z\",\n      \"Department\": \"string\",\n      \"DisplayQuantity\": \"string\",\n      \"GUID\": \"string\",\n      \"IsChecked\": false,\n      \"ItemID\": 67,\n      \"LastModified\": \"1991-01-28T19:07:09.597Z\",\n      \"LocalStatus\": \"string\",\n      \"Name\": \"string\",\n      \"Notes\": \"string\",\n      \"RecipeID\": 5471,\n      \"ThirdPartyURL\": \"string\"\n    },\n    {\n      \"BigOvenObject\": \"string\",\n      \"CreationDate\": \"1968-08-07T01:42:11.895Z\",\n      \"Department\": \"string\",\n      \"DisplayQuantity\": \"string\",\n      \"GUID\": \"string\",\n      \"IsChecked\": false,\n      \"ItemID\": 8458,\n      \"LastModified\": \"1986-10-06T05:58:39.091Z\",\n      \"LocalStatus\": \"string\",\n      \"Name\": \"string\",\n      \"Notes\": \"string\",\n      \"RecipeID\": 8358,\n      \"ThirdPartyURL\": \"string\"\n    }\n  ],\n  \"LastModified\": \"2012-10-18T04:26:34.441Z\",\n  \"Recipes\": [\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"1998-12-02T04:53:49.414Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": true,\n      \"IsPrivate\": false,\n      \"IsRecipeScan\": false,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 3627,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 6589,\n      \"ReviewCount\": 911,\n      \"Servings\": 3790.9443539815534,\n      \"StarRating\": 298.7032925709976,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 9820,\n      \"WebURL\": \"string\"\n    },\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"2009-10-12T04:42:08.771Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": true,\n      \"IsBookmark\": true,\n      \"IsPrivate\": true,\n      \"IsRecipeScan\": true,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 8440,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 8207,\n      \"ReviewCount\": 5469,\n      \"Servings\": 8424.670591412729,\n      \"StarRating\": 7846.519147289788,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 7306,\n      \"WebURL\": \"string\"\n    }\n  ],\n  \"VersionGuid\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f8de4bca-9864-41ec-80fd-f860b829071b",
+          "name": "Clears the checked lines.",
+          "request": {
+            "name": "Clears the checked lines.",
+            "description": {},
+            "url": {
+              "path": [
+                "grocerylist",
+                "clearcheckedlines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "abc0b570-db40-4cfa-bb4f-8c2190e54366",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "grocerylist",
+                    "clearcheckedlines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Items\": [\n    {\n      \"BigOvenObject\": \"string\",\n      \"CreationDate\": \"2000-12-02T15:52:22.812Z\",\n      \"Department\": \"string\",\n      \"DisplayQuantity\": \"string\",\n      \"GUID\": \"string\",\n      \"IsChecked\": false,\n      \"ItemID\": 7855,\n      \"LastModified\": \"2012-10-21T08:06:17.138Z\",\n      \"LocalStatus\": \"string\",\n      \"Name\": \"string\",\n      \"Notes\": \"string\",\n      \"RecipeID\": 510,\n      \"ThirdPartyURL\": \"string\"\n    },\n    {\n      \"BigOvenObject\": \"string\",\n      \"CreationDate\": \"1950-12-08T20:02:40.724Z\",\n      \"Department\": \"string\",\n      \"DisplayQuantity\": \"string\",\n      \"GUID\": \"string\",\n      \"IsChecked\": true,\n      \"ItemID\": 5512,\n      \"LastModified\": \"1986-07-03T00:12:29.872Z\",\n      \"LocalStatus\": \"string\",\n      \"Name\": \"string\",\n      \"Notes\": \"string\",\n      \"RecipeID\": 1780,\n      \"ThirdPartyURL\": \"string\"\n    }\n  ],\n  \"LastModified\": \"1962-10-10T01:48:36.342Z\",\n  \"Recipes\": [\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"1983-09-06T03:24:55.606Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": true,\n      \"IsBookmark\": true,\n      \"IsPrivate\": true,\n      \"IsRecipeScan\": false,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 4743,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 1929,\n      \"ReviewCount\": 3151,\n      \"Servings\": 267.82513235098946,\n      \"StarRating\": 31.686374710223618,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 189,\n      \"WebURL\": \"string\"\n    },\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"1978-10-26T15:20:02.238Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": false,\n      \"IsPrivate\": true,\n      \"IsRecipeScan\": false,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 796,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 9144,\n      \"ReviewCount\": 5548,\n      \"Servings\": 3631.394636468743,\n      \"StarRating\": 7181.416341778763,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 6767,\n      \"WebURL\": \"string\"\n    }\n  ],\n  \"VersionGuid\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "244cc3fd-743a-4110-8b10-e17f04f4dc8c",
+          "name": "Departmentalize a list of strings -- used for ad-hoc grocery list item addition",
+          "request": {
+            "name": "Departmentalize a list of strings -- used for ad-hoc grocery list item addition",
+            "description": {},
+            "url": {
+              "path": [
+                "grocerylist",
+                "department"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "items",
+                  "value": "<string>",
+                  "description": "Gets or sets the items."
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "44781071-6216-4cea-9074-be79e2d04886",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "grocerylist",
+                    "department"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the items.",
+                        "type": "text/plain"
+                      },
+                      "key": "items",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"dept\": \"string\",\n    \"item\": \"string\"\n  },\n  {\n    \"dept\": \"string\",\n    \"item\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1a618ad6-de0a-4fc8-aa41-262a31c59e39",
+          "name": "Add a single line item to the grocery list",
+          "request": {
+            "name": "Add a single line item to the grocery list",
+            "description": {},
+            "url": {
+              "path": [
+                "grocerylist",
+                "item"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "department",
+                  "value": "<string>",
+                  "description": "Gets or sets the department."
+                },
+                {
+                  "disabled": false,
+                  "key": "name",
+                  "value": "<string>",
+                  "description": "Gets or sets the name."
+                },
+                {
+                  "disabled": false,
+                  "key": "notes",
+                  "value": "<string>",
+                  "description": "Gets or sets the notes."
+                },
+                {
+                  "disabled": false,
+                  "key": "quantity",
+                  "value": "<string>",
+                  "description": "Gets or sets the quantity."
+                },
+                {
+                  "disabled": false,
+                  "key": "unit",
+                  "value": "<string>",
+                  "description": "Gets or sets the unit."
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "332a0bc5-4da9-435b-bf3e-be0ad61326a9",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "grocerylist",
+                    "item"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the department.",
+                        "type": "text/plain"
+                      },
+                      "key": "department",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the name.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the notes.",
+                        "type": "text/plain"
+                      },
+                      "key": "notes",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the quantity.",
+                        "type": "text/plain"
+                      },
+                      "key": "quantity",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the unit.",
+                        "type": "text/plain"
+                      },
+                      "key": "unit",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"DateAdded\": \"1994-01-05T23:58:24.548Z\",\n  \"Dept\": \"string\",\n  \"GUID\": \"string\",\n  \"HTMLItemName\": \"string\",\n  \"IsChecked\": true,\n  \"ItemName\": \"string\",\n  \"LastModified\": \"2009-08-12T14:33:52.127Z\",\n  \"ListID\": 6027,\n  \"MealPlanID\": 4719,\n  \"MealPlanObjectType\": 5581,\n  \"Notes\": \"string\",\n  \"PendingAddition\": true,\n  \"RecipeID\": 3458,\n  \"ShoppingListLineID\": 8263,\n  \"Store\": \"string\",\n  \"TextAmt\": \"string\",\n  \"ThirdPartyHost\": \"string\",\n  \"ThirdPartyTitle\": \"string\",\n  \"ThirdPartyURL\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c79ff21d-b274-421c-9d8d-845c21ea1417",
+          "name": "/grocerylist/item/{guid}  DELETE will delete this item assuming you own it.",
+          "request": {
+            "name": "/grocerylist/item/{guid}  DELETE will delete this item assuming you own it.",
+            "description": {},
+            "url": {
+              "path": [
+                "grocerylist",
+                "item",
+                ":guid"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "guid",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3d198403-b6ef-471c-8d14-f490935b727c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "grocerylist",
+                    "item",
+                    ":guid"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "guid",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cacc3eba-71a5-4237-a202-217e14b677d8",
+          "name": "Update a grocery item by GUID",
+          "request": {
+            "name": "Update a grocery item by GUID",
+            "description": {},
+            "url": {
+              "path": [
+                "grocerylist",
+                "item",
+                ":guid"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "guid",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "department",
+                  "value": "<string>",
+                  "description": "Gets or sets the department."
+                },
+                {
+                  "disabled": false,
+                  "key": "guid",
+                  "value": "<string>",
+                  "description": "Gets or sets the unique identifier."
+                },
+                {
+                  "disabled": false,
+                  "key": "ischecked",
+                  "value": "<boolean>",
+                  "description": "Gets or sets the ischecked."
+                },
+                {
+                  "disabled": false,
+                  "key": "name",
+                  "value": "<string>",
+                  "description": "Gets or sets the name."
+                },
+                {
+                  "disabled": false,
+                  "key": "notes",
+                  "value": "<string>",
+                  "description": "Gets or sets the notes."
+                },
+                {
+                  "disabled": false,
+                  "key": "quantity",
+                  "value": "<string>",
+                  "description": "Gets or sets the quantity."
+                },
+                {
+                  "disabled": false,
+                  "key": "unit",
+                  "value": "<string>",
+                  "description": "Gets or sets the unit."
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "0f3b750f-2d6e-46c8-80c3-59a981d4bcdf",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "grocerylist",
+                    "item",
+                    ":guid"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "guid",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the department.",
+                        "type": "text/plain"
+                      },
+                      "key": "department",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the unique identifier.",
+                        "type": "text/plain"
+                      },
+                      "key": "guid",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the ischecked.",
+                        "type": "text/plain"
+                      },
+                      "key": "ischecked",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the name.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the notes.",
+                        "type": "text/plain"
+                      },
+                      "key": "notes",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the quantity.",
+                        "type": "text/plain"
+                      },
+                      "key": "quantity",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the unit.",
+                        "type": "text/plain"
+                      },
+                      "key": "unit",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e4824c22-f409-4dc5-abe1-1b78c3c34d95",
+          "name": "Add a single line item to the grocery list",
+          "request": {
+            "name": "Add a single line item to the grocery list",
+            "description": {},
+            "url": {
+              "path": [
+                "grocerylist",
+                "line"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "text",
+                  "value": "<string>",
+                  "description": "Gets or sets the text."
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "553120a6-d069-451a-8a78-67c9d481390f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "grocerylist",
+                    "line"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the text.",
+                        "type": "text/plain"
+                      },
+                      "key": "text",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"DateAdded\": \"1994-01-05T23:58:24.548Z\",\n  \"Dept\": \"string\",\n  \"GUID\": \"string\",\n  \"HTMLItemName\": \"string\",\n  \"IsChecked\": true,\n  \"ItemName\": \"string\",\n  \"LastModified\": \"2009-08-12T14:33:52.127Z\",\n  \"ListID\": 6027,\n  \"MealPlanID\": 4719,\n  \"MealPlanObjectType\": 5581,\n  \"Notes\": \"string\",\n  \"PendingAddition\": true,\n  \"RecipeID\": 3458,\n  \"ShoppingListLineID\": 8263,\n  \"Store\": \"string\",\n  \"TextAmt\": \"string\",\n  \"ThirdPartyHost\": \"string\",\n  \"ThirdPartyTitle\": \"string\",\n  \"ThirdPartyURL\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e4266ad2-366d-4669-8c00-7c7087e03f89",
+          "name": "Add a Recipe to the grocery list.  In the request data, pass in recipeId, scale (scale=1.0 says to keep the recipe the same size as originally posted), markAsPending (true/false) to indicate that\r\n            the lines in the recipe should be marked in a \"pending\" (unconfirmed by user) state.",
+          "request": {
+            "name": "Add a Recipe to the grocery list.  In the request data, pass in recipeId, scale (scale=1.0 says to keep the recipe the same size as originally posted), markAsPending (true/false) to indicate that\r\n            the lines in the recipe should be marked in a \"pending\" (unconfirmed by user) state.",
+            "description": {},
+            "url": {
+              "path": [
+                "grocerylist",
+                "recipe"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "markAsPending",
+                  "value": "<boolean>",
+                  "description": "Gets or sets the mark as pending."
+                },
+                {
+                  "disabled": false,
+                  "key": "recipeId",
+                  "value": "<integer>",
+                  "description": "Gets or sets the recipe identifier."
+                },
+                {
+                  "disabled": false,
+                  "key": "scale",
+                  "value": "<double>",
+                  "description": "Gets or sets the scale."
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "912245ae-3267-4164-a631-5b0a800a21a1",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "grocerylist",
+                    "recipe"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the mark as pending.",
+                        "type": "text/plain"
+                      },
+                      "key": "markAsPending",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the recipe identifier.",
+                        "type": "text/plain"
+                      },
+                      "key": "recipeId",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the scale.",
+                        "type": "text/plain"
+                      },
+                      "key": "scale",
+                      "value": "<double>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "85a1ac8b-818e-4788-a125-b79a5a9e3ecb",
+          "name": "Synchronize the grocery list.  Call this with a POST to /grocerylist/sync",
+          "request": {
+            "name": "Synchronize the grocery list.  Call this with a POST to /grocerylist/sync",
+            "description": {},
+            "url": {
+              "path": [
+                "grocerylist",
+                "sync"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "Items",
+                  "value": "[{\"BigOvenObject\":\"<string>\",\"CreationDate\":\"<dateTime>\",\"Department\":\"<string>\",\"DisplayQuantity\":\"<string>\",\"GUID\":\"<string>\",\"IsChecked\":\"<boolean>\",\"ItemID\":\"<long>\",\"LastModified\":\"<dateTime>\",\"LocalStatus\":\"<string>\",\"Name\":\"<string>\",\"Notes\":\"<string>\",\"RecipeID\":\"<integer>\",\"ThirdPartyURL\":\"<string>\"},{\"BigOvenObject\":\"<string>\",\"CreationDate\":\"<dateTime>\",\"Department\":\"<string>\",\"DisplayQuantity\":\"<string>\",\"GUID\":\"<string>\",\"IsChecked\":\"<boolean>\",\"ItemID\":\"<long>\",\"LastModified\":\"<dateTime>\",\"LocalStatus\":\"<string>\",\"Name\":\"<string>\",\"Notes\":\"<string>\",\"RecipeID\":\"<integer>\",\"ThirdPartyURL\":\"<string>\"}]"
+                },
+                {
+                  "disabled": false,
+                  "key": "LastModified",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Recipes",
+                  "value": "[{\"BookmarkURL\":\"<string>\",\"Category\":\"<string>\",\"CreationDate\":\"<dateTime>\",\"Cuisine\":\"<string>\",\"HasVideos\":\"<boolean>\",\"HeroPhotoUrl\":\"<string>\",\"HideFromPublicSearch\":\"<boolean>\",\"ImageURL\":\"<string>\",\"ImageURL120\":\"<string>\",\"IsBookmark\":\"<boolean>\",\"IsPrivate\":\"<boolean>\",\"MaxImageSquare\":\"<integer>\",\"Microcategory\":\"<string>\",\"Poster\":{\"FirstName\":\"<string>\",\"ImageUrl48\":\"<string>\",\"IsKitchenHelper\":\"<boolean>\",\"IsPremium\":\"<boolean>\",\"IsUsingRecurly\":\"<boolean>\",\"LastName\":\"<string>\",\"MemberSince\":\"<dateTime>\",\"PhotoUrl\":\"<string>\",\"PremiumExpiryDate\":\"<dateTime>\",\"UserID\":\"<integer>\",\"UserName\":\"<string>\"},\"QualityScore\":\"<double>\",\"RecipeID\":\"<integer>\",\"ReviewCount\":\"<integer>\",\"StarRating\":\"<double>\",\"StarRatingIMG\":\"<string>\",\"Subcategory\":\"<string>\",\"Title\":\"<string>\",\"TotalTries\":\"<integer>\",\"WebURL\":\"<string>\",\"YieldNumber\":\"<double>\"},{\"BookmarkURL\":\"<string>\",\"Category\":\"<string>\",\"CreationDate\":\"<dateTime>\",\"Cuisine\":\"<string>\",\"HasVideos\":\"<boolean>\",\"HeroPhotoUrl\":\"<string>\",\"HideFromPublicSearch\":\"<boolean>\",\"ImageURL\":\"<string>\",\"ImageURL120\":\"<string>\",\"IsBookmark\":\"<boolean>\",\"IsPrivate\":\"<boolean>\",\"MaxImageSquare\":\"<integer>\",\"Microcategory\":\"<string>\",\"Poster\":{\"FirstName\":\"<string>\",\"ImageUrl48\":\"<string>\",\"IsKitchenHelper\":\"<boolean>\",\"IsPremium\":\"<boolean>\",\"IsUsingRecurly\":\"<boolean>\",\"LastName\":\"<string>\",\"MemberSince\":\"<dateTime>\",\"PhotoUrl\":\"<string>\",\"PremiumExpiryDate\":\"<dateTime>\",\"UserID\":\"<integer>\",\"UserName\":\"<string>\"},\"QualityScore\":\"<double>\",\"RecipeID\":\"<integer>\",\"ReviewCount\":\"<integer>\",\"StarRating\":\"<double>\",\"StarRatingIMG\":\"<string>\",\"Subcategory\":\"<string>\",\"Title\":\"<string>\",\"TotalTries\":\"<integer>\",\"WebURL\":\"<string>\",\"YieldNumber\":\"<double>\"}]"
+                },
+                {
+                  "disabled": false,
+                  "key": "VersionGuid",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "since",
+                  "value": "<string>",
+                  "description": "Gets or sets the since."
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "f0160769-80e9-4f23-92dd-9223e617f919",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "grocerylist",
+                    "sync"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "Items",
+                      "value": "[{\"BigOvenObject\":\"<string>\",\"CreationDate\":\"<dateTime>\",\"Department\":\"<string>\",\"DisplayQuantity\":\"<string>\",\"GUID\":\"<string>\",\"IsChecked\":\"<boolean>\",\"ItemID\":\"<long>\",\"LastModified\":\"<dateTime>\",\"LocalStatus\":\"<string>\",\"Name\":\"<string>\",\"Notes\":\"<string>\",\"RecipeID\":\"<integer>\",\"ThirdPartyURL\":\"<string>\"},{\"BigOvenObject\":\"<string>\",\"CreationDate\":\"<dateTime>\",\"Department\":\"<string>\",\"DisplayQuantity\":\"<string>\",\"GUID\":\"<string>\",\"IsChecked\":\"<boolean>\",\"ItemID\":\"<long>\",\"LastModified\":\"<dateTime>\",\"LocalStatus\":\"<string>\",\"Name\":\"<string>\",\"Notes\":\"<string>\",\"RecipeID\":\"<integer>\",\"ThirdPartyURL\":\"<string>\"}]"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "LastModified",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "Recipes",
+                      "value": "[{\"BookmarkURL\":\"<string>\",\"Category\":\"<string>\",\"CreationDate\":\"<dateTime>\",\"Cuisine\":\"<string>\",\"HasVideos\":\"<boolean>\",\"HeroPhotoUrl\":\"<string>\",\"HideFromPublicSearch\":\"<boolean>\",\"ImageURL\":\"<string>\",\"ImageURL120\":\"<string>\",\"IsBookmark\":\"<boolean>\",\"IsPrivate\":\"<boolean>\",\"MaxImageSquare\":\"<integer>\",\"Microcategory\":\"<string>\",\"Poster\":{\"FirstName\":\"<string>\",\"ImageUrl48\":\"<string>\",\"IsKitchenHelper\":\"<boolean>\",\"IsPremium\":\"<boolean>\",\"IsUsingRecurly\":\"<boolean>\",\"LastName\":\"<string>\",\"MemberSince\":\"<dateTime>\",\"PhotoUrl\":\"<string>\",\"PremiumExpiryDate\":\"<dateTime>\",\"UserID\":\"<integer>\",\"UserName\":\"<string>\"},\"QualityScore\":\"<double>\",\"RecipeID\":\"<integer>\",\"ReviewCount\":\"<integer>\",\"StarRating\":\"<double>\",\"StarRatingIMG\":\"<string>\",\"Subcategory\":\"<string>\",\"Title\":\"<string>\",\"TotalTries\":\"<integer>\",\"WebURL\":\"<string>\",\"YieldNumber\":\"<double>\"},{\"BookmarkURL\":\"<string>\",\"Category\":\"<string>\",\"CreationDate\":\"<dateTime>\",\"Cuisine\":\"<string>\",\"HasVideos\":\"<boolean>\",\"HeroPhotoUrl\":\"<string>\",\"HideFromPublicSearch\":\"<boolean>\",\"ImageURL\":\"<string>\",\"ImageURL120\":\"<string>\",\"IsBookmark\":\"<boolean>\",\"IsPrivate\":\"<boolean>\",\"MaxImageSquare\":\"<integer>\",\"Microcategory\":\"<string>\",\"Poster\":{\"FirstName\":\"<string>\",\"ImageUrl48\":\"<string>\",\"IsKitchenHelper\":\"<boolean>\",\"IsPremium\":\"<boolean>\",\"IsUsingRecurly\":\"<boolean>\",\"LastName\":\"<string>\",\"MemberSince\":\"<dateTime>\",\"PhotoUrl\":\"<string>\",\"PremiumExpiryDate\":\"<dateTime>\",\"UserID\":\"<integer>\",\"UserName\":\"<string>\"},\"QualityScore\":\"<double>\",\"RecipeID\":\"<integer>\",\"ReviewCount\":\"<integer>\",\"StarRating\":\"<double>\",\"StarRatingIMG\":\"<string>\",\"Subcategory\":\"<string>\",\"Title\":\"<string>\",\"TotalTries\":\"<integer>\",\"WebURL\":\"<string>\",\"YieldNumber\":\"<double>\"}]"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "VersionGuid",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Gets or sets the since.",
+                        "type": "text/plain"
+                      },
+                      "key": "since",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api2.bigoven.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "74a1791e-9e23-4938-ad8d-4174d925bf50",
+    "name": "1,000,000+ Recipe and Grocery List API (v2) Collection GroceryList API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](https://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](https://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](https://api2.bigoven.com).",
+      "type": "text/plain"
+    }
+  }
+}

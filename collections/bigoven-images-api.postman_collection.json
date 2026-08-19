@@ -1,0 +1,815 @@
+{
+  "item": [
+    {
+      "id": "ccdc2932-cdaf-4613-94a6-2d3589d2deac",
+      "name": "Images",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "94763391-9a0c-4a9e-b0f1-3a9165978404",
+          "name": "POST: /image/avatar\r\n             \r\n            Testing with Postman (validated 11/20/2015):\r\n            1) Remove the Content-Type header; add authentication information\r\n            2) On the request, click Body and choose \"form-data\", then add a line item with \"key\" column set to \"file\" and on the right,\r\n            change the type of the input from Text to File.  Browse and choose a JPG.",
+          "request": {
+            "name": "POST: /image/avatar\r\n             \r\n            Testing with Postman (validated 11/20/2015):\r\n            1) Remove the Content-Type header; add authentication information\r\n            2) On the request, click Body and choose \"form-data\", then add a line item with \"key\" column set to \"file\" and on the right,\r\n            change the type of the input from Text to File.  Browse and choose a JPG.",
+            "description": {},
+            "url": {
+              "path": [
+                "image",
+                "avatar"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e84bef5f-5c1a-4849-b8d0-95a9f91dc2a2",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "image",
+                    "avatar"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "70e43bff-d385-4e0a-a8c9-599df2948e16",
+              "name": "if bad request (e.g., missing parameters)",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "image",
+                    "avatar"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "15ea965d-059f-4a35-bbb7-2d89c19e74db",
+              "name": "if the user is unknown",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "image",
+                    "avatar"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "6b1baeb7-81ed-4d28-ba74-92e32a200044",
+              "name": "if unsupported media type (e.g., bad JPG)",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "image",
+                    "avatar"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "50fc5b18-c63e-4c05-8861-0985ff310728",
+          "name": "Gets the pending by user.",
+          "request": {
+            "name": "Gets the pending by user.",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                "photos",
+                "pending"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8b15023d-ea1e-4944-99fb-761223bc298a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "photos",
+                    "pending"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ResultCount\": 9750,\n  \"Results\": [\n    {\n      \"Caption\": \"string\",\n      \"CreationDate\": \"string\",\n      \"ImageID\": 4300,\n      \"IsPrimary\": true,\n      \"MaxImageSquare\": 2759,\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 4221,\n        \"UserName\": \"string\"\n      }\n    },\n    {\n      \"Caption\": \"string\",\n      \"CreationDate\": \"string\",\n      \"ImageID\": 9787,\n      \"IsPrimary\": true,\n      \"MaxImageSquare\": 9455,\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 8380,\n        \"UserName\": \"string\"\n      }\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "75bfbc6a-8ca7-42ed-bd22-46ed0daab9fe",
+          "name": "POST: /recipe/{recipeId}/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n             \r\n             Note that caption, lng and lat are all optional, but must go on the request URI as params because this endpoint\r\n             needs a multipart/mime content header and will not parse JSON in the body along with it.\r\n            \r\n             Testing with Postman (validated 11/20/2015):\r\n             1) Remove the Content-Type header; add authentication information\r\n             2) On the request, click Body and choose \"form-data\", then add a line item with \"key\" column set to \"file\" and on the right,\r\n             change the type of the input from Text to File.  Browse and choose a JPG.",
+          "request": {
+            "name": "POST: /recipe/{recipeId}/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n             \r\n             Note that caption, lng and lat are all optional, but must go on the request URI as params because this endpoint\r\n             needs a multipart/mime content header and will not parse JSON in the body along with it.\r\n            \r\n             Testing with Postman (validated 11/20/2015):\r\n             1) Remove the Content-Type header; add authentication information\r\n             2) On the request, click Body and choose \"form-data\", then add a line item with \"key\" column set to \"file\" and on the right,\r\n             change the type of the input from Text to File.  Browse and choose a JPG.",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":recipeId",
+                "image"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "caption",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "lat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "lng",
+                  "value": "<double>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "recipeId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3cc59bad-d3ce-46ef-91c0-fbe5cc8db154",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "image"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "caption",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "lat",
+                      "value": "<double>"
+                    },
+                    {
+                      "key": "lng",
+                      "value": "<double>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "recipeId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "326d2647-b4da-4b42-b6af-57ad1caca88e",
+              "name": "if bad request (e.g., missing parameters)",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "image"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "caption",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "lat",
+                      "value": "<double>"
+                    },
+                    {
+                      "key": "lng",
+                      "value": "<double>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "recipeId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "debafb7e-7cad-43aa-a595-534d0e1e2d4e",
+              "name": "if the user is unknown",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "image"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "caption",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "lat",
+                      "value": "<double>"
+                    },
+                    {
+                      "key": "lng",
+                      "value": "<double>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "recipeId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "7482ce7f-e44e-48f4-bd49-4af284180748",
+              "name": "if unsupported media type (e.g., bad JPG)",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "image"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "caption",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "lat",
+                      "value": "<double>"
+                    },
+                    {
+                      "key": "lng",
+                      "value": "<double>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "recipeId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "86a8331f-0031-4435-aad0-25616ac6b86f",
+          "name": "Get all the images for a recipe. DEPRECATED. Please use /recipe/{recipeId}/photos.",
+          "request": {
+            "name": "Get all the images for a recipe. DEPRECATED. Please use /recipe/{recipeId}/photos.",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":recipeId",
+                "images"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "recipeId",
+                  "description": "(Required) Recipe ID (required)"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3a5210a4-8da5-48de-9855-f4be15720145",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "images"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "recipeId",
+                      "description": "(Required) Recipe ID (required)"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Caption\": \"string\",\n    \"CreationDate\": \"string\",\n    \"ImageID\": 1640,\n    \"ImageSquares\": [\n      8540,\n      7491\n    ],\n    \"ImageURL\": \"string\",\n    \"ImageURL120\": \"string\",\n    \"ImageURL128\": \"string\",\n    \"ImageURL200\": \"string\",\n    \"ImageURL256\": \"string\",\n    \"ImageURL48\": \"string\",\n    \"ImageURL64\": \"string\",\n    \"IsPrimary\": true,\n    \"MaxImageSquare\": 9469,\n    \"Poster\": {\n      \"FirstName\": \"string\",\n      \"ImageUrl48\": \"string\",\n      \"IsKitchenHelper\": true,\n      \"IsPremium\": false,\n      \"IsUsingRecurly\": false,\n      \"LastName\": \"string\",\n      \"MemberSince\": \"1979-01-21T02:00:25.227Z\",\n      \"PhotoUrl\": \"string\",\n      \"PhotoUrl48\": \"string\",\n      \"PremiumExpiryDate\": \"2025-06-30T10:44:21.463Z\",\n      \"UserID\": 6355,\n      \"UserName\": \"string\",\n      \"WebUrl\": \"string\"\n    }\n  },\n  {\n    \"Caption\": \"string\",\n    \"CreationDate\": \"string\",\n    \"ImageID\": 9456,\n    \"ImageSquares\": [\n      627,\n      3412\n    ],\n    \"ImageURL\": \"string\",\n    \"ImageURL120\": \"string\",\n    \"ImageURL128\": \"string\",\n    \"ImageURL200\": \"string\",\n    \"ImageURL256\": \"string\",\n    \"ImageURL48\": \"string\",\n    \"ImageURL64\": \"string\",\n    \"IsPrimary\": true,\n    \"MaxImageSquare\": 1954,\n    \"Poster\": {\n      \"FirstName\": \"string\",\n      \"ImageUrl48\": \"string\",\n      \"IsKitchenHelper\": true,\n      \"IsPremium\": false,\n      \"IsUsingRecurly\": false,\n      \"LastName\": \"string\",\n      \"MemberSince\": \"1974-01-28T00:46:36.524Z\",\n      \"PhotoUrl\": \"string\",\n      \"PhotoUrl48\": \"string\",\n      \"PremiumExpiryDate\": \"1996-07-25T13:29:30.879Z\",\n      \"UserID\": 7133,\n      \"UserName\": \"string\",\n      \"WebUrl\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "56bac7d9-7fec-4755-b452-64ef07dae332",
+          "name": "Get all the photos for a recipe",
+          "request": {
+            "name": "Get all the photos for a recipe",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":recipeId",
+                "photos"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "pg",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "rpp",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "recipeId",
+                  "description": "(Required) Recipe ID (required)"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6f24ab92-f477-4094-80c3-a4e6a0312737",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "photos"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "pg",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "rpp",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "recipeId",
+                      "description": "(Required) Recipe ID (required)"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ResultCount\": 1533,\n  \"Results\": [\n    {\n      \"Caption\": \"string\",\n      \"CreationDate\": \"string\",\n      \"ImageID\": 4745,\n      \"IsPrimary\": false,\n      \"MaxImageSquare\": 6126,\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 356,\n        \"UserName\": \"string\"\n      }\n    },\n    {\n      \"Caption\": \"string\",\n      \"CreationDate\": \"string\",\n      \"ImageID\": 5004,\n      \"IsPrimary\": true,\n      \"MaxImageSquare\": 7731,\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 7462,\n        \"UserName\": \"string\"\n      }\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e46e3015-2b78-461d-9593-ef24eb6b11f0",
+          "name": "Gets a list of RecipeScan images for the recipe. There will be at most 3 per recipe.",
+          "request": {
+            "name": "Gets a list of RecipeScan images for the recipe. There will be at most 3 per recipe.",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":recipeId",
+                "scans"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "recipeId",
+                  "description": "(Required) the recipe identifier (int)"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "67c12553-2e6e-450b-8560-21e5be9ceb5c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "scans"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "recipeId",
+                      "description": "(Required) the recipe identifier (int)"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Caption\": \"string\",\n    \"CreationDate\": \"string\",\n    \"ImageID\": 3228,\n    \"ImageSquares\": [\n      2026,\n      1161\n    ],\n    \"ImageURL\": \"string\",\n    \"ImageURL120\": \"string\",\n    \"ImageURL128\": \"string\",\n    \"ImageURL200\": \"string\",\n    \"ImageURL256\": \"string\",\n    \"ImageURL48\": \"string\",\n    \"ImageURL64\": \"string\",\n    \"IsPrimary\": false,\n    \"MaxImageSquare\": 7111,\n    \"Poster\": {\n      \"FirstName\": \"string\",\n      \"ImageUrl48\": \"string\",\n      \"IsKitchenHelper\": true,\n      \"IsPremium\": false,\n      \"IsUsingRecurly\": false,\n      \"LastName\": \"string\",\n      \"MemberSince\": \"1998-05-28T23:11:33.962Z\",\n      \"PhotoUrl\": \"string\",\n      \"PhotoUrl48\": \"string\",\n      \"PremiumExpiryDate\": \"2001-12-02T18:36:05.578Z\",\n      \"UserID\": 5067,\n      \"UserName\": \"string\",\n      \"WebUrl\": \"string\"\n    }\n  },\n  {\n    \"Caption\": \"string\",\n    \"CreationDate\": \"string\",\n    \"ImageID\": 5422,\n    \"ImageSquares\": [\n      9407,\n      81\n    ],\n    \"ImageURL\": \"string\",\n    \"ImageURL120\": \"string\",\n    \"ImageURL128\": \"string\",\n    \"ImageURL200\": \"string\",\n    \"ImageURL256\": \"string\",\n    \"ImageURL48\": \"string\",\n    \"ImageURL64\": \"string\",\n    \"IsPrimary\": true,\n    \"MaxImageSquare\": 5555,\n    \"Poster\": {\n      \"FirstName\": \"string\",\n      \"ImageUrl48\": \"string\",\n      \"IsKitchenHelper\": false,\n      \"IsPremium\": false,\n      \"IsUsingRecurly\": false,\n      \"LastName\": \"string\",\n      \"MemberSince\": \"2014-03-27T22:30:51.004Z\",\n      \"PhotoUrl\": \"string\",\n      \"PhotoUrl48\": \"string\",\n      \"PremiumExpiryDate\": \"1953-11-02T22:56:20.606Z\",\n      \"UserID\": 5615,\n      \"UserName\": \"string\",\n      \"WebUrl\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api2.bigoven.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "7729b4d4-4d80-4d77-86da-9dc29c3c0cf0",
+    "name": "1,000,000+ Recipe and Grocery List API (v2) Collection Images API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](https://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](https://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](https://api2.bigoven.com).",
+      "type": "text/plain"
+    }
+  }
+}

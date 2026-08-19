@@ -1,0 +1,140 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "1,000,000+ Recipe and Grocery List API (v2) Collection Images API",
+    "version": "3.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Images",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "POST: /image/avatar\r\n             \r\n            Testing with Postman (validated 11/20/2015):\r\n            1) Remove the Content-Type header; add authentication information\r\n            2) On the request, click Body and choose \"form-data\", then add a line item with \"key\" column set to \"file\" and on the right,\r\n            change the type of the input from Text to File.  Browse and choose a JPG.",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api2.bigoven.com/image/avatar"
+          },
+          "docs": "POST: /image/avatar\r\n             \r\n            Testing with Postman (validated 11/20/2015):\r\n            1) Remove the Content-Type header; add authentication information\r\n            2) On the request, click Body and choose \"form-data\", then add a line item with \"key\" column set to \"file\" and on the right,\r\n            change the type of the input from Text to File.  Browse and choose a JPG."
+        },
+        {
+          "info": {
+            "name": "Gets the pending by user.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api2.bigoven.com/recipe/photos/pending"
+          },
+          "docs": "Gets the pending by user."
+        },
+        {
+          "info": {
+            "name": "POST: /recipe/{recipeId}/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n             \r\n             Note that caption, lng and lat are all optional, but must go on the request URI as params because this endpoint\r\n             needs a multipart/mime content header and will not parse JSON in the body along with it.\r\n            \r\n             Testing with Postman (validated 11/20/2015):\r\n             1) Remove the Content-Type header; add authentication information\r\n             2) On the request, click Body and choose \"form-data\", then add a line item with \"key\" column set to \"file\" and on the right,\r\n             change the type of the input from Text to File.  Browse and choose a JPG.",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api2.bigoven.com/recipe/:recipeId/image",
+            "params": [
+              {
+                "name": "recipeId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "caption",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "lat",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "lng",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "POST: /recipe/{recipeId}/image?lat=42&amp;lng=21&amp;caption=this%20is%20my%20caption\r\n             \r\n             Note that caption, lng and lat are all optional, but must go on the request URI as params because this endpoint\r\n             needs a multipart/mime content header and will not parse JSON in the body along with it.\r\n            \r\n             Testing with Postman (validated 11/20/2015):\r\n             1) Remove the Content-Type header; add authentication information\r\n             2) "
+        },
+        {
+          "info": {
+            "name": "Get all the images for a recipe. DEPRECATED. Please use /recipe/{recipeId}/photos.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api2.bigoven.com/recipe/:recipeId/images",
+            "params": [
+              {
+                "name": "recipeId",
+                "value": "",
+                "type": "path",
+                "description": "Recipe ID (required)"
+              }
+            ]
+          },
+          "docs": "Get all the images for a recipe. DEPRECATED. Please use /recipe/{recipeId}/photos."
+        },
+        {
+          "info": {
+            "name": "Get all the photos for a recipe",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api2.bigoven.com/recipe/:recipeId/photos",
+            "params": [
+              {
+                "name": "recipeId",
+                "value": "",
+                "type": "path",
+                "description": "Recipe ID (required)"
+              },
+              {
+                "name": "pg",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "rpp",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get all the photos for a recipe"
+        },
+        {
+          "info": {
+            "name": "Gets a list of RecipeScan images for the recipe. There will be at most 3 per recipe.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api2.bigoven.com/recipe/:recipeId/scans",
+            "params": [
+              {
+                "name": "recipeId",
+                "value": "",
+                "type": "path",
+                "description": "the recipe identifier (int)"
+              }
+            ]
+          },
+          "docs": "Gets a list of RecipeScan images for the recipe. There will be at most 3 per recipe."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

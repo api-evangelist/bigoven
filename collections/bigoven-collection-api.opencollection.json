@@ -1,0 +1,96 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "1,000,000+ Recipe and Grocery List API (v2) Collection API",
+    "version": "3.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Collection",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Gets a recipe collection. A recipe collection is a curated set of recipes.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api2.bigoven.com/collection/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "the collection identifier"
+              },
+              {
+                "name": "rpp",
+                "value": "",
+                "type": "query",
+                "description": "results per page"
+              },
+              {
+                "name": "pg",
+                "value": "",
+                "type": "query",
+                "description": "page number (starting with 1)"
+              },
+              {
+                "name": "test",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "sessionForLogging",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Gets a recipe collection. A recipe collection is a curated set of recipes."
+        },
+        {
+          "info": {
+            "name": "Gets a recipe collection metadata. A recipe collection is a curated set of recipes.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api2.bigoven.com/collection/:id/meta",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "the collection identifier"
+              }
+            ]
+          },
+          "docs": "Gets a recipe collection metadata. A recipe collection is a curated set of recipes."
+        },
+        {
+          "info": {
+            "name": "Get the list of current, seasonal recipe collections. From here, you can use the /collection/{id} endpoint to retrieve the recipes in those collections.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api2.bigoven.com/collections",
+            "params": [
+              {
+                "name": "test",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get the list of current, seasonal recipe collections. From here, you can use the /collection/{id} endpoint to retrieve the recipes in those collections."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

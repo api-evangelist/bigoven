@@ -1,0 +1,166 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "1,000,000+ Recipe and Grocery List API (v2) Collection GroceryList API",
+    "version": "3.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "GroceryList",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the user's grocery list.  User is determined by Basic Authentication.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api2.bigoven.com/grocerylist"
+          },
+          "docs": "Get the user's grocery list.  User is determined by Basic Authentication."
+        },
+        {
+          "info": {
+            "name": "Delete all the items on a grocery list; faster operation than a sync with deleted items.",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api2.bigoven.com/grocerylist"
+          },
+          "docs": "Delete all the items on a grocery list; faster operation than a sync with deleted items."
+        },
+        {
+          "info": {
+            "name": "Clears the checked lines.",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api2.bigoven.com/grocerylist/clearcheckedlines"
+          },
+          "docs": "Clears the checked lines."
+        },
+        {
+          "info": {
+            "name": "Departmentalize a list of strings -- used for ad-hoc grocery list item addition",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api2.bigoven.com/grocerylist/department",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Departmentalize a list of strings -- used for ad-hoc grocery list item addition"
+        },
+        {
+          "info": {
+            "name": "Add a single line item to the grocery list",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api2.bigoven.com/grocerylist/item",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add a single line item to the grocery list"
+        },
+        {
+          "info": {
+            "name": "Update a grocery item by GUID",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api2.bigoven.com/grocerylist/item/:guid",
+            "params": [
+              {
+                "name": "guid",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a grocery item by GUID"
+        },
+        {
+          "info": {
+            "name": "/grocerylist/item/{guid}  DELETE will delete this item assuming you own it.",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api2.bigoven.com/grocerylist/item/:guid",
+            "params": [
+              {
+                "name": "guid",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "/grocerylist/item/{guid}  DELETE will delete this item assuming you own it."
+        },
+        {
+          "info": {
+            "name": "Add a single line item to the grocery list",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api2.bigoven.com/grocerylist/line",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add a single line item to the grocery list"
+        },
+        {
+          "info": {
+            "name": "Add a Recipe to the grocery list.  In the request data, pass in recipeId, scale (scale=1.0 says to keep the recipe the same size as originally posted), markAsPending (true/false) to indicate that\r\n            the lines in the recipe should be marked in a \"pending\" (unconfirmed by user) state.",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api2.bigoven.com/grocerylist/recipe",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add a Recipe to the grocery list.  In the request data, pass in recipeId, scale (scale=1.0 says to keep the recipe the same size as originally posted), markAsPending (true/false) to indicate that\r\n            the lines in the recipe should be marked in a \"pending\" (unconfirmed by user) state."
+        },
+        {
+          "info": {
+            "name": "Synchronize the grocery list.  Call this with a POST to /grocerylist/sync",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api2.bigoven.com/grocerylist/sync",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Synchronize the grocery list.  Call this with a POST to /grocerylist/sync"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

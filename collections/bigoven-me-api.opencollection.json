@@ -1,0 +1,111 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "1,000,000+ Recipe and Grocery List API (v2) Collection Me API",
+    "version": "3.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Me",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Indexes this instance.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api2.bigoven.com/me"
+          },
+          "docs": "Indexes this instance."
+        },
+        {
+          "info": {
+            "name": "Puts me.",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api2.bigoven.com/me",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Puts me."
+        },
+        {
+          "info": {
+            "name": "Puts me personal.",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api2.bigoven.com/me/personal",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Puts me personal."
+        },
+        {
+          "info": {
+            "name": "Puts me preferences.",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api2.bigoven.com/me/preferences",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Puts me preferences."
+        },
+        {
+          "info": {
+            "name": "Gets the options.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api2.bigoven.com/me/preferences/options"
+          },
+          "docs": "Gets the options."
+        },
+        {
+          "info": {
+            "name": "Puts me.",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api2.bigoven.com/me/profile",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Puts me."
+        },
+        {
+          "info": {
+            "name": "Skinnies this instance.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api2.bigoven.com/me/skinny"
+          },
+          "docs": "Skinnies this instance."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

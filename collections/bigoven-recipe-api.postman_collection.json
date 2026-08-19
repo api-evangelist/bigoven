@@ -1,0 +1,3773 @@
+{
+  "item": [
+    {
+      "id": "0748b712-a03b-44e2-8167-47bd1fd3d6c8",
+      "name": "Recipe",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "63b0e33b-4a7c-4812-99dd-a16333c0040a",
+          "name": "Add a new recipe",
+          "request": {
+            "name": "Add a new recipe",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "ActiveMinutes",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AdTags",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AdminBoost",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AllCategoriesText",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "BookmarkImageURL",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "BookmarkSiteLogo",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "BookmarkURL",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Category",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Collection",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "CollectionID",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "CreationDate",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Cuisine",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Description",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FavoriteCount",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "HeroPhotoUrl",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ImageSquares",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ImageSquares",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ImageURL",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Ingredients",
+                  "value": "{\"DisplayIndex\":\"<integer>\",\"DisplayQuantity\":\"<string>\",\"HTMLName\":\"<string>\",\"IngredientID\":\"<long>\",\"IngredientInfo\":{\"Department\":\"<string>\",\"MasterIngredientID\":\"<integer>\",\"Name\":\"<string>\",\"UsuallyOnHand\":\"<boolean>\"},\"IsHeading\":\"<boolean>\",\"IsLinked\":\"<boolean>\",\"MetricDisplayQuantity\":\"<string>\",\"MetricQuantity\":\"<double>\",\"MetricUnit\":\"<string>\",\"Name\":\"<string>\",\"PreparationNotes\":\"<string>\",\"Quantity\":\"<double>\",\"Unit\":\"<string>\"}"
+                },
+                {
+                  "disabled": false,
+                  "key": "Ingredients",
+                  "value": "{\"DisplayIndex\":\"<integer>\",\"DisplayQuantity\":\"<string>\",\"HTMLName\":\"<string>\",\"IngredientID\":\"<long>\",\"IngredientInfo\":{\"Department\":\"<string>\",\"MasterIngredientID\":\"<integer>\",\"Name\":\"<string>\",\"UsuallyOnHand\":\"<boolean>\"},\"IsHeading\":\"<boolean>\",\"IsLinked\":\"<boolean>\",\"MetricDisplayQuantity\":\"<string>\",\"MetricQuantity\":\"<double>\",\"MetricUnit\":\"<string>\",\"Name\":\"<string>\",\"PreparationNotes\":\"<string>\",\"Quantity\":\"<double>\",\"Unit\":\"<string>\"}"
+                },
+                {
+                  "disabled": false,
+                  "key": "IngredientsTextBlock",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Instructions",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsBookmark",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsPrivate",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsRecipeScan",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsSponsored",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "LastModified",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "MaxImageSquare",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "MedalCount",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "MenuCount",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Microcategory",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "NotesCount",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "CaloriesFromFat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Cholesterol",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "CholesterolPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "DietaryFiber",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "DietaryFiberPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "MonoFat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PolyFat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Potassium",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PotassiumPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Protein",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ProteinPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "SatFat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "SatFatPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "SingularYieldUnit",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Sodium",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "SodiumPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Sugar",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TotalCalories",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TotalCarbs",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TotalCarbsPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TotalFat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TotalFatPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TransFat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FirstName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ImageUrl48",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsKitchenHelper",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsPremium",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsUsingRecurly",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "LastName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "MemberSince",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PhotoUrl",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PremiumExpiryDate",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UserID",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UserName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PrimaryIngredient",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "RecipeID",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ReviewCount",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StarRating",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Subcategory",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Title",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TotalMinutes",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "VariantOfRecipeID",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "VerifiedByClass",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "VerifiedDateTime",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "WebURL",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "YieldNumber",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "YieldUnit",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "6ac424d1-450a-4695-b826-68153395331b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ActiveMinutes\": \"<integer>\",\n  \"AdTags\": \"<string>\",\n  \"AdminBoost\": \"<integer>\",\n  \"AllCategoriesText\": \"<string>\",\n  \"BookmarkImageURL\": \"<string>\",\n  \"BookmarkSiteLogo\": \"<string>\",\n  \"BookmarkURL\": \"<string>\",\n  \"Category\": \"<string>\",\n  \"Collection\": \"<string>\",\n  \"CollectionID\": \"<integer>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"Cuisine\": \"<string>\",\n  \"Description\": \"<string>\",\n  \"FavoriteCount\": \"<integer>\",\n  \"HeroPhotoUrl\": \"<string>\",\n  \"ImageSquares\": [\n    \"<integer>\",\n    \"<integer>\"\n  ],\n  \"ImageURL\": \"<string>\",\n  \"Ingredients\": [\n    {\n      \"DisplayIndex\": \"<integer>\",\n      \"DisplayQuantity\": \"<string>\",\n      \"HTMLName\": \"<string>\",\n      \"IngredientID\": \"<long>\",\n      \"IngredientInfo\": {\n        \"Department\": \"<string>\",\n        \"MasterIngredientID\": \"<integer>\",\n        \"Name\": \"<string>\",\n        \"UsuallyOnHand\": \"<boolean>\"\n      },\n      \"IsHeading\": \"<boolean>\",\n      \"IsLinked\": \"<boolean>\",\n      \"MetricDisplayQuantity\": \"<string>\",\n      \"MetricQuantity\": \"<double>\",\n      \"MetricUnit\": \"<string>\",\n      \"Name\": \"<string>\",\n      \"PreparationNotes\": \"<string>\",\n      \"Quantity\": \"<double>\",\n      \"Unit\": \"<string>\"\n    },\n    {\n      \"DisplayIndex\": \"<integer>\",\n      \"DisplayQuantity\": \"<string>\",\n      \"HTMLName\": \"<string>\",\n      \"IngredientID\": \"<long>\",\n      \"IngredientInfo\": {\n        \"Department\": \"<string>\",\n        \"MasterIngredientID\": \"<integer>\",\n        \"Name\": \"<string>\",\n        \"UsuallyOnHand\": \"<boolean>\"\n      },\n      \"IsHeading\": \"<boolean>\",\n      \"IsLinked\": \"<boolean>\",\n      \"MetricDisplayQuantity\": \"<string>\",\n      \"MetricQuantity\": \"<double>\",\n      \"MetricUnit\": \"<string>\",\n      \"Name\": \"<string>\",\n      \"PreparationNotes\": \"<string>\",\n      \"Quantity\": \"<double>\",\n      \"Unit\": \"<string>\"\n    }\n  ],\n  \"IngredientsTextBlock\": \"<string>\",\n  \"Instructions\": \"<string>\",\n  \"IsBookmark\": \"<boolean>\",\n  \"IsPrivate\": \"<boolean>\",\n  \"IsRecipeScan\": \"<boolean>\",\n  \"IsSponsored\": \"<boolean>\",\n  \"LastModified\": \"<dateTime>\",\n  \"MaxImageSquare\": \"<integer>\",\n  \"MedalCount\": \"<integer>\",\n  \"MenuCount\": \"<integer>\",\n  \"Microcategory\": \"<string>\",\n  \"NotesCount\": \"<integer>\",\n  \"NutritionInfo\": {\n    \"CaloriesFromFat\": \"<double>\",\n    \"Cholesterol\": \"<double>\",\n    \"CholesterolPct\": \"<double>\",\n    \"DietaryFiber\": \"<double>\",\n    \"DietaryFiberPct\": \"<double>\",\n    \"MonoFat\": \"<double>\",\n    \"PolyFat\": \"<double>\",\n    \"Potassium\": \"<double>\",\n    \"PotassiumPct\": \"<double>\",\n    \"Protein\": \"<double>\",\n    \"ProteinPct\": \"<double>\",\n    \"SatFat\": \"<double>\",\n    \"SatFatPct\": \"<double>\",\n    \"SingularYieldUnit\": \"<string>\",\n    \"Sodium\": \"<double>\",\n    \"SodiumPct\": \"<double>\",\n    \"Sugar\": \"<double>\",\n    \"TotalCalories\": \"<double>\",\n    \"TotalCarbs\": \"<double>\",\n    \"TotalCarbsPct\": \"<double>\",\n    \"TotalFat\": \"<double>\",\n    \"TotalFatPct\": \"<double>\",\n    \"TransFat\": \"<double>\"\n  },\n  \"Poster\": {\n    \"FirstName\": \"<string>\",\n    \"ImageUrl48\": \"<string>\",\n    \"IsKitchenHelper\": \"<boolean>\",\n    \"IsPremium\": \"<boolean>\",\n    \"IsUsingRecurly\": \"<boolean>\",\n    \"LastName\": \"<string>\",\n    \"MemberSince\": \"<dateTime>\",\n    \"PhotoUrl\": \"<string>\",\n    \"PhotoUrl48\": \"string\",\n    \"PremiumExpiryDate\": \"<dateTime>\",\n    \"UserID\": \"<integer>\",\n    \"UserName\": \"<string>\",\n    \"WebUrl\": \"string\"\n  },\n  \"PrimaryIngredient\": \"<string>\",\n  \"RecipeID\": \"<integer>\",\n  \"ReviewCount\": \"<integer>\",\n  \"StarRating\": \"<double>\",\n  \"Subcategory\": \"<string>\",\n  \"Title\": \"<string>\",\n  \"TotalMinutes\": \"<integer>\",\n  \"VariantOfRecipeID\": \"<integer>\",\n  \"VerifiedByClass\": \"<string>\",\n  \"VerifiedDateTime\": \"<dateTime>\",\n  \"WebURL\": \"<string>\",\n  \"YieldNumber\": \"<double>\",\n  \"YieldUnit\": \"<string>\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c15b941c-70bc-40b6-b2c8-f40de1bb556d",
+          "name": "Update a recipe",
+          "request": {
+            "name": "Update a recipe",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "ActiveMinutes",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AdTags",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AdminBoost",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AllCategoriesText",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "BookmarkImageURL",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "BookmarkSiteLogo",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "BookmarkURL",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Category",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Collection",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "CollectionID",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "CreationDate",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Cuisine",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Description",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FavoriteCount",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "HeroPhotoUrl",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ImageSquares",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ImageSquares",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ImageURL",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Ingredients",
+                  "value": "{\"DisplayIndex\":\"<integer>\",\"DisplayQuantity\":\"<string>\",\"HTMLName\":\"<string>\",\"IngredientID\":\"<long>\",\"IngredientInfo\":{\"Department\":\"<string>\",\"MasterIngredientID\":\"<integer>\",\"Name\":\"<string>\",\"UsuallyOnHand\":\"<boolean>\"},\"IsHeading\":\"<boolean>\",\"IsLinked\":\"<boolean>\",\"MetricDisplayQuantity\":\"<string>\",\"MetricQuantity\":\"<double>\",\"MetricUnit\":\"<string>\",\"Name\":\"<string>\",\"PreparationNotes\":\"<string>\",\"Quantity\":\"<double>\",\"Unit\":\"<string>\"}"
+                },
+                {
+                  "disabled": false,
+                  "key": "Ingredients",
+                  "value": "{\"DisplayIndex\":\"<integer>\",\"DisplayQuantity\":\"<string>\",\"HTMLName\":\"<string>\",\"IngredientID\":\"<long>\",\"IngredientInfo\":{\"Department\":\"<string>\",\"MasterIngredientID\":\"<integer>\",\"Name\":\"<string>\",\"UsuallyOnHand\":\"<boolean>\"},\"IsHeading\":\"<boolean>\",\"IsLinked\":\"<boolean>\",\"MetricDisplayQuantity\":\"<string>\",\"MetricQuantity\":\"<double>\",\"MetricUnit\":\"<string>\",\"Name\":\"<string>\",\"PreparationNotes\":\"<string>\",\"Quantity\":\"<double>\",\"Unit\":\"<string>\"}"
+                },
+                {
+                  "disabled": false,
+                  "key": "IngredientsTextBlock",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Instructions",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsBookmark",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsPrivate",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsRecipeScan",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsSponsored",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "LastModified",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "MaxImageSquare",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "MedalCount",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "MenuCount",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Microcategory",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "NotesCount",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "CaloriesFromFat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Cholesterol",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "CholesterolPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "DietaryFiber",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "DietaryFiberPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "MonoFat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PolyFat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Potassium",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PotassiumPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Protein",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ProteinPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "SatFat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "SatFatPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "SingularYieldUnit",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Sodium",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "SodiumPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Sugar",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TotalCalories",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TotalCarbs",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TotalCarbsPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TotalFat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TotalFatPct",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TransFat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FirstName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ImageUrl48",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsKitchenHelper",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsPremium",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IsUsingRecurly",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "LastName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "MemberSince",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PhotoUrl",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PremiumExpiryDate",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UserID",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UserName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PrimaryIngredient",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "RecipeID",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ReviewCount",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StarRating",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Subcategory",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Title",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TotalMinutes",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "VariantOfRecipeID",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "VerifiedByClass",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "VerifiedDateTime",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "WebURL",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "YieldNumber",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "YieldUnit",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "5fbe5538-6db1-48f8-bac5-f6f229b7ed63",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ActiveMinutes\": \"<integer>\",\n  \"AdTags\": \"<string>\",\n  \"AdminBoost\": \"<integer>\",\n  \"AllCategoriesText\": \"<string>\",\n  \"BookmarkImageURL\": \"<string>\",\n  \"BookmarkSiteLogo\": \"<string>\",\n  \"BookmarkURL\": \"<string>\",\n  \"Category\": \"<string>\",\n  \"Collection\": \"<string>\",\n  \"CollectionID\": \"<integer>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"Cuisine\": \"<string>\",\n  \"Description\": \"<string>\",\n  \"FavoriteCount\": \"<integer>\",\n  \"HeroPhotoUrl\": \"<string>\",\n  \"ImageSquares\": [\n    \"<integer>\",\n    \"<integer>\"\n  ],\n  \"ImageURL\": \"<string>\",\n  \"Ingredients\": [\n    {\n      \"DisplayIndex\": \"<integer>\",\n      \"DisplayQuantity\": \"<string>\",\n      \"HTMLName\": \"<string>\",\n      \"IngredientID\": \"<long>\",\n      \"IngredientInfo\": {\n        \"Department\": \"<string>\",\n        \"MasterIngredientID\": \"<integer>\",\n        \"Name\": \"<string>\",\n        \"UsuallyOnHand\": \"<boolean>\"\n      },\n      \"IsHeading\": \"<boolean>\",\n      \"IsLinked\": \"<boolean>\",\n      \"MetricDisplayQuantity\": \"<string>\",\n      \"MetricQuantity\": \"<double>\",\n      \"MetricUnit\": \"<string>\",\n      \"Name\": \"<string>\",\n      \"PreparationNotes\": \"<string>\",\n      \"Quantity\": \"<double>\",\n      \"Unit\": \"<string>\"\n    },\n    {\n      \"DisplayIndex\": \"<integer>\",\n      \"DisplayQuantity\": \"<string>\",\n      \"HTMLName\": \"<string>\",\n      \"IngredientID\": \"<long>\",\n      \"IngredientInfo\": {\n        \"Department\": \"<string>\",\n        \"MasterIngredientID\": \"<integer>\",\n        \"Name\": \"<string>\",\n        \"UsuallyOnHand\": \"<boolean>\"\n      },\n      \"IsHeading\": \"<boolean>\",\n      \"IsLinked\": \"<boolean>\",\n      \"MetricDisplayQuantity\": \"<string>\",\n      \"MetricQuantity\": \"<double>\",\n      \"MetricUnit\": \"<string>\",\n      \"Name\": \"<string>\",\n      \"PreparationNotes\": \"<string>\",\n      \"Quantity\": \"<double>\",\n      \"Unit\": \"<string>\"\n    }\n  ],\n  \"IngredientsTextBlock\": \"<string>\",\n  \"Instructions\": \"<string>\",\n  \"IsBookmark\": \"<boolean>\",\n  \"IsPrivate\": \"<boolean>\",\n  \"IsRecipeScan\": \"<boolean>\",\n  \"IsSponsored\": \"<boolean>\",\n  \"LastModified\": \"<dateTime>\",\n  \"MaxImageSquare\": \"<integer>\",\n  \"MedalCount\": \"<integer>\",\n  \"MenuCount\": \"<integer>\",\n  \"Microcategory\": \"<string>\",\n  \"NotesCount\": \"<integer>\",\n  \"NutritionInfo\": {\n    \"CaloriesFromFat\": \"<double>\",\n    \"Cholesterol\": \"<double>\",\n    \"CholesterolPct\": \"<double>\",\n    \"DietaryFiber\": \"<double>\",\n    \"DietaryFiberPct\": \"<double>\",\n    \"MonoFat\": \"<double>\",\n    \"PolyFat\": \"<double>\",\n    \"Potassium\": \"<double>\",\n    \"PotassiumPct\": \"<double>\",\n    \"Protein\": \"<double>\",\n    \"ProteinPct\": \"<double>\",\n    \"SatFat\": \"<double>\",\n    \"SatFatPct\": \"<double>\",\n    \"SingularYieldUnit\": \"<string>\",\n    \"Sodium\": \"<double>\",\n    \"SodiumPct\": \"<double>\",\n    \"Sugar\": \"<double>\",\n    \"TotalCalories\": \"<double>\",\n    \"TotalCarbs\": \"<double>\",\n    \"TotalCarbsPct\": \"<double>\",\n    \"TotalFat\": \"<double>\",\n    \"TotalFatPct\": \"<double>\",\n    \"TransFat\": \"<double>\"\n  },\n  \"Poster\": {\n    \"FirstName\": \"<string>\",\n    \"ImageUrl48\": \"<string>\",\n    \"IsKitchenHelper\": \"<boolean>\",\n    \"IsPremium\": \"<boolean>\",\n    \"IsUsingRecurly\": \"<boolean>\",\n    \"LastName\": \"<string>\",\n    \"MemberSince\": \"<dateTime>\",\n    \"PhotoUrl\": \"<string>\",\n    \"PhotoUrl48\": \"string\",\n    \"PremiumExpiryDate\": \"<dateTime>\",\n    \"UserID\": \"<integer>\",\n    \"UserName\": \"<string>\",\n    \"WebUrl\": \"string\"\n  },\n  \"PrimaryIngredient\": \"<string>\",\n  \"RecipeID\": \"<integer>\",\n  \"ReviewCount\": \"<integer>\",\n  \"StarRating\": \"<double>\",\n  \"Subcategory\": \"<string>\",\n  \"Title\": \"<string>\",\n  \"TotalMinutes\": \"<integer>\",\n  \"VariantOfRecipeID\": \"<integer>\",\n  \"VerifiedByClass\": \"<string>\",\n  \"VerifiedDateTime\": \"<dateTime>\",\n  \"WebURL\": \"<string>\",\n  \"YieldNumber\": \"<double>\",\n  \"YieldUnit\": \"<string>\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "180f89bc-bff8-47c0-87fb-a82ba7adf878",
+          "name": "Given a query, return recipe titles starting with query. Query must be at least 3 chars in length.",
+          "request": {
+            "name": "Given a query, return recipe titles starting with query. Query must be at least 3 chars in length.",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                "autocomplete"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "query",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "limit",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0c610695-841d-4f12-a04a-bf4c3bcee2b3",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "autocomplete"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  \"string\",\n  \"string\"\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3dd69dcd-2854-41e9-a2e0-7e20475d5e50",
+          "name": "Automatics the complete all recipes.",
+          "request": {
+            "name": "Automatics the complete all recipes.",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                "autocomplete",
+                "all"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "query",
+                  "value": "<string>",
+                  "description": "(Required) The query."
+                },
+                {
+                  "disabled": false,
+                  "key": "limit",
+                  "value": "<integer>",
+                  "description": "(Required) The limit."
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "faeabf66-eb71-405e-951c-7f6e61be170b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "autocomplete",
+                    "all"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"ImageURL\": \"string\",\n    \"QualityScore\": 1767,\n    \"RecipeID\": 4307,\n    \"Servings\": 4120.365361289448,\n    \"Title\": \"string\"\n  },\n  {\n    \"ImageURL\": \"string\",\n    \"QualityScore\": 7107,\n    \"RecipeID\": 2312,\n    \"Servings\": 6855.0399918963285,\n    \"Title\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4a712c77-1b77-4e1d-b26b-caea50eba4e9",
+          "name": "Automatics the complete my recipes.",
+          "request": {
+            "name": "Automatics the complete my recipes.",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                "autocomplete",
+                "mine"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "query",
+                  "value": "<string>",
+                  "description": "(Required) The query."
+                },
+                {
+                  "disabled": false,
+                  "key": "limit",
+                  "value": "<integer>",
+                  "description": "(Required) The limit."
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1ab4f437-dfc5-4446-989f-fc3bd7dab9dd",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "autocomplete",
+                    "mine"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"ImageURL\": \"string\",\n    \"QualityScore\": 1767,\n    \"RecipeID\": 4307,\n    \"Servings\": 4120.365361289448,\n    \"Title\": \"string\"\n  },\n  {\n    \"ImageURL\": \"string\",\n    \"QualityScore\": 7107,\n    \"RecipeID\": 2312,\n    \"Servings\": 6855.0399918963285,\n    \"Title\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b5e03968-1f43-4ca0-9dd4-f8a67dd3ba78",
+          "name": "Get a list of recipe categories (the ID field can be used for include_cat in search parameters)",
+          "request": {
+            "name": "Get a list of recipe categories (the ID field can be used for include_cat in search parameters)",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                "categories"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "94abfe6f-3174-4037-b758-e94d9d6213c9",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "categories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Category\": \"string\",\n    \"DefaultActiveMinutes\": 4790,\n    \"DefaultTotalMinutes\": 1751,\n    \"ID\": 5815,\n    \"ParentID\": 7727,\n    \"PrimaryImage\": \"string\",\n    \"ShortDescription\": \"string\"\n  },\n  {\n    \"Category\": \"string\",\n    \"DefaultActiveMinutes\": 9061,\n    \"DefaultTotalMinutes\": 6920,\n    \"ID\": 2327,\n    \"ParentID\": 5921,\n    \"PrimaryImage\": \"string\",\n    \"ShortDescription\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fd4f3449-8da3-4b2c-8f66-b2ded4877368",
+          "name": "Returns last active recipe for the user",
+          "request": {
+            "name": "Returns last active recipe for the user",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                "get",
+                "active",
+                "recipe"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "userName",
+                  "value": "<string>",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "44e12602-15c6-48fa-a582-7ebdbc86682e",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "get",
+                    "active",
+                    "recipe"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "userName",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Data\": {},\n  \"Message\": \"string\",\n  \"StatusCode\": 5353\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "afee05dc-5090-4edb-a5e5-743bb8809ba8",
+          "name": "Gets recipe single step as text",
+          "request": {
+            "name": "Gets recipe single step as text",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                "get",
+                "saved",
+                "step"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "userName",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "recipeId",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "stepId",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2daafa94-beda-4961-8131-a8f9aecae87c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "get",
+                    "saved",
+                    "step"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "userName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "recipeId",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "stepId",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c4e80244-f19f-4527-aaf9-2343c527620e",
+          "name": "Returns stored step number and number of steps in recipe",
+          "request": {
+            "name": "Returns stored step number and number of steps in recipe",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                "get",
+                "step",
+                "number"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "userName",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "recipeId",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5ad5f21d-4944-4c96-bc39-398651d5d4a0",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "get",
+                    "step",
+                    "number"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "userName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "recipeId",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Data\": {},\n  \"Message\": \"string\",\n  \"StatusCode\": 5353\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9a5b3982-cbe4-4083-a9ff-bd503d50d9fd",
+          "name": "Stores recipe step number and returns saved step data",
+          "request": {
+            "name": "Stores recipe step number and returns saved step data",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                "post",
+                "step"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "userName",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "recipeId",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "stepId",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0d6b596c-42f0-4841-a91a-49bfc4f5c697",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "post",
+                    "step"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "userName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "recipeId",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "stepId",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Data\": {},\n  \"Message\": \"string\",\n  \"StatusCode\": 5353\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f03298dd-a94b-4939-9116-6ebf7f6a668d",
+          "name": "POST an image as a new RecipeScan request\r\n                1)  Fetch the filename -- DONE\r\n                2)  Copy it to the pics/scan folder - ENSURE NO NAMING COLLISIONS -- DONE\r\n                3)  Create 120 thumbnail size  in pics/scan/120 -- DONE\r\n                4)  Insert the CloudTasks record\r\n                5)  Create the HIT\r\n                6)  Update the CloudTasks record with the HIT ID\r\n                7)  Email the requesing user\r\n                8)  Call out to www.bigoven.com to fetch the image and re-create the thumbnail",
+          "request": {
+            "name": "POST an image as a new RecipeScan request\r\n                1)  Fetch the filename -- DONE\r\n                2)  Copy it to the pics/scan folder - ENSURE NO NAMING COLLISIONS -- DONE\r\n                3)  Create 120 thumbnail size  in pics/scan/120 -- DONE\r\n                4)  Insert the CloudTasks record\r\n                5)  Create the HIT\r\n                6)  Update the CloudTasks record with the HIT ID\r\n                7)  Email the requesing user\r\n                8)  Call out to www.bigoven.com to fetch the image and re-create the thumbnail",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                "scan"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "test",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "devicetype",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "lat",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "lng",
+                  "value": "<double>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6c6babb3-3e16-49f9-a9b6-1c44a2547209",
+              "name": "Not authorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "scan"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "test",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "devicetype",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "lat",
+                      "value": "<double>"
+                    },
+                    {
+                      "key": "lng",
+                      "value": "<double>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "a4372196-f720-4387-b2ea-0105d4c4ca4c",
+              "name": "Payment required (not enough credits)",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "scan"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "test",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "devicetype",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "lat",
+                      "value": "<double>"
+                    },
+                    {
+                      "key": "lng",
+                      "value": "<double>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "626b24d1-7a35-4a13-afbb-7ddcbe9ccdb3",
+              "name": "Bad media type (bad JPG)",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "scan"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "test",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "devicetype",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "lat",
+                      "value": "<double>"
+                    },
+                    {
+                      "key": "lng",
+                      "value": "<double>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "380e8e8e-c3c4-45ae-87a9-7d06edd737fc",
+              "name": "General error on initiating RecipeScan task; please try again or contact us at support[at]bigoven.com",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "scan"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "test",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "devicetype",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "lat",
+                      "value": "<double>"
+                    },
+                    {
+                      "key": "lng",
+                      "value": "<double>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "58ee5d75-d56a-41e2-bffd-f726612661a0",
+          "name": "Return full Recipe detail with steps. Returns 403 if the recipe is owned by someone else.",
+          "request": {
+            "name": "Return full Recipe detail with steps. Returns 403 if the recipe is owned by someone else.",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                "steps",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "prefetch",
+                  "value": "<boolean>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) the Recipe ID to retrieve"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "82b66525-f1f2-4a6e-8037-3c65f056325a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    "steps",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "prefetch",
+                      "value": "<boolean>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) the Recipe ID to retrieve"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ActiveMinutes\": 5288,\n  \"AdTags\": \"string\",\n  \"AdminBoost\": 1732,\n  \"AllCategoriesText\": \"string\",\n  \"BookmarkImageURL\": \"string\",\n  \"BookmarkSiteLogo\": \"string\",\n  \"BookmarkURL\": \"string\",\n  \"Category\": \"string\",\n  \"Collection\": \"string\",\n  \"CollectionID\": 1041,\n  \"CreationDate\": \"1965-08-29T16:49:42.882Z\",\n  \"Cuisine\": \"string\",\n  \"Description\": \"string\",\n  \"FavoriteCount\": 1555,\n  \"ImageSquares\": [\n    1791,\n    7028\n  ],\n  \"ImageURL\": \"string\",\n  \"Ingredients\": [\n    {\n      \"DisplayIndex\": \"<integer>\",\n      \"DisplayQuantity\": \"<string>\",\n      \"HTMLName\": \"<string>\",\n      \"IngredientID\": \"<long>\",\n      \"IngredientInfo\": {\n        \"Department\": \"<string>\",\n        \"MasterIngredientID\": \"<integer>\",\n        \"Name\": \"<string>\",\n        \"UsuallyOnHand\": \"<boolean>\"\n      },\n      \"IsHeading\": \"<boolean>\",\n      \"IsLinked\": \"<boolean>\",\n      \"MetricDisplayQuantity\": \"<string>\",\n      \"MetricQuantity\": \"<double>\",\n      \"MetricUnit\": \"<string>\",\n      \"Name\": \"<string>\",\n      \"PreparationNotes\": \"<string>\",\n      \"Quantity\": \"<double>\",\n      \"Unit\": \"<string>\"\n    },\n    {\n      \"DisplayIndex\": \"<integer>\",\n      \"DisplayQuantity\": \"<string>\",\n      \"HTMLName\": \"<string>\",\n      \"IngredientID\": \"<long>\",\n      \"IngredientInfo\": {\n        \"Department\": \"<string>\",\n        \"MasterIngredientID\": \"<integer>\",\n        \"Name\": \"<string>\",\n        \"UsuallyOnHand\": \"<boolean>\"\n      },\n      \"IsHeading\": \"<boolean>\",\n      \"IsLinked\": \"<boolean>\",\n      \"MetricDisplayQuantity\": \"<string>\",\n      \"MetricQuantity\": \"<double>\",\n      \"MetricUnit\": \"<string>\",\n      \"Name\": \"<string>\",\n      \"PreparationNotes\": \"<string>\",\n      \"Quantity\": \"<double>\",\n      \"Unit\": \"<string>\"\n    }\n  ],\n  \"IngredientsTextBlock\": \"string\",\n  \"Instructions\": \"string\",\n  \"IsBookmark\": true,\n  \"IsPrivate\": false,\n  \"IsRecipeScan\": false,\n  \"IsSponsored\": false,\n  \"LastModified\": \"1968-09-03T02:42:40.371Z\",\n  \"MaxImageSquare\": 6850,\n  \"MedalCount\": 3252,\n  \"MenuCount\": 7405,\n  \"Microcategory\": \"string\",\n  \"NotesCount\": 3041,\n  \"NutritionInfo\": {\n    \"CaloriesFromFat\": \"<double>\",\n    \"Cholesterol\": \"<double>\",\n    \"CholesterolPct\": \"<double>\",\n    \"DietaryFiber\": \"<double>\",\n    \"DietaryFiberPct\": \"<double>\",\n    \"MonoFat\": \"<double>\",\n    \"PolyFat\": \"<double>\",\n    \"Potassium\": \"<double>\",\n    \"PotassiumPct\": \"<double>\",\n    \"Protein\": \"<double>\",\n    \"ProteinPct\": \"<double>\",\n    \"SatFat\": \"<double>\",\n    \"SatFatPct\": \"<double>\",\n    \"SingularYieldUnit\": \"<string>\",\n    \"Sodium\": \"<double>\",\n    \"SodiumPct\": \"<double>\",\n    \"Sugar\": \"<double>\",\n    \"TotalCalories\": \"<double>\",\n    \"TotalCarbs\": \"<double>\",\n    \"TotalCarbsPct\": \"<double>\",\n    \"TotalFat\": \"<double>\",\n    \"TotalFatPct\": \"<double>\",\n    \"TransFat\": \"<double>\"\n  },\n  \"PhotoUrl\": \"string\",\n  \"Poster\": {\n    \"FirstName\": \"<string>\",\n    \"ImageUrl48\": \"<string>\",\n    \"IsKitchenHelper\": \"<boolean>\",\n    \"IsPremium\": \"<boolean>\",\n    \"IsUsingRecurly\": \"<boolean>\",\n    \"LastName\": \"<string>\",\n    \"MemberSince\": \"<dateTime>\",\n    \"PhotoUrl\": \"<string>\",\n    \"PhotoUrl48\": \"string\",\n    \"PremiumExpiryDate\": \"<dateTime>\",\n    \"UserID\": \"<integer>\",\n    \"UserName\": \"<string>\",\n    \"WebUrl\": \"string\"\n  },\n  \"PrimaryIngredient\": \"string\",\n  \"RecipeID\": 3140,\n  \"ReviewCount\": 7083,\n  \"StarRating\": 87.30727963147888,\n  \"Steps\": [\n    {\n      \"EndGantt\": 6090,\n      \"StartGantt\": 4843,\n      \"Text\": \"string\"\n    },\n    {\n      \"EndGantt\": 3359,\n      \"StartGantt\": 2840,\n      \"Text\": \"string\"\n    }\n  ],\n  \"Subcategory\": \"string\",\n  \"Title\": \"string\",\n  \"TotalMinutes\": 2401,\n  \"VariantOfRecipeID\": 8689,\n  \"VerifiedByClass\": \"string\",\n  \"VerifiedDateTime\": \"2014-03-01T22:41:22.006Z\",\n  \"WebURL\": \"string\",\n  \"YieldNumber\": 1781.4131058859473,\n  \"YieldUnit\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3a480b91-2474-499e-bd2c-050986ec63e8",
+          "name": "Delete a Recipe (you must be authenticated as an owner of the recipe)",
+          "request": {
+            "name": "Delete a Recipe (you must be authenticated as an owner of the recipe)",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "86af6d9c-ea16-49c7-8e54-afe61e330f5f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "42f89421-06ac-496d-9792-5042bec9fcac",
+          "name": "Return full Recipe detail. Returns 403 if the recipe is owned by someone else.",
+          "request": {
+            "name": "Return full Recipe detail. Returns 403 if the recipe is owned by someone else.",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "prefetch",
+                  "value": "<boolean>",
+                  "description": "The prefetch."
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) The Recipe ID to retrieve"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8f9d98ba-e101-49c6-8c65-e85fab04e867",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "prefetch",
+                      "value": "<boolean>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) The Recipe ID to retrieve"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ActiveMinutes\": 5667,\n  \"AdTags\": \"string\",\n  \"AdminBoost\": 7419,\n  \"AllCategoriesText\": \"string\",\n  \"BookmarkImageURL\": \"string\",\n  \"BookmarkSiteLogo\": \"string\",\n  \"BookmarkURL\": \"string\",\n  \"Category\": \"string\",\n  \"Collection\": \"string\",\n  \"CollectionID\": 848,\n  \"CreationDate\": \"1965-05-09T03:37:14.423Z\",\n  \"Cuisine\": \"string\",\n  \"Description\": \"string\",\n  \"FavoriteCount\": 3922,\n  \"ImageSquares\": [\n    837,\n    3205\n  ],\n  \"ImageURL\": \"string\",\n  \"Ingredients\": [\n    {\n      \"DisplayIndex\": \"<integer>\",\n      \"DisplayQuantity\": \"<string>\",\n      \"HTMLName\": \"<string>\",\n      \"IngredientID\": \"<long>\",\n      \"IngredientInfo\": {\n        \"Department\": \"<string>\",\n        \"MasterIngredientID\": \"<integer>\",\n        \"Name\": \"<string>\",\n        \"UsuallyOnHand\": \"<boolean>\"\n      },\n      \"IsHeading\": \"<boolean>\",\n      \"IsLinked\": \"<boolean>\",\n      \"MetricDisplayQuantity\": \"<string>\",\n      \"MetricQuantity\": \"<double>\",\n      \"MetricUnit\": \"<string>\",\n      \"Name\": \"<string>\",\n      \"PreparationNotes\": \"<string>\",\n      \"Quantity\": \"<double>\",\n      \"Unit\": \"<string>\"\n    },\n    {\n      \"DisplayIndex\": \"<integer>\",\n      \"DisplayQuantity\": \"<string>\",\n      \"HTMLName\": \"<string>\",\n      \"IngredientID\": \"<long>\",\n      \"IngredientInfo\": {\n        \"Department\": \"<string>\",\n        \"MasterIngredientID\": \"<integer>\",\n        \"Name\": \"<string>\",\n        \"UsuallyOnHand\": \"<boolean>\"\n      },\n      \"IsHeading\": \"<boolean>\",\n      \"IsLinked\": \"<boolean>\",\n      \"MetricDisplayQuantity\": \"<string>\",\n      \"MetricQuantity\": \"<double>\",\n      \"MetricUnit\": \"<string>\",\n      \"Name\": \"<string>\",\n      \"PreparationNotes\": \"<string>\",\n      \"Quantity\": \"<double>\",\n      \"Unit\": \"<string>\"\n    }\n  ],\n  \"IngredientsTextBlock\": \"string\",\n  \"Instructions\": \"string\",\n  \"IsBookmark\": true,\n  \"IsPrivate\": false,\n  \"IsRecipeScan\": true,\n  \"IsSponsored\": true,\n  \"LastModified\": \"2010-10-19T04:28:37.557Z\",\n  \"MaxImageSquare\": 8600,\n  \"MedalCount\": 1507,\n  \"MenuCount\": 4310,\n  \"Microcategory\": \"string\",\n  \"NotesCount\": 6392,\n  \"NutritionInfo\": {\n    \"CaloriesFromFat\": \"<double>\",\n    \"Cholesterol\": \"<double>\",\n    \"CholesterolPct\": \"<double>\",\n    \"DietaryFiber\": \"<double>\",\n    \"DietaryFiberPct\": \"<double>\",\n    \"MonoFat\": \"<double>\",\n    \"PolyFat\": \"<double>\",\n    \"Potassium\": \"<double>\",\n    \"PotassiumPct\": \"<double>\",\n    \"Protein\": \"<double>\",\n    \"ProteinPct\": \"<double>\",\n    \"SatFat\": \"<double>\",\n    \"SatFatPct\": \"<double>\",\n    \"SingularYieldUnit\": \"<string>\",\n    \"Sodium\": \"<double>\",\n    \"SodiumPct\": \"<double>\",\n    \"Sugar\": \"<double>\",\n    \"TotalCalories\": \"<double>\",\n    \"TotalCarbs\": \"<double>\",\n    \"TotalCarbsPct\": \"<double>\",\n    \"TotalFat\": \"<double>\",\n    \"TotalFatPct\": \"<double>\",\n    \"TransFat\": \"<double>\"\n  },\n  \"PhotoUrl\": \"string\",\n  \"Poster\": {\n    \"FirstName\": \"<string>\",\n    \"ImageUrl48\": \"<string>\",\n    \"IsKitchenHelper\": \"<boolean>\",\n    \"IsPremium\": \"<boolean>\",\n    \"IsUsingRecurly\": \"<boolean>\",\n    \"LastName\": \"<string>\",\n    \"MemberSince\": \"<dateTime>\",\n    \"PhotoUrl\": \"<string>\",\n    \"PhotoUrl48\": \"string\",\n    \"PremiumExpiryDate\": \"<dateTime>\",\n    \"UserID\": \"<integer>\",\n    \"UserName\": \"<string>\",\n    \"WebUrl\": \"string\"\n  },\n  \"PrimaryIngredient\": \"string\",\n  \"RecipeID\": 1028,\n  \"ReviewCount\": 3605,\n  \"StarRating\": 7643.935579055342,\n  \"Steps\": [\n    {\n      \"EndGantt\": 9977,\n      \"StartGantt\": 8826,\n      \"Text\": \"string\"\n    },\n    {\n      \"EndGantt\": 7877,\n      \"StartGantt\": 4727,\n      \"Text\": \"string\"\n    }\n  ],\n  \"Subcategory\": \"string\",\n  \"Title\": \"string\",\n  \"TotalMinutes\": 8357,\n  \"VariantOfRecipeID\": 5328,\n  \"VerifiedByClass\": \"string\",\n  \"VerifiedDateTime\": \"2002-09-27T13:09:34.125Z\",\n  \"WebURL\": \"string\",\n  \"YieldNumber\": 2611.989576804442,\n  \"YieldUnit\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bbbe8e36-6b05-42d3-8482-d5dcf0745ce1",
+          "name": "Zaps the recipe.",
+          "request": {
+            "name": "Zaps the recipe.",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":id",
+                "zap"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) The identifier."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c1c00068-3715-423b-a9b8-2416b1c29c1d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":id",
+                    "zap"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) The identifier."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "24d1d053-de54-4a6b-a12a-b8b6fe04f989",
+          "name": "Feedback on a Recipe -- for internal BigOven editors",
+          "request": {
+            "name": "Feedback on a Recipe -- for internal BigOven editors",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":recipeId",
+                "feedback"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "recipeId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "feedback",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "625ff551-2b8b-40a4-ae79-799019483db7",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "feedback"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "recipeId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "feedback",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a475203a-2b8d-4ecd-9a3a-135c9b87c324",
+          "name": "Get recipes related to the given recipeId",
+          "request": {
+            "name": "Get recipes related to the given recipeId",
+            "description": {},
+            "url": {
+              "path": [
+                "recipe",
+                ":recipeId",
+                "related"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "pg",
+                  "value": "<integer>",
+                  "description": "The page"
+                },
+                {
+                  "disabled": false,
+                  "key": "rpp",
+                  "value": "<integer>",
+                  "description": "The results per page"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "recipeId",
+                  "description": "(Required) The recipe id"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b19371ee-45eb-4238-9ce2-e6afa169ea3d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipe",
+                    ":recipeId",
+                    "related"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "pg",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "rpp",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "recipeId",
+                      "description": "(Required) The recipe id"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ResultCount\": 564,\n  \"Results\": [\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"2024-08-01T11:02:25.611Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": true,\n      \"IsPrivate\": false,\n      \"IsRecipeScan\": false,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 3561,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 9045,\n      \"ReviewCount\": 2184,\n      \"Servings\": 3042.288129115327,\n      \"StarRating\": 4247.6139250875685,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 6087,\n      \"WebURL\": \"string\"\n    },\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"1988-09-26T19:47:50.287Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": true,\n      \"IsPrivate\": false,\n      \"IsRecipeScan\": false,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 6228,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 9459,\n      \"ReviewCount\": 5737,\n      \"Servings\": 6076.869121428767,\n      \"StarRating\": 5291.885556842978,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 9373,\n      \"WebURL\": \"string\"\n    }\n  ],\n  \"SpellSuggest\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "da67abc9-888c-45df-8be0-f99f7134b190",
+          "name": "Search for recipes. There are many parameters that you can apply. Starting with the most common, use title_kw to search within a title.\r\n            Use any_kw to search across the entire recipe.\r\n            If you'd like to limit by course, set the parameter \"include_primarycat\" to one of (appetizers,bread,breakfast,dessert,drinks,maindish,salad,sidedish,soup,marinades,other).\r\n            If you'd like to exclude a category, set exclude_cat to one or more (comma-separated) list of those categories to exclude.\r\n            If you'd like to include a category, set include_cat to one or more (comma-separated) of those categories to include.\r\n            To explicitly include an ingredient in your search, set the parameter \"include_ing\" to a CSV of up to three ingredients, e.g.:include_ing=mustard,chicken,beef%20tips\r\n            To explicitly exclude an ingredient in your search, set the parameter \"exclude_ing\" to a CSV of up to three ingredients.\r\n            All searches must contain the paging parameters pg and rpp, which are integers, and represent the page number (1-based) and results per page (rpp).\r\n            So, to get the third page of a result set paged with 25 recipes per page, you'd pass pg=3&amp;rpp=25\r\n            If you'd like to target searches to just a single target user's recipes, set userId=the target userId (number).\r\n            Or, you can set username=theirusername\r\n            vtn;vgn;chs;glf;ntf;dyf;sff;slf;tnf;wmf;rmf;cps\r\n            cuisine\r\n            photos\r\n            filter=added,try,favorites,myrecipes\\r\\n\\r\\n\r\n            folder=FolderNameCaseSensitive\r\n            coll=ID of Collection",
+          "request": {
+            "name": "Search for recipes. There are many parameters that you can apply. Starting with the most common, use title_kw to search within a title.\r\n            Use any_kw to search across the entire recipe.\r\n            If you'd like to limit by course, set the parameter \"include_primarycat\" to one of (appetizers,bread,breakfast,dessert,drinks,maindish,salad,sidedish,soup,marinades,other).\r\n            If you'd like to exclude a category, set exclude_cat to one or more (comma-separated) list of those categories to exclude.\r\n            If you'd like to include a category, set include_cat to one or more (comma-separated) of those categories to include.\r\n            To explicitly include an ingredient in your search, set the parameter \"include_ing\" to a CSV of up to three ingredients, e.g.:include_ing=mustard,chicken,beef%20tips\r\n            To explicitly exclude an ingredient in your search, set the parameter \"exclude_ing\" to a CSV of up to three ingredients.\r\n            All searches must contain the paging parameters pg and rpp, which are integers, and represent the page number (1-based) and results per page (rpp).\r\n            So, to get the third page of a result set paged with 25 recipes per page, you'd pass pg=3&amp;rpp=25\r\n            If you'd like to target searches to just a single target user's recipes, set userId=the target userId (number).\r\n            Or, you can set username=theirusername\r\n            vtn;vgn;chs;glf;ntf;dyf;sff;slf;tnf;wmf;rmf;cps\r\n            cuisine\r\n            photos\r\n            filter=added,try,favorites,myrecipes\\r\\n\\r\\n\r\n            folder=FolderNameCaseSensitive\r\n            coll=ID of Collection",
+            "description": {},
+            "url": {
+              "path": [
+                "recipes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "any_kw",
+                  "value": "<string>",
+                  "description": "Search anywhere in the recipe for the keyword"
+                },
+                {
+                  "disabled": false,
+                  "key": "folder",
+                  "value": "<string>",
+                  "description": "Search in a specific folder name for the authenticated user"
+                },
+                {
+                  "disabled": false,
+                  "key": "coll",
+                  "value": "<integer>",
+                  "description": "Limit to a collection ID number"
+                },
+                {
+                  "disabled": false,
+                  "key": "filter",
+                  "value": "<string>",
+                  "description": "optionally set to either \"myrecipes\", \"try\", \"favorites\",\"added\" to filter to just the authenticated user's recipe set"
+                },
+                {
+                  "disabled": false,
+                  "key": "title_kw",
+                  "value": "<string>",
+                  "description": "Search just in the recipe title for the keyword"
+                },
+                {
+                  "disabled": false,
+                  "key": "userId",
+                  "value": "<integer>",
+                  "description": "Set the target userid to search their public recipes"
+                },
+                {
+                  "disabled": false,
+                  "key": "username",
+                  "value": "<string>",
+                  "description": "Set the target username to search their public recipes"
+                },
+                {
+                  "disabled": false,
+                  "key": "token",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "photos",
+                  "value": "<boolean>",
+                  "description": "if set to true, limit search results to photos only"
+                },
+                {
+                  "disabled": false,
+                  "key": "boostmine",
+                  "value": "<boolean>",
+                  "description": "if set to true, boost my own recipes in my folders so they show up high in the list (at the expense of other sort orders)"
+                },
+                {
+                  "disabled": false,
+                  "key": "include_cat",
+                  "value": "<string>",
+                  "description": "integer of the subcategory you'd like to limit searches to (see the /recipe/categories endpoint for available id numbers). For instance, 58 is \"Main Dish &gt; Casseroles\"."
+                },
+                {
+                  "disabled": false,
+                  "key": "exclude_cat",
+                  "value": "<string>",
+                  "description": "like include_cat, set this to an integer to exclude a specific category"
+                },
+                {
+                  "disabled": false,
+                  "key": "include_primarycat",
+                  "value": "<string>",
+                  "description": "csv indicating up to three top-level categories -- valid values are [appetizers,bread,breakfast,desserts,drinks,maindish,salads,sidedish,soups,marinades,other]"
+                },
+                {
+                  "disabled": false,
+                  "key": "exclude_primarycat",
+                  "value": "<string>",
+                  "description": "csv indicating integer values for up to 3 top-level categories -- valid values are 1...11 [appetizers,bread,breakfast,desserts,drinks,maindish,salads,sidedish,soups,marinades,other]"
+                },
+                {
+                  "disabled": false,
+                  "key": "include_ing",
+                  "value": "<string>",
+                  "description": "A CSV representing up to 3 ingredients to include, e.g., tomatoes,corn%20%starch,chicken"
+                },
+                {
+                  "disabled": false,
+                  "key": "exclude_ing",
+                  "value": "<string>",
+                  "description": "A CSV representing up to 3 ingredients to exclude  (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "cuisine",
+                  "value": "<string>",
+                  "description": "Limit to a specific cuisine. Cooks can enter anything free-form, but the few dozen preconfigured values are Afghan,African,American,American-South,Asian,Australian,Brazilian,Cajun,Canadian,Caribbean,Chinese,Croatian,Cuban,Dessert,Eastern European,English,French,German,Greek,Hawaiian,Hungarian,India,Indian,Irish,Italian,Japanese,Jewish,Korean,Latin,Mediterranean,Mexican,Middle Eastern,Moroccan,Polish,Russian,Scandanavian,Seafood,Southern,Southwestern,Spanish,Tex-Mex,Thai,Vegan,Vegetarian,Vietnamese"
+                },
+                {
+                  "disabled": false,
+                  "key": "db",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "userset",
+                  "value": "<string>",
+                  "description": "If set to a given username, it'll force the search to filter to just that username"
+                },
+                {
+                  "disabled": false,
+                  "key": "servingsMin",
+                  "value": "<double>",
+                  "description": "Limit to yield of a given number size or greater. Note that cooks usually enter recipes by Servings, but sometimes they are posted by \"dozen\", etc. This parameter simply specifies the minimum number for that value entered in \"yield.\""
+                },
+                {
+                  "disabled": false,
+                  "key": "totalMins",
+                  "value": "<integer>",
+                  "description": "Optional. If supplied, will restrict results to recipes that can be made in {totalMins} or less. (Convert \"1 hour, 15 minutes\" to 75 before passing in.)"
+                },
+                {
+                  "disabled": false,
+                  "key": "maxIngredients",
+                  "value": "<integer>",
+                  "description": "Optional. If supplied, will restrict results to recipes that can be made with {maxIngredients} ingredients or less"
+                },
+                {
+                  "disabled": false,
+                  "key": "minIngredients",
+                  "value": "<integer>",
+                  "description": "Optional. If supplied, will restrict results to recipes that have at least {minIngredients}"
+                },
+                {
+                  "disabled": false,
+                  "key": "rpp",
+                  "value": "<integer>",
+                  "description": "integer; results per page"
+                },
+                {
+                  "disabled": false,
+                  "key": "pg",
+                  "value": "<integer>",
+                  "description": "integer: the page number"
+                },
+                {
+                  "disabled": false,
+                  "key": "vtn",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to vegetarian (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "vgn",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to vegan (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "chs",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to contains-cheese (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "glf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to gluten-free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "ntf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to nut-free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "dyf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to dairy-free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "sff",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to seafood-free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "slf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to shellfish-free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "tnf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to tree-nut free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "wmf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to white-meat free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "rmf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to red-meat free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "cps",
+                  "value": "<integer>",
+                  "description": "when set to 1, recipe contains pasta, set to 0 means contains no pasta (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "champion",
+                  "value": "<integer>",
+                  "description": "optional. When set to 1, this will limit search results to \"best of\" recipes as determined by various internal editorial and programmatic algorithms. For the most comprehensive results, don't include this parameter."
+                },
+                {
+                  "disabled": false,
+                  "key": "synonyms",
+                  "value": "<boolean>",
+                  "description": "optional, default is false. When set to true, BigOven will attempt to apply synonyms in search (e.g., excluding pork will also exclude bacon)"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "313f6070-525b-4aba-a388-ec69c8825e3d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "any_kw",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "folder",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "coll",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "filter",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "title_kw",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "userId",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "username",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "token",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "photos",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "boostmine",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "include_cat",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "exclude_cat",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "include_primarycat",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "exclude_primarycat",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "include_ing",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "exclude_ing",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "cuisine",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "db",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "userset",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "servingsMin",
+                      "value": "<double>"
+                    },
+                    {
+                      "key": "totalMins",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "maxIngredients",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "minIngredients",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "rpp",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "pg",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "vtn",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "vgn",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "chs",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "glf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "ntf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "dyf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "sff",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "slf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "tnf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "wmf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "rmf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "cps",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "champion",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "synonyms",
+                      "value": "<boolean>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ResultCount\": 3538,\n  \"Results\": [\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"1989-12-11T23:00:17.230Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": true,\n      \"IsPrivate\": true,\n      \"IsRecipeScan\": true,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 4092,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 3961,\n      \"ReviewCount\": 7321,\n      \"Servings\": 5210.033000005985,\n      \"StarRating\": 8514.254622007937,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 3913,\n      \"WebURL\": \"string\"\n    },\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"1963-11-25T09:08:24.249Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": true,\n      \"IsPrivate\": true,\n      \"IsRecipeScan\": false,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 7772,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 5957,\n      \"ReviewCount\": 5575,\n      \"Servings\": 5047.433633464787,\n      \"StarRating\": 9356.627844952414,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 539,\n      \"WebURL\": \"string\"\n    }\n  ],\n  \"SpellSuggest\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c061a322-ed9b-44b1-b8a5-80842af6dff5",
+          "name": "Get a random, home-page-quality Recipe.",
+          "request": {
+            "name": "Get a random, home-page-quality Recipe.",
+            "description": {},
+            "url": {
+              "path": [
+                "recipes",
+                "random"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7675d9a1-78b5-4b83-afd1-faffff83f441",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipes",
+                    "random"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ActiveMinutes\": \"<integer>\",\n  \"AdTags\": \"<string>\",\n  \"AdminBoost\": \"<integer>\",\n  \"AllCategoriesText\": \"<string>\",\n  \"BookmarkImageURL\": \"<string>\",\n  \"BookmarkSiteLogo\": \"<string>\",\n  \"BookmarkURL\": \"<string>\",\n  \"Category\": \"<string>\",\n  \"Collection\": \"<string>\",\n  \"CollectionID\": \"<integer>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"Cuisine\": \"<string>\",\n  \"Description\": \"<string>\",\n  \"FavoriteCount\": \"<integer>\",\n  \"HeroPhotoUrl\": \"<string>\",\n  \"ImageSquares\": [\n    \"<integer>\",\n    \"<integer>\"\n  ],\n  \"ImageURL\": \"<string>\",\n  \"Ingredients\": [\n    {\n      \"DisplayIndex\": \"<integer>\",\n      \"DisplayQuantity\": \"<string>\",\n      \"HTMLName\": \"<string>\",\n      \"IngredientID\": \"<long>\",\n      \"IngredientInfo\": {\n        \"Department\": \"<string>\",\n        \"MasterIngredientID\": \"<integer>\",\n        \"Name\": \"<string>\",\n        \"UsuallyOnHand\": \"<boolean>\"\n      },\n      \"IsHeading\": \"<boolean>\",\n      \"IsLinked\": \"<boolean>\",\n      \"MetricDisplayQuantity\": \"<string>\",\n      \"MetricQuantity\": \"<double>\",\n      \"MetricUnit\": \"<string>\",\n      \"Name\": \"<string>\",\n      \"PreparationNotes\": \"<string>\",\n      \"Quantity\": \"<double>\",\n      \"Unit\": \"<string>\"\n    },\n    {\n      \"DisplayIndex\": \"<integer>\",\n      \"DisplayQuantity\": \"<string>\",\n      \"HTMLName\": \"<string>\",\n      \"IngredientID\": \"<long>\",\n      \"IngredientInfo\": {\n        \"Department\": \"<string>\",\n        \"MasterIngredientID\": \"<integer>\",\n        \"Name\": \"<string>\",\n        \"UsuallyOnHand\": \"<boolean>\"\n      },\n      \"IsHeading\": \"<boolean>\",\n      \"IsLinked\": \"<boolean>\",\n      \"MetricDisplayQuantity\": \"<string>\",\n      \"MetricQuantity\": \"<double>\",\n      \"MetricUnit\": \"<string>\",\n      \"Name\": \"<string>\",\n      \"PreparationNotes\": \"<string>\",\n      \"Quantity\": \"<double>\",\n      \"Unit\": \"<string>\"\n    }\n  ],\n  \"IngredientsTextBlock\": \"<string>\",\n  \"Instructions\": \"<string>\",\n  \"IsBookmark\": \"<boolean>\",\n  \"IsPrivate\": \"<boolean>\",\n  \"IsRecipeScan\": \"<boolean>\",\n  \"IsSponsored\": \"<boolean>\",\n  \"LastModified\": \"<dateTime>\",\n  \"MaxImageSquare\": \"<integer>\",\n  \"MedalCount\": \"<integer>\",\n  \"MenuCount\": \"<integer>\",\n  \"Microcategory\": \"<string>\",\n  \"NotesCount\": \"<integer>\",\n  \"NutritionInfo\": {\n    \"CaloriesFromFat\": \"<double>\",\n    \"Cholesterol\": \"<double>\",\n    \"CholesterolPct\": \"<double>\",\n    \"DietaryFiber\": \"<double>\",\n    \"DietaryFiberPct\": \"<double>\",\n    \"MonoFat\": \"<double>\",\n    \"PolyFat\": \"<double>\",\n    \"Potassium\": \"<double>\",\n    \"PotassiumPct\": \"<double>\",\n    \"Protein\": \"<double>\",\n    \"ProteinPct\": \"<double>\",\n    \"SatFat\": \"<double>\",\n    \"SatFatPct\": \"<double>\",\n    \"SingularYieldUnit\": \"<string>\",\n    \"Sodium\": \"<double>\",\n    \"SodiumPct\": \"<double>\",\n    \"Sugar\": \"<double>\",\n    \"TotalCalories\": \"<double>\",\n    \"TotalCarbs\": \"<double>\",\n    \"TotalCarbsPct\": \"<double>\",\n    \"TotalFat\": \"<double>\",\n    \"TotalFatPct\": \"<double>\",\n    \"TransFat\": \"<double>\"\n  },\n  \"Poster\": {\n    \"FirstName\": \"<string>\",\n    \"ImageUrl48\": \"<string>\",\n    \"IsKitchenHelper\": \"<boolean>\",\n    \"IsPremium\": \"<boolean>\",\n    \"IsUsingRecurly\": \"<boolean>\",\n    \"LastName\": \"<string>\",\n    \"MemberSince\": \"<dateTime>\",\n    \"PhotoUrl\": \"<string>\",\n    \"PhotoUrl48\": \"string\",\n    \"PremiumExpiryDate\": \"<dateTime>\",\n    \"UserID\": \"<integer>\",\n    \"UserName\": \"<string>\",\n    \"WebUrl\": \"string\"\n  },\n  \"PrimaryIngredient\": \"<string>\",\n  \"RecipeID\": \"<integer>\",\n  \"ReviewCount\": \"<integer>\",\n  \"StarRating\": \"<double>\",\n  \"Subcategory\": \"<string>\",\n  \"Title\": \"<string>\",\n  \"TotalMinutes\": \"<integer>\",\n  \"VariantOfRecipeID\": \"<integer>\",\n  \"VerifiedByClass\": \"<string>\",\n  \"VerifiedDateTime\": \"<dateTime>\",\n  \"WebURL\": \"<string>\",\n  \"YieldNumber\": \"<double>\",\n  \"YieldUnit\": \"<string>\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e85df2dc-9398-4ae5-9b8a-074db6a4bd16",
+          "name": "Get the recipe/comment tuples for those recipes with 4 or 5 star ratings",
+          "request": {
+            "name": "Get the recipe/comment tuples for those recipes with 4 or 5 star ratings",
+            "description": {},
+            "url": {
+              "path": [
+                "recipes",
+                "raves"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "pg",
+                  "value": "<integer>",
+                  "description": "page, starting with 1"
+                },
+                {
+                  "disabled": false,
+                  "key": "rpp",
+                  "value": "<integer>",
+                  "description": "results per page"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "57ab8599-4420-4be8-aebf-8f25d57d372f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipes",
+                    "raves"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "pg",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "rpp",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"RecipeInfo\": {\n      \"Category\": \"string\",\n      \"CreationDate\": \"1993-07-09T14:12:53.193Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": false,\n      \"IsPrivate\": false,\n      \"IsRecipeScan\": true,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 9309,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 3637,\n      \"ReviewCount\": 3750,\n      \"Servings\": 5088.7637048687575,\n      \"StarRating\": 3814.2477320852477,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 3596,\n      \"WebURL\": \"string\"\n    },\n    \"Review\": {\n      \"ActiveMinutes\": 2748,\n      \"Comment\": \"string\",\n      \"CreationDate\": \"1948-01-31T19:02:51.551Z\",\n      \"FeaturedReply\": {\n        \"Comment\": \"string\",\n        \"CreationDate\": \"1958-09-02T12:11:56.843Z\",\n        \"ID\": \"string\",\n        \"LastModified\": \"1979-07-23T03:43:09.639Z\",\n        \"Poster\": {\n          \"FirstName\": \"string\",\n          \"LastName\": \"string\",\n          \"PhotoUrl\": \"string\",\n          \"UserID\": 7860,\n          \"UserName\": \"string\"\n        },\n        \"ReviewID\": \"string\"\n      },\n      \"GUID\": \"string\",\n      \"ID\": \"string\",\n      \"LastModified\": \"1982-07-03T13:55:54.194Z\",\n      \"ParentID\": 311,\n      \"Poster\": {\n        \"FirstName\": \"<string>\",\n        \"ImageUrl48\": \"<string>\",\n        \"IsKitchenHelper\": \"<boolean>\",\n        \"IsPremium\": \"<boolean>\",\n        \"IsUsingRecurly\": \"<boolean>\",\n        \"LastName\": \"<string>\",\n        \"MemberSince\": \"<dateTime>\",\n        \"PhotoUrl\": \"<string>\",\n        \"PhotoUrl48\": \"string\",\n        \"PremiumExpiryDate\": \"<dateTime>\",\n        \"UserID\": \"<integer>\",\n        \"UserName\": \"<string>\",\n        \"WebUrl\": \"string\"\n      },\n      \"Replies\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/BigOven.Model.API.Review detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/BigOven.Model.API.Review detected>\"\n        }\n      ],\n      \"ReplyCount\": 6917,\n      \"ReviewID\": 369,\n      \"StarRating\": 6729.281326177751,\n      \"TotalMinutes\": 6903\n    }\n  },\n  {\n    \"RecipeInfo\": {\n      \"Category\": \"string\",\n      \"CreationDate\": \"1985-11-25T05:58:07.313Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": true,\n      \"IsPrivate\": true,\n      \"IsRecipeScan\": false,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 6784,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 9410,\n      \"ReviewCount\": 3586,\n      \"Servings\": 2348.678935407902,\n      \"StarRating\": 433.1455934505335,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 4693,\n      \"WebURL\": \"string\"\n    },\n    \"Review\": {\n      \"ActiveMinutes\": 9512,\n      \"Comment\": \"string\",\n      \"CreationDate\": \"1998-12-17T20:17:59.274Z\",\n      \"FeaturedReply\": {\n        \"Comment\": \"string\",\n        \"CreationDate\": \"1991-09-17T18:55:00.253Z\",\n        \"ID\": \"string\",\n        \"LastModified\": \"1957-04-04T09:50:32.084Z\",\n        \"Poster\": {\n          \"FirstName\": \"string\",\n          \"LastName\": \"string\",\n          \"PhotoUrl\": \"string\",\n          \"UserID\": 7527,\n          \"UserName\": \"string\"\n        },\n        \"ReviewID\": \"string\"\n      },\n      \"GUID\": \"string\",\n      \"ID\": \"string\",\n      \"LastModified\": \"1995-09-03T04:39:25.299Z\",\n      \"ParentID\": 5917,\n      \"Poster\": {\n        \"FirstName\": \"<string>\",\n        \"ImageUrl48\": \"<string>\",\n        \"IsKitchenHelper\": \"<boolean>\",\n        \"IsPremium\": \"<boolean>\",\n        \"IsUsingRecurly\": \"<boolean>\",\n        \"LastName\": \"<string>\",\n        \"MemberSince\": \"<dateTime>\",\n        \"PhotoUrl\": \"<string>\",\n        \"PhotoUrl48\": \"string\",\n        \"PremiumExpiryDate\": \"<dateTime>\",\n        \"UserID\": \"<integer>\",\n        \"UserName\": \"<string>\",\n        \"WebUrl\": \"string\"\n      },\n      \"Replies\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/BigOven.Model.API.Review detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/BigOven.Model.API.Review detected>\"\n        }\n      ],\n      \"ReplyCount\": 5244,\n      \"ReviewID\": 8962,\n      \"StarRating\": 2073.083171163721,\n      \"TotalMinutes\": 2824\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b7f8a854-79c4-48e9-9035-6361636dbddb",
+          "name": "Get a list of recipes that the authenticated user has most recently viewed",
+          "request": {
+            "name": "Get a list of recipes that the authenticated user has most recently viewed",
+            "description": {},
+            "url": {
+              "path": [
+                "recipes",
+                "recentviews"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "pg",
+                  "value": "<integer>",
+                  "description": "Page number starting with 1"
+                },
+                {
+                  "disabled": false,
+                  "key": "rpp",
+                  "value": "<integer>",
+                  "description": "results per page"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c09bd6f4-2ff7-43cf-bbcd-592b5fb7394a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipes",
+                    "recentviews"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "pg",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "rpp",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"date\": \"1998-06-14T18:08:37.747Z\",\n    \"recipeInfo\": {\n      \"Category\": \"string\",\n      \"CreationDate\": \"1973-07-07T21:57:23.470Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": true,\n      \"IsPrivate\": true,\n      \"IsRecipeScan\": true,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 6313,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 322,\n      \"ReviewCount\": 2121,\n      \"Servings\": 4778.175825475245,\n      \"StarRating\": 2666.870376415177,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 1688,\n      \"WebURL\": \"string\"\n    }\n  },\n  {\n    \"date\": \"2003-08-12T20:48:07.104Z\",\n    \"recipeInfo\": {\n      \"Category\": \"string\",\n      \"CreationDate\": \"1996-08-23T20:21:50.983Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": true,\n      \"IsPrivate\": true,\n      \"IsRecipeScan\": true,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 6375,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 6400,\n      \"ReviewCount\": 8639,\n      \"Servings\": 8586.888596788274,\n      \"StarRating\": 1675.2763789327407,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 9606,\n      \"WebURL\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "03f7fd05-db3e-4801-9e87-2b6841bc37bd",
+          "name": "Search for recipes. There are many parameters that you can apply. Starting with the most common, use title_kw to search within a title.\r\n            Use any_kw to search across the entire recipe.\r\n            If you'd like to limit by course, set the parameter \"include_primarycat\" to one of (appetizers,bread,breakfast,dessert,drinks,maindish,salad,sidedish,soup,marinades,other).\r\n            If you'd like to exclude a category, set exclude_cat to one or more (comma-separated) list of those categories to exclude.\r\n            If you'd like to include a category, set include_cat to one or more (comma-separated) of those categories to include.\r\n            To explicitly include an ingredient in your search, set the parameter \"include_ing\" to a CSV of up to three ingredients, e.g.:include_ing=mustard,chicken,beef%20tips\r\n            To explicitly exclude an ingredient in your search, set the parameter \"exclude_ing\" to a CSV of up to three ingredients.\r\n            All searches must contain the paging parameters pg and rpp, which are integers, and represent the page number (1-based) and results per page (rpp).\r\n            So, to get the third page of a result set paged with 25 recipes per page, you'd pass pg=3&amp;rpp=25\r\n            If you'd like to target searches to just a single target user's recipes, set userId=the target userId (number).\r\n            Or, you can set username=theirusername\r\n            vtn;vgn;chs;glf;ntf;dyf;sff;slf;tnf;wmf;rmf;cps\r\n            cuisine\r\n            photos\r\n            filter=added,try,favorites,myrecipes\\r\\n\\r\\n\r\n            folder=FolderNameCaseSensitive\r\n            coll=ID of Collection",
+          "request": {
+            "name": "Search for recipes. There are many parameters that you can apply. Starting with the most common, use title_kw to search within a title.\r\n            Use any_kw to search across the entire recipe.\r\n            If you'd like to limit by course, set the parameter \"include_primarycat\" to one of (appetizers,bread,breakfast,dessert,drinks,maindish,salad,sidedish,soup,marinades,other).\r\n            If you'd like to exclude a category, set exclude_cat to one or more (comma-separated) list of those categories to exclude.\r\n            If you'd like to include a category, set include_cat to one or more (comma-separated) of those categories to include.\r\n            To explicitly include an ingredient in your search, set the parameter \"include_ing\" to a CSV of up to three ingredients, e.g.:include_ing=mustard,chicken,beef%20tips\r\n            To explicitly exclude an ingredient in your search, set the parameter \"exclude_ing\" to a CSV of up to three ingredients.\r\n            All searches must contain the paging parameters pg and rpp, which are integers, and represent the page number (1-based) and results per page (rpp).\r\n            So, to get the third page of a result set paged with 25 recipes per page, you'd pass pg=3&amp;rpp=25\r\n            If you'd like to target searches to just a single target user's recipes, set userId=the target userId (number).\r\n            Or, you can set username=theirusername\r\n            vtn;vgn;chs;glf;ntf;dyf;sff;slf;tnf;wmf;rmf;cps\r\n            cuisine\r\n            photos\r\n            filter=added,try,favorites,myrecipes\\r\\n\\r\\n\r\n            folder=FolderNameCaseSensitive\r\n            coll=ID of Collection",
+            "description": {},
+            "url": {
+              "path": [
+                "recipes",
+                "top25random"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "any_kw",
+                  "value": "<string>",
+                  "description": "Search anywhere in the recipe for the keyword"
+                },
+                {
+                  "disabled": false,
+                  "key": "folder",
+                  "value": "<string>",
+                  "description": "Search in a specific folder name for the authenticated user"
+                },
+                {
+                  "disabled": false,
+                  "key": "coll",
+                  "value": "<integer>",
+                  "description": "Limit to a collection ID number"
+                },
+                {
+                  "disabled": false,
+                  "key": "filter",
+                  "value": "<string>",
+                  "description": "optionally set to either \"myrecipes\", \"try\", \"favorites\",\"added\" to filter to just the authenticated user's recipe set"
+                },
+                {
+                  "disabled": false,
+                  "key": "title_kw",
+                  "value": "<string>",
+                  "description": "Search just in the recipe title for the keyword"
+                },
+                {
+                  "disabled": false,
+                  "key": "userId",
+                  "value": "<integer>",
+                  "description": "Set the target userid to search their public recipes"
+                },
+                {
+                  "disabled": false,
+                  "key": "username",
+                  "value": "<string>",
+                  "description": "Set the target username to search their public recipes"
+                },
+                {
+                  "disabled": false,
+                  "key": "token",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "photos",
+                  "value": "<boolean>",
+                  "description": "if set to true, limit search results to photos only"
+                },
+                {
+                  "disabled": false,
+                  "key": "boostmine",
+                  "value": "<boolean>",
+                  "description": "if set to true, boost my own recipes in my folders so they show up high in the list (at the expense of other sort orders)"
+                },
+                {
+                  "disabled": false,
+                  "key": "include_cat",
+                  "value": "<string>",
+                  "description": "integer of the subcategory you'd like to limit searches to (see the /recipe/categories endpoint for available id numbers). For instance, 58 is \"Main Dish &gt; Casseroles\"."
+                },
+                {
+                  "disabled": false,
+                  "key": "exclude_cat",
+                  "value": "<string>",
+                  "description": "like include_cat, set this to an integer to exclude a specific category"
+                },
+                {
+                  "disabled": false,
+                  "key": "include_primarycat",
+                  "value": "<string>",
+                  "description": "csv indicating up to three top-level categories -- valid values are [appetizers,bread,breakfast,desserts,drinks,maindish,salads,sidedish,soups,marinades,other]"
+                },
+                {
+                  "disabled": false,
+                  "key": "exclude_primarycat",
+                  "value": "<string>",
+                  "description": "csv indicating integer values for up to 3 top-level categories -- valid values are 1...11 [appetizers,bread,breakfast,desserts,drinks,maindish,salads,sidedish,soups,marinades,other]"
+                },
+                {
+                  "disabled": false,
+                  "key": "include_ing",
+                  "value": "<string>",
+                  "description": "A CSV representing up to 3 ingredients to include, e.g., tomatoes,corn%20%starch,chicken"
+                },
+                {
+                  "disabled": false,
+                  "key": "exclude_ing",
+                  "value": "<string>",
+                  "description": "A CSV representing up to 3 ingredients to exclude  (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "cuisine",
+                  "value": "<string>",
+                  "description": "Limit to a specific cuisine. Cooks can enter anything free-form, but the few dozen preconfigured values are Afghan,African,American,American-South,Asian,Australian,Brazilian,Cajun,Canadian,Caribbean,Chinese,Croatian,Cuban,Dessert,Eastern European,English,French,German,Greek,Hawaiian,Hungarian,India,Indian,Irish,Italian,Japanese,Jewish,Korean,Latin,Mediterranean,Mexican,Middle Eastern,Moroccan,Polish,Russian,Scandanavian,Seafood,Southern,Southwestern,Spanish,Tex-Mex,Thai,Vegan,Vegetarian,Vietnamese"
+                },
+                {
+                  "disabled": false,
+                  "key": "db",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "userset",
+                  "value": "<string>",
+                  "description": "If set to a given username, it'll force the search to filter to just that username"
+                },
+                {
+                  "disabled": false,
+                  "key": "servingsMin",
+                  "value": "<double>",
+                  "description": "Limit to yield of a given number size or greater. Note that cooks usually enter recipes by Servings, but sometimes they are posted by \"dozen\", etc. This parameter simply specifies the minimum number for that value entered in \"yield.\""
+                },
+                {
+                  "disabled": false,
+                  "key": "totalMins",
+                  "value": "<integer>",
+                  "description": "Optional. If supplied, will restrict results to recipes that can be made in {totalMins} or less. (Convert \"1 hour, 15 minutes\" to 75 before passing in.)"
+                },
+                {
+                  "disabled": false,
+                  "key": "maxIngredients",
+                  "value": "<integer>",
+                  "description": "Optional. If supplied, will restrict results to recipes that can be made with {maxIngredients} ingredients or less"
+                },
+                {
+                  "disabled": false,
+                  "key": "minIngredients",
+                  "value": "<integer>",
+                  "description": "Optional. If supplied, will restrict results to recipes that have at least {minIngredients}"
+                },
+                {
+                  "disabled": false,
+                  "key": "vtn",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to vegetarian (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "vgn",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to vegan (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "chs",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to contains-cheese (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "glf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to gluten-free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "ntf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to nut-free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "dyf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to dairy-free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "sff",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to seafood-free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "slf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to shellfish-free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "tnf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to tree-nut free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "wmf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to white-meat free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "rmf",
+                  "value": "<integer>",
+                  "description": "when set to 1, limit to red-meat free (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "cps",
+                  "value": "<integer>",
+                  "description": "when set to 1, recipe contains pasta, set to 0 means contains no pasta (Powersearch-capable plan required)"
+                },
+                {
+                  "disabled": false,
+                  "key": "champion",
+                  "value": "<integer>",
+                  "description": "optional. When set to 1, this will limit search results to \"best of\" recipes as determined by various internal editorial and programmatic algorithms. For the most comprehensive results, don't include this parameter."
+                },
+                {
+                  "disabled": false,
+                  "key": "synonyms",
+                  "value": "<boolean>",
+                  "description": "optional, default is false. When set to true, BigOven will attempt to apply synonyms in search (e.g., excluding pork will also exclude bacon)"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7c5cb981-ad68-4cd6-9720-1ba5dcb6dbec",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipes",
+                    "top25random"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "any_kw",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "folder",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "coll",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "filter",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "title_kw",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "userId",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "username",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "token",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "photos",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "boostmine",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "include_cat",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "exclude_cat",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "include_primarycat",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "exclude_primarycat",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "include_ing",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "exclude_ing",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "cuisine",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "db",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "userset",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "servingsMin",
+                      "value": "<double>"
+                    },
+                    {
+                      "key": "totalMins",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "maxIngredients",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "minIngredients",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "vtn",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "vgn",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "chs",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "glf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "ntf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "dyf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "sff",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "slf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "tnf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "wmf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "rmf",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "cps",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "champion",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "synonyms",
+                      "value": "<boolean>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ResultCount\": 3538,\n  \"Results\": [\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"1989-12-11T23:00:17.230Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": true,\n      \"IsPrivate\": true,\n      \"IsRecipeScan\": true,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 4092,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 3961,\n      \"ReviewCount\": 7321,\n      \"Servings\": 5210.033000005985,\n      \"StarRating\": 8514.254622007937,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 3913,\n      \"WebURL\": \"string\"\n    },\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"1963-11-25T09:08:24.249Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": true,\n      \"IsPrivate\": true,\n      \"IsRecipeScan\": false,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 7772,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 5957,\n      \"ReviewCount\": 5575,\n      \"Servings\": 5047.433633464787,\n      \"StarRating\": 9356.627844952414,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 539,\n      \"WebURL\": \"string\"\n    }\n  ],\n  \"SpellSuggest\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "189c4d84-b2fb-44a3-a3f7-cfae53c9e0d6",
+          "name": "Same as GET recipe but also includes the recipe videos (if any)",
+          "request": {
+            "name": "Same as GET recipe but also includes the recipe videos (if any)",
+            "description": {},
+            "url": {
+              "path": [
+                "recipes",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "prefetch",
+                  "value": "<boolean>",
+                  "description": "The prefetch."
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) The Recipe ID to retrieve"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6919a030-6fbc-4145-b0f7-76f6ce6e4c63",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recipes",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "prefetch",
+                      "value": "<boolean>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) The Recipe ID to retrieve"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ActiveMinutes\": 3579,\n  \"AdTags\": \"string\",\n  \"AdminBoost\": 8889,\n  \"AllCategoriesText\": \"string\",\n  \"BookmarkImageURL\": \"string\",\n  \"BookmarkSiteLogo\": \"string\",\n  \"BookmarkURL\": \"string\",\n  \"Category\": \"string\",\n  \"Collection\": \"string\",\n  \"CollectionID\": 4149,\n  \"CreationDate\": \"1979-10-17T06:52:12.779Z\",\n  \"Cuisine\": \"string\",\n  \"Description\": \"string\",\n  \"FavoriteCount\": 7724,\n  \"ImageSquares\": [\n    468,\n    5854\n  ],\n  \"ImageURL\": \"string\",\n  \"Ingredients\": [\n    {\n      \"DisplayIndex\": \"<integer>\",\n      \"DisplayQuantity\": \"<string>\",\n      \"HTMLName\": \"<string>\",\n      \"IngredientID\": \"<long>\",\n      \"IngredientInfo\": {\n        \"Department\": \"<string>\",\n        \"MasterIngredientID\": \"<integer>\",\n        \"Name\": \"<string>\",\n        \"UsuallyOnHand\": \"<boolean>\"\n      },\n      \"IsHeading\": \"<boolean>\",\n      \"IsLinked\": \"<boolean>\",\n      \"MetricDisplayQuantity\": \"<string>\",\n      \"MetricQuantity\": \"<double>\",\n      \"MetricUnit\": \"<string>\",\n      \"Name\": \"<string>\",\n      \"PreparationNotes\": \"<string>\",\n      \"Quantity\": \"<double>\",\n      \"Unit\": \"<string>\"\n    },\n    {\n      \"DisplayIndex\": \"<integer>\",\n      \"DisplayQuantity\": \"<string>\",\n      \"HTMLName\": \"<string>\",\n      \"IngredientID\": \"<long>\",\n      \"IngredientInfo\": {\n        \"Department\": \"<string>\",\n        \"MasterIngredientID\": \"<integer>\",\n        \"Name\": \"<string>\",\n        \"UsuallyOnHand\": \"<boolean>\"\n      },\n      \"IsHeading\": \"<boolean>\",\n      \"IsLinked\": \"<boolean>\",\n      \"MetricDisplayQuantity\": \"<string>\",\n      \"MetricQuantity\": \"<double>\",\n      \"MetricUnit\": \"<string>\",\n      \"Name\": \"<string>\",\n      \"PreparationNotes\": \"<string>\",\n      \"Quantity\": \"<double>\",\n      \"Unit\": \"<string>\"\n    }\n  ],\n  \"IngredientsTextBlock\": \"string\",\n  \"Instructions\": \"string\",\n  \"IsBookmark\": true,\n  \"IsPrivate\": false,\n  \"IsRecipeScan\": false,\n  \"IsSponsored\": true,\n  \"LastModified\": \"1959-04-07T10:57:15.482Z\",\n  \"MaxImageSquare\": 8112,\n  \"MedalCount\": 5940,\n  \"MenuCount\": 711,\n  \"Microcategory\": \"string\",\n  \"NotesCount\": 636,\n  \"NutritionInfo\": {\n    \"CaloriesFromFat\": \"<double>\",\n    \"Cholesterol\": \"<double>\",\n    \"CholesterolPct\": \"<double>\",\n    \"DietaryFiber\": \"<double>\",\n    \"DietaryFiberPct\": \"<double>\",\n    \"MonoFat\": \"<double>\",\n    \"PolyFat\": \"<double>\",\n    \"Potassium\": \"<double>\",\n    \"PotassiumPct\": \"<double>\",\n    \"Protein\": \"<double>\",\n    \"ProteinPct\": \"<double>\",\n    \"SatFat\": \"<double>\",\n    \"SatFatPct\": \"<double>\",\n    \"SingularYieldUnit\": \"<string>\",\n    \"Sodium\": \"<double>\",\n    \"SodiumPct\": \"<double>\",\n    \"Sugar\": \"<double>\",\n    \"TotalCalories\": \"<double>\",\n    \"TotalCarbs\": \"<double>\",\n    \"TotalCarbsPct\": \"<double>\",\n    \"TotalFat\": \"<double>\",\n    \"TotalFatPct\": \"<double>\",\n    \"TransFat\": \"<double>\"\n  },\n  \"PhotoUrl\": \"string\",\n  \"Poster\": {\n    \"FirstName\": \"<string>\",\n    \"ImageUrl48\": \"<string>\",\n    \"IsKitchenHelper\": \"<boolean>\",\n    \"IsPremium\": \"<boolean>\",\n    \"IsUsingRecurly\": \"<boolean>\",\n    \"LastName\": \"<string>\",\n    \"MemberSince\": \"<dateTime>\",\n    \"PhotoUrl\": \"<string>\",\n    \"PhotoUrl48\": \"string\",\n    \"PremiumExpiryDate\": \"<dateTime>\",\n    \"UserID\": \"<integer>\",\n    \"UserName\": \"<string>\",\n    \"WebUrl\": \"string\"\n  },\n  \"PrimaryIngredient\": \"string\",\n  \"RecipeID\": 5997,\n  \"ReviewCount\": 423,\n  \"StarRating\": 5507.33605706399,\n  \"Steps\": [\n    {\n      \"EndGantt\": 2861,\n      \"StartGantt\": 1363,\n      \"Text\": \"string\"\n    },\n    {\n      \"EndGantt\": 1169,\n      \"StartGantt\": 2155,\n      \"Text\": \"string\"\n    }\n  ],\n  \"Subcategory\": \"string\",\n  \"Title\": \"string\",\n  \"TotalMinutes\": 1586,\n  \"VariantOfRecipeID\": 3102,\n  \"VerifiedByClass\": \"string\",\n  \"VerifiedDateTime\": \"1954-12-14T12:56:53.145Z\",\n  \"Videos\": [\n    {\n      \"InsertedOn\": \"2011-03-23T08:13:22.886Z\",\n      \"IsPrimaryVideo\": true,\n      \"MediaId\": \"string\",\n      \"VidId\": 5793\n    },\n    {\n      \"InsertedOn\": \"1981-12-25T01:31:07.024Z\",\n      \"IsPrimaryVideo\": true,\n      \"MediaId\": \"string\",\n      \"VidId\": 5929\n    }\n  ],\n  \"WebURL\": \"string\",\n  \"YieldNumber\": 2367.31083473285,\n  \"YieldUnit\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api2.bigoven.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "cec54217-3aae-4f44-8b52-2f5baabe0653",
+    "name": "1,000,000+ and Grocery List API (v2) Collection Recipe API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](https://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](https://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](https://api2.bigoven.com).",
+      "type": "text/plain"
+    }
+  }
+}

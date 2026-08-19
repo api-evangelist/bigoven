@@ -1,0 +1,965 @@
+{
+  "item": [
+    {
+      "id": "91e3d34a-7bd6-469d-9a33-84ba5f3aaae8",
+      "name": "Me",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "dbc5b70f-6ca3-4ac7-bdc2-ed2a109483da",
+          "name": "Indexes this instance.",
+          "request": {
+            "name": "Indexes this instance.",
+            "description": {},
+            "url": {
+              "path": [
+                "me"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "01117ed7-8307-4f35-bbde-ff7fb52fd5d6",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Accounting\": {\n    \"CreditBalance\": 9135,\n    \"MemberSince\": \"2001-02-23T10:35:04.023Z\",\n    \"PremiumExpiryDate\": \"1950-08-26T08:48:15.875Z\",\n    \"UserLevel\": \"string\"\n  },\n  \"BOAuthToken\": \"string\",\n  \"LastChangeLogID\": \"string\",\n  \"Personal\": {\n    \"Email\": \"string\",\n    \"Location\": {\n      \"City\": \"string\",\n      \"Country\": \"string\",\n      \"DMA\": 8173\n    }\n  },\n  \"Preferences\": {\n    \"EatingStyle\": \"string\"\n  },\n  \"Profile\": {\n    \"AboutMe\": \"string\",\n    \"BackgroundUrl\": \"string\",\n    \"Counts\": {\n      \"AddedCount\": 1690,\n      \"FollowersCount\": 6685,\n      \"FollowingCount\": 3992,\n      \"PrivateRecipeCount\": 4877,\n      \"PublicRecipeCount\": 6686,\n      \"TotalRecipes\": 4065\n    },\n    \"FirstName\": \"string\",\n    \"FullName\": \"string\",\n    \"HomeUrl\": \"string\",\n    \"LastName\": \"string\",\n    \"PhotoUrl\": \"string\",\n    \"UserID\": 3675,\n    \"UserName\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e0ef755f-8f5d-4bc0-9bc5-9fd6b8744df1",
+          "name": "Puts me.",
+          "request": {
+            "name": "Puts me.",
+            "description": {},
+            "url": {
+              "path": [
+                "me"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "CreditBalance",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "MemberSince",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PremiumExpiryDate",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UserLevel",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "BOAuthToken",
+                  "value": "<string>",
+                  "description": "The user-specific authentication token"
+                },
+                {
+                  "disabled": false,
+                  "key": "LastChangeLogID",
+                  "value": "<string>",
+                  "description": "Last change log"
+                },
+                {
+                  "disabled": false,
+                  "key": "Email",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Location",
+                  "value": "{\"City\":\"<string>\",\"Country\":\"<string>\",\"DMA\":\"<integer>\"}"
+                },
+                {
+                  "disabled": false,
+                  "key": "EatingStyle",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AboutMe",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "BackgroundUrl",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Counts",
+                  "value": "{\"AddedCount\":\"<long>\",\"FollowersCount\":\"<long>\",\"FollowingCount\":\"<long>\",\"PrivateRecipeCount\":\"<long>\",\"PublicRecipeCount\":\"<long>\",\"TotalRecipes\":\"<long>\"}"
+                },
+                {
+                  "disabled": false,
+                  "key": "FirstName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FullName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "HomeUrl",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "LastName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PhotoUrl",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UserID",
+                  "value": "<long>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UserName",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "687933a7-0c84-4a99-a77c-b1bd61d0d996",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "CreditBalance",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "MemberSince",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "PremiumExpiryDate",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "UserLevel",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "The user-specific authentication token",
+                        "type": "text/plain"
+                      },
+                      "key": "BOAuthToken",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Last change log",
+                        "type": "text/plain"
+                      },
+                      "key": "LastChangeLogID",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "Email",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "Location",
+                      "value": "{\"City\":\"<string>\",\"Country\":\"<string>\",\"DMA\":\"<integer>\"}"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "EatingStyle",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "AboutMe",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "BackgroundUrl",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "Counts",
+                      "value": "{\"AddedCount\":\"<long>\",\"FollowersCount\":\"<long>\",\"FollowingCount\":\"<long>\",\"PrivateRecipeCount\":\"<long>\",\"PublicRecipeCount\":\"<long>\",\"TotalRecipes\":\"<long>\"}"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "FirstName",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "FullName",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "HomeUrl",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "LastName",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "PhotoUrl",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "UserID",
+                      "value": "<long>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "UserName",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Accounting\": {\n    \"CreditBalance\": \"<integer>\",\n    \"MemberSince\": \"<dateTime>\",\n    \"PremiumExpiryDate\": \"<dateTime>\",\n    \"UserLevel\": \"<string>\"\n  },\n  \"BOAuthToken\": \"<string>\",\n  \"LastChangeLogID\": \"<string>\",\n  \"Personal\": {\n    \"Email\": \"<string>\",\n    \"Location\": {\n      \"City\": \"<string>\",\n      \"Country\": \"<string>\",\n      \"DMA\": \"<integer>\"\n    }\n  },\n  \"Preferences\": {\n    \"EatingStyle\": \"<string>\"\n  },\n  \"Profile\": {\n    \"AboutMe\": \"<string>\",\n    \"BackgroundUrl\": \"<string>\",\n    \"Counts\": {\n      \"AddedCount\": \"<long>\",\n      \"FollowersCount\": \"<long>\",\n      \"FollowingCount\": \"<long>\",\n      \"PrivateRecipeCount\": \"<long>\",\n      \"PublicRecipeCount\": \"<long>\",\n      \"TotalRecipes\": \"<long>\"\n    },\n    \"FirstName\": \"<string>\",\n    \"FullName\": \"<string>\",\n    \"HomeUrl\": \"<string>\",\n    \"LastName\": \"<string>\",\n    \"PhotoUrl\": \"<string>\",\n    \"UserID\": \"<long>\",\n    \"UserName\": \"<string>\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3ba546d0-8691-4318-98a3-d687a0bb7cc6",
+          "name": "Puts me personal.",
+          "request": {
+            "name": "Puts me personal.",
+            "description": {},
+            "url": {
+              "path": [
+                "me",
+                "personal"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "Email",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "City",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Country",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "DMA",
+                  "value": "<integer>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "0114fbe4-90e0-40bc-9546-eb5ab4d5b8b5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "personal"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "Email",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "City",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "Country",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "DMA",
+                      "value": "<integer>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Accounting\": {\n    \"CreditBalance\": \"<integer>\",\n    \"MemberSince\": \"<dateTime>\",\n    \"PremiumExpiryDate\": \"<dateTime>\",\n    \"UserLevel\": \"<string>\"\n  },\n  \"BOAuthToken\": \"<string>\",\n  \"LastChangeLogID\": \"<string>\",\n  \"Personal\": {\n    \"Email\": \"<string>\",\n    \"Location\": {\n      \"City\": \"<string>\",\n      \"Country\": \"<string>\",\n      \"DMA\": \"<integer>\"\n    }\n  },\n  \"Preferences\": {\n    \"EatingStyle\": \"<string>\"\n  },\n  \"Profile\": {\n    \"AboutMe\": \"<string>\",\n    \"BackgroundUrl\": \"<string>\",\n    \"Counts\": {\n      \"AddedCount\": \"<long>\",\n      \"FollowersCount\": \"<long>\",\n      \"FollowingCount\": \"<long>\",\n      \"PrivateRecipeCount\": \"<long>\",\n      \"PublicRecipeCount\": \"<long>\",\n      \"TotalRecipes\": \"<long>\"\n    },\n    \"FirstName\": \"<string>\",\n    \"FullName\": \"<string>\",\n    \"HomeUrl\": \"<string>\",\n    \"LastName\": \"<string>\",\n    \"PhotoUrl\": \"<string>\",\n    \"UserID\": \"<long>\",\n    \"UserName\": \"<string>\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a672f06f-bc6c-44ec-88fe-7383348e2966",
+          "name": "Puts me preferences.",
+          "request": {
+            "name": "Puts me preferences.",
+            "description": {},
+            "url": {
+              "path": [
+                "me",
+                "preferences"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "EatingStyle",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "e53952db-9bc8-42bd-ae24-a1b6c3ac1b3b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "preferences"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "EatingStyle",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Accounting\": {\n    \"CreditBalance\": \"<integer>\",\n    \"MemberSince\": \"<dateTime>\",\n    \"PremiumExpiryDate\": \"<dateTime>\",\n    \"UserLevel\": \"<string>\"\n  },\n  \"BOAuthToken\": \"<string>\",\n  \"LastChangeLogID\": \"<string>\",\n  \"Personal\": {\n    \"Email\": \"<string>\",\n    \"Location\": {\n      \"City\": \"<string>\",\n      \"Country\": \"<string>\",\n      \"DMA\": \"<integer>\"\n    }\n  },\n  \"Preferences\": {\n    \"EatingStyle\": \"<string>\"\n  },\n  \"Profile\": {\n    \"AboutMe\": \"<string>\",\n    \"BackgroundUrl\": \"<string>\",\n    \"Counts\": {\n      \"AddedCount\": \"<long>\",\n      \"FollowersCount\": \"<long>\",\n      \"FollowingCount\": \"<long>\",\n      \"PrivateRecipeCount\": \"<long>\",\n      \"PublicRecipeCount\": \"<long>\",\n      \"TotalRecipes\": \"<long>\"\n    },\n    \"FirstName\": \"<string>\",\n    \"FullName\": \"<string>\",\n    \"HomeUrl\": \"<string>\",\n    \"LastName\": \"<string>\",\n    \"PhotoUrl\": \"<string>\",\n    \"UserID\": \"<long>\",\n    \"UserName\": \"<string>\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "91c5e3cf-d3fa-4710-8a24-a31db37f90d3",
+          "name": "Gets the options.",
+          "request": {
+            "name": "Gets the options.",
+            "description": {},
+            "url": {
+              "path": [
+                "me",
+                "preferences",
+                "options"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "59cec6d5-49ce-4e87-88b9-b93c7696e685",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "preferences",
+                    "options"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"EatingStyle\": {\n    \"Options\": [\n      {\n        \"Description\": \"string\",\n        \"Key\": \"string\"\n      },\n      {\n        \"Description\": \"string\",\n        \"Key\": \"string\"\n      }\n    ]\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e87ca52f-10e9-43dc-acf0-3e5b83d88cbc",
+          "name": "Puts me.",
+          "request": {
+            "name": "Puts me.",
+            "description": {},
+            "url": {
+              "path": [
+                "me",
+                "profile"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "AboutMe",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "BackgroundUrl",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AddedCount",
+                  "value": "<long>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FollowersCount",
+                  "value": "<long>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FollowingCount",
+                  "value": "<long>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PrivateRecipeCount",
+                  "value": "<long>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PublicRecipeCount",
+                  "value": "<long>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TotalRecipes",
+                  "value": "<long>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FirstName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FullName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "HomeUrl",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "LastName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PhotoUrl",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UserID",
+                  "value": "<long>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UserName",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "3559b73d-52f9-419a-bc00-15fb9e947d76",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "profile"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "AboutMe",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "BackgroundUrl",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "AddedCount",
+                      "value": "<long>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "FollowersCount",
+                      "value": "<long>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "FollowingCount",
+                      "value": "<long>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "PrivateRecipeCount",
+                      "value": "<long>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "PublicRecipeCount",
+                      "value": "<long>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "TotalRecipes",
+                      "value": "<long>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "FirstName",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "FullName",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "HomeUrl",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "LastName",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "PhotoUrl",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "UserID",
+                      "value": "<long>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "UserName",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Accounting\": {\n    \"CreditBalance\": \"<integer>\",\n    \"MemberSince\": \"<dateTime>\",\n    \"PremiumExpiryDate\": \"<dateTime>\",\n    \"UserLevel\": \"<string>\"\n  },\n  \"BOAuthToken\": \"<string>\",\n  \"LastChangeLogID\": \"<string>\",\n  \"Personal\": {\n    \"Email\": \"<string>\",\n    \"Location\": {\n      \"City\": \"<string>\",\n      \"Country\": \"<string>\",\n      \"DMA\": \"<integer>\"\n    }\n  },\n  \"Preferences\": {\n    \"EatingStyle\": \"<string>\"\n  },\n  \"Profile\": {\n    \"AboutMe\": \"<string>\",\n    \"BackgroundUrl\": \"<string>\",\n    \"Counts\": {\n      \"AddedCount\": \"<long>\",\n      \"FollowersCount\": \"<long>\",\n      \"FollowingCount\": \"<long>\",\n      \"PrivateRecipeCount\": \"<long>\",\n      \"PublicRecipeCount\": \"<long>\",\n      \"TotalRecipes\": \"<long>\"\n    },\n    \"FirstName\": \"<string>\",\n    \"FullName\": \"<string>\",\n    \"HomeUrl\": \"<string>\",\n    \"LastName\": \"<string>\",\n    \"PhotoUrl\": \"<string>\",\n    \"UserID\": \"<long>\",\n    \"UserName\": \"<string>\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4632ab7f-510e-48da-96e6-d5a3d1f5cd4a",
+          "name": "Skinnies this instance.",
+          "request": {
+            "name": "Skinnies this instance.",
+            "description": {},
+            "url": {
+              "path": [
+                "me",
+                "skinny"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e20f5cc7-7156-4138-b80e-70303be42167",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "skinny"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Accounting\": {\n    \"CreditBalance\": \"<integer>\",\n    \"MemberSince\": \"<dateTime>\",\n    \"PremiumExpiryDate\": \"<dateTime>\",\n    \"UserLevel\": \"<string>\"\n  },\n  \"BOAuthToken\": \"<string>\",\n  \"LastChangeLogID\": \"<string>\",\n  \"Personal\": {\n    \"Email\": \"<string>\",\n    \"Location\": {\n      \"City\": \"<string>\",\n      \"Country\": \"<string>\",\n      \"DMA\": \"<integer>\"\n    }\n  },\n  \"Preferences\": {\n    \"EatingStyle\": \"<string>\"\n  },\n  \"Profile\": {\n    \"AboutMe\": \"<string>\",\n    \"BackgroundUrl\": \"<string>\",\n    \"Counts\": {\n      \"AddedCount\": \"<long>\",\n      \"FollowersCount\": \"<long>\",\n      \"FollowingCount\": \"<long>\",\n      \"PrivateRecipeCount\": \"<long>\",\n      \"PublicRecipeCount\": \"<long>\",\n      \"TotalRecipes\": \"<long>\"\n    },\n    \"FirstName\": \"<string>\",\n    \"FullName\": \"<string>\",\n    \"HomeUrl\": \"<string>\",\n    \"LastName\": \"<string>\",\n    \"PhotoUrl\": \"<string>\",\n    \"UserID\": \"<long>\",\n    \"UserName\": \"<string>\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api2.bigoven.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "3f426e84-6ccb-4691-8748-0f93d1f9d15f",
+    "name": "1,000,000+ Recipe and Grocery List API (v2) Collection Me API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](https://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](https://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](https://api2.bigoven.com).",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "item": [
+    {
+      "id": "95aed9ff-55fe-4d58-ba91-29dfd0452a5b",
+      "name": "Collection",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a3595eea-eeba-47ab-96e3-a97152b77eec",
+          "name": "Gets a recipe collection. A recipe collection is a curated set of recipes.",
+          "request": {
+            "name": "Gets a recipe collection. A recipe collection is a curated set of recipes.",
+            "description": {},
+            "url": {
+              "path": [
+                "collection",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "rpp",
+                  "value": "<integer>",
+                  "description": "results per page"
+                },
+                {
+                  "disabled": false,
+                  "key": "pg",
+                  "value": "<integer>",
+                  "description": "page number (starting with 1)"
+                },
+                {
+                  "disabled": false,
+                  "key": "test",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "sessionForLogging",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) the collection identifier"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fefd4ff7-0121-48ad-a260-ca388fa83a0a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "collection",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "rpp",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "pg",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "test",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "sessionForLogging",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) the collection identifier"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ResultCount\": 2644,\n  \"Results\": [\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"2012-07-30T14:45:21.656Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": false,\n      \"IsPrivate\": true,\n      \"IsRecipeScan\": true,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 9286,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 5484,\n      \"ReviewCount\": 2396,\n      \"Servings\": 2297.7196530997458,\n      \"StarRating\": 831.9364246194882,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 6251,\n      \"WebURL\": \"string\"\n    },\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"2009-02-08T19:38:49.072Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": true,\n      \"IsBookmark\": true,\n      \"IsPrivate\": true,\n      \"IsRecipeScan\": true,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 1301,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 6518,\n      \"ReviewCount\": 9438,\n      \"Servings\": 1073.1416675358319,\n      \"StarRating\": 4371.7786220834305,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 8456,\n      \"WebURL\": \"string\"\n    }\n  ],\n  \"SpellSuggest\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1de09b12-e593-4eb2-b2f0-30e4791b1447",
+          "name": "Gets a recipe collection metadata. A recipe collection is a curated set of recipes.",
+          "request": {
+            "name": "Gets a recipe collection metadata. A recipe collection is a curated set of recipes.",
+            "description": {},
+            "url": {
+              "path": [
+                "collection",
+                ":id",
+                "meta"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) the collection identifier"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f4cb8d37-87ce-4a48-9f1d-c3f769247aa3",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "collection",
+                    ":id",
+                    "meta"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) the collection identifier"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Description\": \"string\",\n  \"ID\": 8199,\n  \"IsFiltered\": false,\n  \"IsSponsored\": true,\n  \"MobileUrl\": \"string\",\n  \"PRO\": false,\n  \"PhotoUrl\": \"string\",\n  \"Results\": [\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"2000-06-15T04:17:31.745Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": true,\n      \"IsBookmark\": false,\n      \"IsPrivate\": false,\n      \"IsRecipeScan\": true,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 1206,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 3638,\n      \"ReviewCount\": 9044,\n      \"Servings\": 4731.065507580464,\n      \"StarRating\": 1375.955986122067,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 8444,\n      \"WebURL\": \"string\"\n    },\n    {\n      \"Category\": \"string\",\n      \"CreationDate\": \"1962-06-23T09:43:55.222Z\",\n      \"Cuisine\": \"string\",\n      \"HasVideos\": false,\n      \"IsBookmark\": true,\n      \"IsPrivate\": false,\n      \"IsRecipeScan\": false,\n      \"Microcategory\": \"string\",\n      \"PhotoUrl\": \"string\",\n      \"Poster\": {\n        \"FirstName\": \"string\",\n        \"LastName\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"UserID\": 1996,\n        \"UserName\": \"string\"\n      },\n      \"RecipeID\": 5244,\n      \"ReviewCount\": 1197,\n      \"Servings\": 1301.4650825153485,\n      \"StarRating\": 5761.690670118359,\n      \"Subcategory\": \"string\",\n      \"Title\": \"string\",\n      \"TotalTries\": 9064,\n      \"WebURL\": \"string\"\n    }\n  ],\n  \"Title\": \"string\",\n  \"Token\": \"string\",\n  \"WebUrl\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e7303798-07c9-4590-9ecd-d9c1362df52b",
+          "name": "Get the list of current, seasonal recipe collections. From here, you can use the /collection/{id} endpoint to retrieve the recipes in those collections.",
+          "request": {
+            "name": "Get the list of current, seasonal recipe collections. From here, you can use the /collection/{id} endpoint to retrieve the recipes in those collections.",
+            "description": {},
+            "url": {
+              "path": [
+                "collections"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "test",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d3028d63-fc1e-4cf1-94f1-36e9cc7a256f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "collections"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "test",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Description\": \"string\",\n    \"ID\": 7684,\n    \"IsFiltered\": true,\n    \"IsSponsored\": true,\n    \"MobileUrl\": \"string\",\n    \"PRO\": true,\n    \"PhotoUrl\": \"string\",\n    \"Results\": [\n      {\n        \"Category\": \"string\",\n        \"CreationDate\": \"1977-02-28T09:44:27.838Z\",\n        \"Cuisine\": \"string\",\n        \"HasVideos\": false,\n        \"IsBookmark\": true,\n        \"IsPrivate\": true,\n        \"IsRecipeScan\": true,\n        \"Microcategory\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"Poster\": {\n          \"FirstName\": \"string\",\n          \"LastName\": \"string\",\n          \"PhotoUrl\": \"string\",\n          \"UserID\": 6549,\n          \"UserName\": \"string\"\n        },\n        \"RecipeID\": 5068,\n        \"ReviewCount\": 6961,\n        \"Servings\": 7088.504537979975,\n        \"StarRating\": 6929.940916117807,\n        \"Subcategory\": \"string\",\n        \"Title\": \"string\",\n        \"TotalTries\": 1480,\n        \"WebURL\": \"string\"\n      },\n      {\n        \"Category\": \"string\",\n        \"CreationDate\": \"1958-07-19T10:16:08.837Z\",\n        \"Cuisine\": \"string\",\n        \"HasVideos\": true,\n        \"IsBookmark\": false,\n        \"IsPrivate\": false,\n        \"IsRecipeScan\": false,\n        \"Microcategory\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"Poster\": {\n          \"FirstName\": \"string\",\n          \"LastName\": \"string\",\n          \"PhotoUrl\": \"string\",\n          \"UserID\": 9573,\n          \"UserName\": \"string\"\n        },\n        \"RecipeID\": 4036,\n        \"ReviewCount\": 6521,\n        \"Servings\": 2127.4666059353463,\n        \"StarRating\": 9152.122324520356,\n        \"Subcategory\": \"string\",\n        \"Title\": \"string\",\n        \"TotalTries\": 4770,\n        \"WebURL\": \"string\"\n      }\n    ],\n    \"Title\": \"string\",\n    \"Token\": \"string\",\n    \"WebUrl\": \"string\"\n  },\n  {\n    \"Description\": \"string\",\n    \"ID\": 3497,\n    \"IsFiltered\": true,\n    \"IsSponsored\": true,\n    \"MobileUrl\": \"string\",\n    \"PRO\": true,\n    \"PhotoUrl\": \"string\",\n    \"Results\": [\n      {\n        \"Category\": \"string\",\n        \"CreationDate\": \"1991-03-11T01:30:11.993Z\",\n        \"Cuisine\": \"string\",\n        \"HasVideos\": false,\n        \"IsBookmark\": false,\n        \"IsPrivate\": true,\n        \"IsRecipeScan\": false,\n        \"Microcategory\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"Poster\": {\n          \"FirstName\": \"string\",\n          \"LastName\": \"string\",\n          \"PhotoUrl\": \"string\",\n          \"UserID\": 9166,\n          \"UserName\": \"string\"\n        },\n        \"RecipeID\": 5006,\n        \"ReviewCount\": 3334,\n        \"Servings\": 3633.570462976223,\n        \"StarRating\": 4816.354101206644,\n        \"Subcategory\": \"string\",\n        \"Title\": \"string\",\n        \"TotalTries\": 938,\n        \"WebURL\": \"string\"\n      },\n      {\n        \"Category\": \"string\",\n        \"CreationDate\": \"2010-11-02T09:45:11.959Z\",\n        \"Cuisine\": \"string\",\n        \"HasVideos\": true,\n        \"IsBookmark\": false,\n        \"IsPrivate\": false,\n        \"IsRecipeScan\": true,\n        \"Microcategory\": \"string\",\n        \"PhotoUrl\": \"string\",\n        \"Poster\": {\n          \"FirstName\": \"string\",\n          \"LastName\": \"string\",\n          \"PhotoUrl\": \"string\",\n          \"UserID\": 2320,\n          \"UserName\": \"string\"\n        },\n        \"RecipeID\": 6350,\n        \"ReviewCount\": 5487,\n        \"Servings\": 4854.046047111577,\n        \"StarRating\": 2355.299642119698,\n        \"Subcategory\": \"string\",\n        \"Title\": \"string\",\n        \"TotalTries\": 205,\n        \"WebURL\": \"string\"\n      }\n    ],\n    \"Title\": \"string\",\n    \"Token\": \"string\",\n    \"WebUrl\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api2.bigoven.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "8dcff59d-3cd2-4a26-8665-5eb7d21fb9f7",
+    "name": "1,000,000+ Recipe and Grocery List API (v2) Collection API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](https://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](https://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](https://api2.bigoven.com).",
+      "type": "text/plain"
+    }
+  }
+}
