@@ -69,6 +69,8 @@ apis:
   humanURL: https://api2.bigoven.com/web/documentation
   baseURL: https://api2.bigoven.com
   tags:
+  - Image
+  tags_raw:
   - Images
   properties:
   - type: OpenAPI
