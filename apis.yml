@@ -1,6 +1,18 @@
 aid: bigoven
 name: BigOven
 description: BigOven is a recipe and meal planning platform providing access to over 1,000,000 recipes via a REST API. Developers can search recipes, retrieve nutritional information, manage cloud-based grocery lists, and build diet and meal planning features. The API is offered by Aisle Ahead, Inc. and supports commercial food, nutrition, diet, and grocery applications.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: paid
   onboarding: self-serve
