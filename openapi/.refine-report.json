@@ -1,13 +1,7 @@
 {
   "provider": "bigoven",
   "sources": [
-    "bigoven-collection-api-openapi.yml",
-    "bigoven-grocerylist-api-openapi.yml",
-    "bigoven-images-api-openapi.yml",
-    "bigoven-me-api-openapi.yml",
-    "bigoven-note-api-openapi.yml",
-    "bigoven-recipe-api-openapi.yml",
-    "bigoven-review-api-openapi.yml"
+    "_original/bigoven-openapi.yaml"
   ],
   "outputs": [
     "bigoven-collection-api-openapi.yml",
@@ -21,6 +15,25 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "bigoven-openapi.yaml: upgraded openapi 3.0.0 -> OpenAPI 3.2.0",
+    "bigoven-openapi.yaml: declared missing tag: Collection",
+    "bigoven-openapi.yaml: declared missing tag: GroceryList",
+    "bigoven-openapi.yaml: declared missing tag: Images",
+    "bigoven-openapi.yaml: declared missing tag: Me",
+    "bigoven-openapi.yaml: declared missing tag: Note",
+    "bigoven-openapi.yaml: declared missing tag: Recipe",
+    "bigoven-openapi.yaml: declared missing tag: Review",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "bigoven-collection-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bigoven-grocerylist-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bigoven-images-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bigoven-me-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bigoven-note-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bigoven-recipe-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bigoven-review-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

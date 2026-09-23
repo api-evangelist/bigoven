@@ -1,8 +1,11 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  description: "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](https://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](https://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](https://api2.bigoven.com)."
-  title: 1,000,000+ Recipe and Grocery List API (v2) Collection Review API
-  version: '3.0'
+  description: '#Documentation
+
+
+    This is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.'
+  title: 1,000,000+ Recipe and Grocery List API (v2) Review API
+  version: partner
   x-apiClientRegistration:
     url: http://api2.bigoven.com/web/console
   x-logo:
@@ -10,6 +13,7 @@ info:
   x-origin:
   - format: openapi
     url: http://api2.bigoven.com/swagger/docs/partner
+    version: '3.0'
   x-providerName: bigoven.com
 servers:
 - url: https://api2.bigoven.com
@@ -43,7 +47,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/System.Object'
           description: OK
-      summary: DELETE a reply to a given review. Authenticated user must be the one who originally posted the reply.
+      summary: DELETE a reply to a given review.
       tags:
       - Review
     put:
@@ -74,7 +78,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BigOven.Model.API.Reply'
           description: OK
-      summary: Update (PUT) a reply to a given review. Authenticated user must be the original one that posted the reply.
+      summary: Update (PUT) a reply to a given review.
       tags:
       - Review
   /recipe/review/{reviewId}:
@@ -102,9 +106,11 @@ paths:
               schema:
                 $ref: '#/components/schemas/BigOven.Model.API.Review'
           description: OK
-      summary: "Get a given review by string-style ID. This will return a payload with FeaturedReply, ReplyCount.\r\n            Recommended display is to list top-level reviews with one featured reply underneath. \r\n            Currently, the FeaturedReply is the most recent one for that rating."
+      summary: Get a given review by string-style ID.
       tags:
       - Review
+      operationId: getRecipeReviewByReviewId
+      x-operation-id-source: derived
     put:
       deprecated: false
       operationId: Review_Put
@@ -133,7 +139,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BigOven.Model.API.Review'
           description: OK
-      summary: Update a given top-level review.
+      summary: Update a given top-level review
       tags:
       - Review
   /recipe/review/{reviewId}/replies:
@@ -185,7 +191,7 @@ paths:
                   $ref: '#/components/schemas/BigOven.Model.API.Reply'
                 type: array
           description: OK
-      summary: Get a paged list of replies for a given review.
+      summary: Get a paged list of replies for a given review
       tags:
       - Review
     post:
@@ -216,7 +222,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BigOven.Model.API.Reply'
           description: OK
-      summary: POST a reply to a given review. The date will be set by server. Note that replies no longer have star ratings, only top-level reviews do.
+      summary: POST a reply to a given review.
       tags:
       - Review
   /recipe/{recipeId}/review:
@@ -246,9 +252,11 @@ paths:
               schema:
                 $ref: '#/components/schemas/BigOven.Model.API.Review'
           description: OK
-      summary: Get *my* review for the recipe {recipeId}, where "me" is determined by standard authentication headers
+      summary: Get *my* review for the recipe {recipeId}, where "me" is determined by standard…
       tags:
       - Review
+      operationId: getRecipeByRecipeIdReview
+      x-operation-id-source: derived
     post:
       deprecated: false
       operationId: Review_Post
@@ -278,7 +286,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/System.Object'
           description: OK
-      summary: Add a new review. Only one review can be provided per {userId, recipeId} pair. Otherwise your review will be updated.
+      summary: Add a new review.
       tags:
       - Review
   /recipe/{recipeId}/review/{reviewId}:
@@ -316,7 +324,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/System.Object'
           description: OK
-      summary: DEPRECATED! - Deletes a review by recipeId and reviewId. Please use recipe/review/{reviewId} instead.
+      summary: DEPRECATED!
       tags:
       - Review
     get:
@@ -353,7 +361,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BigOven.Model.API.Review'
           description: OK
-      summary: "Get a given review - DEPRECATED. See recipe/review/{reviewId} for the current usage.\r\n            Beginning in January 2017, BigOven moded from an integer-based ID system to a GUID-style string-based ID system for reviews and replies.\r\n            We are also supporting more of a \"Google Play\" style model for Reviews and Replies. That is, there are top-level Reviews and then\r\n            an unlimited list of replies (which do not carry star ratings) underneath existing reviews. Also, a given user can only have one review \r\n            per recipe. Existing legacy endpoints will continue to work, but we strongly recommend you migrate to using the newer endpoints listed\r\n            which do NOT carry the \"DEPRECATED\" flag."
+      summary: Get a given review - DEPRECATED.
       tags:
       - Review
     put:
@@ -408,7 +416,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BigOven.Model.API.Review'
           description: OK
-      summary: "HTTP PUT (update) a recipe review. DEPRECATED. Please see recipe/review/{reviewId} PUT for the new endpoint.\r\n            We are moving to a string-based primary key system, no longer integers, for reviews and replies."
+      summary: HTTP PUT (update) a recipe review.
       tags:
       - Review
   /recipe/{recipeId}/reviews:
@@ -461,30 +469,16 @@ paths:
                   $ref: '#/components/schemas/BigOven.Model.API.Review'
                 type: array
           description: OK
-      summary: Get paged list of reviews for a recipe. Each review will have at most one FeaturedReply, as well as a ReplyCount.
+      summary: Get paged list of reviews for a recipe.
       tags:
       - Review
 components:
   schemas:
-    BigOven.Model.API.UserInfoTiny:
-      properties:
-        FirstName:
-          type: string
-        LastName:
-          type: string
-        PhotoUrl:
-          type: string
-        UserID:
-          format: int32
-          type: integer
-        UserName:
-          type: string
-      type: object
     API2.Controllers.WebAPI.ReviewController.ReviewRequest:
       description: Payload for reviews
       properties:
         ActiveMinutes:
-          description: "How many minutes of ACTIVE time (i.e., actively working on the recipe, not waiting for rising, baking, etc.) did it \r\n            demand of the cook? Optional."
+          description: "How many minutes of ACTIVE time (i.e., actively working on the recipe, not waiting for rising, baking, etc.) did it \n            demand of the cook? Optional."
           format: int32
           type: integer
         Comment:
@@ -502,6 +496,38 @@ components:
           format: int32
           type: integer
       type: object
+    System.Object:
+      properties: {}
+      type: object
+    API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy:
+      description: Legacy -- This object here is deprecated. Please use the new "ReviewRequest" structure for all future development
+      properties:
+        ActiveMinutes:
+          format: int32
+          type: integer
+        Comment:
+          type: string
+        GUID:
+          type: string
+        MakeAgain:
+          type: string
+        ParentID:
+          format: int32
+          type: integer
+        StarRating:
+          format: int32
+          type: integer
+        TotalMinutes:
+          format: int32
+          type: integer
+      type: object
+    API2.Controllers.WebAPI.ReviewController.PostReplyReq:
+      description: Reply request parameters
+      properties:
+        Comment:
+          description: The comment. If mentioning any user(s) (optional), include them as @username in the text body. Do not use @ symbol for anything but mentioning @usernames.
+          type: string
+      type: object
     BigOven.Model.API.Reply:
       properties:
         Comment:
@@ -517,6 +543,20 @@ components:
         Poster:
           $ref: '#/components/schemas/BigOven.Model.API.UserInfoTiny'
         ReviewID:
+          type: string
+      type: object
+    BigOven.Model.API.UserInfoTiny:
+      properties:
+        FirstName:
+          type: string
+        LastName:
+          type: string
+        PhotoUrl:
+          type: string
+        UserID:
+          format: int32
+          type: integer
+        UserName:
           type: string
       type: object
     BigOven.Model.API.UserInfo:
@@ -551,38 +591,6 @@ components:
           type: string
         WebUrl:
           readOnly: true
-          type: string
-      type: object
-    System.Object:
-      properties: {}
-      type: object
-    API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy:
-      description: Legacy -- This object here is deprecated. Please use the new "ReviewRequest" structure for all future development
-      properties:
-        ActiveMinutes:
-          format: int32
-          type: integer
-        Comment:
-          type: string
-        GUID:
-          type: string
-        MakeAgain:
-          type: string
-        ParentID:
-          format: int32
-          type: integer
-        StarRating:
-          format: int32
-          type: integer
-        TotalMinutes:
-          format: int32
-          type: integer
-      type: object
-    API2.Controllers.WebAPI.ReviewController.PostReplyReq:
-      description: Reply request parameters
-      properties:
-        Comment:
-          description: The comment. If mentioning any user(s) (optional), include them as @username in the text body. Do not use @ symbol for anything but mentioning @usernames.
           type: string
       type: object
     BigOven.Model.API.Review:
