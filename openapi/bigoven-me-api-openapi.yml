@@ -259,6 +259,34 @@ paths:
       - Me
 components:
   schemas:
+    API2.Models.Counts:
+      description: ''
+      properties:
+        AddedCount:
+          description: ''
+          format: int64
+          type: integer
+        FollowersCount:
+          description: ''
+          format: int64
+          type: integer
+        FollowingCount:
+          description: ''
+          format: int64
+          type: integer
+        PrivateRecipeCount:
+          description: ''
+          format: int64
+          type: integer
+        PublicRecipeCount:
+          description: ''
+          format: int64
+          type: integer
+        TotalRecipes:
+          description: ''
+          format: int64
+          type: integer
+      type: object
     API2.Models.Profile:
       description: ''
       properties:
@@ -293,39 +321,54 @@ components:
           description: ''
           type: string
       type: object
+    API2.Models.Personal:
+      description: Personal level info -- email, location, etc.
+      properties:
+        Email:
+          description: ''
+          type: string
+        Location:
+          $ref: '#/components/schemas/API2.Models.Location'
+      type: object
     API2.Controllers.WebAPI.MeController.PreferenceOptions:
       description: ''
       properties:
         EatingStyle:
           $ref: '#/components/schemas/API2.Controllers.WebAPI.MeController.EatingStyle'
       type: object
-    API2.Models.Counts:
+    API2.Models.Preference:
       description: ''
       properties:
-        AddedCount:
+        EatingStyle:
           description: ''
-          format: int64
-          type: integer
-        FollowersCount:
-          description: ''
-          format: int64
-          type: integer
-        FollowingCount:
-          description: ''
-          format: int64
-          type: integer
-        PrivateRecipeCount:
-          description: ''
-          format: int64
-          type: integer
-        PublicRecipeCount:
-          description: ''
-          format: int64
-          type: integer
-        TotalRecipes:
-          description: ''
-          format: int64
-          type: integer
+          type: string
+      type: object
+    API2.Controllers.WebAPI.MeController.EatingStyle:
+      description: ''
+      properties:
+        Options:
+          description: Gets or sets the options.
+          items:
+            $ref: '#/components/schemas/API2.Controllers.WebAPI.MeController.Option'
+          type: array
+      type: object
+    API2.Models.BigOvenUser:
+      description: An API2 wrapper object for a user
+      properties:
+        Accounting:
+          $ref: '#/components/schemas/API2.Models.Accounting'
+        BOAuthToken:
+          description: The user-specific authentication token
+          type: string
+        LastChangeLogID:
+          description: Last change log
+          type: string
+        Personal:
+          $ref: '#/components/schemas/API2.Models.Personal'
+        Preferences:
+          $ref: '#/components/schemas/API2.Models.Preference'
+        Profile:
+          $ref: '#/components/schemas/API2.Models.Profile'
       type: object
     API2.Models.Accounting:
       description: ''
@@ -346,59 +389,6 @@ components:
           description: ''
           type: string
       type: object
-    API2.Models.BigOvenUser:
-      description: An API2 wrapper object for a user
-      properties:
-        Accounting:
-          $ref: '#/components/schemas/API2.Models.Accounting'
-        BOAuthToken:
-          description: The user-specific authentication token
-          type: string
-        LastChangeLogID:
-          description: Last change log
-          type: string
-        Personal:
-          $ref: '#/components/schemas/API2.Models.Personal'
-        Preferences:
-          $ref: '#/components/schemas/API2.Models.Preference'
-        Profile:
-          $ref: '#/components/schemas/API2.Models.Profile'
-      type: object
-    API2.Models.Personal:
-      description: Personal level info -- email, location, etc.
-      properties:
-        Email:
-          description: ''
-          type: string
-        Location:
-          $ref: '#/components/schemas/API2.Models.Location'
-      type: object
-    API2.Controllers.WebAPI.MeController.EatingStyle:
-      description: ''
-      properties:
-        Options:
-          description: Gets or sets the options.
-          items:
-            $ref: '#/components/schemas/API2.Controllers.WebAPI.MeController.Option'
-          type: array
-      type: object
-    API2.Controllers.WebAPI.MeController.Option:
-      description: ''
-      properties:
-        Description:
-          description: Gets or sets the description.
-          type: string
-        Key:
-          description: Gets or sets the key.
-          type: string
-      type: object
-    API2.Models.Preference:
-      description: ''
-      properties:
-        EatingStyle:
-          description: ''
-          type: string
-      type: object
     API2.Models.Location:
       description: ''
       properties:
@@ -412,6 +402,16 @@ components:
           description: ''
           format: int32
           type: integer
+      type: object
+    API2.Controllers.WebAPI.MeController.Option:
+      description: ''
+      properties:
+        Description:
+          description: Gets or sets the description.
+          type: string
+        Key:
+          description: Gets or sets the key.
+          type: string
       type: object
   securitySchemes:
     api_key:

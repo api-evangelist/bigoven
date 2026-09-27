@@ -245,6 +245,58 @@ paths:
       - Note
 components:
   schemas:
+    System.Object:
+      properties: {}
+      type: object
+    BigOven.Model.API.RecipeNoteList:
+      properties:
+        ResultCount:
+          format: int32
+          type: integer
+        Results:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API.RecipeNote'
+          type: array
+      type: object
+    API2.Controllers.WebAPI.NoteController.NoteRequest:
+      description: ''
+      properties:
+        CreationDate:
+          description: Gets or sets the creation date.
+          format: date-time
+          type: string
+        Date:
+          description: Gets or sets the date.
+          format: date-time
+          type: string
+        DateDT:
+          description: Gets or sets the date dt.
+          type: string
+        GUID:
+          description: Gets or sets the unique identifier.
+          type: string
+        ID:
+          description: Gets or sets the identifier.
+          format: int32
+          type: integer
+        Notes:
+          description: Gets or sets the notes.
+          type: string
+        People:
+          description: Gets or sets the people.
+          type: string
+        RecipeID:
+          description: Gets or sets the recipe identifier.
+          format: int32
+          type: integer
+        UserID:
+          description: Gets or sets the user identifier.
+          format: int32
+          type: integer
+        Variations:
+          description: Gets or sets the variations.
+          type: string
+      type: object
     BigOven.Model.API.RecipeNote:
       properties:
         CreationDate:
@@ -299,58 +351,6 @@ components:
           format: int32
           type: integer
         Variations:
-          type: string
-      type: object
-    System.Object:
-      properties: {}
-      type: object
-    BigOven.Model.API.RecipeNoteList:
-      properties:
-        ResultCount:
-          format: int32
-          type: integer
-        Results:
-          items:
-            $ref: '#/components/schemas/BigOven.Model.API.RecipeNote'
-          type: array
-      type: object
-    API2.Controllers.WebAPI.NoteController.NoteRequest:
-      description: ''
-      properties:
-        CreationDate:
-          description: Gets or sets the creation date.
-          format: date-time
-          type: string
-        Date:
-          description: Gets or sets the date.
-          format: date-time
-          type: string
-        DateDT:
-          description: Gets or sets the date dt.
-          type: string
-        GUID:
-          description: Gets or sets the unique identifier.
-          type: string
-        ID:
-          description: Gets or sets the identifier.
-          format: int32
-          type: integer
-        Notes:
-          description: Gets or sets the notes.
-          type: string
-        People:
-          description: Gets or sets the people.
-          type: string
-        RecipeID:
-          description: Gets or sets the recipe identifier.
-          format: int32
-          type: integer
-        UserID:
-          description: Gets or sets the user identifier.
-          format: int32
-          type: integer
-        Variations:
-          description: Gets or sets the variations.
           type: string
       type: object
   securitySchemes:

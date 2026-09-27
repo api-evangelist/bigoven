@@ -249,19 +249,6 @@ paths:
       - Images
 components:
   schemas:
-    API2.Controllers.WebAPI.ImagesController.RecipePhotosResponse:
-      description: ''
-      properties:
-        ResultCount:
-          description: Gets or sets the result count.
-          format: int32
-          type: integer
-        Results:
-          description: Gets or sets the results.
-          items:
-            $ref: '#/components/schemas/BigOven.Model.API2.Photo'
-          type: array
-      type: object
     BigOven.Model.API2.Photo:
       properties:
         Caption:
@@ -281,41 +268,32 @@ components:
         Poster:
           $ref: '#/components/schemas/BigOven.Model.API2.UserInfoTinyx'
       type: object
-    BigOven.Model.API.Image:
+    API2.Controllers.WebAPI.ImagesController.RecipePhotosResponse:
+      description: ''
       properties:
-        Caption:
-          type: string
-        CreationDate:
-          type: string
-        ImageID:
-          format: int64
-          type: integer
-        ImageSquares:
-          items:
-            format: int32
-            type: integer
-          type: array
-        ImageURL:
-          type: string
-        ImageURL120:
-          type: string
-        ImageURL128:
-          type: string
-        ImageURL200:
-          type: string
-        ImageURL256:
-          type: string
-        ImageURL48:
-          type: string
-        ImageURL64:
-          type: string
-        IsPrimary:
-          type: boolean
-        MaxImageSquare:
+        ResultCount:
+          description: Gets or sets the result count.
           format: int32
           type: integer
-        Poster:
-          $ref: '#/components/schemas/BigOven.Model.API.UserInfo'
+        Results:
+          description: Gets or sets the results.
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API2.Photo'
+          type: array
+      type: object
+    BigOven.Model.API2.UserInfoTinyx:
+      properties:
+        FirstName:
+          type: string
+        LastName:
+          type: string
+        PhotoUrl:
+          type: string
+        UserID:
+          format: int32
+          type: integer
+        UserName:
+          type: string
       type: object
     System.Object:
       properties: {}
@@ -354,19 +332,41 @@ components:
           readOnly: true
           type: string
       type: object
-    BigOven.Model.API2.UserInfoTinyx:
+    BigOven.Model.API.Image:
       properties:
-        FirstName:
+        Caption:
           type: string
-        LastName:
+        CreationDate:
           type: string
-        PhotoUrl:
+        ImageID:
+          format: int64
+          type: integer
+        ImageSquares:
+          items:
+            format: int32
+            type: integer
+          type: array
+        ImageURL:
           type: string
-        UserID:
+        ImageURL120:
+          type: string
+        ImageURL128:
+          type: string
+        ImageURL200:
+          type: string
+        ImageURL256:
+          type: string
+        ImageURL48:
+          type: string
+        ImageURL64:
+          type: string
+        IsPrimary:
+          type: boolean
+        MaxImageSquare:
           format: int32
           type: integer
-        UserName:
-          type: string
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API.UserInfo'
       type: object
   securitySchemes:
     api_key:
