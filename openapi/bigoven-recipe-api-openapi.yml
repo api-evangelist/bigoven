@@ -1355,265 +1355,42 @@ paths:
       - Recipe
 components:
   schemas:
-    BigOven.Model.API.UserInfoTiny:
+    BigOven.Model.API.Ingredient:
       properties:
-        FirstName:
-          type: string
-        LastName:
-          type: string
-        PhotoUrl:
-          type: string
-        UserID:
+        DisplayIndex:
           format: int32
           type: integer
-        UserName:
+        DisplayQuantity:
           type: string
-      type: object
-    BigOven.Model.API2.RecipeInfox:
-      properties:
-        Category:
+        HTMLName:
           type: string
-        CreationDate:
-          format: date-time
-          type: string
-        Cuisine:
-          type: string
-        HasVideos:
+        IngredientID:
+          format: int64
+          type: integer
+        IngredientInfo:
+          $ref: '#/components/schemas/BigOven.Model.API.IngredientInfo'
+        IsHeading:
           type: boolean
-        IsBookmark:
+        IsLinked:
           type: boolean
-        IsPrivate:
-          type: boolean
-        IsRecipeScan:
-          type: boolean
-        Microcategory:
+        MetricDisplayQuantity:
           type: string
-        PhotoUrl:
-          type: string
-        Poster:
-          $ref: '#/components/schemas/BigOven.Model.API2.UserInfoTinyx'
-        RecipeID:
-          format: int32
-          type: integer
-        ReviewCount:
-          format: int32
-          type: integer
-        Servings:
+        MetricQuantity:
           format: double
           type: number
-        StarRating:
-          format: double
-          type: number
-        Subcategory:
+        MetricUnit:
           type: string
-        Title:
-          type: string
-        TotalTries:
-          format: int32
-          type: integer
-        WebURL:
-          type: string
-      type: object
-    BigOven.Model.API.UserInfo:
-      properties:
-        FirstName:
-          type: string
-        ImageUrl48:
-          type: string
-        IsKitchenHelper:
-          type: boolean
-        IsPremium:
-          type: boolean
-        IsUsingRecurly:
-          type: boolean
-        LastName:
-          type: string
-        MemberSince:
-          format: date-time
-          type: string
-        PhotoUrl:
-          type: string
-        PhotoUrl48:
-          readOnly: true
-          type: string
-        PremiumExpiryDate:
-          format: date-time
-          type: string
-        UserID:
-          format: int32
-          type: integer
-        UserName:
-          type: string
-        WebUrl:
-          readOnly: true
-          type: string
-      type: object
-    BigOven.Model.API.NutritionInfo:
-      properties:
-        CaloriesFromFat:
-          format: double
-          type: number
-        Cholesterol:
-          format: double
-          type: number
-        CholesterolPct:
-          format: double
-          type: number
-        DietaryFiber:
-          format: double
-          type: number
-        DietaryFiberPct:
-          format: double
-          type: number
-        MonoFat:
-          format: double
-          type: number
-        PolyFat:
-          format: double
-          type: number
-        Potassium:
-          format: double
-          type: number
-        PotassiumPct:
-          format: double
-          type: number
-        Protein:
-          format: double
-          type: number
-        ProteinPct:
-          format: double
-          type: number
-        SatFat:
-          format: double
-          type: number
-        SatFatPct:
-          format: double
-          type: number
-        SingularYieldUnit:
-          type: string
-        Sodium:
-          format: double
-          type: number
-        SodiumPct:
-          format: double
-          type: number
-        Sugar:
-          format: double
-          type: number
-        TotalCalories:
-          format: double
-          type: number
-        TotalCarbs:
-          format: double
-          type: number
-        TotalCarbsPct:
-          format: double
-          type: number
-        TotalFat:
-          format: double
-          type: number
-        TotalFatPct:
-          format: double
-          type: number
-        TransFat:
-          format: double
-          type: number
-      type: object
-    API2.Result:
-      properties:
-        Data:
-          $ref: '#/components/schemas/System.Object'
-        Message:
-          type: string
-        StatusCode:
-          format: int32
-          type: integer
-      type: object
-    API2.Models.Recipes.FeedbackDTO:
-      properties:
-        feedback:
-          type: string
-      type: object
-    BigOven.Model.RecipeCategory:
-      properties:
-        Category:
-          type: string
-        DefaultActiveMinutes:
-          format: int32
-          type: integer
-        DefaultTotalMinutes:
-          format: int32
-          type: integer
-        ID:
-          format: int32
-          type: integer
-        ParentID:
-          format: int32
-          type: integer
-        PrimaryImage:
-          type: string
-        ShortDescription:
-          type: string
-      type: object
-    BigOven.Model.API2.RecipeSearchResult:
-      properties:
-        ResultCount:
-          format: int32
-          type: integer
-        Results:
-          items:
-            $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
-          type: array
-        SpellSuggest:
-          type: string
-      type: object
-    API2.Models.Recipes.RecipeVideoResponse:
-      description: DTO used to return the details of a recipe video
-      properties:
-        InsertedOn:
-          description: Gets or sets the date the video was added.
-          format: date-time
-          type: string
-        IsPrimaryVideo:
-          description: Gets or sets a value indicating whether the video is the primary video of the recipe.
-          type: boolean
-        MediaId:
-          description: Gets or sets the JWPlayer media id.
-          type: string
-        VidId:
-          description: Gets or sets the video id.
-          format: int32
-          type: integer
-      type: object
-    BigOven.Model.RecipeInfoTiny:
-      properties:
-        ImageURL:
-          type: string
-        QualityScore:
-          format: int32
-          type: integer
-        RecipeID:
-          format: int32
-          type: integer
-        Servings:
-          format: double
-          type: number
-        Title:
-          type: string
-      type: object
-    BigOven.Model.API.IngredientInfo:
-      properties:
-        Department:
-          type: string
-        MasterIngredientID:
-          format: int32
-          type: integer
         Name:
           type: string
-        UsuallyOnHand:
-          type: boolean
+        PreparationNotes:
+          type: string
+        Quantity:
+          format: double
+          type: number
+        Unit:
+          type: string
       type: object
-    BigOven.Model.API.Recipe:
+    BigOven.Model.API2.Recipe:
       properties:
         ActiveMinutes:
           format: int32
@@ -1648,8 +1425,6 @@ components:
         FavoriteCount:
           format: int32
           type: integer
-        HeroPhotoUrl:
-          type: string
         ImageSquares:
           items:
             format: int32
@@ -1692,6 +1467,8 @@ components:
           type: integer
         NutritionInfo:
           $ref: '#/components/schemas/BigOven.Model.API.NutritionInfo'
+        PhotoUrl:
+          type: string
         Poster:
           $ref: '#/components/schemas/BigOven.Model.API.UserInfo'
         PrimaryIngredient:
@@ -1705,6 +1482,10 @@ components:
         StarRating:
           format: double
           type: number
+        Steps:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.InstructionStep'
+          type: array
         Subcategory:
           type: string
         Title:
@@ -1726,152 +1507,6 @@ components:
           format: double
           type: number
         YieldUnit:
-          type: string
-      type: object
-    BigOven.Model.RecipeInfoDateTuple2:
-      properties:
-        date:
-          format: date-time
-          type: string
-        recipeInfo:
-          $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
-      type: object
-    BigOven.Model.API.Review:
-      properties:
-        ActiveMinutes:
-          format: int32
-          type: integer
-        Comment:
-          type: string
-        CreationDate:
-          format: date-time
-          type: string
-        FeaturedReply:
-          $ref: '#/components/schemas/BigOven.Model.API.Reply'
-        GUID:
-          type: string
-        ID:
-          type: string
-        LastModified:
-          format: date-time
-          type: string
-        ParentID:
-          format: int64
-          type: integer
-        Poster:
-          $ref: '#/components/schemas/BigOven.Model.API.UserInfo'
-        Replies:
-          items:
-            $ref: '#/components/schemas/BigOven.Model.API.Review'
-          type: array
-        ReplyCount:
-          format: int32
-          type: integer
-        ReviewID:
-          format: int64
-          type: integer
-        StarRating:
-          format: double
-          type: number
-        TotalMinutes:
-          format: int32
-          type: integer
-      type: object
-    BigOven.Model.RecipeInfoReviewTuple2:
-      properties:
-        RecipeInfo:
-          $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
-        Review:
-          $ref: '#/components/schemas/BigOven.Model.API.Review'
-      type: object
-    BigOven.Result:
-      properties:
-        Data:
-          $ref: '#/components/schemas/System.Object'
-        Message:
-          type: string
-        StatusCode:
-          format: int32
-          type: integer
-      type: object
-    BigOven.Model.API.Reply:
-      properties:
-        Comment:
-          type: string
-        CreationDate:
-          format: date-time
-          type: string
-        ID:
-          type: string
-        LastModified:
-          format: date-time
-          type: string
-        Poster:
-          $ref: '#/components/schemas/BigOven.Model.API.UserInfoTiny'
-        ReviewID:
-          type: string
-      type: object
-    BigOven.Model.API2.UserInfoTinyx:
-      properties:
-        FirstName:
-          type: string
-        LastName:
-          type: string
-        PhotoUrl:
-          type: string
-        UserID:
-          format: int32
-          type: integer
-        UserName:
-          type: string
-      type: object
-    BigOven.Model.API.Ingredient:
-      properties:
-        DisplayIndex:
-          format: int32
-          type: integer
-        DisplayQuantity:
-          type: string
-        HTMLName:
-          type: string
-        IngredientID:
-          format: int64
-          type: integer
-        IngredientInfo:
-          $ref: '#/components/schemas/BigOven.Model.API.IngredientInfo'
-        IsHeading:
-          type: boolean
-        IsLinked:
-          type: boolean
-        MetricDisplayQuantity:
-          type: string
-        MetricQuantity:
-          format: double
-          type: number
-        MetricUnit:
-          type: string
-        Name:
-          type: string
-        PreparationNotes:
-          type: string
-        Quantity:
-          format: double
-          type: number
-        Unit:
-          type: string
-      type: object
-    System.Object:
-      properties: {}
-      type: object
-    BigOven.Model.InstructionStep:
-      properties:
-        EndGantt:
-          format: int32
-          type: integer
-        StartGantt:
-          format: int32
-          type: integer
-        Text:
           type: string
       type: object
     API2.Models.Recipes.RecipeResponse:
@@ -1999,7 +1634,369 @@ components:
         YieldUnit:
           type: string
       type: object
-    BigOven.Model.API2.Recipe:
+    BigOven.Model.API.UserInfoTiny:
+      properties:
+        FirstName:
+          type: string
+        LastName:
+          type: string
+        PhotoUrl:
+          type: string
+        UserID:
+          format: int32
+          type: integer
+        UserName:
+          type: string
+      type: object
+    BigOven.Model.RecipeInfoDateTuple2:
+      properties:
+        date:
+          format: date-time
+          type: string
+        recipeInfo:
+          $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
+      type: object
+    BigOven.Model.API.Review:
+      properties:
+        ActiveMinutes:
+          format: int32
+          type: integer
+        Comment:
+          type: string
+        CreationDate:
+          format: date-time
+          type: string
+        FeaturedReply:
+          $ref: '#/components/schemas/BigOven.Model.API.Reply'
+        GUID:
+          type: string
+        ID:
+          type: string
+        LastModified:
+          format: date-time
+          type: string
+        ParentID:
+          format: int64
+          type: integer
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API.UserInfo'
+        Replies:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API.Review'
+          type: array
+        ReplyCount:
+          format: int32
+          type: integer
+        ReviewID:
+          format: int64
+          type: integer
+        StarRating:
+          format: double
+          type: number
+        TotalMinutes:
+          format: int32
+          type: integer
+      type: object
+    BigOven.Model.API.Reply:
+      properties:
+        Comment:
+          type: string
+        CreationDate:
+          format: date-time
+          type: string
+        ID:
+          type: string
+        LastModified:
+          format: date-time
+          type: string
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API.UserInfoTiny'
+        ReviewID:
+          type: string
+      type: object
+    BigOven.Model.InstructionStep:
+      properties:
+        EndGantt:
+          format: int32
+          type: integer
+        StartGantt:
+          format: int32
+          type: integer
+        Text:
+          type: string
+      type: object
+    System.Object:
+      properties: {}
+      type: object
+    BigOven.Model.RecipeInfoTiny:
+      properties:
+        ImageURL:
+          type: string
+        QualityScore:
+          format: int32
+          type: integer
+        RecipeID:
+          format: int32
+          type: integer
+        Servings:
+          format: double
+          type: number
+        Title:
+          type: string
+      type: object
+    API2.Models.Recipes.FeedbackDTO:
+      properties:
+        feedback:
+          type: string
+      type: object
+    BigOven.Result:
+      properties:
+        Data:
+          $ref: '#/components/schemas/System.Object'
+        Message:
+          type: string
+        StatusCode:
+          format: int32
+          type: integer
+      type: object
+    BigOven.Model.API2.UserInfoTinyx:
+      properties:
+        FirstName:
+          type: string
+        LastName:
+          type: string
+        PhotoUrl:
+          type: string
+        UserID:
+          format: int32
+          type: integer
+        UserName:
+          type: string
+      type: object
+    BigOven.Model.RecipeCategory:
+      properties:
+        Category:
+          type: string
+        DefaultActiveMinutes:
+          format: int32
+          type: integer
+        DefaultTotalMinutes:
+          format: int32
+          type: integer
+        ID:
+          format: int32
+          type: integer
+        ParentID:
+          format: int32
+          type: integer
+        PrimaryImage:
+          type: string
+        ShortDescription:
+          type: string
+      type: object
+    BigOven.Model.API2.RecipeSearchResult:
+      properties:
+        ResultCount:
+          format: int32
+          type: integer
+        Results:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
+          type: array
+        SpellSuggest:
+          type: string
+      type: object
+    API2.Models.Recipes.RecipeVideoResponse:
+      description: DTO used to return the details of a recipe video
+      properties:
+        InsertedOn:
+          description: Gets or sets the date the video was added.
+          format: date-time
+          type: string
+        IsPrimaryVideo:
+          description: Gets or sets a value indicating whether the video is the primary video of the recipe.
+          type: boolean
+        MediaId:
+          description: Gets or sets the JWPlayer media id.
+          type: string
+        VidId:
+          description: Gets or sets the video id.
+          format: int32
+          type: integer
+      type: object
+    BigOven.Model.API.UserInfo:
+      properties:
+        FirstName:
+          type: string
+        ImageUrl48:
+          type: string
+        IsKitchenHelper:
+          type: boolean
+        IsPremium:
+          type: boolean
+        IsUsingRecurly:
+          type: boolean
+        LastName:
+          type: string
+        MemberSince:
+          format: date-time
+          type: string
+        PhotoUrl:
+          type: string
+        PhotoUrl48:
+          readOnly: true
+          type: string
+        PremiumExpiryDate:
+          format: date-time
+          type: string
+        UserID:
+          format: int32
+          type: integer
+        UserName:
+          type: string
+        WebUrl:
+          readOnly: true
+          type: string
+      type: object
+    BigOven.Model.API.NutritionInfo:
+      properties:
+        CaloriesFromFat:
+          format: double
+          type: number
+        Cholesterol:
+          format: double
+          type: number
+        CholesterolPct:
+          format: double
+          type: number
+        DietaryFiber:
+          format: double
+          type: number
+        DietaryFiberPct:
+          format: double
+          type: number
+        MonoFat:
+          format: double
+          type: number
+        PolyFat:
+          format: double
+          type: number
+        Potassium:
+          format: double
+          type: number
+        PotassiumPct:
+          format: double
+          type: number
+        Protein:
+          format: double
+          type: number
+        ProteinPct:
+          format: double
+          type: number
+        SatFat:
+          format: double
+          type: number
+        SatFatPct:
+          format: double
+          type: number
+        SingularYieldUnit:
+          type: string
+        Sodium:
+          format: double
+          type: number
+        SodiumPct:
+          format: double
+          type: number
+        Sugar:
+          format: double
+          type: number
+        TotalCalories:
+          format: double
+          type: number
+        TotalCarbs:
+          format: double
+          type: number
+        TotalCarbsPct:
+          format: double
+          type: number
+        TotalFat:
+          format: double
+          type: number
+        TotalFatPct:
+          format: double
+          type: number
+        TransFat:
+          format: double
+          type: number
+      type: object
+    BigOven.Model.API2.RecipeInfox:
+      properties:
+        Category:
+          type: string
+        CreationDate:
+          format: date-time
+          type: string
+        Cuisine:
+          type: string
+        HasVideos:
+          type: boolean
+        IsBookmark:
+          type: boolean
+        IsPrivate:
+          type: boolean
+        IsRecipeScan:
+          type: boolean
+        Microcategory:
+          type: string
+        PhotoUrl:
+          type: string
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API2.UserInfoTinyx'
+        RecipeID:
+          format: int32
+          type: integer
+        ReviewCount:
+          format: int32
+          type: integer
+        Servings:
+          format: double
+          type: number
+        StarRating:
+          format: double
+          type: number
+        Subcategory:
+          type: string
+        Title:
+          type: string
+        TotalTries:
+          format: int32
+          type: integer
+        WebURL:
+          type: string
+      type: object
+    BigOven.Model.API.IngredientInfo:
+      properties:
+        Department:
+          type: string
+        MasterIngredientID:
+          format: int32
+          type: integer
+        Name:
+          type: string
+        UsuallyOnHand:
+          type: boolean
+      type: object
+    API2.Result:
+      properties:
+        Data:
+          $ref: '#/components/schemas/System.Object'
+        Message:
+          type: string
+        StatusCode:
+          format: int32
+          type: integer
+      type: object
+    BigOven.Model.API.Recipe:
       properties:
         ActiveMinutes:
           format: int32
@@ -2034,6 +2031,8 @@ components:
         FavoriteCount:
           format: int32
           type: integer
+        HeroPhotoUrl:
+          type: string
         ImageSquares:
           items:
             format: int32
@@ -2076,8 +2075,6 @@ components:
           type: integer
         NutritionInfo:
           $ref: '#/components/schemas/BigOven.Model.API.NutritionInfo'
-        PhotoUrl:
-          type: string
         Poster:
           $ref: '#/components/schemas/BigOven.Model.API.UserInfo'
         PrimaryIngredient:
@@ -2091,10 +2088,6 @@ components:
         StarRating:
           format: double
           type: number
-        Steps:
-          items:
-            $ref: '#/components/schemas/BigOven.Model.InstructionStep'
-          type: array
         Subcategory:
           type: string
         Title:
@@ -2117,6 +2110,13 @@ components:
           type: number
         YieldUnit:
           type: string
+      type: object
+    BigOven.Model.RecipeInfoReviewTuple2:
+      properties:
+        RecipeInfo:
+          $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
+        Review:
+          $ref: '#/components/schemas/BigOven.Model.API.Review'
       type: object
   requestBodies:
     BigOven.Model.API.Recipe:

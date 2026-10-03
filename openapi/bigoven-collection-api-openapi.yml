@@ -147,48 +147,6 @@ paths:
       - Collection
 components:
   schemas:
-    BigOven.Model.API2.UserInfoTinyx:
-      properties:
-        FirstName:
-          type: string
-        LastName:
-          type: string
-        PhotoUrl:
-          type: string
-        UserID:
-          format: int32
-          type: integer
-        UserName:
-          type: string
-      type: object
-    BigOven.Model.API2.CollectionInfo:
-      properties:
-        Description:
-          type: string
-        ID:
-          format: int32
-          type: integer
-        IsFiltered:
-          type: boolean
-        IsSponsored:
-          type: boolean
-        MobileUrl:
-          type: string
-        PRO:
-          type: boolean
-        PhotoUrl:
-          type: string
-        Results:
-          items:
-            $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
-          type: array
-        Title:
-          type: string
-        Token:
-          type: string
-        WebUrl:
-          type: string
-      type: object
     BigOven.Model.API2.RecipeSearchResult:
       properties:
         ResultCount:
@@ -244,6 +202,48 @@ components:
           format: int32
           type: integer
         WebURL:
+          type: string
+      type: object
+    BigOven.Model.API2.UserInfoTinyx:
+      properties:
+        FirstName:
+          type: string
+        LastName:
+          type: string
+        PhotoUrl:
+          type: string
+        UserID:
+          format: int32
+          type: integer
+        UserName:
+          type: string
+      type: object
+    BigOven.Model.API2.CollectionInfo:
+      properties:
+        Description:
+          type: string
+        ID:
+          format: int32
+          type: integer
+        IsFiltered:
+          type: boolean
+        IsSponsored:
+          type: boolean
+        MobileUrl:
+          type: string
+        PRO:
+          type: boolean
+        PhotoUrl:
+          type: string
+        Results:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
+          type: array
+        Title:
+          type: string
+        Token:
+          type: string
+        WebUrl:
           type: string
       type: object
   securitySchemes:

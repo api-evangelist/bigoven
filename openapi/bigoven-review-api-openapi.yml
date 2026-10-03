@@ -474,6 +474,60 @@ paths:
       - Review
 components:
   schemas:
+    API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy:
+      description: Legacy -- This object here is deprecated. Please use the new "ReviewRequest" structure for all future development
+      properties:
+        ActiveMinutes:
+          format: int32
+          type: integer
+        Comment:
+          type: string
+        GUID:
+          type: string
+        MakeAgain:
+          type: string
+        ParentID:
+          format: int32
+          type: integer
+        StarRating:
+          format: int32
+          type: integer
+        TotalMinutes:
+          format: int32
+          type: integer
+      type: object
+    System.Object:
+      properties: {}
+      type: object
+    API2.Controllers.WebAPI.ReviewController.ReviewRequest:
+      description: Payload for reviews
+      properties:
+        ActiveMinutes:
+          description: "How many minutes of ACTIVE time (i.e., actively working on the recipe, not waiting for rising, baking, etc.) did it \n            demand of the cook? Optional."
+          format: int32
+          type: integer
+        Comment:
+          description: The notes
+          type: string
+        MakeAgain:
+          description: '"yes" or "no"'
+          type: string
+        StarRating:
+          description: 1, 2, 3, 4, or 5
+          format: int32
+          type: integer
+        TotalMinutes:
+          description: How long, start to finish, in minutes (integer) did it take? Optional.
+          format: int32
+          type: integer
+      type: object
+    API2.Controllers.WebAPI.ReviewController.PostReplyReq:
+      description: Reply request parameters
+      properties:
+        Comment:
+          description: The comment. If mentioning any user(s) (optional), include them as @username in the text body. Do not use @ symbol for anything but mentioning @usernames.
+          type: string
+      type: object
     BigOven.Model.API.UserInfoTiny:
       properties:
         FirstName:
@@ -488,32 +542,39 @@ components:
         UserName:
           type: string
       type: object
-    API2.Controllers.WebAPI.ReviewController.PostReplyReq:
-      description: Reply request parameters
+    BigOven.Model.API.UserInfo:
       properties:
-        Comment:
-          description: The comment. If mentioning any user(s) (optional), include them as @username in the text body. Do not use @ symbol for anything but mentioning @usernames.
+        FirstName:
           type: string
-      type: object
-    BigOven.Model.API.Reply:
-      properties:
-        Comment:
+        ImageUrl48:
           type: string
-        CreationDate:
+        IsKitchenHelper:
+          type: boolean
+        IsPremium:
+          type: boolean
+        IsUsingRecurly:
+          type: boolean
+        LastName:
+          type: string
+        MemberSince:
           format: date-time
           type: string
-        ID:
+        PhotoUrl:
           type: string
-        LastModified:
+        PhotoUrl48:
+          readOnly: true
+          type: string
+        PremiumExpiryDate:
           format: date-time
           type: string
-        Poster:
-          $ref: '#/components/schemas/BigOven.Model.API.UserInfoTiny'
-        ReviewID:
+        UserID:
+          format: int32
+          type: integer
+        UserName:
           type: string
-      type: object
-    System.Object:
-      properties: {}
+        WebUrl:
+          readOnly: true
+          type: string
       type: object
     BigOven.Model.API.Review:
       properties:
@@ -556,85 +617,42 @@ components:
           format: int32
           type: integer
       type: object
-    BigOven.Model.API.UserInfo:
+    BigOven.Model.API.Reply:
       properties:
-        FirstName:
-          type: string
-        ImageUrl48:
-          type: string
-        IsKitchenHelper:
-          type: boolean
-        IsPremium:
-          type: boolean
-        IsUsingRecurly:
-          type: boolean
-        LastName:
-          type: string
-        MemberSince:
-          format: date-time
-          type: string
-        PhotoUrl:
-          type: string
-        PhotoUrl48:
-          readOnly: true
-          type: string
-        PremiumExpiryDate:
-          format: date-time
-          type: string
-        UserID:
-          format: int32
-          type: integer
-        UserName:
-          type: string
-        WebUrl:
-          readOnly: true
-          type: string
-      type: object
-    API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy:
-      description: Legacy -- This object here is deprecated. Please use the new "ReviewRequest" structure for all future development
-      properties:
-        ActiveMinutes:
-          format: int32
-          type: integer
         Comment:
           type: string
-        GUID:
+        CreationDate:
+          format: date-time
           type: string
-        MakeAgain:
+        ID:
           type: string
-        ParentID:
-          format: int32
-          type: integer
-        StarRating:
-          format: int32
-          type: integer
-        TotalMinutes:
-          format: int32
-          type: integer
-      type: object
-    API2.Controllers.WebAPI.ReviewController.ReviewRequest:
-      description: Payload for reviews
-      properties:
-        ActiveMinutes:
-          description: "How many minutes of ACTIVE time (i.e., actively working on the recipe, not waiting for rising, baking, etc.) did it \n            demand of the cook? Optional."
-          format: int32
-          type: integer
-        Comment:
-          description: The notes
+        LastModified:
+          format: date-time
           type: string
-        MakeAgain:
-          description: '"yes" or "no"'
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API.UserInfoTiny'
+        ReviewID:
           type: string
-        StarRating:
-          description: 1, 2, 3, 4, or 5
-          format: int32
-          type: integer
-        TotalMinutes:
-          description: How long, start to finish, in minutes (integer) did it take? Optional.
-          format: int32
-          type: integer
       type: object
   requestBodies:
+    API2.Controllers.WebAPI.ReviewController.ReviewRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/API2.Controllers.WebAPI.ReviewController.ReviewRequest'
+        application/x-www-form-urlencoded:
+          schema:
+            $ref: '#/components/schemas/API2.Controllers.WebAPI.ReviewController.ReviewRequest'
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/API2.Controllers.WebAPI.ReviewController.ReviewRequest'
+        text/json:
+          schema:
+            $ref: '#/components/schemas/API2.Controllers.WebAPI.ReviewController.ReviewRequest'
+        text/xml:
+          schema:
+            $ref: '#/components/schemas/API2.Controllers.WebAPI.ReviewController.ReviewRequest'
+      required: true
     API2.Controllers.WebAPI.ReviewController.PostReplyReq:
       content:
         application/json:
@@ -652,24 +670,6 @@ components:
         text/xml:
           schema:
             $ref: '#/components/schemas/API2.Controllers.WebAPI.ReviewController.PostReplyReq'
-      required: true
-    API2.Controllers.WebAPI.ReviewController.ReviewRequest:
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/API2.Controllers.WebAPI.ReviewController.ReviewRequest'
-        application/x-www-form-urlencoded:
-          schema:
-            $ref: '#/components/schemas/API2.Controllers.WebAPI.ReviewController.ReviewRequest'
-        application/xml:
-          schema:
-            $ref: '#/components/schemas/API2.Controllers.WebAPI.ReviewController.ReviewRequest'
-        text/json:
-          schema:
-            $ref: '#/components/schemas/API2.Controllers.WebAPI.ReviewController.ReviewRequest'
-        text/xml:
-          schema:
-            $ref: '#/components/schemas/API2.Controllers.WebAPI.ReviewController.ReviewRequest'
       required: true
   securitySchemes:
     api_key:
