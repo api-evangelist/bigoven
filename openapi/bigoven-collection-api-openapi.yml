@@ -147,18 +147,6 @@ paths:
       - Collection
 components:
   schemas:
-    BigOven.Model.API2.RecipeSearchResult:
-      properties:
-        ResultCount:
-          format: int32
-          type: integer
-        Results:
-          items:
-            $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
-          type: array
-        SpellSuggest:
-          type: string
-      type: object
     BigOven.Model.API2.RecipeInfox:
       properties:
         Category:
@@ -204,18 +192,16 @@ components:
         WebURL:
           type: string
       type: object
-    BigOven.Model.API2.UserInfoTinyx:
+    BigOven.Model.API2.RecipeSearchResult:
       properties:
-        FirstName:
-          type: string
-        LastName:
-          type: string
-        PhotoUrl:
-          type: string
-        UserID:
+        ResultCount:
           format: int32
           type: integer
-        UserName:
+        Results:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
+          type: array
+        SpellSuggest:
           type: string
       type: object
     BigOven.Model.API2.CollectionInfo:
@@ -244,6 +230,20 @@ components:
         Token:
           type: string
         WebUrl:
+          type: string
+      type: object
+    BigOven.Model.API2.UserInfoTinyx:
+      properties:
+        FirstName:
+          type: string
+        LastName:
+          type: string
+        PhotoUrl:
+          type: string
+        UserID:
+          format: int32
+          type: integer
+        UserName:
           type: string
       type: object
   securitySchemes:

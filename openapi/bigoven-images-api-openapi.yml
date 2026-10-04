@@ -252,20 +252,6 @@ components:
     System.Object:
       properties: {}
       type: object
-    BigOven.Model.API2.UserInfoTinyx:
-      properties:
-        FirstName:
-          type: string
-        LastName:
-          type: string
-        PhotoUrl:
-          type: string
-        UserID:
-          format: int32
-          type: integer
-        UserName:
-          type: string
-      type: object
     BigOven.Model.API.Image:
       properties:
         Caption:
@@ -301,6 +287,39 @@ components:
           type: integer
         Poster:
           $ref: '#/components/schemas/BigOven.Model.API.UserInfo'
+      type: object
+    BigOven.Model.API2.Photo:
+      properties:
+        Caption:
+          type: string
+        CreationDate:
+          type: string
+        ImageID:
+          format: int64
+          type: integer
+        IsPrimary:
+          type: boolean
+        MaxImageSquare:
+          format: int32
+          type: integer
+        PhotoUrl:
+          type: string
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API2.UserInfoTinyx'
+      type: object
+    BigOven.Model.API2.UserInfoTinyx:
+      properties:
+        FirstName:
+          type: string
+        LastName:
+          type: string
+        PhotoUrl:
+          type: string
+        UserID:
+          format: int32
+          type: integer
+        UserName:
+          type: string
       type: object
     API2.Controllers.WebAPI.ImagesController.RecipePhotosResponse:
       description: ''
@@ -348,25 +367,6 @@ components:
         WebUrl:
           readOnly: true
           type: string
-      type: object
-    BigOven.Model.API2.Photo:
-      properties:
-        Caption:
-          type: string
-        CreationDate:
-          type: string
-        ImageID:
-          format: int64
-          type: integer
-        IsPrimary:
-          type: boolean
-        MaxImageSquare:
-          format: int32
-          type: integer
-        PhotoUrl:
-          type: string
-        Poster:
-          $ref: '#/components/schemas/BigOven.Model.API2.UserInfoTinyx'
       type: object
   securitySchemes:
     api_key:
