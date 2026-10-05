@@ -1,0 +1,12 @@
+{
+ "url": "https://api2.bigoven.com/swagger/docs/partner",
+ "requested_url": "http://api2.bigoven.com/swagger/docs/partner",
+ "status": 200,
+ "content_type": "application/json; charset=utf-8",
+ "bytes": 91250,
+ "sha256": "213a69be07282d4cc1ce7439ef96a6d923ca7f04583d2e16390ad72f59e2d87c",
+ "fetched_at": "2026-10-04",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "equivalent",
+ "note": "Re-fetched from the provider by verify-openapi-sources.py; the provider's current document describes the same operations (Jaccard 1.0), but the bytes differ, so the archive is an earlier or reformatted copy."
+}
