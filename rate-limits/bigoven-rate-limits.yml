@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: BigOven API Rate Limits
 description: Usage throttling and rate limiting details for the BigOven Build API. Limits are enforced per API key per hour.
 url: https://api2.bigoven.com/web/documentation/usage-throttling
