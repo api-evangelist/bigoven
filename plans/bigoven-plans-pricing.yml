@@ -88,3 +88,39 @@ plans:
     nutritionData: true
     powerSearch: true
     contactRequired: true
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Basic
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Bronze
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Silver
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Gold
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Platinum
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
