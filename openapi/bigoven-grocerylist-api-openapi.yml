@@ -383,6 +383,50 @@ paths:
       - GroceryList
 components:
   schemas:
+    BigOven.Model.API.UserInfo:
+      properties:
+        FirstName:
+          type: string
+        ImageUrl48:
+          type: string
+        IsKitchenHelper:
+          type: boolean
+        IsPremium:
+          type: boolean
+        IsUsingRecurly:
+          type: boolean
+        LastName:
+          type: string
+        MemberSince:
+          format: date-time
+          type: string
+        PhotoUrl:
+          type: string
+        PhotoUrl48:
+          readOnly: true
+          type: string
+        PremiumExpiryDate:
+          format: date-time
+          type: string
+        UserID:
+          format: int32
+          type: integer
+        UserName:
+          type: string
+        WebUrl:
+          readOnly: true
+          type: string
+      type: object
+    API2.GroceryListDepartmentResult:
+      description: ''
+      properties:
+        dept:
+          description: Gets or sets the dept.
+          type: string
+        item:
+          description: Gets or sets the item.
+          type: string
+      type: object
     API2.Controllers.WebAPI.GroceryListController.PostGroceryListSyncRequest:
       description: ''
       properties:
@@ -392,38 +436,152 @@ components:
           description: Gets or sets the since.
           type: string
       type: object
-    BigOven.Model.API.Grocery.Item:
+    BigOven.Model.API.Grocery.GroceryList:
       properties:
-        BigOvenObject:
+        Items:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API.Grocery.Item'
+          type: array
+        LastModified:
+          format: date-time
+          type: string
+        Recipes:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API.RecipeInfo'
+          type: array
+        VersionGuid:
+          type: string
+      type: object
+    BigOven.Model.ShoppingListLine:
+      properties:
+        DateAdded:
+          format: date-time
+          type: string
+        Dept:
+          type: string
+        GUID:
+          type: string
+        HTMLItemName:
+          type: string
+        IsChecked:
+          type: boolean
+        ItemName:
+          type: string
+        LastModified:
+          format: date-time
+          type: string
+        ListID:
+          format: int64
+          type: integer
+        MealPlanID:
+          format: int32
+          type: integer
+        MealPlanObjectType:
+          format: int32
+          type: integer
+        Notes:
+          type: string
+        PendingAddition:
+          type: boolean
+        RecipeID:
+          format: int32
+          type: integer
+        ShoppingListLineID:
+          format: int64
+          type: integer
+        Store:
+          type: string
+        TextAmt:
+          type: string
+        ThirdPartyHost:
+          type: string
+        ThirdPartyTitle:
+          type: string
+        ThirdPartyURL:
+          type: string
+      type: object
+    BigOven.Model.API2.RecipeInfox:
+      properties:
+        Category:
           type: string
         CreationDate:
           format: date-time
           type: string
-        Department:
+        Cuisine:
           type: string
-        DisplayQuantity:
-          type: string
-        GUID:
-          type: string
-        IsChecked:
+        HasVideos:
           type: boolean
-        ItemID:
-          format: int64
-          type: integer
-        LastModified:
-          format: date-time
+        IsBookmark:
+          type: boolean
+        IsPrivate:
+          type: boolean
+        IsRecipeScan:
+          type: boolean
+        Microcategory:
           type: string
-        LocalStatus:
+        PhotoUrl:
           type: string
-        Name:
-          type: string
-        Notes:
-          type: string
+        Poster:
+          $ref: '#/components/schemas/BigOven.Model.API2.UserInfoTinyx'
         RecipeID:
           format: int32
           type: integer
-        ThirdPartyURL:
+        ReviewCount:
+          format: int32
+          type: integer
+        Servings:
+          format: double
+          type: number
+        StarRating:
+          format: double
+          type: number
+        Subcategory:
           type: string
+        Title:
+          type: string
+        TotalTries:
+          format: int32
+          type: integer
+        WebURL:
+          type: string
+      type: object
+    API2.Controllers.WebAPI.GroceryListController.DepartmentModel:
+      description: ''
+      properties:
+        items:
+          description: Gets or sets the items.
+          type: string
+      type: object
+    BigOven.Model.API2.GroceryList:
+      properties:
+        Items:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API.Grocery.Item'
+          type: array
+        LastModified:
+          format: date-time
+          type: string
+        Recipes:
+          items:
+            $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
+          type: array
+        VersionGuid:
+          type: string
+      type: object
+    API2.Controllers.WebAPI.GroceryListController.PostGroceryListRecipeRequest:
+      description: ''
+      properties:
+        markAsPending:
+          description: Gets or sets the mark as pending.
+          type: boolean
+        recipeId:
+          description: Gets or sets the recipe identifier.
+          format: int32
+          type: integer
+        scale:
+          description: Gets or sets the scale.
+          format: double
+          type: number
       type: object
     System.Object:
       properties: {}
@@ -487,97 +645,56 @@ components:
           format: double
           type: number
       type: object
-    BigOven.Model.API2.RecipeInfox:
+    BigOven.Model.API.Grocery.Item:
       properties:
-        Category:
+        BigOvenObject:
           type: string
         CreationDate:
           format: date-time
           type: string
-        Cuisine:
+        Department:
           type: string
-        HasVideos:
-          type: boolean
-        IsBookmark:
-          type: boolean
-        IsPrivate:
-          type: boolean
-        IsRecipeScan:
-          type: boolean
-        Microcategory:
-          type: string
-        PhotoUrl:
-          type: string
-        Poster:
-          $ref: '#/components/schemas/BigOven.Model.API2.UserInfoTinyx'
-        RecipeID:
-          format: int32
-          type: integer
-        ReviewCount:
-          format: int32
-          type: integer
-        Servings:
-          format: double
-          type: number
-        StarRating:
-          format: double
-          type: number
-        Subcategory:
-          type: string
-        Title:
-          type: string
-        TotalTries:
-          format: int32
-          type: integer
-        WebURL:
-          type: string
-      type: object
-    BigOven.Model.ShoppingListLine:
-      properties:
-        DateAdded:
-          format: date-time
-          type: string
-        Dept:
+        DisplayQuantity:
           type: string
         GUID:
           type: string
-        HTMLItemName:
-          type: string
         IsChecked:
           type: boolean
-        ItemName:
-          type: string
+        ItemID:
+          format: int64
+          type: integer
         LastModified:
           format: date-time
           type: string
-        ListID:
-          format: int64
-          type: integer
-        MealPlanID:
-          format: int32
-          type: integer
-        MealPlanObjectType:
-          format: int32
-          type: integer
+        LocalStatus:
+          type: string
+        Name:
+          type: string
         Notes:
           type: string
-        PendingAddition:
-          type: boolean
         RecipeID:
           format: int32
           type: integer
-        ShoppingListLineID:
-          format: int64
-          type: integer
-        Store:
-          type: string
-        TextAmt:
-          type: string
-        ThirdPartyHost:
-          type: string
-        ThirdPartyTitle:
-          type: string
         ThirdPartyURL:
+          type: string
+      type: object
+    API2.Controllers.WebAPI.GroceryListController.PostToGroceryListRecipeRequest:
+      description: ''
+      properties:
+        department:
+          description: Gets or sets the department.
+          type: string
+        name:
+          description: Gets or sets the name.
+          type: string
+        notes:
+          description: Gets or sets the notes.
+          type: string
+        quantity:
+          description: Gets or sets the quantity.
+          type: string
+        unit:
+          description: Gets or sets the unit.
           type: string
       type: object
     BigOven.Model.API2.UserInfoTinyx:
@@ -613,123 +730,6 @@ components:
         ischecked:
           description: Gets or sets the ischecked.
           type: boolean
-        name:
-          description: Gets or sets the name.
-          type: string
-        notes:
-          description: Gets or sets the notes.
-          type: string
-        quantity:
-          description: Gets or sets the quantity.
-          type: string
-        unit:
-          description: Gets or sets the unit.
-          type: string
-      type: object
-    BigOven.Model.API2.GroceryList:
-      properties:
-        Items:
-          items:
-            $ref: '#/components/schemas/BigOven.Model.API.Grocery.Item'
-          type: array
-        LastModified:
-          format: date-time
-          type: string
-        Recipes:
-          items:
-            $ref: '#/components/schemas/BigOven.Model.API2.RecipeInfox'
-          type: array
-        VersionGuid:
-          type: string
-      type: object
-    BigOven.Model.API.Grocery.GroceryList:
-      properties:
-        Items:
-          items:
-            $ref: '#/components/schemas/BigOven.Model.API.Grocery.Item'
-          type: array
-        LastModified:
-          format: date-time
-          type: string
-        Recipes:
-          items:
-            $ref: '#/components/schemas/BigOven.Model.API.RecipeInfo'
-          type: array
-        VersionGuid:
-          type: string
-      type: object
-    API2.Controllers.WebAPI.GroceryListController.PostGroceryListRecipeRequest:
-      description: ''
-      properties:
-        markAsPending:
-          description: Gets or sets the mark as pending.
-          type: boolean
-        recipeId:
-          description: Gets or sets the recipe identifier.
-          format: int32
-          type: integer
-        scale:
-          description: Gets or sets the scale.
-          format: double
-          type: number
-      type: object
-    BigOven.Model.API.UserInfo:
-      properties:
-        FirstName:
-          type: string
-        ImageUrl48:
-          type: string
-        IsKitchenHelper:
-          type: boolean
-        IsPremium:
-          type: boolean
-        IsUsingRecurly:
-          type: boolean
-        LastName:
-          type: string
-        MemberSince:
-          format: date-time
-          type: string
-        PhotoUrl:
-          type: string
-        PhotoUrl48:
-          readOnly: true
-          type: string
-        PremiumExpiryDate:
-          format: date-time
-          type: string
-        UserID:
-          format: int32
-          type: integer
-        UserName:
-          type: string
-        WebUrl:
-          readOnly: true
-          type: string
-      type: object
-    API2.GroceryListDepartmentResult:
-      description: ''
-      properties:
-        dept:
-          description: Gets or sets the dept.
-          type: string
-        item:
-          description: Gets or sets the item.
-          type: string
-      type: object
-    API2.Controllers.WebAPI.GroceryListController.DepartmentModel:
-      description: ''
-      properties:
-        items:
-          description: Gets or sets the items.
-          type: string
-      type: object
-    API2.Controllers.WebAPI.GroceryListController.PostToGroceryListRecipeRequest:
-      description: ''
-      properties:
-        department:
-          description: Gets or sets the department.
-          type: string
         name:
           description: Gets or sets the name.
           type: string

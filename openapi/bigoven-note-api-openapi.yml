@@ -245,6 +245,9 @@ paths:
       - Note
 components:
   schemas:
+    System.Object:
+      properties: {}
+      type: object
     BigOven.Model.API.RecipeNoteList:
       properties:
         ResultCount:
@@ -255,8 +258,33 @@ components:
             $ref: '#/components/schemas/BigOven.Model.API.RecipeNote'
           type: array
       type: object
-    System.Object:
-      properties: {}
+    BigOven.Model.API.RecipeNote:
+      properties:
+        CreationDate:
+          format: date-time
+          type: string
+        Date:
+          type: string
+        DateDT:
+          format: date-time
+          type: string
+        GUID:
+          type: string
+        ID:
+          format: int32
+          type: integer
+        Notes:
+          type: string
+        People:
+          type: string
+        RecipeID:
+          format: int32
+          type: integer
+        UserID:
+          format: int32
+          type: integer
+        Variations:
+          type: string
       type: object
     API2.Controllers.WebAPI.NoteController.NoteRequest:
       description: ''
@@ -295,34 +323,6 @@ components:
           type: integer
         Variations:
           description: Gets or sets the variations.
-          type: string
-      type: object
-    BigOven.Model.API.RecipeNote:
-      properties:
-        CreationDate:
-          format: date-time
-          type: string
-        Date:
-          type: string
-        DateDT:
-          format: date-time
-          type: string
-        GUID:
-          type: string
-        ID:
-          format: int32
-          type: integer
-        Notes:
-          type: string
-        People:
-          type: string
-        RecipeID:
-          format: int32
-          type: integer
-        UserID:
-          format: int32
-          type: integer
-        Variations:
           type: string
       type: object
     BigOven.Model.API2.RecipeNote:
