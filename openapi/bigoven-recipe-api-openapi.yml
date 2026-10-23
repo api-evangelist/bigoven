@@ -2149,3 +2149,9 @@ components:
       type: http
 externalDocs:
   url: http://api2.bigoven.com/web/documentation
+x-provenance:
+  method: harvested
+  publisher: BigOven
+  source: https://api2.bigoven.com/swagger/docs/partner
+  note: split by refine-openapis from the provider's own published document, verified by fetch (openapi/_original/*.fetch.json);
+    stamped by stamp-openapi-provenance.py (roadmap#793)
