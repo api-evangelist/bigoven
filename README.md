@@ -1,4 +1,4 @@
-# BigOven (bigoven)
+# BigOven
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,61 +66,200 @@
 
 BigOven is a recipe and meal planning platform providing access to over 1,000,000 recipes via a REST API. Developers can search recipes, retrieve nutritional information, manage cloud-based grocery lists, and build diet and meal planning features. The API is offered by Aisle Ahead, Inc. and supports commercial food, nutrition, diet, and grocery applications.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/bigoven/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/bigoven/refs/heads/main/apis.yml)
+**Areas:** Recipes · Meal Planning · Grocery Lists · Nutrition · Food · Cooking
 
-## Tags
+## BigOven on APIs.io
 
-- Recipes
-- Meal Planning
-- Grocery Lists
-- Nutrition
-- Food
-- Cooking
+Everything profiled for BigOven is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bigoven/](https://apis.io/providers/bigoven/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (7)
 
-- **Created:** 2026-06-13
-- **Modified:** 2026-06-13
+- [BigOven Collection API](https://apis.io/apis/bigoven/bigoven-collection-api/) — The Collection API from BigOven — 3 operation(s) for collection.
+- [BigOven GroceryList API](https://apis.io/apis/bigoven/bigoven-grocerylist-api/) — The GroceryList API from BigOven — 8 operation(s) for grocerylist.
+- [BigOven Images API](https://apis.io/apis/bigoven/bigoven-images-api/) — The Images API from BigOven — 6 operation(s) for images.
+- [BigOven Me API](https://apis.io/apis/bigoven/bigoven-me-api/) — The Me API from BigOven — 6 operation(s) for me.
+- [BigOven Note API](https://apis.io/apis/bigoven/bigoven-note-api/) — The Note API from BigOven — 3 operation(s) for note.
+- [BigOven Recipe API](https://apis.io/apis/bigoven/bigoven-recipe-api/) — The Recipe API from BigOven — 21 operation(s) for recipe.
+- [BigOven Review API](https://apis.io/apis/bigoven/bigoven-review-api/) — The Review API from BigOven — 6 operation(s) for review.
 
-## APIs
+### Published properties
 
-### BigOven Build API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-REST API providing access to 1,000,000+ recipes, grocery list management, nutritional data, and meal planning features. Returns JSON responses and requires HTTPS and an API key.
+#### Agentic access (1)
 
-- **Human URL:** [https://api2.bigoven.com/web/documentation](https://api2.bigoven.com/web/documentation)
-- **Base URL:** `https://api2.bigoven.com`
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Tags
+- [Bigoven Agentic Access](https://apis.io/agentic-access/bigoven/bigoven-agentic-access/)
 
-- Recipes
-- Nutrition
-- Grocery Lists
-- Meal Planning
+#### JSON Schema (56)
 
-#### Properties
+The data models the API reads and writes.
 
-- [Documentation](https://api2.bigoven.com/web/documentation)
-- [OpenAPI](https://api2.bigoven.com/swagger/ui/index) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [OpenAPI](openapi/bigoven-openapi.yaml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Authentication](https://api2.bigoven.com/web/documentation/authentication)
-- [Pricing](https://api2.bigoven.com/web/documentation/feestructure)
-- [Rate Limits](https://api2.bigoven.com/web/documentation/usage-throttling)
+- [API2.Controllers.WebAPI.GroceryListController.DepartmentModel](https://apis.io/schemas/bigoven/api2.controllers.webapi.grocerylistcontroller.departmentmodel/)
+- [API2.Controllers.WebAPI.GroceryListController.PostGroceryListAddLineRequest](https://apis.io/schemas/bigoven/api2.controllers.webapi.grocerylistcontroller.postgrocerylistaddlinerequest/)
+- [API2.Controllers.WebAPI.GroceryListController.PostGroceryListRecipeRequest](https://apis.io/schemas/bigoven/api2.controllers.webapi.grocerylistcontroller.postgrocerylistreciperequest/)
+- [API2.Controllers.WebAPI.GroceryListController.PostGroceryListSyncRequest](https://apis.io/schemas/bigoven/api2.controllers.webapi.grocerylistcontroller.postgrocerylistsyncrequest/)
+- [API2.Controllers.WebAPI.GroceryListController.PostToGroceryListRecipeRequest](https://apis.io/schemas/bigoven/api2.controllers.webapi.grocerylistcontroller.posttogrocerylistreciperequest/)
+- [API2.Controllers.WebAPI.GroceryListController.UpdateItemByGuidRequest](https://apis.io/schemas/bigoven/api2.controllers.webapi.grocerylistcontroller.updateitembyguidrequest/)
+- [API2.Controllers.WebAPI.ImagesController.RecipePhotosResponse](https://apis.io/schemas/bigoven/api2.controllers.webapi.imagescontroller.recipephotosresponse/)
+- [API2.Controllers.WebAPI.MeController.EatingStyle](https://apis.io/schemas/bigoven/api2.controllers.webapi.mecontroller.eatingstyle/)
+- [API2.Controllers.WebAPI.MeController.Option](https://apis.io/schemas/bigoven/api2.controllers.webapi.mecontroller.option/)
+- [API2.Controllers.WebAPI.MeController.PreferenceOptions](https://apis.io/schemas/bigoven/api2.controllers.webapi.mecontroller.preferenceoptions/)
+- [API2.Controllers.WebAPI.NoteController.NoteRequest](https://apis.io/schemas/bigoven/api2.controllers.webapi.notecontroller.noterequest/)
+- [API2.Controllers.WebAPI.ReviewController.PostReplyReq](https://apis.io/schemas/bigoven/api2.controllers.webapi.reviewcontroller.postreplyreq/)
+- [API2.Controllers.WebAPI.ReviewController.ReviewRequest](https://apis.io/schemas/bigoven/api2.controllers.webapi.reviewcontroller.reviewrequest/)
+- [API2.Controllers.WebAPI.ReviewController.ReviewRequestLegacy](https://apis.io/schemas/bigoven/api2.controllers.webapi.reviewcontroller.reviewrequestlegacy/)
+- [API2.GroceryListDepartmentResult](https://apis.io/schemas/bigoven/api2.grocerylistdepartmentresult/)
+- [API2.Models.Accounting](https://apis.io/schemas/bigoven/api2.models.accounting/)
+- [API2.Models.BigOvenUser](https://apis.io/schemas/bigoven/api2.models.bigovenuser/)
+- [API2.Models.Counts](https://apis.io/schemas/bigoven/api2.models.counts/)
+- [API2.Models.Location](https://apis.io/schemas/bigoven/api2.models.location/)
+- [API2.Models.Personal](https://apis.io/schemas/bigoven/api2.models.personal/)
+- [API2.Models.Preference](https://apis.io/schemas/bigoven/api2.models.preference/)
+- [API2.Models.Profile](https://apis.io/schemas/bigoven/api2.models.profile/)
+- [API2.Models.Recipes.FeedbackDTO](https://apis.io/schemas/bigoven/api2.models.recipes.feedbackdto/)
+- [API2.Models.Recipes.RecipeResponse](https://apis.io/schemas/bigoven/api2.models.recipes.reciperesponse/)
+- [API2.Models.Recipes.RecipeVideoResponse](https://apis.io/schemas/bigoven/api2.models.recipes.recipevideoresponse/)
+- …and 31 more published on APIs.io
 
-## Common Properties
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Bigoven Context](https://apis.io/jsonld/bigoven/bigoven/)
+
+#### Examples (66)
+
+Example requests and responses.
+
+- [Collection_Collections](https://apis.io/examples/bigoven/Collection_Collections/)
+- [Collection_Getcollection](https://apis.io/examples/bigoven/Collection_GetCollection/)
+- [Collection_Getcollectionmeta](https://apis.io/examples/bigoven/Collection_GetCollectionMeta/)
+- [Grocerylist_Addrecipe](https://apis.io/examples/bigoven/GroceryList_AddRecipe/)
+- [Grocerylist_Delete](https://apis.io/examples/bigoven/GroceryList_Delete/)
+- [Grocerylist_Deleteitembyguid](https://apis.io/examples/bigoven/GroceryList_DeleteItemByGuid/)
+- [Grocerylist_Department](https://apis.io/examples/bigoven/GroceryList_Department/)
+- [Grocerylist_Get](https://apis.io/examples/bigoven/GroceryList_Get/)
+- [Grocerylist_Grocerylistitemguid](https://apis.io/examples/bigoven/GroceryList_GroceryListItemGuid/)
+- [Grocerylist_Grocerylistremovemarkeditems](https://apis.io/examples/bigoven/GroceryList_GroceryListRemoveMarkedItems/)
+- [Grocerylist_Post](https://apis.io/examples/bigoven/GroceryList_Post/)
+- [Grocerylist_Postgrocerylistsync](https://apis.io/examples/bigoven/GroceryList_PostGroceryListSync/)
+- [Images_Get](https://apis.io/examples/bigoven/Images_Get/)
+- [Images_Getpendingbyuser](https://apis.io/examples/bigoven/Images_GetPendingByUser/)
+- [Images_Getrecipephotos](https://apis.io/examples/bigoven/Images_GetRecipePhotos/)
+- [Images_Getscanimages](https://apis.io/examples/bigoven/Images_GetScanImages/)
+- [Images_Uploadrecipeimage](https://apis.io/examples/bigoven/Images_UploadRecipeImage/)
+- [Images_Uploaduseravatar](https://apis.io/examples/bigoven/Images_UploadUserAvatar/)
+- [Me_Getoptions](https://apis.io/examples/bigoven/Me_GetOptions/)
+- [Me_Index](https://apis.io/examples/bigoven/Me_Index/)
+- [Me_Putme](https://apis.io/examples/bigoven/Me_PutMe/)
+- [Me_Putmepersonal](https://apis.io/examples/bigoven/Me_PutMePersonal/)
+- [Me_Putmepreferences](https://apis.io/examples/bigoven/Me_PutMePreferences/)
+- [Me_Skinny](https://apis.io/examples/bigoven/Me_Skinny/)
+- [Note_Delete](https://apis.io/examples/bigoven/Note_Delete/)
+- …and 41 more published on APIs.io
+
+#### Collections (6)
+
+Postman and Open Collection request collections.
+
+- [1,000,000+ Recipe and Grocery List API (v2) Collection API](https://apis.io/collections/bigoven/open-bigoven-collection-api/)
+- [1,000,000+ Recipe and Grocery List API (v2) Collection GroceryList API](https://apis.io/collections/bigoven/open-bigoven-grocerylist-api/)
+- [1,000,000+ Recipe and Grocery List API (v2) Collection Images API](https://apis.io/collections/bigoven/open-bigoven-images-api/)
+- [1,000,000+ Recipe and Grocery List API (v2) Collection Me API](https://apis.io/collections/bigoven/open-bigoven-me-api/)
+- [1,000,000+ Recipe and Grocery List API (v2) Collection Note API](https://apis.io/collections/bigoven/open-bigoven-note-api/)
+- [1,000,000+ and Grocery List API (v2) Collection Recipe API](https://apis.io/collections/bigoven/open-bigoven-recipe-api/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [BigOven — jsonschema rules](https://apis.io/rules/bigoven/bigoven-jsonschema-spectral-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bigoven Authentication](https://apis.io/security/bigoven/bigoven-authentication/)
+- [Bigoven Domain Security](https://apis.io/security/bigoven/bigoven-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Bigoven Plans Pricing](https://apis.io/plans/bigoven/bigoven-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Bigoven Rate Limits](https://apis.io/rate-limits/bigoven/bigoven-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Bigoven Finops](https://apis.io/finops/bigoven/bigoven-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.bigoven.com)
 - [Documentation](https://api2.bigoven.com/web/documentation)
-- [Git Hub Org](https://github.com/bigoven)
-- [LinkedIn](https://www.linkedin.com/company/bigoven-com)
-- [Blog](https://www.bigoven.com/article)
 - [Pricing](https://api2.bigoven.com/web/documentation/feestructure)
-- [X (Twitter)](https://x.com/bigoven)
-- [Plans](plans/bigoven-plans-pricing.yml)
-- [Rate Limits](rate-limits/bigoven-rate-limits.yml)
-- [Fin Ops](finops/bigoven-finops.yml)
+- [Blog](https://www.bigoven.com/article)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 25.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 45.2 |
+| Contract governance | 9.8 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 18.4 |
+
+**Agent readiness 19.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bigoven/](https://apis.io/providers/bigoven/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for BigOven: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bigoven/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
